@@ -2,56 +2,78 @@
 Lineage 2 .NET fork
 
 
+
+
+
 # Original Changelog
+
+
+3.07.2013: Fixed IS_RED
+		   Fixed Karma display on Char Info Tab, Now shows absolute negative value instead of positive million.
+		   (Note: Cannot use uint to display/parse karma value, breaks is_red and displays karma incorrectly)
+		   Found OC overflow bug with transformations, Causes L2Net to crash when untransforming, will try to replicate at later date.
+		   Updated Language Files from Karma to Reputation.
+		   Modified Char_status_new_god.bmp (char status tab background image) to correct Karma heading to Reputation.
+2.27.2013: 
+			Updated Get_Skills to include Reuse time in sortedlist
+			Files Include: Util_Get.cs, Script_Handler_L2.cs, Skill.L2c .
+			Added: Sample Script - get_skills_test.l2s .
+			Updated Ignore Summons List, Confirmed Sigel, Aeore Healer, Wynn Summoner - Summons in List.
+			Files Include: BotOptionsScreen.cs
+			Provided Community with Excel Sheet of Summon Names included in the ignore list.
+
+
 volatile only on: byte, sbyte, short, ushort, int, uint, char, float, or bool, or an enumeration with a base type of byte, sbyte, short, ushort, int, or uint
 
-TODO - stand to use skills
-TODO - fix allowing movement while dead
-TODO - make server emulator to test gameguard login packets
-TODO - self/target - like dead, sitting, running, armor, weapon...etc
-TODO - protected / static class functions
-TODO - fix all non-thread safe variables
-TODO - allow setting L2.Net follow distance 2
-TODO - set walls via bot options
-TODO - command channel pink
-TODO - party info summon
-TODO - debug output with command line param
-TODO - on self targeted -targeter clan, ally
-TODO - add script events for enter/leave peace zone
-TODO - event MEMBER_JOIN_PARTY?
-TODO - event MEMBER_LEFT_PARTY?
-TODO - skill successful/failed for skill launched events?
-TODO - delayed party invite reject
-TODO - delayed trade invite reject
-TODO - "<&DOUBLE I2&>" set precision
-TODO - add flagged state to targeting and combat events
-TODO - script targeting ... TARGETTED, TARGETING, IGNORE
-TODO - Util.GetCharName - check clan members
-TODO - Util.GetCharID - check clan members
-TODO - fix forward exit packet on close
-TODO - 0x12 = GM Announcement - Light Blue use hero color
-TODO - make hero chat color a little darker
+* TODO - stand to use skills
+* TODO - fix allowing movement while dead
+* TODO - make server emulator to test gameguard login packets
+* TODO - self/target - like dead, sitting, running, armor, weapon...etc
+* TODO - protected / static class functions
+* TODO - fix all non-thread safe variables
+* TODO - allow setting L2.Net follow distance 2
+* TODO - set walls via bot options
+* TODO - command channel pink
+* TODO - party info summon
+* TODO - debug output with command line param
+* TODO - on self targeted -targeter clan, ally
+* TODO - add script events for enter/leave peace zone
+* TODO - event MEMBER_JOIN_PARTY?
+* TODO - event MEMBER_LEFT_PARTY?
+* TODO - skill successful/failed for skill launched events?
+* TODO - delayed party invite reject
+* TODO - delayed trade invite reject
+* TODO - "<&DOUBLE I2&>" set precision
+* TODO - add flagged state to targeting and combat events
+* TODO - script targeting ... TARGETTED, TARGETING, IGNORE
+* TODO - Util.GetCharName - check clan members
+* TODO - Util.GetCharID - check clan members
+* TODO - fix forward exit packet on close
+* TODO - 0x12 = GM Announcement - Light Blue use hero color
+* TODO - make hero chat color a little darker
 
-TODO - summoned/spawned - spawned last forever.
-TODO - on dead delay of 15 seconds.
+* TODO - summoned/spawned - spawned last forever.
+* TODO - on dead delay of 15 seconds.
+* TODO - added x,y map viewport offset to map tab
+* TODO - script event PARTY_INVITE
+* TODO - script event TRADE_INVITE
 
-TODO - added x,y map viewport offset to map tab
-TODO - script event PARTY_INVITE
-TODO - script event TRADE_INVITE
-
-TODO - fix needlessly reusing items when bot options are applied
+* TODO - fix needlessly reusing items when bot options are applied
 
 "Auto Unstuck"
 "Only Pick Mine"
 
 ---
 v390
+---
 fixed error calling functions/labels/subs with lowercase names
 
 v389
+---
 no work done
 
 v388
+---
 updated jingjing StdLib scripts
 splash cleaned up by tortur
 map streams are now released after no use for 5min (allows fast resizing... but saves memory later)
@@ -66,6 +88,7 @@ fixed EFFECTS in Get_Party
 added option in setup to disable gpu acceleration
 
 v387
+---
 //changed exe to target any cpu instead of x86  (will now run in 64bit mode on x64 capable pcs)
 new splash from tortur - congrats :)
 new v387 datapack
@@ -86,6 +109,7 @@ script class member variable names automatically converted to uppercase
 script file cached function,sub,label lists changed from arraylist to sortedlist for performance
 
 v386
+---
 updated exe to require .Net 4.0
 tweaked process encryption
 changed netping to accept invalid id values (l2ex.pl)
@@ -97,6 +121,7 @@ added script command: GeneratePoly [double radius] [int sides] [double offset]
 setup window now set to topmost (can't be hidden behind other windows)
 
 v385
+---
 updated process encryption
 updated French language (ty you!)
 updated Spanish language (ty Lyara!)
@@ -116,6 +141,7 @@ added support for encrypted scripts
 refactored datafile loading to decrease load times by 15%
 
 v384
+---
 new datafiles
 default protocol changed to 152
 added 36 new localizable terms
@@ -163,9 +189,11 @@ added bot option to ignore items with no drop meshes when picking up items
 fixed bug loading bot options corrupting trait attribute for saved combat settings
 
 v383
+---
 updated meta data
 
 v382
+---
 new datafiles
 added NetPing handler
 improved CT2.4 action handling
