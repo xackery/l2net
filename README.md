@@ -1,9 +1,12 @@
-# l2net
-Lineage 2 .NET fork
+# L2 .NET
+L2 .NET is an automated assistant tool (commonly referred to as 'bot') for Lineage 2 that assist a player's experience during their game play. It is similar to [L2Walker](http://www.towalker.com/).
 
-
-
-
+Features
+---
+* Out of Game Mode, allowing you to fully control your characters without being inside the normal Lineage 2 Client.
+* In Game Mode, allowing you to attach to a game client and enhance the gameplay experience (best of both worlds).
+* Top-Down Overview map allowing you to interact with the world.
+* Scripting Support, including custom scripting
 
 # Original Changelog
 
