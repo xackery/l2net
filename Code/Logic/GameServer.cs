@@ -64,7 +64,14 @@ namespace L2_login
             Globals.gamedata.botoptions = new BotOptions();
             Globals.gamedata.alertoptions = new AlertOptions();
 
-            LoadData.LoadDataFiles();
+            try {
+                LoadData.LoadDataFiles();
+            } catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+                Environment.FailFast("File not found:" + e.Message);
+                return;
+            }
 
             AddInfo.Set_PartyVisible();
             AddInfo.Set_PartyInfo();

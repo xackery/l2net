@@ -27,22 +27,29 @@ namespace L2_login
 
         public static void LoadDataFiles()
         {
-            data_lvlexp = GetData(Globals.PATH + "\\Data\\lvlexp.txt");
-            data_servername = GetData(Globals.PATH + "\\Data\\servername.txt");
-            data_systemmsg = GetData(Globals.PATH + "\\Data\\systemmsg.txt");
-            data_hennagrp = GetData(Globals.PATH + "\\Data\\hennagrp.txt");
-            data_npcname = GetData(Globals.PATH + "\\Data\\npcname.txt");
-            data_itemname = GetData(Globals.PATH + "\\Data\\itemname.txt");
-            data_etcitemgrp = GetData(Globals.PATH + "\\Data\\etcitemgrp.txt");
-            data_weapongrp = GetData(Globals.PATH + "\\Data\\weapongrp.txt");
-            data_armorgrp = GetData(Globals.PATH + "\\Data\\armorgrp.txt");
-            data_classes = GetData(Globals.PATH + "\\Data\\classes.txt");
-            data_races = GetData(Globals.PATH + "\\Data\\races.txt");
-            data_skillname = GetData(Globals.PATH + "\\Data\\skillname.txt");
-            data_actionname = GetData(Globals.PATH + "\\Data\\actionname.txt");
-            //data_questname = GetData(Globals.PATH + "\\Data\\questname.txt");
-            data_zonename = GetData(Globals.PATH + "\\Data\\zonename.txt");
-            data_npcstring = GetData(Globals.PATH + "\\Data\\npcstring.txt");
+            try
+            {
+                data_lvlexp = GetData(Globals.PATH + "\\Data\\lvlexp.txt");
+                data_servername = GetData(Globals.PATH + "\\Data\\servername.txt");
+                data_systemmsg = GetData(Globals.PATH + "\\Data\\systemmsg.txt");
+                data_hennagrp = GetData(Globals.PATH + "\\Data\\hennagrp.txt");
+                data_npcname = GetData(Globals.PATH + "\\Data\\npcname.txt");
+                data_itemname = GetData(Globals.PATH + "\\Data\\itemname.txt");
+                data_etcitemgrp = GetData(Globals.PATH + "\\Data\\etcitemgrp.txt");
+                data_weapongrp = GetData(Globals.PATH + "\\Data\\weapongrp.txt");
+                data_armorgrp = GetData(Globals.PATH + "\\Data\\armorgrp.txt");
+                data_classes = GetData(Globals.PATH + "\\Data\\classes.txt");
+                data_races = GetData(Globals.PATH + "\\Data\\races.txt");
+                data_skillname = GetData(Globals.PATH + "\\Data\\skillname.txt");
+                data_actionname = GetData(Globals.PATH + "\\Data\\actionname.txt");
+                //data_questname = GetData(Globals.PATH + "\\Data\\questname.txt");
+                data_zonename = GetData(Globals.PATH + "\\Data\\zonename.txt");
+                data_npcstring = GetData(Globals.PATH + "\\Data\\npcstring.txt");
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
 
             //System.Threading.Tasks.Parallel.For(0, 14, (i) =>
             System.Threading.Tasks.Parallel.For(0, 14, (i) =>
@@ -120,8 +127,7 @@ namespace L2_login
         {
             if (!System.IO.File.Exists(filename))
             {
-                System.Windows.Forms.MessageBox.Show(filename + " is missing");
-                System.Windows.Forms.Application.Exit();
+                throw new Exception("File not found: " + filename);
             }
 
 
