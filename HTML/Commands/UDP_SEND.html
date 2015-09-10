@@ -1,0 +1,5 @@
+UDP_SEND [STRING] [INT] [INT] [INT] [INT]<br />
+<br />
+This function will send 5 parameters (1 x string, 4 x 32 bit ints) over the UDP sub system. This function will trigger UPDRECEIVE events on all connected remote clients and the sending client. Look at the UDPRECEIVE event for information as to what variables are sent.<br />
+<br />
+EX: UDP_SEND "stuffzzzz" CHAR_X CHAR_Y CHAR_Z NULL<br />

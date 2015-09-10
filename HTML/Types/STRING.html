@@ -1,0 +1,68 @@
+STRING<br />
+<br />
+A unicode string.<br />
+<br />
+Member Functions:<br />
+.TYPE<br />
+Returns the global STRING<br />
+<br />
+.CLASSNAME<br />
+Returns a string "STRING"<br />
+<br />
+.CLONE<br />
+Returns a copy of the variable.<br />
+<br />
+.GET_HEX<br />
+Returns the string version of the hex value of this variable. 2 bytes per character delimited with 2 bytes of 0x00<br />
+<br />
+.LENGTH<br />
+Returns an int containing the length of the string<br />
+<br />
+.COUNT<br />
+Same as .LENGTH<br />
+<br />
+.REVERSE<br />
+Reverses the character order in the string.<br />
+<br />
+.TO_UPPER<br />
+Returns the string where all characters have been converted to uppercase using the local system's locale uppercase rules.<br />
+<br />
+.TO_UPPER_INVARIANT<br />
+Returns the string where all characters have been converted to uppercase using the invariant culture rules (English).<br />
+<br />
+.TO_LOWER<br />
+Returns the string where all characters have been converted to lowercase using the local system's locale uppercase rules.<br />
+<br />
+.TO_LOWER_INVARIANT<br />
+Returns the string where all characters have been converted to lowercase using the invariant culture rules (English).<br />
+<br />
+.TRIM<br />
+Returns the string where all whitespace characters have been removed from the the start and end of the string.<br />
+<br />
+.LASTINDEXOF [v]<br />
+Returns the int location of the last index of the string version of the value of V1.<br />
+<br />
+.INDEXOF [v]<br />
+Returns the int location of the first index of the string version of the value of V1.<br />
+<br />
+.TRIMEND [v]<br />
+Returns the string where string version of the value of V1 has been trimmed from the end.<br />
+<br />
+.TRIMSTART [v]<br />
+Returns the string where string version of the value of V1 has been trimmed from the start.<br />
+<br />
+.CONTAINS [v]<br />
+Returns the global TRUE or FALSE depending if the string version of the value of V1 was contained in the string.<br />
+<br />
+.SUBSTRING [v] [v]<br />
+Returns the string starting from the integer version of the value of V1 to the integer version of the value of V2.<br />
+<br />
+.REPLACE [v] [V]<br />
+Returns the string where the string version of the value of V1 was contained in the string was replaced with the string version of the value of V2.<br />
+<br />
+.STARTSWITH [v]<br />
+Returns the global TRUE or FALSE depending if the string version of the value of V1 was at the start of the string.<br />
+<br />
+.ENDSWITH [v]<br />
+Returns the global TRUE or FALSE depending if the string version of the value of V1 was at the end of the string.<br />
+<br />

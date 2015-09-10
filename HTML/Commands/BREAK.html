@@ -1,0 +1,11 @@
+BREAK [INT]<br />
+<br />
+Breaks out of [INT1] loops, ifs, and switch statements.<br />
+<br />
+It searches the lines of script following the BREAK and searches for ENDIF, WEND, LOOP, and NEXT. A counter is incremented everytime one of these is found. Once the counter is equal to the passed integer, the line position is set to the line following that last loop/conditional terminator.<br />
+<br />
+If you set i so large that it comes across the end of a function or subroutine, it will set the line to the end of that function or sub. A BREAK will not go outside of the function/sub it is used in.<br />
+<br />
+IF BREAK results in an end of file status, an error message will be printed and the script will halt.<br />
+<br />
+EX: BREAK 2<br />

@@ -1,0 +1,43 @@
+THREAD [STRING]<br />
+<br />
+Calls the given function named [STRING1] on a new thread. All variables are guaranteed thread safe.<br />
+<br />
+Threads sleep independent of each other. Each thread has a unique stack and does NOT share memory/variables with any other thread. End a thread by using the RETURN VOID statement.<br />
+<br />
+Global variables can be used to communicate between threads.<br />
+<br />
+EX:<br />
+PRINT_TEXT "11-1"<br />
+THREAD t2<br />
+PRINT_TEXT "11-2"<br />
+THREAD t3<br />
+PRINT_TEXT "11-3"<br />
+CALL t4<br />
+PRINT_TEXT "11-4"<br />
+PRINT_TEXT "11-5"<br />
+END_SCRIPT<br />
+<br />
+FUNCTION t2<br />
+PRINT_TEXT "22-1"<br />
+PRINT_TEXT "22-2"<br />
+PRINT_TEXT "22-3"<br />
+PRINT_TEXT "22-4"<br />
+PRINT_TEXT "22-5"<br />
+RETURN VOID<br />
+<br />
+FUNCTION t3<br />
+PRINT_TEXT "33-1"<br />
+PRINT_TEXT "33-2"<br />
+PRINT_TEXT "33-3"<br />
+PRINT_TEXT "33-4"<br />
+PRINT_TEXT "33-5"<br />
+RETURN VOID<br />
+<br />
+FUNCTION t4<br />
+PRINT_TEXT "44-1"<br />
+PRINT_TEXT "44-2"<br />
+THREAD t2<br />
+PRINT_TEXT "44-3"<br />
+PRINT_TEXT "44-4"<br />
+PRINT_TEXT "44-5"<br />
+RETURN VOID<br />

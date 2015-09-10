@@ -1,0 +1,7 @@
+jingjing is an (losely) object oriented language.  In keeping with this, users can create their own classes.  There is no support for structs in jingjing; just create a class with no functions.<br />
+<br />
+When a class file in included the file it cached and parsed.  The resulting class object is stored in a global class list.  Classes have global scope; there is no need to include them more than once although it won't hurt.  jingjing is smart enough to detect is a class has already been loaded and will not load it twice.<br />
+<br />
+All classes inherit from a base null class object.  This be overrided to allow for user defined class inheritence.  Multiple intheritence is not allowed.<br />
+<br />
+Inheritence allows a class to build on a parent class.  For example, you could have a phone class that supports calling.  Then you could create a cellphone class that inherits from phone and adds web browsing.  You can pass child classes where a parent class is needed (to a function).<br />

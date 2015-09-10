@@ -1,0 +1,25 @@
+FS = "|";
+HEADER = 1;
+RECCNT = OFF;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = 0;
+
+{
+	UINT id;
+	UINT UNK_0;
+		ORD = OFF;
+	ASCF message;
+	UINT group;
+	CHEX rgba[3];
+	CHEX rgbz[1];
+		ORD = OFF;
+	ASCF item_sound;
+		ORD = OFF;
+	ASCF sys_msg_ref;
+		ORD = OFF;
+	UINT UNK_1[5];
+		ORD = OFF;
+	ASCF sub_msg;
+	ASCF type;
+}

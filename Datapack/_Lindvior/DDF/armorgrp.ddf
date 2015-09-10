@@ -1,0 +1,157 @@
+//early version submitted by Allen (L2Sexi Server)
+FS = "|";
+HEADER = 1;
+RECCNT = -1;
+MTXCNT_OUT = 1;
+MATCNT_OUT = 1;
+ORD_IGNORE = NO;
+
+{
+	UINT tag; 
+		ORD = OFF;	
+	UINT id;
+	UINT drop_type;
+		ORD = OFF;
+	UINT drop_anim_type;
+		ORD = OFF;
+	UINT drop_radius;
+		ORD = OFF;
+	UINT drop_height;
+		ORD = OFF;
+	UINT UNK_0;
+		ORD = OFF;
+	UNICODE drop_mesh1;
+	UNICODE drop_mesh2;
+		ORD = OFF;
+	UNICODE drop_mesh3;
+		ORD = OFF;
+	UNICODE drop_tex1;
+		ORD = OFF;
+	UNICODE drop_tex2;
+		ORD = OFF;
+	UNICODE drop_tex3;
+		ORD = OFF;
+	UNICODE drop_extratex1;
+		ORD = OFF;
+	UINT newdata[8];
+		ORD = OFF;
+	UNICODE icon[1];
+	UNICODE icon2[4];
+		ORD = OFF;
+	INT durability;
+	UINT weight;
+	UINT material;
+	UINT crystallizable;
+	HEX UNK_3;
+		ORD = OFF;
+//	CHEX specdat[4];
+	UINT UNK_4_cnt;
+		ORD = OFF;
+	UINT UNK_4_tab[UNK_4_cnt];
+		ORD = OFF;
+	UINT UNK_5[3];
+		ORD = OFF;
+	UNICODE timetab;
+		ORD = OFF;
+	UINT body_part;
+
+	MTX m_HumnFigh;
+		ORD = OFF;
+	MTX3 m_HumnFigh_add;
+		ORD = OFF;
+	MTX f_HumnFigh;
+		ORD = OFF;
+	MTX3 f_HumnFigh_add;
+		ORD = OFF;
+
+	MTX m_DarkElf;
+		ORD = OFF;
+	MTX3 m_DarkElf_add;
+		ORD = OFF;
+	MTX f_DarkElf;
+		ORD = OFF;
+	MTX3 f_DarkElf_add;
+		ORD = OFF;
+
+	MTX m_Dorf;
+		ORD = OFF;
+	MTX3 m_Dorf_add;
+		ORD = OFF;
+	MTX f_Dorf;
+		ORD = OFF;
+	MTX3 f_Dorf_add;
+		ORD = OFF;
+
+	MTX m_Elf;
+		ORD = OFF;
+	MTX3 m_Elf_add;
+		ORD = OFF;
+	MTX f_Elf;
+		ORD = OFF;
+	MTX3 f_Elf_add;
+		ORD = OFF;
+
+	MTX m_HumnMyst;
+		ORD = OFF;
+	MTX3 m_HumnMyst_add;
+		ORD = OFF;
+	MTX f_HumnMyst;
+		ORD = OFF;
+	MTX3 f_HumnMyst_add;
+		ORD = OFF;
+
+	MTX m_OrcFigh;
+		ORD = OFF;
+	MTX3 m_OrcFigh_add;
+		ORD = OFF;
+	MTX f_OrcFigh;
+		ORD = OFF;
+	MTX3 f_OrcFigh_add;
+		ORD = OFF;
+
+	MTX m_OrcMage;
+		ORD = OFF;
+	MTX3 m_OrcMage_add;
+		ORD = OFF;
+	MTX f_OrcMage;
+		ORD = OFF;
+	MTX3 f_OrcMage_add;
+		ORD = OFF;
+
+	MTX m_Kamael;
+		ORD = OFF;
+	MTX3 m_Kamael_add;
+		ORD = OFF;
+	MTX f_Kamael;
+		ORD = OFF;
+	MTX3 f_Kamael_add;
+		ORD = OFF;
+
+	MTX NPC;
+		ORD = OFF;
+	MTX3 NPC_add;
+		ORD = OFF;
+
+	UNICODE att_eff;
+		ORD = OFF;
+	UINT item_sound_cnt;
+		ORD = OFF;
+	UNICODE item_sound[item_sound_cnt];
+		ORD = OFF;
+	UNICODE drop_sound;
+		ORD = OFF;
+	UNICODE equip_sound;
+		ORD = OFF;
+	UINT UNK_6;
+		ORD = OFF;
+	UINT UNK_7;
+		ORD = OFF;
+	UINT armor_type;
+	UINT crystal_type;
+	UINT avoid_mod;
+	UINT UNK_8[3];
+		ORD = OFF;
+}                
+
+
+//by Sakaszli, 26-10-2012

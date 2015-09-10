@@ -1,0 +1,52 @@
+MATH was deprecated in v358!  Use = now!<br />
+<br />
+MATH [V] [V] [STRING] ([V] [V] [V})<br />
+<br />
+V1 = Destination var<br />
+V2 = Source var 1<br />
+STRING3 = any of a set of values listed below<br />
+V4 = Source var 2<br />
+V5 = Source var 3<br />
+V6 = Source var 4<br />
+<br />
+<li>ADD V1 = V2 + V4
+<li>SUBTRACT V1 = V2 - V4
+<li>MULTIPLY V1 = V2 * V4
+<li>DIVIDE V1 = V2 / V4
+<li>SQRT V1 = sqrt( V2 )
+<li>POW V1 = V2 ^ V4
+<li>EQUAL V1 = V2
+<li>MOD V1 = REM( V2 / V4 )
+<li>ABS V1 = ABS( V2 )
+<li>SIN V1 = SIN( V2 )
+<li>SINH V1 = SINH( V2 )
+<li>ASIN V1 = ASIN( V2 )
+<li>COS V1 = COS( V2 )
+<li>COSH V1 = COSH( V2 )
+<li>ACOS V1 = ACOS( V2 )
+<li>TAN V1 = TAN( V2 )
+<li>TANH V1 = TANH( V2 )
+<li>ATAN V1 = ATAN( V2 )
+<li>LOG V1 = LOG (base V4) of V2
+<li>REPLACE V1 = V2 where all instances of V4 have been replace with V5
+<li>TO_UPPER V1 = V2 capitalized
+<li>TO_UPPER_INVARIANT V1 = V2 capitalized based on the rules of the invariant culture
+<li>TO_LOWER V1 = V2 lower cased
+<li>TO_LOWER_INVARIANT V1 = V2 lower cased based on the rules of the invariant culture
+<li>SUBSTRING V1 = V2 starting at index V4 and reading V5 characters
+<li>LENGTH V1 = length of the string V2
+<li>PADLEFT V1 = V2 padded with the char V5, V4 times on the left
+<li>PADRIGHT V1 = V2 padded with the char V5, V4 times on the right
+<li>TRIM V1 = V2 with all white space chars removed from the front
+<li>TRIMSTART V1 = V2 with all instaces of V4 removed from the front
+<li>TRIMEND V1 = V2 with all instances of V4 removed from the end
+<li>INDEXOF V1 = index of V4 in V2 starting at index V5 and through the next V6 characters
+<li>LASTINDEXOF V1 = last index of V4 in V2 starting at index V5 and through the next V6 characters
+<li>GET_HEX V1 = string hex value of V2
+<br /><br />
+Types are maintained EXCEPT for sin/cos/tan operations. INTs are typecast to DOUBLE and the result is typecast back to an INT<br />
+<br />
+EX: DEFINE INT A 0<br />
+EX: DEFINE INT B 20<br />
+EX: DEFINE INT C 30<br />
+EX: MATH A B ADD C<br />

@@ -1,0 +1,361 @@
+id|dye_id|name|icon|symbol_add_name|symbol_add_desc
+1|4445|a,Dye of STR \0|a,icon.etc_str_symbol_i00\0|a,Str+1 Con-3\0|a,Str+1 Con-3\0
+2|4446|a,Dye of STR \0|a,icon.etc_str_symbol_i00\0|a,Str+1 Dex-3\0|a,Str+1 Dex-3\0
+3|4447|a,Dye of CON\0|a,icon.etc_con_symbol_i00\0|a,Con+1 Str-3\0|a,Con+1 Str-3\0
+4|4448|a,Dye of CON\0|a,icon.etc_con_symbol_i00\0|a,Con+1 Dex-3\0|a,Con+1 Dex-3\0
+5|4449|a,Dye of DEX\0|a,icon.etc_dex_symbol_i00\0|a,Dex+1 Str-3\0|a,Dex+1 Str-3\0
+6|4450|a,Dye of DEX\0|a,icon.etc_dex_symbol_i00\0|a,Dex+1 Con-3\0|a,Dex+1 Con-3\0
+7|4451|a,Dye of INT\0|a,icon.etc_int_symbol_i00\0|a,Int+1 Men-3\0|a,Int+1 Men-3\0
+8|4452|a,Dye of INT\0|a,icon.etc_int_symbol_i00\0|a,Int+1 Wit-3\0|a,Int+1 Wit-3\0
+9|4453|a,Dye of MEN\0|a,icon.etc_men_symbol_i00\0|a,Men+1 Int-3\0|a,Men+1 Int-3\0
+10|4454|a,Dye of MEN\0|a,icon.etc_men_symbol_i00\0|a,Men+1 Wit-3\0|a,Men+1 Wit-3\0
+11|4455|a,Dye of WIT\0|a,icon.etc_wit_symbol_i00\0|a,Wit+1 Int-3\0|a,Wit+1 Int-3\0
+12|4456|a,Dye of WIT\0|a,icon.etc_wit_symbol_i00\0|a,Wit+1 Men-3\0|a,Wit+1 Men-3\0
+13|4457|a,Dye of STR \0|a,icon.etc_str_symbol_i00\0|a,Str+1 Con-2\0|a,Str+1 Con-2\0
+14|4458|a,Dye of STR \0|a,icon.etc_str_symbol_i00\0|a,Str+1 Dex-2\0|a,Str+1 Dex-2\0
+15|4459|a,Dye of CON\0|a,icon.etc_con_symbol_i00\0|a,Con+1 Str-2\0|a,Con+1 Str-2\0
+16|4460|a,Dye of CON\0|a,icon.etc_con_symbol_i00\0|a,Con+1 Dex-2\0|a,Con+1 Dex-2\0
+17|4461|a,Dye of DEX\0|a,icon.etc_dex_symbol_i00\0|a,Dex+1 Str-2\0|a,Dex+1 Str-2\0
+18|4462|a,Dye of DEX\0|a,icon.etc_dex_symbol_i00\0|a,Dex+1 Con-2\0|a,Dex+1 Con-2\0
+19|4463|a,Dye of INT\0|a,icon.etc_int_symbol_i00\0|a,Int+1 Men-2\0|a,Int+1 Men-2\0
+20|4464|a,Dye of INT\0|a,icon.etc_int_symbol_i00\0|a,Int+1 Wit-2\0|a,Int+1 Wit-2\0
+21|4465|a,Dye of MEN\0|a,icon.etc_men_symbol_i00\0|a,Men+1 Int-2\0|a,Men+1 Int-2\0
+22|4466|a,Dye of MEN\0|a,icon.etc_men_symbol_i00\0|a,Men+1 Wit-2\0|a,Men+1 Wit-2\0
+23|4467|a,Dye of WIT\0|a,icon.etc_wit_symbol_i00\0|a,Wit+1 Int-2\0|a,Wit+1 Int-2\0
+24|4468|a,Dye of WIT\0|a,icon.etc_wit_symbol_i00\0|a,Wit+1 Men-2\0|a,Wit+1 Men-2\0
+25|4469|a,Dye of STR \0|a,icon.etc_str_symbol_i00\0|a,Str+1 Con-1\0|a,Str+1 Con-1\0
+26|4470|a,Dye of STR \0|a,icon.etc_str_symbol_i00\0|a,Str+1 Dex-1\0|a,Str+1 Dex-1\0
+27|4471|a,Dye of CON\0|a,icon.etc_con_symbol_i00\0|a,Con+1 Str-1\0|a,Con+1 Str-1\0
+28|4472|a,Dye of CON\0|a,icon.etc_con_symbol_i00\0|a,Con+1 Dex-1\0|a,Con+1 Dex-1\0
+29|4473|a,Dye of DEX\0|a,icon.etc_dex_symbol_i00\0|a,Dex+1 Str-1\0|a,Dex+1 Str-1\0
+30|4474|a,Dye of DEX\0|a,icon.etc_dex_symbol_i00\0|a,Dex+1 Con-1\0|a,Dex+1 Con-1\0
+31|4475|a,Dye of INT\0|a,icon.etc_int_symbol_i00\0|a,Int+1 Men-1\0|a,Int+1 Men-1\0
+32|4476|a,Dye of INT\0|a,icon.etc_int_symbol_i00\0|a,Int+1 Wit-1\0|a,Int+1 Wit-1\0
+33|4477|a,Dye of MEN\0|a,icon.etc_men_symbol_i00\0|a,Men+1 Int-1\0|a,Men+1 Int-1\0
+34|4478|a,Dye of MEN\0|a,icon.etc_men_symbol_i00\0|a,Men+1 Wit-1\0|a,Men+1 Wit-1\0
+35|4479|a,Dye of WIT\0|a,icon.etc_wit_symbol_i00\0|a,Wit+1 Int-1\0|a,Wit+1 Int-1\0
+36|4480|a,Dye of WIT\0|a,icon.etc_wit_symbol_i00\0|a,Wit+1 Men-1\0|a,Wit+1 Men-1\0
+37|4481|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+1 Con-3\0|a,Str+1 Con-3\0
+38|4482|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+1 Dex-3\0|a,Str+1 Dex-3\0
+39|4483|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+1 Str-3\0|a,Con+1 Str-3\0
+40|4484|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+1 Dex-3\0|a,Con+1 Dex-3\0
+41|4485|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+1 Str-3\0|a,Dex+1 Str-3\0
+42|4486|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+1 Con-3\0|a,Dex+1 Con-3\0
+43|4487|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+1 Men-3\0|a,Int+1 Men-3\0
+44|4488|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+1 Wit-3\0|a,Int+1 Wit-3\0
+45|4489|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+1 Int-3\0|a,Men+1 Int-3\0
+46|4490|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+1 Wit-3\0|a,Men+1 Wit-3\0
+47|4491|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+1 Int-3\0|a,Wit+1 Int-3\0
+48|4492|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+1 Men-3\0|a,Wit+1 Men-3\0
+49|4493|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+1 Con-2\0|a,Str+1 Con-2\0
+50|4494|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+1 Dex-2\0|a,Str+1 Dex-2\0
+51|4495|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+1 Str-2\0|a,Con+1 Str-2\0
+52|4496|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+1 Dex-2\0|a,Con+1 Dex-2\0
+53|4497|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+1 Str-2\0|a,Dex+1 Str-2\0
+54|4498|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+1 Con-2\0|a,Dex+1 Con-2\0
+55|4499|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+1 Men-2\0|a,Int+1 Men-2\0
+56|4500|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+1 Wit-2\0|a,Int+1 Wit-2\0
+57|4501|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+1 Int-2\0|a,Men+1 Int-2\0
+58|4502|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+1 Wit-2\0|a,Men+1 Wit-2\0
+59|4503|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+1 Int-2\0|a,Wit+1 Int-2\0
+60|4504|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+1 Men-2\0|a,Wit+1 Men-2\0
+61|4505|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+2 Con-4\0|a,Str+2 Con-4\0
+62|4506|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+2 Dex-4\0|a,Str+2 Dex-4\0
+63|4507|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+2 Str-4\0|a,Con+2 Str-4\0
+64|4508|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+2 Dex-4\0|a,Con+2 Dex-4\0
+65|4509|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+2 Str-4\0|a,Dex+2 Str-4\0
+66|4510|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+2 Con-4\0|a,Dex+2 Con-4\0
+67|4511|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+2 Men-4\0|a,Int+2 Men-4\0
+68|4512|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+2 Wit-4\0|a,Int+2 Wit-4\0
+69|4513|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+2 Int-4\0|a,Men+2 Int-4\0
+70|4514|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+2 Wit-4\0|a,Men+2 Wit-4\0
+71|4515|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+2 Int-4\0|a,Wit+2 Int-4\0
+72|4516|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+2 Men-4\0|a,Wit+2 Men-4\0
+73|4517|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+2 Con-3\0|a,Str+2 Con-3\0
+74|4518|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+2 Dex-3\0|a,Str+2 Dex-3\0
+75|4519|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+2 Str-3\0|a,Con+2 Str-3\0
+76|4520|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+2 Dex-3\0|a,Con+2 Dex-3\0
+77|4521|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+2 Str-3\0|a,Dex+2 Str-3\0
+78|4522|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+2 Con-3\0|a,Dex+2 Con-3\0
+79|4523|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+2 Men-3\0|a,Int+2 Men-3\0
+80|4524|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+2 Wit-3\0|a,Int+2 Wit-3\0
+81|4525|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+2 Int-3\0|a,Men+2 Int-3\0
+82|4526|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+2 Wit-3\0|a,Men+2 Wit-3\0
+83|4527|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+2 Int-3\0|a,Wit+2 Int-3\0
+84|4528|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+2 Men-3\0|a,Wit+2 Men-3\0
+85|4529|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+3 Con-5\0|a,Str+3 Con-5\0
+86|4530|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+3 Dex-5\0|a,Str+3 Dex-5\0
+87|4531|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+3 Str-5\0|a,Con+3 Str-5\0
+88|4532|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+3 Dex-5\0|a,Con+3 Dex-5\0
+89|4533|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+3 Str-5\0|a,Dex+3 Str-5\0
+90|4534|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+3 Con-5\0|a,Dex+3 Con-5\0
+91|4535|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+3 Men-5\0|a,Int+3 Men-5\0
+92|4536|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+3 Wit-5\0|a,Int+3 Wit-5\0
+93|4537|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+3 Int-5\0|a,Men+3 Int-5\0
+94|4538|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+3 Wit-5\0|a,Men+3 Wit-5\0
+95|4539|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+3 Int-5\0|a,Wit+3 Int-5\0
+96|4540|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+3 Men-5\0|a,Wit+3 Men-5\0
+97|4541|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+3 Con-4\0|a,Str+3 Con-4\0
+98|4542|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+3 Dex-4\0|a,Str+3 Dex-4\0
+99|4543|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+3 Str-4\0|a,Con+3 Str-4\0
+100|4544|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+3 Dex-4\0|a,Con+3 Dex-4\0
+101|4545|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+3 Str-4\0|a,Dex+3 Str-4\0
+102|4546|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+3 Con-4\0|a,Dex+3 Con-4\0
+103|4547|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+3 Men-4\0|a,Int+3 Men-4\0
+104|4548|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+3 Wit-4\0|a,Int+3 Wit-4\0
+105|4549|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+3 Int-4\0|a,Men+3 Int-4\0
+106|4550|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+3 Wit-4\0|a,Men+3 Wit-4\0
+107|4551|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+3 Int-4\0|a,Wit+3 Int-4\0
+108|4552|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+3 Men-4\0|a,Wit+3 Men-4\0
+109|4553|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+1 Con-1\0|a,Str+1 Con-1\0
+110|4554|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+1 Dex-1\0|a,Str+1 Dex-1\0
+111|4555|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+1 Str-1\0|a,Con+1 Str-1\0
+112|4556|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+1 Dex-1\0|a,Con+1 Dex-1\0
+113|4557|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+1 Str-1\0|a,Dex+1 Str-1\0
+114|4558|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+1 Con-1\0|a,Dex+1 Con-1\0
+115|4559|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+1 Men-1\0|a,Int+1 Men-1\0
+116|4560|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+1 Wit-1\0|a,Int+1 Wit-1\0
+117|4561|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+1 Int-1\0|a,Men+1 Int-1\0
+118|4562|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+1 Wit-1\0|a,Men+1 Wit-1\0
+119|4563|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+1 Int-1\0|a,Wit+1 Int-1\0
+120|4564|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+1 Men-1\0|a,Wit+1 Men-1\0
+121|4565|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+4 Con-6\0|a,Str+4 Con-6\0
+122|4566|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+4 Dex-6\0|a,Str+4 Dex-6\0
+123|4567|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+4 Str-6\0|a,Con+4 Str-6\0
+124|4568|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+4 Dex-6\0|a,Con+4 Dex-6\0
+125|4569|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+4 Str-6\0|a,Dex+4 Str-6\0
+126|4570|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+4 Con-6\0|a,Dex+4 Con-6\0
+127|4571|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+4 Men-6\0|a,Int+4 Men-6\0
+128|4572|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+4 Wit-6\0|a,Int+4 Wit-6\0
+129|4573|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+4 Int-6\0|a,Men+4 Int-6\0
+130|4574|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+4 Wit-6\0|a,Men+4 Wit-6\0
+131|4575|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+4 Int-6\0|a,Wit+4 Int-6\0
+132|4576|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+4 Men-6\0|a,Wit+4 Men-6\0
+133|4577|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+4 Con-5\0|a,Str+4 Con-5\0
+134|4578|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+4 Dex-5\0|a,Str+4 Dex-5\0
+135|4579|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+4 Str-5\0|a,Con+4 Str-5\0
+136|4580|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+4 Dex-5\0|a,Con+4 Dex-5\0
+137|4581|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+4 Str-5\0|a,Dex+4 Str-5\0
+138|4582|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+4 Con-5\0|a,Dex+4 Con-5\0
+139|4583|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+4 Men-5\0|a,Int+4 Men-5\0
+140|4584|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+4 Wit-5\0|a,Int+4 Wit-5\0
+141|4585|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+4 Int-5\0|a,Men+4 Int-5\0
+142|4586|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+4 Wit-5\0|a,Men+4 Wit-5\0
+143|4587|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+4 Int-5\0|a,Wit+4 Int-5\0
+144|4588|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+4 Men-5\0|a,Wit+4 Men-5\0
+145|4589|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+2 Con-2\0|a,Str+2 Con-2\0
+146|4590|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+2 Dex-2\0|a,Str+2 Dex-2\0
+147|4591|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+2 Str-2\0|a,Con+2 Str-2\0
+148|4592|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+2 Dex-2\0|a,Con+2 Dex-2\0
+149|4593|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+2 Str-2\0|a,Dex+2 Str-2\0
+150|4594|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+2 Con-2\0|a,Dex+2 Con-2\0
+151|4595|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+2 Men-2\0|a,Int+2 Men-2\0
+152|4596|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+2 Wit-2\0|a,Int+2 Wit-2\0
+153|4597|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+2 Int-2\0|a,Men+2 Int-2\0
+154|4598|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+2 Wit-2\0|a,Men+2 Wit-2\0
+155|4599|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+2 Int-2\0|a,Wit+2 Int-2\0
+156|4600|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+2 Men-2\0|a,Wit+2 Men-2\0
+157|4601|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+3 Con-3\0|a,Str+3 Con-3\0
+158|4602|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+3 Dex-3\0|a,Str+3 Dex-3\0
+159|4603|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+3 Str-3\0|a,Con+3 Str-3\0
+160|4604|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+3 Dex-3\0|a,Con+3 Dex-3\0
+161|4605|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+3 Str-3\0|a,Dex+3 Str-3\0
+162|4606|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+3 Con-3\0|a,Dex+3 Con-3\0
+163|4607|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+3 Men-3\0|a,Int+3 Men-3\0
+164|4608|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+3 Wit-3\0|a,Int+3 Wit-3\0
+165|4609|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+3 Int-3\0|a,Men+3 Int-3\0
+166|4610|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+3 Wit-3\0|a,Men+3 Wit-3\0
+167|4611|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+3 Int-3\0|a,Wit+3 Int-3\0
+168|4612|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+3 Men-3\0|a,Wit+3 Men-3\0
+169|4613|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+4 Con-4\0|a,Str+4 Con-4\0
+170|4614|a,Greater Dye of STR\0|a,icon.etc_str_symbol_i01\0|a,Str+4 Dex-4\0|a,Str+4 Dex-4\0
+171|4615|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+4 Str-4\0|a,Con+4 Str-4\0
+172|4616|a,Greater Dye of CON\0|a,icon.etc_con_symbol_i01\0|a,Con+4 Dex-4\0|a,Con+4 Dex-4\0
+173|4617|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+4 Str-4\0|a,Dex+4 Str-4\0
+174|4618|a,Greater Dye of DEX\0|a,icon.etc_dex_symbol_i01\0|a,Dex+4 Con-4\0|a,Dex+4 Con-4\0
+175|4619|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+4 Men-4\0|a,Int+4 Men-4\0
+176|4620|a,Greater Dye of INT\0|a,icon.etc_int_symbol_i01\0|a,Int+4 Wit-4\0|a,Int+4 Wit-4\0
+177|4621|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+4 Int-4\0|a,Men+4 Int-4\0
+178|4622|a,Greater Dye of MEN\0|a,icon.etc_men_symbol_i01\0|a,Men+4 Wit-4\0|a,Men+4 Wit-4\0
+179|4623|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+4 Int-4\0|a,Wit+4 Int-4\0
+180|4624|a,Greater Dye of WIT\0|a,icon.etc_wit_symbol_i01\0|a,Wit+4 Men-4\0|a,Wit+4 Men-4\0
+181|17625|a,Lv1 Giant's Dye of STR\0|a,icon.lv1_1_hena_str\0|a,Str+3 Dex-2\0|a,Str+3 Dex-2\0
+182|17626|a,Lv1 Giant's Dye of DEX\0|a,icon.lv1_1_hena_dex\0|a,Dex+3 Con-2\0|a,Dex+3 Con-2\0
+183|17627|a,Lv1 Giant's Dye of CON\0|a,icon.lv1_1_hena_con\0|a,Con+3 Str-2\0|a,Con+3 Str-2\0
+184|17628|a,Lv1 Giant's Dye of INT\0|a,icon.lv1_1_hena_int\0|a,Int+3 Wit-2\0|a,Int+3 Wit-2\0
+185|17629|a,Lv1 Giant's Dye of WIT\0|a,icon.lv1_1_hena_wit\0|a,Wit+3 Men-2\0|a,Wit+3 Men-2\0
+186|17630|a,Lv1 Giant's Dye of MEN\0|a,icon.lv1_1_hena_men\0|a,Men+3 Int-2\0|a,Men+3 Int-2\0
+187|17631|a,Lv1 Ancient Dye of STR\0|a,icon.lv1_2_hena_str\0|a,Str+3 Dex-2 Resistance to Fire +5\0|a,Str+3 Dex-2 Resistance to Fire +5\0
+188|17632|a,Lv1 Ancient Dye of DEX\0|a,icon.lv1_2_hena_dex\0|a,Dex+3 Con-2 Resistance to Earth +5\0|a,Dex+3 Con-2 Resistance to Earth +5\0
+189|17633|a,Lv1 Ancient Dye of CON\0|a,icon.lv1_2_hena_con\0|a,Con+3 Str-2 Resistance to Darkness+5\0|a,Con+3 Str-2 Resistance to Darkness+5\0
+190|17634|a,Lv1 Ancient Dye of INT\0|a,icon.lv1_2_hena_int\0|a,Int+3 Wit-2 Resistance to Water+5\0|a,Int+3 Wit-2 Resistance to Water+5\0
+191|17635|a,Lv1 Ancient Dye of WIT\0|a,icon.lv1_2_hena_wit\0|a,Wit+3 Men-2 Resistance to Wind+5\0|a,Wit+3 Men-2 Resistance to Wind+5\0
+192|17636|a,Lv1 Ancient Dye of MEN\0|a,icon.lv1_2_hena_men\0|a,MEN+3 INT-2 Resistance to Holy+5\0|a,MEN+3 INT-2 Resistance to Holy+5\0
+193|17637|a,Lv1 Legendary Dye of STR\0|a,icon.lv1_3_hena_str\0|a,Str+3 Dex-1 Resistance to Fire +5\0|a,Str+3 Dex-1 Resistance to Fire +5\0
+194|17638|a,Lv1 Legendary Dye of DEX\0|a,icon.lv1_3_hena_dex\0|a,Dex+3 Con-1 Resistance to Earth +5\0|a,Dex+3 Con-1 Resistance to Earth +5\0
+195|17639|a,Lv1 Legendary Dye of CON\0|a,icon.lv1_3_hena_con\0|a,Con+3 Str-1 Resistance to Darkness+5\0|a,Con+3 Str-1 Resistance to Darkness+5\0
+196|17640|a,Lv1 Legendary Dye of INT\0|a,icon.lv1_3_hena_int\0|a,Int+3 Wit-1 Resistance to Water+5\0|a,Int+3 Wit-1 Resistance to Water+5\0
+197|17641|a,Lv1 Legendary Dye of WIT\0|a,icon.lv1_3_hena_wit\0|a,Wit+3 Men-1 Resistance to Wind+5\0|a,Wit+3 Men-1 Resistance to Wind+5\0
+198|17642|a,Lv1 Legendary Dye of MEN\0|a,icon.lv1_3_hena_men\0|a,MEN+3 INT-1 Resistance to Holy+5\0|a,MEN+3 INT-1 Resistance to Holy+5\0
+199|17643|a,Lv2 Giant's Dye of STR\0|a,icon.lv2_1_hena_str\0|a,Str+4 Dex-3\0|a,Str+4 Dex-3\0
+200|17644|a,Lv2 Giant's Dye of DEX\0|a,icon.lv2_1_hena_dex\0|a,Dex+4 Con-3\0|a,Dex+4 Con-3\0
+201|17645|a,Lv2 Giant's Dye of CON\0|a,icon.lv2_1_hena_con\0|a,Con+4 Str-3\0|a,Con+4 Str-3\0
+202|17646|a,Lv2 Giant's Dye of INT\0|a,icon.lv2_1_hena_int\0|a,Int+4 Wit-3\0|a,Int+4 Wit-3\0
+203|17647|a,Lv2 Giant's Dye of WIT\0|a,icon.lv2_1_hena_wit\0|a,Wit+4 Men-3\0|a,Wit+4 Men-3\0
+204|17648|a,Lv2 Giant's Dye of MEN\0|a,icon.lv2_1_hena_men\0|a,Men+4 Int-3\0|a,Men+4 Int-3\0
+205|17649|a,Lv2 Ancient Dye of STR\0|a,icon.lv2_2_hena_str\0|a,Str+4 Dex-3 Resistance to Fire +10\0|a,Str+4 Dex-3 Resistance to Fire +10\0
+206|17650|a,Lv2 Ancient Dye of DEX\0|a,icon.lv2_2_hena_dex\0|a,Dex+4 Con-3 Resistance to Earth +10\0|a,Dex+4 Con-3 Resistance to Earth +10\0
+207|17651|a,Lv2 Ancient Dye of CON\0|a,icon.lv2_2_hena_con\0|a,Con+4 Str-3 Resistance to Darkness+ 10\0|a,Con+4 Str-3 Resistance to Darkness+ 10\0
+208|17652|a,Lv2 Ancient Dye of INT\0|a,icon.lv2_2_hena_int\0|a,Int+4 Wit-3 Resistance to Water+10\0|a,Int+4 Wit-3 Resistance to Water+10\0
+209|17653|a,Lv2 Ancient Dye of WIT\0|a,icon.lv2_2_hena_wit\0|a,Wit+4 Men-3 Resistance to Wind+ 10\0|a,Wit+4 Men-3 Resistance to Wind+ 10\0
+210|17654|a,Lv2 Ancient Dye of MEN\0|a,icon.lv2_2_hena_men\0|a,MEN+4 INT-3 Resistance to Holy+10\0|a,MEN+4 INT-3 Resistance to Holy+10\0
+211|17655|a,Lv2 Legendary Dye of STR\0|a,icon.lv2_3_hena_str\0|a,Str+4 Dex-2 Resistance to Fire +10\0|a,Str+4 Dex-2 Resistance to Fire +10\0
+212|17656|a,Lv2 Legendary Dye of DEX\0|a,icon.lv2_3_hena_dex\0|a,Dex+4 Con-2 Resistance to Earth +10\0|a,Dex+4 Con-2 Resistance to Earth +10\0
+213|17657|a,Lv2 Legendary Dye of CON\0|a,icon.lv2_3_hena_con\0|a,Con+4 Str-2 Resistance to Darkness+ 10\0|a,Con+4 Str-2 Resistance to Darkness+ 10\0
+214|17658|a,Lv2 Legendary Dye of INT\0|a,icon.lv2_3_hena_int\0|a,Int+4 Wit-2 Resistance to Water+10\0|a,Int+4 Wit-2 Resistance to Water+10\0
+215|17659|a,Lv2 Legendary Dye of WIT\0|a,icon.lv2_3_hena_wit\0|a,Wit+4 Men-2 Resistance to Wind+ 10\0|a,Wit+4 Men-2 Resistance to Wind+ 10\0
+216|17660|a,Lv2 Legendary Dye of MEN\0|a,icon.lv2_3_hena_men\0|a,MEN+4 INT-2 Resistance to Holy+10\0|a,MEN+4 INT-2 Resistance to Holy+10\0
+217|17661|a,Str +5 Dex -4\0|a,icon.lv3_1_hena_str\0|a,Str+4 Dex-2\0|a,Str+4 Dex-2\0
+218|17662|a,Dex +5 Con -4\0|a,icon.lv3_1_hena_dex\0|a,Dex+4 Con-2\0|a,Dex+4 Con-2\0
+219|17663|a,Con +5 Str -4\0|a,icon.lv3_1_hena_con\0|a,Con+4 Str-2\0|a,Con+4 Str-2\0
+220|17664|a,Int +5 Wit -4\0|a,icon.lv3_1_hena_int\0|a,Int+4 Wit-2\0|a,Int+4 Wit-2\0
+221|17665|a,Wit +5 Men -4\0|a,icon.lv3_1_hena_wit\0|a,Wit+4 Men-2\0|a,Wit+4 Men-2\0
+222|17666|a,Men +5 Int -4\0|a,icon.lv3_1_hena_men\0|a,Men+4 Int-2\0|a,Men+4 Int-2\0
+223|17667|a,Str +5 Dex -4 Resistance to Fire +15\0|a,icon.lv3_2_hena_str\0|a,Str+4 Dex-2 Resistance to Fire +15\0|a,Str+4 Dex-2 Resistance to Fire +15\0
+224|17668|a,Dex +5 Con -4 Resistance to Earth +15\0|a,icon.lv3_2_hena_dex\0|a,Dex+4 Con-2 Resistance to Earth +15\0|a,Dex+4 Con-2 Resistance to Earth +15\0
+225|17669|a,Con +5 Str -4 Resistance to Darkness +15\0|a,icon.lv3_2_hena_con\0|a,Con+4 Str-2 Resistance to Darkness+15\0|a,Con+4 Str-2 Resistance to Darkness+15\0
+226|17670|a,Int +5 Wit -4 Resistance to Water +15\0|a,icon.lv3_2_hena_int\0|a,Int+4 Wit-2 Resistance to Water+15\0|a,Int+4 Wit-2 Resistance to Water+15\0
+227|17671|a,Wit +5 Men -4 Resistance to Wind +15\0|a,icon.lv3_2_hena_wit\0|a,Wit+4 Men-2 Resistance to Wind+15\0|a,Wit+4 Men-2 Resistance to Wind+15\0
+228|17672|a,Men +5 Int -4 Resistance to Holy +15\0|a,icon.lv3_2_hena_men\0|a,MEN+4 INT-2 Resistance to Holy+15\0|a,MEN+4 INT-2 Resistance to Holy+15\0
+229|17673|a,Str +5 Dex -3 Resistance to Fire +15\0|a,icon.lv3_3_hena_str\0|a,Str+4 Dex-1 Resistance to Fire +15\0|a,Str+4 Dex-1 Resistance to Fire +15\0
+230|17674|a,Dex +5 Con -3 Resistance to Earth +15\0|a,icon.lv3_3_hena_dex\0|a,Dex+4 Con-1 Resistance to Earth +15\0|a,Dex+4 Con-1 Resistance to Earth +15\0
+231|17675|a,Con +5 Str -3 Resistance to Darkness +15\0|a,icon.lv3_3_hena_con\0|a,Con+4 Str-1 Resistance to Darkness+15\0|a,Con+4 Str-1 Resistance to Darkness+15\0
+232|17676|a,Int +5 Wit -3 Resistance to Water +15\0|a,icon.lv3_3_hena_int\0|a,Int+4 Wit-1 Resistance to Water+15\0|a,Int+4 Wit-1 Resistance to Water+15\0
+233|17677|a,Wit +5 Men -3 Resistance to Wind +15\0|a,icon.lv3_3_hena_wit\0|a,Wit+4 Men-1 Resistance to Wind+15\0|a,Wit+4 Men-1 Resistance to Wind+15\0
+234|17678|a,Men +5 Int -3 Resistance to Holy +15\0|a,icon.lv3_3_hena_men\0|a,MEN+4 INT-1 Resistance to Holy+15\0|a,MEN+4 INT-1 Resistance to Holy+15\0
+235|17679|a,Str +5 Dex -2\0|a,icon.lv4_1_hena_str\0|a,Str+5 Dex-3\0|a,Str+5 Dex-3\0
+236|17680|a,Dex +5 Con -2\0|a,icon.lv4_1_hena_dex\0|a,Dex+5 Con-3\0|a,Dex+5 Con-3\0
+237|17681|a,Con +5 Str -2\0|a,icon.lv4_1_hena_con\0|a,Con+5 Str-3\0|a,Con+5 Str-3\0
+238|17682|a,Int +5 Wit -2\0|a,icon.lv4_1_hena_int\0|a,Int+5 Wit-3\0|a,Int+5 Wit-3\0
+239|17683|a,Wit +5 Men -2\0|a,icon.lv4_1_hena_wit\0|a,Wit+5 Men-3\0|a,Wit+5 Men-3\0
+240|17684|a,Men +5 Int -2\0|a,icon.lv4_1_hena_men\0|a,Men+5 Int-3\0|a,Men+5 Int-3\0
+241|17685|a,Str +5 Dex -2 Resistance to Fire +20\0|a,icon.lv4_2_hena_str\0|a,Str+5 Dex-3 Resistance to Fire +20\0|a,Str+5 Dex-3 Resistance to Fire +20\0
+242|17686|a,Dex +5 Con -2 Resistance to Earth +20\0|a,icon.lv4_2_hena_dex\0|a,Dex+5 Con-3 Resistance to Earth +20\0|a,Dex+5 Con-3 Resistance to Earth +20\0
+243|17687|a,Con +5 Str -2 Resistance to Darkness +20\0|a,icon.lv4_2_hena_con\0|a,Con+5 Str-3 Resistance to Darkness+20\0|a,Con+5 Str-3 Resistance to Darkness+20\0
+244|17688|a,Int +5 Wit -2 Resistance to Water +20\0|a,icon.lv4_2_hena_int\0|a,Int+5 Wit-3 Resistance to Water+20\0|a,Int+5 Wit-3 Resistance to Water+20\0
+245|17689|a,Wit +5 Men -2 Resistance to Wind +20\0|a,icon.lv4_2_hena_wit\0|a,Wit+5 Men-3 Resistance to Wind+20\0|a,Wit+5 Men-3 Resistance to Wind+20\0
+246|17690|a,Men +5 Int -2 Resistance to Holy +20\0|a,icon.lv4_2_hena_men\0|a,MEN+5 INT-3 Resistance to Holy+20\0|a,MEN+5 INT-3 Resistance to Holy+20\0
+247|17691|a,Lv4 Legendary Dye of STR\0|a,icon.lv4_3_hena_str\0|a,Str+5 Dex-1 Resistance to Fire +20\0|a,Str+5 Dex-1 Resistance to Fire +20\0
+248|17692|a,Lv4 Legendary Dye of DEX\0|a,icon.lv4_3_hena_dex\0|a,Dex+5 Con-1 Resistance to Earth +20\0|a,Dex+5 Con-1 Resistance to Earth +20\0
+249|17693|a,Lv4 Legendary Dye of CON\0|a,icon.lv4_3_hena_con\0|a,Con+5 Str-1 Resistance to Darkness+20\0|a,Con+5 Str-1 Resistance to Darkness+20\0
+250|17694|a,Lv4 Legendary Dye of INT\0|a,icon.lv4_3_hena_int\0|a,Int+5 Wit-1 Resistance to Water+20\0|a,Int+5 Wit-1 Resistance to Water+20\0
+251|17695|a,Lv4 Legendary Dye of WIT\0|a,icon.lv4_3_hena_wit\0|a,Wit+5 Men-1 Resistance to Wind+20\0|a,Wit+5 Men-1 Resistance to Wind+20\0
+252|17696|a,Lv4 Legendary Dye of MEN\0|a,icon.lv4_3_hena_men\0|a,MEN+5 INT-1 Resistance to Holy+20\0|a,MEN+5 INT-1 Resistance to Holy+20\0
+253|17697|a,Lv5 Giant's Dye of STR\0|a,icon.lv5_1_hena_str\0|a,Str+5\0|a,Str+5\0
+254|17698|a,Lv5 Giant's Dye of DEX\0|a,icon.lv5_1_hena_dex\0|a,Dex+5\0|a,Dex+5\0
+255|17699|a,Lv5 Giant's Dye of CON\0|a,icon.lv5_1_hena_con\0|a,Con+5\0|a,Con+5\0
+256|17700|a,Lv5 Giant's Dye of INT\0|a,icon.lv5_1_hena_int\0|a,Int+5\0|a,Int+5\0
+257|17701|a,Lv5 Giant's Dye of WIT\0|a,icon.lv5_1_hena_wit\0|a,Wit+5\0|a,Wit+5\0
+258|17702|a,Lv5 Giant's Dye of MEN\0|a,icon.lv5_1_hena_men\0|a,Men+5\0|a,Men+5\0
+259|17703|a,Lv5 Ancient Dye of STR\0|a,icon.lv5_2_hena_str\0|a,Str+5 Resistance to Fire +25\0|a,Str+5 Resistance to Fire +25\0
+260|17704|a,Lv5 Ancient Dye of DEX\0|a,icon.lv5_2_hena_dex\0|a,Dex+5 Resistance to Earth +25\0|a,Dex+5 Resistance to Earth +25\0
+261|17705|a,Lv5 Ancient Dye of CON\0|a,icon.lv5_2_hena_con\0|a,Con+5 Resistance to Darkness+25\0|a,Con+5 Resistance to Darkness+25\0
+262|17706|a,Lv5 Ancient Dye of INT\0|a,icon.lv5_2_hena_int\0|a,Int+5 Resistance to Water+25\0|a,Int+5 Resistance to Water+25\0
+263|17707|a,Lv5 Ancient Dye of WIT\0|a,icon.lv5_2_hena_wit\0|a,Wit+5 Resistance to Wind+25\0|a,Wit+5 Resistance to Wind+25\0
+264|17708|a,Lv5 Ancient Dye of MEN\0|a,icon.lv5_2_hena_men\0|a,MEN+5 Resistance to Holy+25\0|a,MEN+5 Resistance to Holy+25\0
+265|17709|a,Lv5 Legendary Dye of STR\0|a,icon.lv5_3_hena_str\0|a,Str+5 Dex+1 Resistance to Fire +25\0|a,Str+5 Dex+1 Resistance to Fire +25\0
+266|17710|a,Lv5 Legendary Dye of DEX\0|a,icon.lv5_3_hena_dex\0|a,Dex+5 Con+1 Resistance to Earth +25\0|a,Dex+5 Con+1 Resistance to Earth +25\0
+267|17711|a,Lv5 Legendary Dye of CON\0|a,icon.lv5_3_hena_con\0|a,Con+5 Str+1 Resistance to Darkness+25\0|a,Con+5 Str+1 Resistance to Darkness+25\0
+268|17712|a,Lv5 Legendary Dye of INT\0|a,icon.lv5_3_hena_int\0|a,Int+5 Wit+1 Resistance to Water+25\0|a,Int+5 Wit+1 Resistance to Water+25\0
+269|17713|a,Lv5 Legendary Dye of WIT\0|a,icon.lv5_3_hena_wit\0|a,Wit+5 Men+1 Resistance to Wind+25\0|a,Wit+5 Men+1 Resistance to Wind+25\0
+270|17714|a,Lv5 Legendary Dye of MEN\0|a,icon.lv5_3_hena_men\0|a,MEN+5 INT+1 Resistance to Holy+25\0|a,MEN+5 INT+1 Resistance to Holy+25\0
+271|22982|a,Lv1 Giant's Dye of STR\0|a,icon.lv1_1_hena_str\0|a,Str+3 Dex-2\0|a,Str+3 Dex-2\0
+272|22983|a,Lv1 Giant's Dye of DEX\0|a,icon.lv1_1_hena_dex\0|a,Dex+3 Con-2\0|a,Dex+3 Con-2\0
+273|22984|a,Lv1 Giant's Dye of CON\0|a,icon.lv1_1_hena_con\0|a,Con+3 Str-2\0|a,Con+3 Str-2\0
+274|22985|a,Lv1 Giant's Dye of INT\0|a,icon.lv1_1_hena_int\0|a,Int+3 Wit-2\0|a,Int+3 Wit-2\0
+275|22986|a,Lv1 Giant's Dye of WIT\0|a,icon.lv1_1_hena_wit\0|a,Wit+3 Men-2\0|a,Wit+3 Men-2\0
+276|22987|a,Lv1 Giant's Dye of MEN\0|a,icon.lv1_1_hena_men\0|a,Men+3 Int-2\0|a,Men+3 Int-2\0
+277|22988|a,Lv1 Ancient Dye of STR\0|a,icon.lv1_2_hena_str\0|a,Str+3 Dex-2 Resistance to Fire +5\0|a,Str+3 Dex-2 Resistance to Fire +5\0
+278|22989|a,Lv1 Ancient Dye of DEX\0|a,icon.lv1_2_hena_dex\0|a,Dex+3 Con-2 Resistance to Earth+5\0|a,Dex+3 Con-2 Resistance to Earth+5\0
+279|22990|a,Lv1 Ancient Dye of CON\0|a,icon.lv1_2_hena_con\0|a,Con+3 Str-2 Resistance to Dark+5\0|a,Con+3 Str-2 Resistance to Dark+5\0
+280|22991|a,Lv1 Ancient Dye of INT\0|a,icon.lv1_2_hena_int\0|a,Int+3 Wit-2 Resistance to Water+5\0|a,Int+3 Wit-2 Resistance to Water+5\0
+281|22992|a,Lv1 Ancient Dye of WIT\0|a,icon.lv1_2_hena_wit\0|a,Wit+3 Men-2 Resistance to Wind+5\0|a,Wit+3 Men-2 Resistance to Wind+5\0
+282|22993|a,Lv1 Ancient Dye of MEN\0|a,icon.lv1_2_hena_men\0|a,Men+3 Int-2 Resistance to Holy+5\0|a,Men+3 Int-2 Resistance to Holy+5\0
+283|22994|a,Lv1 Legendary Dye of STR\0|a,icon.lv1_3_hena_str\0|a,Str+3 Dex-1 Resistance to Fire +5\0|a,Str+3 Dex-1 Resistance to Fire +5\0
+284|22995|a,Lv1 Legendary Dye of DEX\0|a,icon.lv1_3_hena_dex\0|a,Dex+3 Con-1 Resistance to Earth+5\0|a,Dex+3 Con-1 Resistance to Earth+5\0
+285|22996|a,Lv1 Legendary Dye of CON\0|a,icon.lv1_3_hena_con\0|a,Con+3 Str-1 Resistance to Dark+5\0|a,Con+3 Str-1 Resistance to Dark+5\0
+286|22997|a,Lv1 Legendary Dye of INT\0|a,icon.lv1_3_hena_int\0|a,Int+3 Wit-1 Resistance to Water+5\0|a,Int+3 Wit-1 Resistance to Water+5\0
+287|22998|a,Lv1 Legendary Dye of WIT\0|a,icon.lv1_3_hena_wit\0|a,Wit+3 Men-1 Resistance to Wind+5\0|a,Wit+3 Men-1 Resistance to Wind+5\0
+288|22999|a,Lv1 Legendary Dye of MEN\0|a,icon.lv1_3_hena_men\0|a,Men+3 Int-1 Resistance to Holy+5\0|a,Men+3 Int-1 Resistance to Holy+5\0
+289|23000|a,Lv2 Giant's Dye of STR\0|a,icon.lv2_1_hena_str\0|a,Str+4 Dex-3\0|a,Str+4 Dex-3\0
+290|23001|a,Lv2 Giant's Dye of DEX\0|a,icon.lv2_1_hena_dex\0|a,Dex+4 Con-3\0|a,Dex+4 Con-3\0
+291|23002|a,Lv2 Giant's Dye of CON\0|a,icon.lv2_1_hena_con\0|a,Con+4 Str-3\0|a,Con+4 Str-3\0
+292|23003|a,Lv2 Giant's Dye of INT\0|a,icon.lv2_1_hena_int\0|a,Int+4 Wit-3\0|a,Int+4 Wit-3\0
+293|23004|a,Lv2 Giant's Dye of WIT\0|a,icon.lv2_1_hena_wit\0|a,Wit+4 Men-3\0|a,Wit+4 Men-3\0
+294|23005|a,Lv2 Giant's Dye of MEN\0|a,icon.lv2_1_hena_men\0|a,Men+4 Int-3\0|a,Men+4 Int-3\0
+295|23006|a,Lv2 Ancient Dye of STR\0|a,icon.lv2_2_hena_str\0|a,Str+4 Dex-3 Resistance to Fire +10\0|a,Str+4 Dex-3 Resistance to Fire +10\0
+296|23007|a,Lv2 Ancient Dye of DEX\0|a,icon.lv2_2_hena_dex\0|a,Dex+4 Con-3 Resistance to Earth+10\0|a,Dex+4 Con-3 Resistance to Earth+10\0
+297|23008|a,Lv2 Ancient Dye of CON\0|a,icon.lv2_2_hena_con\0|a,Con+4 Str-3 Resistance to Dark+10\0|a,Con+4 Str-3 Resistance to Dark+10\0
+298|23009|a,Lv2 Ancient Dye of INT\0|a,icon.lv2_2_hena_int\0|a,Int+4 Wit-3 Resistance to Water+10\0|a,Int+4 Wit-3 Resistance to Water+10\0
+299|23010|a,Lv2 Ancient Dye of WIT\0|a,icon.lv2_2_hena_wit\0|a,Wit+4 Men-3 Resistance to Wind+10\0|a,Wit+4 Men-3 Resistance to Wind+10\0
+300|23011|a,Lv2 Ancient Dye of MEN\0|a,icon.lv2_2_hena_men\0|a,Men+4 Int-3 Resistance to Holy+10\0|a,Men+4 Int-3 Resistance to Holy+10\0
+301|23012|a,Lv2 Legendary Dye of STR\0|a,icon.lv2_3_hena_str\0|a,Str+4 Dex-2 Resistance to Fire +10\0|a,Str+4 Dex-2 Resistance to Fire +10\0
+302|23013|a,Lv2 Legendary Dye of DEX\0|a,icon.lv2_3_hena_dex\0|a,Dex+4 Con-2 Resistance to Earth+10\0|a,Dex+4 Con-2 Resistance to Earth+10\0
+303|23014|a,Lv2 Legendary Dye of CON\0|a,icon.lv2_3_hena_con\0|a,Con+4 Str-2 Resistance to Dark+10\0|a,Con+4 Str-2 Resistance to Dark+10\0
+304|23015|a,Lv2 Legendary Dye of INT\0|a,icon.lv2_3_hena_int\0|a,Int+4 Wit-2 Resistance to Water+10\0|a,Int+4 Wit-2 Resistance to Water+10\0
+305|23016|a,Lv2 Legendary Dye of WIT\0|a,icon.lv2_3_hena_wit\0|a,Wit+4 Men-2 Resistance to Wind+10\0|a,Wit+4 Men-2 Resistance to Wind+10\0
+306|23017|a,Lv2 Legendary Dye of MEN\0|a,icon.lv2_3_hena_men\0|a,Men+4 Int-2 Resistance to Holy+10\0|a,Men+4 Int-2 Resistance to Holy+10\0
+307|23018|a,Lv3 Giant's Dye of STR\0|a,icon.lv3_1_hena_str\0|a,Str+5 Dex-4\0|a,Str+5 Dex-4\0
+308|23019|a,Lv3 Giant's Dye of DEX\0|a,icon.lv3_1_hena_dex\0|a,Dex+5 Con-4\0|a,Dex+5 Con-4\0
+309|23020|a,Lv3 Giant's Dye of CON\0|a,icon.lv3_1_hena_con\0|a,Con+5 Str-4\0|a,Con+5 Str-4\0
+310|23021|a,Lv3 Giant's Dye of INT\0|a,icon.lv3_1_hena_int\0|a,Int+5 Wit-4\0|a,Int+5 Wit-4\0
+311|23022|a,Lv3 Giant's Dye of WIT\0|a,icon.lv3_1_hena_wit\0|a,Wit+5 Men-4\0|a,Wit+5 Men-4\0
+312|23023|a,Lv3 Giant's Dye of MEN\0|a,icon.lv3_1_hena_men\0|a,Men+5 Int-4\0|a,Men+5 Int-4\0
+313|23024|a,Lv3 Ancient Dye of STR\0|a,icon.lv3_2_hena_str\0|a,Str+5 Dex-4 Resistance to Fire +15\0|a,Str+5 Dex-4 Resistance to Fire +15\0
+314|23025|a,Lv3 Ancient Dye of DEX\0|a,icon.lv3_2_hena_dex\0|a,Dex+5 Con-4 Resistance to Earth+15\0|a,Dex+5 Con-4 Resistance to Earth+15\0
+315|23026|a,Lv3 Ancient Dye of CON\0|a,icon.lv3_2_hena_con\0|a,Con+5 Str-4 Resistance to Dark+15\0|a,Con+5 Str-4 Resistance to Dark+15\0
+316|23027|a,Lv3 Ancient Dye of INT\0|a,icon.lv3_2_hena_int\0|a,Int+5 Wit-4 Resistance to Water+15\0|a,Int+5 Wit-4 Resistance to Water+15\0
+317|23028|a,Lv3 Ancient Dye of WIT\0|a,icon.lv3_2_hena_wit\0|a,Wit+5 Men-4 Resistance to Wind+15\0|a,Wit+5 Men-4 Resistance to Wind+15\0
+318|23029|a,Lv3 Ancient Dye of MEN\0|a,icon.lv3_2_hena_men\0|a,Men+5 Int-4 Resistance to Holy+15\0|a,Men+5 Int-4 Resistance to Holy+15\0
+319|23030|a,Lv3 Legendary Dye of STR\0|a,icon.lv3_3_hena_str\0|a,Str+5 Dex-3 Resistance to Fire +15\0|a,Str+5 Dex-3 Resistance to Fire +15\0
+320|23031|a,Lv3 Legendary Dye of DEX\0|a,icon.lv3_3_hena_dex\0|a,Dex+5 Con-3 Resistance to Earth+15\0|a,Dex+5 Con-3 Resistance to Earth+15\0
+321|23032|a,Lv3 Legendary Dye of CON\0|a,icon.lv3_3_hena_con\0|a,Con+5 Str-3 Resistance to Dark+15\0|a,Con+5 Str-3 Resistance to Dark+15\0
+322|23033|a,Lv3 Legendary Dye of INT\0|a,icon.lv3_3_hena_int\0|a,Int+5 Wit-3 Resistance to Water+15\0|a,Int+5 Wit-3 Resistance to Water+15\0
+323|23034|a,Lv3 Legendary Dye of WIT\0|a,icon.lv3_3_hena_wit\0|a,Wit+5 Men-3 Resistance to Wind+15\0|a,Wit+5 Men-3 Resistance to Wind+15\0
+324|23035|a,Lv3 Legendary Dye of MEN\0|a,icon.lv3_3_hena_men\0|a,Men+5 Int-3 Resistance to Holy+15\0|a,Men+5 Int-3 Resistance to Holy+15\0
+325|23036|a,Lv4 Giant's Dye of STR\0|a,icon.lv4_1_hena_str\0|a,Str+5 Dex-2\0|a,Str+5 Dex-2\0
+326|23037|a,Lv4 Giant's Dye of DEX\0|a,icon.lv4_1_hena_dex\0|a,Dex+5 Con-2\0|a,Dex+5 Con-2\0
+327|23038|a,Lv4 Giant's Dye of CON\0|a,icon.lv4_1_hena_con\0|a,Con+5 Str-2\0|a,Con+5 Str-2\0
+328|23039|a,Lv4 Giant's Dye of INT\0|a,icon.lv4_1_hena_int\0|a,Int+5 Wit-2\0|a,Int+5 Wit-2\0
+329|23040|a,Lv4 Giant's Dye of WIT\0|a,icon.lv4_1_hena_wit\0|a,Wit+5 Men-2\0|a,Wit+5 Men-2\0
+330|23041|a,Lv4 Giant's Dye of MEN\0|a,icon.lv4_1_hena_men\0|a,Men+5 Int-2\0|a,Men+5 Int-2\0
+331|23042|a,Lv4 Ancient Dye of STR\0|a,icon.lv4_2_hena_str\0|a,Str+5 Dex-2 Resistance to Fire +20\0|a,Str+5 Dex-2 Resistance to Fire +20\0
+332|23043|a,Lv4 Ancient Dye of DEX\0|a,icon.lv4_2_hena_dex\0|a,Dex+5 Con-2 Resistance to Earth+20\0|a,Dex+5 Con-2 Resistance to Earth+20\0
+333|23044|a,Lv4 Ancient Dye of CON\0|a,icon.lv4_2_hena_con\0|a,Con+5 Str-2 Resistance to Dark+20\0|a,Con+5 Str-2 Resistance to Dark+20\0
+334|23045|a,Lv4 Ancient Dye of INT\0|a,icon.lv4_2_hena_int\0|a,Int+5 Wit-2 Resistance to Water+20\0|a,Int+5 Wit-2 Resistance to Water+20\0
+335|23046|a,Lv4 Ancient Dye of WIT\0|a,icon.lv4_2_hena_wit\0|a,Wit+5 Men-2 Resistance to Wind+20\0|a,Wit+5 Men-2 Resistance to Wind+20\0
+336|23047|a,Lv4 Ancient Dye of MEN\0|a,icon.lv4_2_hena_men\0|a,Men+5 Int-2 Resistance to Holy+20\0|a,Men+5 Int-2 Resistance to Holy+20\0
+337|23048|a,Lv4 Legendary Dye of STR\0|a,icon.lv4_3_hena_str\0|a,Str+5 Dex-1 Resistance to Fire +20\0|a,Str+5 Dex-1 Resistance to Fire +20\0
+338|23049|a,Lv4 Legendary Dye of DEX\0|a,icon.lv4_3_hena_dex\0|a,Dex+5 Con-1 Resistance to Earth+20\0|a,Dex+5 Con-1 Resistance to Earth+20\0
+339|23050|a,Lv4 Legendary Dye of CON\0|a,icon.lv4_3_hena_con\0|a,Con+5 Str-1 Resistance to Dark+20\0|a,Con+5 Str-1 Resistance to Dark+20\0
+340|23051|a,Lv4 Legendary Dye of INT\0|a,icon.lv4_3_hena_int\0|a,Int+5 Wit-1 Resistance to Water+20\0|a,Int+5 Wit-1 Resistance to Water+20\0
+341|23052|a,Lv4 Legendary Dye of WIT\0|a,icon.lv4_3_hena_wit\0|a,Wit+5 Men-1 Resistance to Wind+20\0|a,Wit+5 Men-1 Resistance to Wind+20\0
+342|23053|a,Lv4 Legendary Dye of MEN\0|a,icon.lv4_3_hena_men\0|a,Men+5 Int-1 Resistance to Holy+20\0|a,Men+5 Int-1 Resistance to Holy+20\0
+343|23054|a,Lv5 Giant's Dye of STR\0|a,icon.lv5_1_hena_str\0|a,Str+5\0|a,Str+5\0
+344|23055|a,Lv5 Giant's Dye of DEX\0|a,icon.lv5_1_hena_dex\0|a,Dex+5\0|a,Dex+5\0
+345|23056|a,Lv5 Giant's Dye of CON\0|a,icon.lv5_1_hena_con\0|a,Con+5\0|a,Con+5\0
+346|23057|a,Lv5 Giant's Dye of INT\0|a,icon.lv5_1_hena_int\0|a,Int+5\0|a,Int+5\0
+347|23058|a,Lv5 Giant's Dye of WIT\0|a,icon.lv5_1_hena_wit\0|a,Wit+5\0|a,Wit+5\0
+348|23059|a,Lv5 Giant's Dye of MEN\0|a,icon.lv5_1_hena_men\0|a,Men+5\0|a,Men+5\0
+349|23060|a,Lv5 Ancient Dye of STR\0|a,icon.lv5_2_hena_str\0|a,Str+5 Resistance to Fire +25\0|a,Str+5 Resistance to Fire +25\0
+350|23061|a,Lv5 Ancient Dye of DEX\0|a,icon.lv5_2_hena_dex\0|a,Dex+5 Resistance to Earth+25\0|a,Dex+5 Resistance to Earth+25\0
+351|23062|a,Lv5 Ancient Dye of CON\0|a,icon.lv5_2_hena_con\0|a,Con+5 Resistance to Dark+25\0|a,Con+5 Resistance to Dark+25\0
+352|23063|a,Lv5 Ancient Dye of INT\0|a,icon.lv5_2_hena_int\0|a,Int+5 Resistance to Water+25\0|a,Int+5 Resistance to Water+25\0
+353|23064|a,Lv5 Ancient Dye of WIT\0|a,icon.lv5_2_hena_wit\0|a,Wit+5 Resistance to Wind+25\0|a,Wit+5 Resistance to Wind+25\0
+354|23065|a,Lv5 Ancient Dye of MEN\0|a,icon.lv5_2_hena_men\0|a,Men+5 Resistance to Holy+25\0|a,Men+5 Resistance to Holy+25\0
+355|23066|a,Lv5 Legendary Dye of STR\0|a,icon.lv5_3_hena_str\0|a,Str+5 Dex+1 Resistance to Fire +25\0|a,Str+5 Dex+1 Resistance to Fire +25\0
+356|23067|a,Lv5 Legendary Dye of DEX\0|a,icon.lv5_3_hena_dex\0|a,Dex+5 Con+1 Resistance to Earth+25\0|a,Dex+5 Con+1 Resistance to Earth+25\0
+357|23068|a,Lv5 Legendary Dye of CON\0|a,icon.lv5_3_hena_con\0|a,Con+5 Str+1 Resistance to Dark+25\0|a,Con+5 Str+1 Resistance to Dark+25\0
+358|23069|a,Lv5 Legendary Dye of INT\0|a,icon.lv5_3_hena_int\0|a,Int+5 Wit+1 Resistance to Water+25\0|a,Int+5 Wit+1 Resistance to Water+25\0
+359|23070|a,Lv5 Legendary Dye of WIT\0|a,icon.lv5_3_hena_wit\0|a,Wit+5 Men+1 Resistance to Wind+25\0|a,Wit+5 Men+1 Resistance to Wind+25\0
+360|23071|a,Lv5 Legendary Dye of MEN\0|a,icon.lv5_3_hena_men\0|a,Men+5 Int+1 Resistance to Holy+25\0|a,Men+5 Int+1 Resistance to Holy+25\0

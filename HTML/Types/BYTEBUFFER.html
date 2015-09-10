@@ -1,0 +1,84 @@
+BYTEBUFFER<br />
+<br />
+A binary buffer.<br />
+<br />
+Member Functions:<br />
+.TYPE<br />
+Returns the global BYTEBUFFER<br />
+<br />
+.CLASSNAME<br />
+Returns a string "BYTEBUFFER"<br />
+<br />
+.CLONE<br />
+Returns a copy of the variable.<br />
+<br />
+.GET_HEX<br />
+Returns the string version of the hex value of this variable.<br />
+<br />
+.LENGTH<br />
+Returns an int containing the length of the binary array in bytes.<br />
+<br />
+.COUNT<br />
+Same as .LENGTH<br />
+<br />
+.TRIM_TO_INDEX<br />
+Resizes the bytebuffer to match the current cursor position.  Use to trim extra length before sending.<br />
+<br />
+.RESET_INDEX<br />
+Resets the index for reading and writing to the start of the buffer (index = 0).<br />
+<br />
+WRITE_UINT16 [V]<br />
+Converts the value of [V1] to a 16 bit unsigned integer and writes it to the bytebuffer.  The cursor is advanced by 2.<br />
+<br />
+WRITE_UINT32 [V]<br />
+Converts the value of [V1] to a 32 bit unsigned integer and writes it to the bytebuffer.  The cursor is advanced by 4.<br />
+<br />
+WRITE_UINT64 [V]<br />
+Converts the value of [V1] to a 64 bit unsigned integer and writes it to the bytebuffer.  The cursor is advanced by 8.<br />
+<br />
+WRITE_INT16 [V]<br />
+Converts the value of [V1] to a 16 bit signed integer and writes it to the bytebuffer.  The cursor is advanced by 2.<br />
+<br />
+WRITE_INT32 [V]<br />
+Converts the value of [V1] to a 32 bit signed integer and writes it to the bytebuffer.  The cursor is advanced by 4.<br />
+<br />
+WRITE_INT64 [V]<br />
+Converts the value of [V1] to a 64 bit signed integer and writes it to the bytebuffer.  The cursor is advanced by 8.<br />
+<br />
+WRITE_DOUBLE [V]<br />
+Converts the value of [V1] to a double precision floating point value and writes it to the bytebuffer.  The cursor is advanced by 8.<br />
+<br />
+WRITE_BYTE [V]<br />
+Converts the value of [V1] to an 8 bit unsigned integer and writes it to the bytebuffer.  The cursor is advanced by 1.<br />
+<br />
+WRITE_STRING [V]<br />
+Converts the value of [V1] to a ubnicode string and writes it to the bytebuffer.  The cursor is advanced by length * 2 + 2.<br />
+<br />
+READ_UINT16<br />
+Converts the next 2 bytes to a 16 bit unsigned integer and returns it.  The cursor is advanced by 2.<br />
+<br />
+READ_UINT32<br />
+Converts the next 4 bytes to a 32 bit unsigned integer and returns it.  The cursor is advanced by 4.<br />
+<br />
+READ_UINT64<br />
+Converts the next 8 bytes to a 64 bit unsigned integer and returns it.  The cursor is advanced by 8.<br />
+<br />
+READ_INT16<br />
+Converts the next 2 bytes to a 16 bit signed integer and returns it.  The cursor is advanced by 2.<br />
+<br />
+READ_INT32<br />
+Converts the next 4 bytes to a 32 bit signed integer and returns it.  The cursor is advanced by 4.<br />
+<br />
+READ_INT64<br />
+Converts the next 8 bytes to a 64 bit signed integer and returns it.  The cursor is advanced by 8.<br />
+<br />
+READ_DOUBLE<br />
+Converts the next 8 bytes to a double precision floating point value and returns it.  The cursor is advanced by 8.<br />
+<br />
+READ_BYTE<br />
+Converts the next byte to an 8 bit unsigned integer and returns it.  The cursor is advanced by 1.<br />
+<br />
+READ_STRING<br />
+Reads the next unicode string from the bytebuffer and returns it.  Reading is stopped when 0x0000 is read.  The cursor is advanced accordingly.<br />
+<br />
+

@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="menuItem_File" xml:space="preserve">
+    <value>Fájl</value>
+  </data>
+  <data name="menuItem_cmd_logon" xml:space="preserve">
+    <value>Belépő Ablak</value>
+  </data>
+  <data name="menuItem_cmd_game" xml:space="preserve">
+    <value>Játék Ablak</value>
+  </data>
+  <data name="menuItem_cmd_restart" xml:space="preserve">
+    <value>Újraindítás</value>
+  </data>
+  <data name="menuItem_cmd_logout" xml:space="preserve">
+    <value>Kilépés</value>
+  </data>
+  <data name="menuItem_closeclient" xml:space="preserve">
+    <value>Kliens Bezárása</value>
+  </data>
+  <data name="menuItem_exit" xml:space="preserve">
+    <value>Kilépés</value>
+  </data>
+  <data name="menuItem_Commands" xml:space="preserve">
+    <value>Parancsok</value>
+  </data>
+  <data name="menuItem_cmd_cancel" xml:space="preserve">
+    <value>Cél Törlés</value>
+  </data>
+  <data name="menuItem_toggle_botting" xml:space="preserve">
+    <value>Toggle Botting</value>
+  </data>
+  <data name="menuItem_Options" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
+  <data name="menuItem_bot_options" xml:space="preserve">
+    <value>Bot Beállítások</value>
+  </data>
+  <data name="menuItem_sound_alerts" xml:space="preserve">
+    <value>Hang Figyelmeztetés</value>
+  </data>
+  <data name="menuItem_bot_load" xml:space="preserve">
+    <value>Beállítások Betöltése</value>
+  </data>
+  <data name="menuItem_bot_save" xml:space="preserve">
+    <value>Beállítások Mentése</value>
+  </data>
+  <data name="menuItem_saveinterface" xml:space="preserve">
+    <value>Felület Mentése</value>
+  </data>
+  <data name="menuItem_Help" xml:space="preserve">
+    <value>Segítség</value>
+  </data>
+  <data name="menuItem_about" xml:space="preserve">
+    <value>Névjegy</value>
+  </data>
+  <data name="menuItem_hosts" xml:space="preserve">
+    <value>Hosztok</value>
+  </data>
+  <data name="menuItem_language" xml:space="preserve">
+    <value>Nyelv</value>
+  </data>
+  <data name="button_save" xml:space="preserve">
+    <value>Mentés</value>
+  </data>
+  <data name="button_cancel" xml:space="preserve">
+    <value>Mégse</value>
+  </data>
+  <data name="label_select_lang" xml:space="preserve">
+    <value>Nyelv Választás</value>
+  </data>
+  <data name="button_dead_town" xml:space="preserve">
+    <value>Város</value>
+  </data>
+  <data name="button_dead_castle" xml:space="preserve">
+    <value>Kastély</value>
+  </data>
+  <data name="button_dead_clanhall" xml:space="preserve">
+    <value>Klán Terem</value>
+  </data>
+  <data name="button_dead_siege" xml:space="preserve">
+    <value>Ostrom Központ</value>
+  </data>
+  <data name="button_yesno_yes" xml:space="preserve">
+    <value>Igen</value>
+  </data>
+  <data name="button_yesno_no" xml:space="preserve">
+    <value>Nem</value>
+  </data>
+  <data name="button_npc_close" xml:space="preserve">
+    <value>Bezár</value>
+  </data>
+  <data name="checkBox_downloadcrests" xml:space="preserve">
+    <value>Új címerek letöltése</value>
+  </data>
+  <data name="checkBox_social_self" xml:space="preserve">
+    <value>social self</value>
+  </data>
+  <data name="checkBox_social_pcs" xml:space="preserve">
+    <value>social pcs</value>
+  </data>
+  <data name="checkBox_social_npcs" xml:space="preserve">
+    <value>social npcs</value>
+  </data>
+  <data name="checkBox_minimap" xml:space="preserve">
+    <value>Térkép</value>
+  </data>
+  <data name="checkBox_op_control" xml:space="preserve">
+    <value>control</value>
+  </data>
+  <data name="checkBox_op_shift" xml:space="preserve">
+    <value>shift</value>
+  </data>
+  <data name="button_select_oog" xml:space="preserve">
+    <value>OOG</value>
+  </data>
+  <data name="button_select_ig" xml:space="preserve">
+    <value>IG</value>
+  </data>
+  <data name="label_blowfishkey" xml:space="preserve">
+    <value>Blowfish Kulcs(token)</value>
+  </data>
+  <data name="label_loginserver" xml:space="preserve">
+    <value>Login Szerver</value>
+  </data>
+  <data name="label_gameserver" xml:space="preserve">
+    <value>Játék Szerver</value>
+  </data>
+  <data name="label_localport" xml:space="preserve">
+    <value>Local Port</value>
+  </data>
+  <data name="checkBox_bypassgg" xml:space="preserve">
+    <value>Gameguard Emulálás</value>
+  </data>
+  <data name="button_logon" xml:space="preserve">
+    <value>Belépés</value>
+  </data>
+  <data name="button_server" xml:space="preserve">
+    <value>Szerver Választás</value>
+  </data>
+  <data name="button_char" xml:space="preserve">
+    <value>Karakter Választás</value>
+  </data>
+  <data name="checkBox_activefollow" xml:space="preserve">
+    <value>Aktív Követés</value>
+  </data>
+  <data name="label_followname" xml:space="preserve">
+    <value>Név</value>
+  </data>
+  <data name="label_followdistance" xml:space="preserve">
+    <value>Távolság</value>
+  </data>
+  <data name="checkBox_activefollow_attack" xml:space="preserve">
+    <value>Aktív Támadás Követés</value>
+  </data>
+  <data name="Skill" xml:space="preserve">
+    <value>Képesség</value>
+  </data>
+  <data name="Names" xml:space="preserve">
+    <value>Nevek</value>
+  </data>
+  <data name="Trait" xml:space="preserve">
+    <value>Jelleg</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Tárgy</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Idő</value>
+  </data>
+  <data name="button_sendtext" xml:space="preserve">
+    <value>Mond</value>
+  </data>
+  <data name="label_youdied" xml:space="preserve">
+    <value>Meghaltál!</value>
+  </data>
+  <data name="button_ig_listen" xml:space="preserve">
+    <value>Figyel</value>
+  </data>
+  <data name="label_delaymsec" xml:space="preserve">
+    <value>Késleltetés(msec)</value>
+  </data>
+  <data name="menuItem_scripting" xml:space="preserve">
+    <value>Szkriptelés</value>
+  </data>
+  <data name="menuItem_scriptwindow" xml:space="preserve">
+    <value>Szkript Editor</value>
+  </data>
+  <data name="menuItem_startscript" xml:space="preserve">
+    <value>Szkript Indítás</value>
+  </data>
+  <data name="menuItem_resestscript" xml:space="preserve">
+    <value>Szkript Újraindítás</value>
+  </data>
+  <data name="menuItem_stopscript" xml:space="preserve">
+    <value>Szkript Leállítás</value>
+  </data>
+  <data name="button_loadscript" xml:space="preserve">
+    <value>Szkript Betöltés</value>
+  </data>
+  <data name="button_savescript" xml:space="preserve">
+    <value>Szkript Mentés </value>
+  </data>
+  <data name="tab_Char" xml:space="preserve">
+    <value>Kari</value>
+  </data>
+  <data name="tab_Players" xml:space="preserve">
+    <value>Játékosok</value>
+  </data>
+  <data name="tab_Items" xml:space="preserve">
+    <value>Tárgyak</value>
+  </data>
+  <data name="tab_NPC" xml:space="preserve">
+    <value>NPC</value>
+  </data>
+  <data name="tab_Inv" xml:space="preserve">
+    <value>Hátizsák</value>
+  </data>
+  <data name="tab_Skills" xml:space="preserve">
+    <value>Képességek</value>
+  </data>
+  <data name="tab_Clan" xml:space="preserve">
+    <value>Klán</value>
+  </data>
+  <data name="col_ObjID" xml:space="preserve">
+    <value>ObjID</value>
+  </data>
+  <data name="col_War" xml:space="preserve">
+    <value>Háború</value>
+  </data>
+  <data name="col_Title" xml:space="preserve">
+    <value>Cím</value>
+  </data>
+  <data name="col_Clan" xml:space="preserve">
+    <value>Klán</value>
+  </data>
+  <data name="col_Ally" xml:space="preserve">
+    <value>Szövi</value>
+  </data>
+  <data name="col_X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="col_Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="col_Z" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="col_Race" xml:space="preserve">
+    <value>Faj</value>
+  </data>
+  <data name="col_Sex" xml:space="preserve">
+    <value>Nem</value>
+  </data>
+  <data name="col_Class" xml:space="preserve">
+    <value>Kaszt</value>
+  </data>
+  <data name="col_Head" xml:space="preserve">
+    <value>Fej</value>
+  </data>
+  <data name="col_RHand" xml:space="preserve">
+    <value>Jobb kéz</value>
+  </data>
+  <data name="col_LRHand" xml:space="preserve">
+    <value>Jobb-Bal kéz</value>
+  </data>
+  <data name="col_LHand" xml:space="preserve">
+    <value>Bal kéz</value>
+  </data>
+  <data name="col_Gloves" xml:space="preserve">
+    <value>Kesztyű</value>
+  </data>
+  <data name="col_Chest" xml:space="preserve">
+    <value>Mellkas</value>
+  </data>
+  <data name="col_Legs" xml:space="preserve">
+    <value>Lábak</value>
+  </data>
+  <data name="col_Feet" xml:space="preserve">
+    <value>Láb</value>
+  </data>
+  <data name="col_Back" xml:space="preserve">
+    <value>Hát</value>
+  </data>
+  <data name="col_Hair" xml:space="preserve">
+    <value>Haj</value>
+  </data>
+  <data name="col_PvPFlag" xml:space="preserve">
+    <value>PvPFlag</value>
+  </data>
+  <data name="col_Karma" xml:space="preserve">
+    <value>Reputation</value>
+  </data>
+  <data name="col_MatkSpeed" xml:space="preserve">
+    <value>MatkSpeed</value>
+  </data>
+  <data name="col_PatkSpeed" xml:space="preserve">
+    <value>PatkSpeed</value>
+  </data>
+  <data name="col_RunSpeed" xml:space="preserve">
+    <value>RunSpeed</value>
+  </data>
+  <data name="col_WalkSpeed" xml:space="preserve">
+    <value>WalkSpeed</value>
+  </data>
+  <data name="col_HairStyle" xml:space="preserve">
+    <value>Haj stílus</value>
+  </data>
+  <data name="col_HairColor" xml:space="preserve">
+    <value>Hajszín</value>
+  </data>
+  <data name="col_Face" xml:space="preserve">
+    <value>Arc</value>
+  </data>
+  <data name="col_ClanID" xml:space="preserve">
+    <value>KlánID</value>
+  </data>
+  <data name="col_AllyID" xml:space="preserve">
+    <value>SzövetségID</value>
+  </data>
+  <data name="col_Sitting" xml:space="preserve">
+    <value>Ülés?</value>
+  </data>
+  <data name="col_Running" xml:space="preserve">
+    <value>Futás?</value>
+  </data>
+  <data name="col_InCombat" xml:space="preserve">
+    <value>Harc közben?</value>
+  </data>
+  <data name="col_LikeDead" xml:space="preserve">
+    <value>Holtan?</value>
+  </data>
+  <data name="col_Invisible" xml:space="preserve">
+    <value>Láthatatlan?</value>
+  </data>
+  <data name="col_Mount" xml:space="preserve">
+    <value>Felszerel?</value>
+  </data>
+  <data name="col_PrivateStore" xml:space="preserve">
+    <value>PrivateStore</value>
+  </data>
+  <data name="col_CubicCount" xml:space="preserve">
+    <value>CubicSzám</value>
+  </data>
+  <data name="col_LFG" xml:space="preserve">
+    <value>LFG</value>
+  </data>
+  <data name="col_RecAmount" xml:space="preserve">
+    <value>RecÉrték</value>
+  </data>
+  <data name="col_Enchant" xml:space="preserve">
+    <value>Enchant</value>
+  </data>
+  <data name="col_LogoGlow" xml:space="preserve">
+    <value>LogoFény</value>
+  </data>
+  <data name="col_HeroGlow" xml:space="preserve">
+    <value>HeroFény</value>
+  </data>
+  <data name="col_Fishing" xml:space="preserve">
+    <value>Horgászat?</value>
+  </data>
+  <data name="col_Item" xml:space="preserve">
+    <value>Tárgy</value>
+  </data>
+  <data name="col_Count" xml:space="preserve">
+    <value>Szám</value>
+  </data>
+  <data name="col_Stack" xml:space="preserve">
+    <value>Stack?</value>
+  </data>
+  <data name="col_NPC" xml:space="preserve">
+    <value>NPC</value>
+  </data>
+  <data name="col_Attackable" xml:space="preserve">
+    <value>Támadható?</value>
+  </data>
+  <data name="col_Radius" xml:space="preserve">
+    <value>Sugár</value>
+  </data>
+  <data name="col_Height" xml:space="preserve">
+    <value>Magasság</value>
+  </data>
+  <data name="col_NameShows" xml:space="preserve">
+    <value>Nevek?</value>
+  </data>
+  <data name="col_Summoned" xml:space="preserve">
+    <value>Idézett?</value>
+  </data>
+  <data name="col_AbnormalEffects" xml:space="preserve">
+    <value>AbnormalEffektek</value>
+  </data>
+  <data name="col_TeamCircle" xml:space="preserve">
+    <value>TeamCircle</value>
+  </data>
+  <data name="col_Trait" xml:space="preserve">
+    <value>Jelleg</value>
+  </data>
+  <data name="col_Value" xml:space="preserve">
+    <value>Érték</value>
+  </data>
+  <data name="col_Color" xml:space="preserve">
+    <value>Szín</value>
+  </data>
+  <data name="col_Type" xml:space="preserve">
+    <value>Típus1</value>
+  </data>
+  <data name="col_Type2" xml:space="preserve">
+    <value>Típus2</value>
+  </data>
+  <data name="col_Type3" xml:space="preserve">
+    <value>Típus3</value>
+  </data>
+  <data name="col_Type4" xml:space="preserve">
+    <value>Típus4</value>
+  </data>
+  <data name="col_Equipped" xml:space="preserve">
+    <value>Felszerelt?</value>
+  </data>
+  <data name="col_Slot" xml:space="preserve">
+    <value>Hely</value>
+  </data>
+  <data name="col_Level" xml:space="preserve">
+    <value>Szint</value>
+  </data>
+  <data name="col_Passive" xml:space="preserve">
+    <value>Passzív?</value>
+  </data>
+  <data name="col_Desc1" xml:space="preserve">
+    <value>Leírás1</value>
+  </data>
+  <data name="col_Desc2" xml:space="preserve">
+    <value>Leírás2</value>
+  </data>
+  <data name="col_Desc3" xml:space="preserve">
+    <value>Description3</value>
+  </data>
+  <data name="col_Online" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="label_on" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="show_names" xml:space="preserve">
+    <value>Nevek Mutatása</value>
+  </data>
+  <data name="overlay_window" xml:space="preserve">
+    <value>Overlay Ablak</value>
+  </data>
+  <data name="button_top" xml:space="preserve">
+    <value>Tető</value>
+  </data>
+  <data name="shortcut_window" xml:space="preserve">
+    <value>Shortcut Ablak</value>
+  </data>
+  <data name="report_window" xml:space="preserve">
+    <value>Beszámoló Ablak</value>
+  </data>
+  <data name="ShortCut" xml:space="preserve">
+    <value>ShortCut</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Lap</value>
+  </data>
+  <data name="delaysec" xml:space="preserve">
+    <value>Késleltetés(sec)</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Frissít</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Alkalmaz</value>
+  </data>
+  <data name="NeedTarget" xml:space="preserve">
+    <value>Need Target</value>
+  </data>
+  <data name="menuItem_debug_mode" xml:space="preserve">
+    <value>Debug Mode</value>
+  </data>
+  <data name="menuItem_loadscript" xml:space="preserve">
+    <value>Set Script Main</value>
+  </data>
+  <data name="menuItem_scriptdebugger" xml:space="preserve">
+    <value>Script Debugger</value>
+  </data>
+  <data name="add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="auto_spoil" xml:space="preserve">
+    <value>Auto Spoil</value>
+  </data>
+  <data name="auto_sweep" xml:space="preserve">
+    <value>Auto Sweep</value>
+  </data>
+  <data name="buffs_heals" xml:space="preserve">
+    <value>Buffs/Heals</value>
+  </data>
+  <data name="direct_3d" xml:space="preserve">
+    <value>Use Direct 3D</value>
+  </data>
+  <data name="direct_sound" xml:space="preserve">
+    <value>Use Direct Sound</value>
+  </data>
+  <data name="do_not" xml:space="preserve">
+    <value>Do Not</value>
+  </data>
+  <data name="ignore_unknown_items" xml:space="preserve">
+    <value>Ignore Unknown Items</value>
+  </data>
+  <data name="l2_path" xml:space="preserve">
+    <value>Lineage 2 Path</value>
+  </data>
+  <data name="menuItem_dump_mode" xml:space="preserve">
+    <value>Dump Mode</value>
+  </data>
+  <data name="menuItem_forcecollect" xml:space="preserve">
+    <value>Force Collect</value>
+  </data>
+  <data name="menuItem_help_donate" xml:space="preserve">
+    <value>Donate</value>
+  </data>
+  <data name="menuItem_killthreads" xml:space="preserve">
+    <value>Kill Threads</value>
+  </data>
+  <data name="menuItem_launchl2" xml:space="preserve">
+    <value>Launch Lineage 2</value>
+  </data>
+  <data name="menuItem_options_setup" xml:space="preserve">
+    <value>Setup</value>
+  </data>
+  <data name="min_to_tray" xml:space="preserve">
+    <value>Minimize to Tray</value>
+  </data>
+  <data name="party" xml:space="preserve">
+    <value>Party</value>
+  </data>
+  <data name="pause_resume_script" xml:space="preserve">
+    <value>Pause/Resume Script</value>
+  </data>
+  <data name="product_key" xml:space="preserve">
+    <value>Product Key</value>
+  </data>
+  <data name="script_io" xml:space="preserve">
+    <value>Allow Script I/O</value>
+  </data>
+  <data name="snapshot" xml:space="preserve">
+    <value>Snapshot</value>
+  </data>
+  <data name="spoil_crush" xml:space="preserve">
+    <value>Use Spoil Crush</value>
+  </data>
+  <data name="toggle_key" xml:space="preserve">
+    <value>Toggle Key</value>
+  </data>
+  <data name="voice" xml:space="preserve">
+    <value>Voice</value>
+  </data>
+  <data name="accept_party" xml:space="preserve">
+    <value>Auto Accept Party</value>
+  </data>
+  <data name="accept_rez" xml:space="preserve">
+    <value>Auto Accept Rez</value>
+  </data>
+  <data name="active_attack" xml:space="preserve">
+    <value>Active Attack</value>
+  </data>
+  <data name="active_pickup" xml:space="preserve">
+    <value>Pickup</value>
+  </data>
+  <data name="active_pickup_range" xml:space="preserve">
+    <value>Pickup Range</value>
+  </data>
+  <data name="active_target" xml:space="preserve">
+    <value>Active Target</value>
+  </data>
+  <data name="add_current" xml:space="preserve">
+    <value>Add Current Location</value>
+  </data>
+  <data name="autofighter" xml:space="preserve">
+    <value>Autofighter</value>
+  </data>
+  <data name="buff_control" xml:space="preserve">
+    <value>Buff with Control</value>
+  </data>
+  <data name="buff_range" xml:space="preserve">
+    <value>Buff/Heal Range</value>
+  </data>
+  <data name="buff_shift" xml:space="preserve">
+    <value>Buff with Shift</value>
+  </data>
+  <data name="button_dead_fort" xml:space="preserve">
+    <value>Fortress</value>
+  </data>
+  <data name="combat" xml:space="preserve">
+    <value>Combat</value>
+  </data>
+  <data name="conditional" xml:space="preserve">
+    <value>Conditional</value>
+  </data>
+  <data name="forcelog" xml:space="preserve">
+    <value>Force Log</value>
+  </data>
+  <data name="generate_box" xml:space="preserve">
+    <value>Generate Box</value>
+  </data>
+  <data name="offset" xml:space="preserve">
+    <value>Offset</value>
+  </data>
+  <data name="polygon" xml:space="preserve">
+    <value>Bounding Polygon</value>
+  </data>
+  <data name="radius" xml:space="preserve">
+    <value>Radius</value>
+  </data>
+  <data name="sides" xml:space="preserve">
+    <value>Sides</value>
+  </data>
+  <data name="zrange" xml:space="preserve">
+    <value>Z Range</value>
+  </data>
+  <data name="zrange_map" xml:space="preserve">
+    <value>Map Z Range</value>
+  </data>
+  <data name="check_ignexitconf" xml:space="preserve">
+    <value>Ignore Exit Confirmation</value>
+  </data>
+  <data name="radio_active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="radio_passive" xml:space="preserve">
+    <value>Passive</value>
+  </data>
+  <data name="button_delete_char" xml:space="preserve">
+    <value>Delete Char</value>
+  </data>
+  <data name="but_ss_activate" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="but_ss_deactivate" xml:space="preserve">
+    <value>Deactivate</value>
+  </data>
+  <data name="label_autoss" xml:space="preserve">
+    <value>Auto Soul/Spiritshot</value>
+  </data>
+  <data name="Forums" xml:space="preserve">
+    <value>Forums</value>
+  </data>
+  <data name="EULA" xml:space="preserve">
+    <value>EULA</value>
+  </data>
+  <data name="server_dump_mode" xml:space="preserve">
+    <value>Server Dump Mode</value>
+  </data>
+  <data name="blacklist_target" xml:space="preserve">
+    <value>Blacklist Target</value>
+  </data>
+  <data name="actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="char_detail" xml:space="preserve">
+    <value>Char Detail</value>
+  </data>
+  <data name="NPC_chat" xml:space="preserve">
+    <value>NPC Chat</value>
+  </data>
+  <data name="buffs" xml:space="preserve">
+    <value>Buffs</value>
+  </data>
+  <data name="remaining" xml:space="preserve">
+    <value>Remaining</value>
+  </data>
+  <data name="rest_options" xml:space="preserve">
+    <value>Rest Options</value>
+  </data>
+  <data name="sound_alerts" xml:space="preserve">
+    <value>Sound Alerts</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="targeting" xml:space="preserve">
+    <value>Targeting</value>
+  </data>
+  <data name="solo_settings" xml:space="preserve">
+    <value>Solo Settings</value>
+  </data>
+  <data name="party_settings" xml:space="preserve">
+    <value>Party Settings</value>
+  </data>
+  <data name="rest_below" xml:space="preserve">
+    <value>Rest Below</value>
+  </data>
+  <data name="follow_rest" xml:space="preserve">
+    <value>Follow Rest</value>
+  </data>
+  <data name="auto_send_party_invite" xml:space="preserve">
+    <value>Auto Send Party Invite</value>
+  </data>
+  <data name="OOP_members" xml:space="preserve">
+    <value>OOP Members</value>
+  </data>
+  <data name="walker_style" xml:space="preserve">
+    <value>Walker Style</value>
+  </data>
+  <data name="l2net_style" xml:space="preserve">
+    <value>L2.Net Style</value>
+  </data>
+  <data name="move_before_attack" xml:space="preserve">
+    <value>Smart Move Before Attack</value>
+  </data>
+  <data name="active_follow_target" xml:space="preserve">
+    <value>Active Follow Target</value>
+  </data>
+  <data name="move_range" xml:space="preserve">
+    <value>Move Range</value>
+  </data>
+  <data name="until" xml:space="preserve">
+    <value>Until</value>
+  </data>
+  <data name="ignore_meshless_items" xml:space="preserve">
+    <value>Ignore Meshless Items</value>
+  </data>
+  <data name="ignore_raidbosses" xml:space="preserve">
+    <value>Ignore Raidbosses</value>
+  </data>
+  <data name="ignore_chests" xml:space="preserve">
+    <value>Ignore Chests</value>
+  </data>
+  <data name="2_way_war" xml:space="preserve">
+    <value>2 Way War</value>
+  </data>
+  <data name="1_way_war" xml:space="preserve">
+    <value>1 Way War</value>
+  </data>
+  <data name="n1_way_war" xml:space="preserve">
+    <value>-1 Way War</value>
+  </data>
+  <data name="player" xml:space="preserve">
+    <value>Player</value>
+  </data>
+  <data name="ignore_party_members" xml:space="preserve">
+    <value>Ignore Party Members</value>
+  </data>
+  <data name="white_chat" xml:space="preserve">
+    <value>White Chat</value>
+  </data>
+  <data name="private_message" xml:space="preserve">
+    <value>Private Message</value>
+  </data>
+  <data name="friend_chat" xml:space="preserve">
+    <value>Friend Chat</value>
+  </data>
+  <data name="menuItem_bot_clear" xml:space="preserve">
+    <value>Clear Options</value>
+  </data>
+  <data name="anti_ks_delay" xml:space="preserve">
+    <value>Anti KS Delay</value>
+  </data>
+  <data name="attack_only" xml:space="preserve">
+    <value>Attack Only NPCs in List</value>
+  </data>
+  <data name="auto_follow_delay" xml:space="preserve">
+    <value>Auto Follow Delay</value>
+  </data>
+  <data name="blacklist_tries" xml:space="preserve">
+    <value>Blacklist Tries</value>
+  </data>
+  <data name="btn_reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="btn_set" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="custom_window_title" xml:space="preserve">
+    <value>Custom Window Title</value>
+  </data>
+  <data name="pick_only" xml:space="preserve">
+    <value>Pick Only Items in List</value>
+  </data>
+  <data name="advanced" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="alive" xml:space="preserve">
+    <value>Alive</value>
+  </data>
+  <data name="attackable" xml:space="preserve">
+    <value>Attackable</value>
+  </data>
+  <data name="auto_unstuck" xml:space="preserve">
+    <value>Auto Unstuck</value>
+  </data>
+  <data name="both" xml:space="preserve">
+    <value>Both</value>
+  </data>
+  <data name="dead" xml:space="preserve">
+    <value>Dead</value>
+  </data>
+  <data name="dont_ks" xml:space="preserve">
+    <value>Don't KS</value>
+  </data>
+  <data name="ignore_summons" xml:space="preserve">
+    <value>Ignore Summons</value>
+  </data>
+  <data name="invincible" xml:space="preserve">
+    <value>Invincible</value>
+  </data>
+  <data name="in_box" xml:space="preserve">
+    <value>In Box</value>
+  </data>
+  <data name="move_normal_before_attack" xml:space="preserve">
+    <value>Move Before Attack</value>
+  </data>
+  <data name="not_in_box" xml:space="preserve">
+    <value>Not in Box</value>
+  </data>
+  <data name="npcs" xml:space="preserve">
+    <value>NPCs</value>
+  </data>
+  <data name="only_ks" xml:space="preserve">
+    <value>Only KS</value>
+  </data>
+  <data name="only_pick_mine" xml:space="preserve">
+    <value>Only Pick Mine</value>
+  </data>
+  <data name="players" xml:space="preserve">
+    <value>Players</value>
+  </data>
+  <data name="protect_priority" xml:space="preserve">
+    <value>Protect Priority</value>
+  </data>
+  <data name="cancel_target" xml:space="preserve">
+    <value>Cancel Target on Dead</value>
+  </data>
+</root>

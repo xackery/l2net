@@ -1,0 +1,19 @@
+INCLUDE StdLib\Player.l2c
+INCLUDE StdLib\NPC.l2c
+INCLUDE StdLib\Inventory.l2c
+INCLUDE StdLib\Effect.l2c
+INCLUDE StdLib\Skill.l2c
+
+define_global sortedlist skilllist
+
+DO
+GET_SKILLS skilllist
+for a 0 "<&skilllist.count&>" 1
+if skilllist.a.reuse > 0
+print_text "Reuse Time: <&skilllist.a.name&> <&skilllist.a.id&> : <&skilllist.a.reuse&>"
+endif
+next
+sleep 5000
+LOOP ZERO == ZERO
+END_SCRIPT
+RETURN VOID

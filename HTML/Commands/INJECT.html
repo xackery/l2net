@@ -1,0 +1,12 @@
+INJECT [STRING]<br />
+<br />
+Injects a packet into the stream to the SERVER.<br />
+<br />
+The packet must adhere to the following conditions to have a chance at working.<br />
+<br />
+1. Use 00 instead of 0 for zero valued hex.<br />
+2. Spaces between hex pairs are allowed. (00 00 00 or 000000 will work)<br />
+3. Do NOT include the two byte size at the start of the stream. This will be calculated and appended for you.<br />
+<br />
+(this sample packet is a dud and does nothing, dont try it)<br />
+EX: INJECT "00 01 02 03"<br />

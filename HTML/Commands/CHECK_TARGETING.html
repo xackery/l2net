@@ -1,0 +1,34 @@
+CHECK_TARGETING [VINT] [INT] [STRING] [V]<br />
+<br />
+Used to check if the NPC or PLAYER with unique id [INT2] meets the targeting condition specified by [STRING2].  The result is stored in [VINT1]<br />
+<br />
+Currently this command only works with NPCs.  Player support is coming soon. If the targeted id can't be found... -1 is stored in the output variable.<br />
+<br />
+Parameters:<br />
+<br />
+TYPE<br />
+0 = npc<br />
+1 = pc<br />
+<br />
+ATTACKABLE<br />
+0 = attackable<br />
+1 = invincible(for npcs), invisible(for pcs)<br />
+<br />
+ALIVE<br />
+0 = alive<br />
+1 = looks dead (might be really dead... or just using fakedeath)<br />
+<br />
+INBOX<br />
+0 = inside border polygon<br />
+1 = outside the box<br />
+Remember a bounding polygon is defined as at least 3 points... If you have less than 3 points in your border, everything will be considered "inside" the box.<br />
+<br />
+COMBAT<br />
+0 = not in combat<br />
+1 = in combat<br />
+<br />
+ZRANGE<br />
+0 = in the z range<br />
+1 = outside of the z range<br />
+<br />
+EX: CHECK_TARGETING var_out 458323 INBOX<br />

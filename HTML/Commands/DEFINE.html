@@ -1,0 +1,26 @@
+DEFINE [STRING] [STRING] [STRING]<br />
+<br />
+Declares a variable at the current stack height of type [STRING1] named [STRING2] with default value [STRING3].<br />
+<br />
+Built in variable types:<br />
+<li>NULL
+<li>INT
+<li>DOUBLE
+<li>STRING
+<li>FILEREADER **
+<li>FILEWRITER **
+<li>ARRAYLIST *
+<li>SORTEDLIST *
+<li>StACK
+<li>QUEUE
+<li>BYTEBUFFER *
+<br /><br />
+*For ARRAYLIST, SORTEDLIST and BYTEBUFFER [STRING3] must resolve to an INT and is the default size of the collection.<br />
+<br />
+**FILEREADER and FILEWRITER can only open files contained in the Scripts\Files\ folder<br />
+<br />
+EX: DEFINE INT MOB_COUNT 0<br />
+EX: DEFINE STRING MOB_S1 "zero"<br />
+EX: DEFINE STRING MOB_S2 "<&MOB_COUNT&>"<br />
+EX: DEFINE FILEREADER filein "my_data.txt"<br />
+EX: DEFINE BYTEBUFFER bbuff 128<br />

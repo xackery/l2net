@@ -1,0 +1,248 @@
+396
+5000|-1|5|1|Hand of Warmth|br_rudolf_hand_i00|Can express affection to Rudolph. Affection Level rises by 25%. Warning: Can be used only when a Rudolph requests expression of affection, and cannot be used while transformed!|usepetskill
+5001|-1|5|6|Rosy Seduction|br_rose_lover_special_i00|Increases Max HP by 20%, Max MP by 20%, and the Speed by 20% for 5 minutes. Increases the Debuff Resistance by 10%. Reuse delay 10 minutes. Consumes 3 Rose Essence(s) during skill use. Doesn't overlap with other buffs except Critical Seduction.|usepetskill
+5002|-1|5|6|Art of Seduction|br_rose_lover_special_i00|For 30 minutes, increases party members' Max HP by 30%, Max MP by 30%, Max CP by 30%, P. Def. by 30%, magic M. Def. by 30%, Speed by 20, P. Atk. by 10%, and magic M. Atk. by 20%. Decreases MP consumption for skill use by 15%. Reuse delay 5 minutes. Consumes 10 Rose Essence(s) during skill use.|usepetskill
+5003|-1|5|4|Thunder Bolt|action113|Attacks the enemy with the power of lightning.|usepetskill
+5004|-1|5|4|Flash|action114|Inflicts a swift magic attack upon contacted enemies nearby.|usepetskill
+5005|-1|5|4|Lightning Wave|action115|Attacks nearby enemies with the power of lightning.|usepetskill
+5006|-1|5|12|Buff Control|action113|Restricts to prevent the use of a buff upon the master. 5 minute duration.|usepetskill
+5007|-1|5|4|Piercing Attack|action114|Inflicts a powerful attack that seems to pierce through the target.|usepetskill
+5008|-1|5|4|Spin Attack|action115|Attacks nearby enemies.|usepetskill
+5009|-1|5|4|Impale|action116|Impales an enemy with a sword.|usepetskill
+5010|-1|5|4|Battle Cry|action117|Raises one's own abilities.|usepetskill
+5011|-1|5|4|Power Smash|action114|Inflicts a powerful attack on the target.|usepetskill
+5012|-1|5|4|Energy Burst|action115|Gathered energy within ones self can be focused and used to attack an enemy.|usepetskill
+5013|-1|5|4|Shock Wave|action116|Fires a shock wave to attack enemies at the front.|usepetskill
+5014|-1|5|4|Burst|action117|Amplifies one's own abilities.|usepetskill
+5015|-1|5|12|Switch Tactics|action105|Switches between attack mode and support mode.|usepetskill
+5016|-1|5|3|Cat the Ranger Boost|action5016|Instantly restores the master's HP by 10%.  Increases the master's Debuff Resistance by 80%, Buff-canceling Attack Resistance by 40%, Speed by 10, P. Def. by 20%, and M. Def. by 20%, and decreases MP consumption for all skills by 50% for 1 minute.|usepetskill
+0|-1|1|1|Sit/Stand|action001|Toggle Sit/Stand. (/sit, /stand)|sitstand
+1|-1|1|1|Walk/Run|action002|Toggle Walk/Run. (/walk, /run)|walkrun
+2|-1|1|1|Attack|action003|Attacks selected target(s), or takes a general action if the target cannot be attacked. Hold down the Ctrl key and click to attack by force. (/attack, /attackforce)|Attack
+3|-1|1|1|Exchange|action005|Request a trade from the selected target. (/trade)|trade
+4|-1|1|1|Next Target|action007|Select the nearest attackable target. (/targetnext)|targetnext
+5|-1|1|1|Pick Up|action008|Pick up items that are scattered nearby. (/pickup)|Pickup
+6|-1|1|1|Assist|action010|Change to the target of the currently selected player. (/assist)|assist
+7|-1|2|1|Invite|action011|Invite the selected person to your party. (/invite)|partyinvite
+8|-1|2|1|Leave Party|action012|Leave the party. (/leave)|partyleave
+9|-1|2|1|Dismiss Party Member|action013|If you are the leader of the party, dismiss selected members from your party. (/dismiss)|partydismiss
+10|-1|1|1|Private Store - Sell|action018|Sets up a private store  to sell your items. (/vendor)|vendor
+11|-1|2|1|Party Matching|action019|Display the party matching window to search for parties or to add members to your party.  (/partymatching)|partymatching
+12|2|4|1|Greeting|action015|Emote: Greet others with a kind "hello." (/socialhello)|socialhello
+13|3|4|1|Victory|action016|Emote: Let everyone know that you or someone else is victorious! (/socialvictory)|socialvictory
+14|4|4|1|Advance|action017|Emote: Rouse your allies and charge! (/socialcharge)|socialcharge
+15|-1|5|1|Change Movement Mode|action101|Have your pet follow you or stay and hold its ground.|pethold
+16|-1|5|1|Attack|action102|Attack target.|petattack
+17|-1|5|1|Stop|action103|Stop current action.|petstop
+18|-1|5|1|Pickup|action104|Pick up nearby items.|petpickup
+19|-1|5|1|Unsummon Pet|action106|Returns your pet back to its home.|petrevert
+20|0|0|1|Special skill|action105|Use special skill.|petspecial
+21|-1|6|1|Change Movement Mode|action201|Have your summons follow you or stay and hold its ground.|summonhold
+22|-1|6|842|Attack|action202|Attack target.|summonattack
+23|-1|6|1|Stop|action203|Stop current action.|summonstop
+24|6|4|1|Yes|action024|Emote: Respond positively. (/socialyes)|socialyes
+25|5|4|1|No|action025|Emote: Respond negatively. (/socialno)|socialno
+26|7|4|1|Bow|action026|Emote: Show your respect and bow.  (/socialbow)|socialbow
+27|-1|0|1|Special skill|action105|Use special skill.|summonspecial
+28|-1|1|1|Private Store - Buy|action028|Sets up a private store to purchase items. (/buy)|buy
+29|8|4|1|Unaware|action029|Emote: You have no idea what's going on. (/socialunaware)|socialunaware
+30|9|4|1|Social Waiting|action030|Emote: I'm waiting... (/socialwaiting)|socialwaitinga
+31|10|4|1|Laugh|action031|Emote: Have a good laugh. (/sociallaugh)|sociallaugh
+32|-1|6|35|Switch Mode|action205|Toggle between Attack/Move modes.|summonsiege
+33|11|4|1|Applaud|action032|Emote: Applaud. (/socialapplause)|socialapplause
+34|12|4|1|Dance|action033|Emote: Serve them up your best dance moves.  (/socialdance)|socialdance
+35|13|4|1|Sorrow|action034|Emote: Show grief. (/socialsad)|socialsad
+36|-1|6|44|Toxic Smoke|action205|Poison gas attack.|usesummonskill
+37|-1|1|1|Dwarven Workshop|action042|Set up a private workshop that creates items by using Dwarven recipes in exchange for a fee. (/dwarvenmanufacture)|manufacture
+38|-1|1|1|Mount/Dismount|action036|Toggle mount/dismount when near or on an NPC that can be ridden. (/mount, /dismount, /mountdismount)|mountdismount
+39|-1|6|44|Parasite Burst|action208|Exploding corpse attack.|usesummonskill
+40|-1|1|1|Recommend|action040|Enhances a target's evaluation score. (/evaluate)|commend
+41|-1|6|35|Wild Cannon|action205|Attacks castle gates, walls, or headquarters by shooting a cannon.|usesummonskill
+42|-1|6|44|Self Damage Shield|action205|Reflects damage back to an enemy.|usesummonskill
+43|-1|6|44|Hydro Screw|action205|Attacks an enemy by creating a whirling surge of water.|usesummonskill
+44|-1|6|35|Boom Attack|action205|Attacks an enemy with a powerful explosion.|usesummonskill
+45|-1|6|96|Master Recharge|action205|Restores the summoner's MP.|usesummonskill
+46|-1|6|96|Mega Storm Strike|action205|Attacks an enemy by summoning up a devastating storm.|usesummonskill
+47|-1|6|84|Steal Blood|action205|Damages an enemy and heals the servitor at the same time.|usesummonskill
+48|-1|6|39|Mech. Cannon|action205|Attacks the enemy by shooting a cannon.|usesummonskill
+49|-1|0|2|Wield Temper|action105|Attack with a fit of rage.|skill4032
+50|-1|2|1|Change Party Leader|action041|The selected party member will become the new party leader. (/changepartyleader)|leaderchange
+51|-1|1|1|General Workshop|action043|Creates an item using a common recipe in exchange for a fee.(/generalmanufacture)|manufacture2
+52|-1|6|1|Unsummon|action207|Removes the bonds from the summons and releases it.|unsummon
+53|-1|6|1|Move|action212|Move to the target.|summonmove
+54|-1|5|1|Move|action112|Move to the target.|petmove
+55|-1|1|1|Start/End Recording Replay|action044|Toggle recording and stop recording of replay files.  (/start_replayrecording, /stop_replayrecording, /startstop_replayrecording)|replayrecstartstop
+56|-1|2|1|Command Channel Invite|action045|Invite the selected target to a command channel. (/channelinvite)|inviteunion
+57|-1|1|1|Find Store|action046|Highlights private store and private workshop messages that contain the search word. (/findprivatestore)|storefind
+58|-1|1|1|Duel|action047|Challenge another player to a duel. (/duel)|challenge
+59|-1|1|1|Withdraw|action048|Withdraw from a duel. A withdrawal is treated as a defeat. (/withdraw)|cancelchallenge
+60|-1|2|1|Party Duel|action049|Challenge another party to a duel. (/partyduel)|partychallenge
+61|-1|1|1|Package Sale|action050|Open a personal store for package sale. (/packagesale)|packagevendor
+62|14|4|1|Charm|action051|Charm Pose(Command: /charm)|socialcharm
+63|-1|1|1|Mini-Game|action052|Begins a fun and easy mini-game. (command: /minigame)|playminigame
+64|-1|1|1|My Teleports|action053|Displays My Teleports window you can use to save and manage my teleport locations (command: /myteleport).|teleportbookmark
+65|-1|1|1|Bot Report Button|action054|Reports the targeted player as a suspected bot.|botreport
+66|15|4|1|Shyness|action055|Allows character to strike shy pose. (command: /shyness)|socialshy
+67|-1|1|1|Steer|action056|Allows you to control the Airship.|navigatewheel
+68|-1|1|1|Cancel Control|action057|Relinquishes control of the Airship.|leavewheel
+69|-1|1|1|Destination Map|action058|Choose from pre-designated locations.|startship
+70|-1|1|1|Exit Airship|action059|Disembarks from the Airship.|leaveship
+71|16|4|1|Exchange Bows|action060|Exchange bows with another person.(command: /two-personbow)|couplebow
+72|17|4|1|High Five|action061|High Five another person.(command: /hi-five)|couplehighfive
+73|18|4|1|Couple Dance|action062|Dance with another player.(command: /coupledance)|coupledance
+74|-1|1|1|Turn On/Off the Status Information|action063|It turns on or off the entire status information gauge above the player's head.(Commands: /statusbaroff, /statusbaron, /statusbaronoff)|condinfoonoff
+76|-1|1|1|Invite Friends|action065|Invite the selected target as friends.(Commands: /friendinvite, /addfriend, /registerfriend)|friendinvite
+77|-1|1|1|Start/End Recording|action066|Start or end recording videos. (Commands: /startrecording, /stoprecording, /startstoprecording)|recstartstop
+78|-1|3|1|Use Token 1|action067|Use Token 1 on the target. It is only available with party status.(Command: /usetoken1)|tacticalsign1
+79|-1|3|1|Use Token 2|action068|Use Token 2 on the target. It is only available with party status.(Command: /usetoken2)|tacticalsign2
+80|-1|3|1|Use Token 3|action069|Use Token 3 on the target. It is only available with party status.(Command: /usetoken3)|tacticalsign3
+81|-1|3|1|Use Token 4|action070|Use Token 4 on the target. It is only available with party status.(Command: /usetoken4)|tacticalsign4
+82|-1|3|1|Token 1 Targeting|action071|Make a target of an object that was applied with the token 1.  It is only available with party status.(Command: /targettoken1)|targettacticalsign1
+83|-1|3|1|Token 2 Targeting|action072|Make a target of an object that was applied with the token 2.  It is only available with party status.(Command: /targettoken2)|targettacticalsign2
+84|-1|3|1|Token 3 Targeting|action073|Make a target of an object that was applied with the token 3.  It is only available with party status.(Command: /targettoken3)|targettacticalsign3
+85|-1|3|1|Token 4 Targeting|action074|Make a target of an object that was applied with the token 4.  It is only available with party status.(Command: /targettoken4)|targettacticalsign4
+86|-1|2|1|Start/Stop Automatic Party Search|action075|Start or stop searching for a party that you can automatically join.(Commands: /autopartysearchon, /autopartysearchoff, /autopartysearchonoff)|autopartysearchonoff
+87|19|4|1|Propose|action077|Gesture of Proposal(Command: /Propose)|socialpropose
+88|20|4|1|Provoke|action078|Gesture of Provocation(Command: /Provoke)|socialprovocation
+89|21|4|1|Show Off|action079|Show Off(Command: /showoff)|socialbeauty
+90|-1|1|1|Instanced Zone|action227|Display list of usage times for instanced zones.(Command: /instancedzone)|instantzone
+1000|-1|6|35|Siege Hammer|action205|Attacks castle gates, walls, or headquarters with a powerful strike.|usesummonskill
+1001|-1|5|1|Ultimate Bombastic Buster|action105|A reckless yet powerful attack that must be used with extreme caution.|fakeskill
+1002|-1|0|2|Hostile Feeling|action105|Incites those around the summon to attack you.|skill4123
+1003|-1|5|3|Wild Stun|action105|A surprise attack that inflicts damage and stuns the opponent.|usepetskill
+1004|-1|5|3|Wild Defense|action108|Instantly increases P. Def. and M. Def. significantly.  Character is immovable while this skill is in effect.|usepetskill
+1005|-1|5|3|Bright Burst|action105|A magical attack.|usepetskill
+1006|-1|5|3|Bright Heal|action108|Recovers the pet's HP.|usepetskill
+1007|-1|6|44|Blessing of Queen|action205|Temporarily increases your party's chance to land a critical attack and also increases the power of the attack if successful.|usesummonskill
+1008|-1|6|44|Gift of Queen|action208|Temporarily increases your party's P. Atk and accuracy.|usesummonskill
+1009|-1|6|44|Cure of Queen|action209|Has a chance to remove curses from party members.|usesummonskill
+1010|-1|6|44|Blessing of Seraphim|action205|Temporarily increases your party's MP regeneration.|usesummonskill
+1011|-1|6|44|Gift of Seraphim|action208|Temporarily shortens your party's spell re-use timer.|usesummonskill
+1012|-1|6|44|Cure of Seraphim|action209|Remove a curse from your party.|usesummonskill
+1013|-1|6|44|Curse of Shade|action205|Provokes an opponent to attack and strikes them with a curse that decreases their P. Def and M. Def.|usesummonskill
+1014|-1|6|44|Mass Curse of Shade|action208|Provokes multiple enemies around the caster to attack and strikes them with a curse that decreases their P. Def and M. Def.|usesummonskill
+1015|-1|6|44|Shade Sacrifice|action209|Sacrifice HP in order to regenerate the HP of a selected target.|usesummonskill
+1016|-1|6|37|Cursed Blow|action205|Attempt a powerful, critical attack on an opponent.|usesummonskill
+1017|-1|6|37|Cursed Strike|action208|A stunning blow that inflicts damage and instantly throws an enemy into a state of stun.|usesummonskill
+1018|-1|6|1|Cursed Drain Energy|action209|Inflict a deadly curse on an enemy that absorbs their HP.|usesummonskill
+1019|-1|6|1|Kat the Cat Skill 2|action208|Skill #2 that is used by Kat the Cat|usesummonskill
+1020|-1|6|1|Mew the Cat Skill 2|action208|Skill #2 that is used by Mew the Cat|usesummonskill
+1021|-1|6|1|Kai the Cat Skill 2|action208|Skill #2 that is used by Kai the Cat|usesummonskill
+1022|-1|6|1|Boxer the Unicorn Skill 2|action208|Skill #2 that is used by Boxer the Unicorn|usesummonskill
+1023|-1|6|1|Mirage the Unicorn Skill 2|action208|Skill #2 that is used by Mirage the Unicorn|usesummonskill
+1024|-1|6|1|Merrow the Unicorn Skill 2|action208|Skill #2 that is used by Merrow the Unicorn|usesummonskill
+1025|-1|6|1|Shadow Skill 1|action205|Skill #2 that is used by Shadow|usesummonskill
+1026|-1|6|1|Shadow Skill 2|action208|Skill #1 that is used by Shadow|usesummonskill
+1027|-1|6|1|Silhouette Skill 2|action208|Skill #2 that is used by Silhouette|usesummonskill
+1028|-1|6|1|Reanimated Man Skill 1|action205|Skill #1 that is used by reanimated man|usesummonskill
+1029|-1|6|1|Reanimated Man Skill 2|action208|Skill #2 that is used by reanimated man|usesummonskill
+1030|-1|6|1|Corrupted Man Skill 2|action208|Skill #2 that is used by corrupted man|usesummonskill
+1031|-1|6|16|Slash|action208|Feline King: A powerful slashing attack. Over-hit is possible.|usesummonskill
+1032|-1|6|16|Spin Slash|action209|Feline King: Slashes at surrounding enemies while spinning in the air. Over-hit is possible.|usesummonskill
+1033|-1|6|16|Grip of the Cat|action211|Feline King: Immobilizes all nearby enemies.|usesummonskill
+1034|-1|6|16|Whiplash|action208|Magnus the Unicorn: Powerful rear kicks that stun and damage an enemy. Over-hit is possible.|usesummonskill
+1035|-1|6|16|Tidal Wave|action209|Magnus the Unicorn: Pounds multiple enemies with a tremendous onrush of water.|usesummonskill
+1036|-1|6|16|Corpse Burst|action208|Spectral Lord: Detonates a corpse, inflicting damage to nearby enemies.|usesummonskill
+1037|-1|6|16|Dicing Death|action209|Spectral Lord: Blades attached to each arm slash out in a devastating attack. Over-hit is possible.|usesummonskill
+1038|-1|6|16|Dark Curse|action211|Spectral Lord: Curses nearby enemies, poisoning them and reducing their Atk. Spd.|usesummonskill
+1039|-1|6|35|Cannon Fodder|action208|Swoop Cannon: Fires a projectile a short distance. Consumes 4 Flash Gunpowder.|usesummonskill
+1040|-1|6|35|Big Bang|action209|Swoop Cannon: Fires a projectile a long distance. Consumes 5 Flash Gunpowder.|usesummonskill
+1041|-1|5|4|Bite Attack|action111|Viciously bite an enemy.|usepetskill
+1042|-1|5|4|Maul|action108|Scratch an enemy with both paws. Causes bleeding.|usepetskill
+1043|-1|5|4|Cry of the Wolf|action109|Dominate nearby enemies with a mighty roar.|usepetskill
+1044|-1|5|4|Awakening|action105|Awaken hidden powers.|usepetskill
+1045|-1|5|2|Wolf Howl|action109|Decrease a nearby enemy's P. Atk./M. Atk. with a wolf cry.|usepetskill
+1046|-1|5|2|Strider Roar|action111|Decrease a nearby enemy's attack speed/magic speed with a strider roar.|usepetskill
+1047|-1|6|1|Divine Beast Bite|action205|Viciously bite an enemy.|
+1048|-1|6|1|Divine Beast Stun Attack|action208|Cause both damage and shock at the same time. Instantly stuns an enemy.|
+1049|-1|6|1|Divine Beast Fire Breath|action209|Breath fire in front of you.|
+1050|-1|6|1|Divine Beast Roar|action211|Dominate nearby enemies with a mighty roar.|
+1051|-1|6|40|Blessed Body|action213|Increases maximum HP temporarily.|usesummonskill
+1052|-1|6|40|Blessed Soul|action214|Increases maximum MP temporarily.|usesummonskill
+1053|-1|6|40|Haste|action215|Increases Atk. Spd. temporarily.|usesummonskill
+1054|-1|6|40|Acumen|action216|Increases Casting Spd. temporarily.|usesummonskill
+1055|-1|6|40|Clarity|action217|Temporarily decreases the target's MP consumption of skills. Consumes Spirit Ore.|usesummonskill
+1056|-1|6|40|Empower|action213|Increases M. Atk. power temporarily.|usesummonskill
+1057|-1|6|36|Wild Magic|action214|Temporarily increases the critical rate of damage attack magic.|usesummonskill
+1058|-1|6|40|Death Whisper|action215|Temporarily increases the critical attack power.|usesummonskill
+1059|-1|6|40|Focus|action216|Temporarily increases the probability of critical attack.|usesummonskill
+1060|-1|6|40|Guidance|action217|Temporarily increases Accuracy.|usesummonskill
+1061|-1|5|2|Death Blow|action113|Awakens a hidden ability to inflict a powerful attack on the enemy. Requires application of the Awakening skill.|usepetskill
+1062|-1|5|1|Double Attack|action114|Rapidly attacks the enemy twice.|usepetskill
+1063|-1|5|1|Spin Attack|action115|Inflicts shock and damage to the enemy at the same time with a powerful spin attack.|usepetskill
+1064|-1|5|1|Meteor Shower|action116|Attacks nearby enemies with a doll heap attack.|usepetskill
+1065|-1|5|4|Awakening|action117|Awakens a hidden ability.|usepetskill
+1066|-1|5|3|Thunder Bolt|action113|Attacks the enemy with the power of thunder.|usepetskill
+1067|-1|5|3|Flash|action114|Inflicts a swift magic attack on nearby enemies when hit.|usepetskill
+1068|-1|5|3|Lightning Wave|action115|Attacks nearby enemies with the power of lightning.|usepetskill
+1069|-1|5|2|Flare|action116|Awakens a hidden ability to inflict a powerful attack on the enemy. Requires application of the Awakening skill.|usepetskill
+1070|-1|5|11|Buff Control|action113|Control put in place to prevent the use of a buff upon the master. 5-minute duration.|usepetskill
+1071|-1|6|2|Power Striker|action211|Powerfully attacks the target.|usesummonskill
+1072|-1|5|2|Piercing Attack|action114|A powerful attack that pierces through a target.|usepetskill
+1073|-1|5|2|Whirlwind|action115|Attacks nearby enemies by spinning your own body like a whirlwind.|usepetskill
+1074|-1|5|2|Lance Smash|action116|Attacks a front-line enemy with a powerful lance thrust.|usepetskill
+1075|-1|5|2|Battle Cry|action117|Shouts a victory cry that increases your abilities.|usepetskill
+1076|-1|5|2|Power Smash|action114|Inflicts a powerful attack on the target.|usepetskill
+1077|-1|5|2|Energy Burst|action115|Gathers energy into your body, then releases it in a destructive blast.|usepetskill
+1078|-1|5|2|Shock Wave|action116|Hits enemies with a powerful wave of force.|usepetskill
+1079|-1|5|2|Howl|action117|Emits a loud roar that amplifies your abilities.|usepetskill
+1080|-1|6|1|Phoenix Rush|action208|Charges toward the enemy and inflicts damage.|usesummonskill
+1081|-1|6|1|Phoenix Cleanse|action209|Cancels the target's de-buff.|usesummonskill
+1082|-1|6|1|Phoenix Flame Feather|action205|Emits a spread of ring-shaped flames.|usesummonskill
+1083|-1|6|1|Phoenix Flame Beak|action211|Attacks the enemy with a powerful flaming beak.|usesummonskill
+1084|-1|5|6|Switch State|action105|Toggles you between Attack and Support modes.|usepetskill
+1086|-1|6|33|Panther Cancel|action209|Cancels more than one of the enemy's buffs.|usesummonskill
+1087|-1|6|37|Panther Dark Claw|action205|Decreases the enemy's Dark attribute by 25.|usesummonskill
+1088|-1|6|35|Panther Fatal Claw|action205|Aims at the enemy's vital spot.|usesummonskill
+1089|-1|5|1|Tail Strike|action111|Strike multiple enemies at the front with the tail.|usepetskill
+1090|-1|5|1|Strider Bite|action111|Bites the enemies at the front.|usepetskill
+1091|-1|5|1|Strider Fear|action109|Causes nearby enemies to flee in fear.|usepetskill
+1092|-1|5|1|Strider Dash|action108|Increases your speed.|usepetskill
+1093|-1|5|1|Maguen Strike|action111|Attacks the target with a chance to decrease target's speed.|usepetskill
+1094|-1|5|1|Maguen Wind Walk|action108|Greatly increases its master's speed.|usepetskill
+1095|-1|5|1|Maguen Power Strike|action111|Attacks the target with a chance to decrease target's speed.|usepetskill
+1096|-1|5|1|Elite Maguen Wind Walk|action108|Increases the speed of its master and their party.|usepetskill
+1097|-1|5|1|Maguen Return|action117|Teleports its master to the Seed of Annihilation.|usepetskill
+1098|-1|5|1|Maguen Party Return|action117|Teleports its master and their party to the Seed of Annihilation.|usepetskill
+1099|-1|7|1|Attack|action202|Attack the target.|summonattack
+1100|-1|7|1|Move|action212|Move to a designated location.|summonmove
+1101|-1|7|1|Stop|action203|Stop current action.|summonstop
+1102|-1|7|1|Unsummon|action207|Make the servitor disappear by cancelling the summoning.|unsummon
+1103|-1|8|1|Passive|action220|Do not counter-attack.|usesummonskill
+1104|-1|8|1|Defend|action219|Counter-attack when the master or itself is attacked.|usesummonskill
+1106|-1|10|19|Bear Claw|action221|Damages and provokes the target.|usesummonskill
+1107|-1|10|19|Bear Tumbling|action222|Roll over and deliver a shock to the ground stunning nearby targets.|usesummonskill
+1108|-1|10|19|Cougar Bite|action223|Bites the target to inflict damage.|usesummonskill
+1109|-1|10|19|Cougar Pounce|action224|Jumps toward the target to inflict damage to nearby targets. Can be used when a short distance away from the target.|usesummonskill
+1110|-1|10|19|Reaper Touch|action225|Damages the target and absorbs some of its HP.|usesummonskill
+1111|-1|10|19|Reaper Power|action226|Creates a space of death near the enemy to inflict damage.|usesummonskill
+1113|-1|6|16|Lion Roar|action208|Attack nearby enemies and block their physical skills.|usesummonskill
+1114|-1|6|16|Lion Claw|action209|Flourishes claws and frontally attacks enemies.|usesummonskill
+1115|-1|6|16|Lion Dash|action211|Dashes toward enemies to inflict damage and Stun them.|usesummonskill
+1116|-1|6|16|Lion Flame|action209|Inflicts damage onto the enemies with a flame.|usesummonskill
+1117|-1|6|18|Thunder Flight|action211|Flies straight into the enemy.|usesummonskill
+1118|-1|6|18|Thunder Purity|action214|Purifies the master.|usesummonskill
+1120|-1|6|18|Thunder Feather|action208|Attack the enemy by darting a feather.|usesummonskill
+1121|-1|6|18|Thunder Sharp Claw|action209|Hurt the enemy by attacking them with sharp claws.|usesummonskill
+1122|-1|6|14|Blessing of Life|action213|Recover the targets near the tree and clear any debuff.|usesummonskill
+1123|-1|6|35|Siege Punch|action208|Attacks nearby targets with a powerful punch.|usesummonskill
+1124|-1|10|8|Feline Aggression|action221|Provokes nearby enemies.|usesummonskill
+1125|-1|10|8|Feline Stun|action222|Temporarily Stuns nearby enemies.|usesummonskill
+1126|-1|10|8|Feline Bite|action223|Bites the enemy.|usesummonskill
+1127|-1|10|8|Feline Pounce|action224|Pounces on the target to inflict damage and decrease their Speed by 50%.|usesummonskill
+1128|-1|10|8|Feline Touch|action225|Attacks the enemy with the touch of death.|usesummonskill
+1129|-1|10|8|Feline Power|action226|Creates a space of death near the enemy to inflict damage.|usesummonskill
+1130|-1|10|8|Unicorn's Aggression|action221|Provokes nearby enemies.|usesummonskill
+1131|-1|10|8|Unicorn's Stun|action222|Temporarily Stuns nearby enemies.|usesummonskill
+1132|-1|10|8|Unicorn's Bite|action223|Bites the enemy.|usesummonskill
+1133|-1|10|8|Unicorn's Pounce|action224|Pounces on the target to inflict damage and decrease their Speed by 50%.|usesummonskill
+1134|-1|10|8|Unicorn's Touch|action225|Attacks the enemy with the touch of death.|usesummonskill
+1135|-1|10|8|Unicorn's Power|action226|Creates a space of death near the enemy to inflict damage.|usesummonskill
+1136|-1|10|8|Phantom Aggression|action221|Provokes nearby enemies.|usesummonskill
+1137|-1|10|8|Phantom Stun|action222|Temporarily Stuns nearby enemies.|usesummonskill
+1138|-1|10|8|Phantom Bite|action223|Bites the enemy.|usesummonskill
+1139|-1|10|8|Phantom Pounce|action224|Pounces on the target to inflict damage and decrease their Speed by 50%.|usesummonskill
+1140|-1|10|8|Phantom Touch|action225|Attacks the enemy with the touch of death.|usesummonskill
+1141|-1|10|8|Phantom Power|action226|Creates a space of death near the enemy to inflict damage.|usesummonskill
+1142|-1|6|4|Panther Roar|action208|Attacks nearby enemies and blocks their P. Skills.|usesummonskill
+1143|-1|6|4|Panther Rush|action211|Rushes to the enemy to inflict damage and Stun.|usesummonskill

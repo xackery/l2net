@@ -1,0 +1,42 @@
+SET_TARGETING [STRING] [V]<br />
+<br />
+Used to set the parameters for the target nearest functions. Gives the paramater of type [STRING1] the value of [V2]<br />
+<br />
+All parameters default to their 0 (ZERO) state.<br />
+<br />
+Parameters:<br />
+<br />
+TYPE<br />
+0 = npcs<br />
+1 = pcs<br />
+2 = both<br />
+<br />
+ATTACKABLE<br />
+0 = attackable<br />
+1 = invincible(for npcs), invisible(for pcs)<br />
+2 = both<br />
+<br />
+ALIVE<br />
+0 = alive<br />
+1 = looks dead (might be really dead... or just using fakedeath)<br />
+2 = both<br />
+<br />
+INBOX<br />
+0 = inside border polygon<br />
+1 = outside the box<br />
+2 = both<br />
+Remember a bounding polygon is defined as at least 3 points... If you have less than 3 points in your border, everything will be considered "inside" the box.<br />
+<br />
+COMBAT<br />
+0 = not in combat<br />
+1 = in combat<br />
+2 = both<br />
+<br />
+ZRANGE<br />
+variable set at the distance<br />
+<br />
+More items will come in later releases.<br />
+<br />
+EX: SET_TARGETING TYPE ONE<br />
+EX: SET_TARGETING COMBAT TWO<br />
+EX: SET_TARGETING ZRANGE my_defined_dist<br />

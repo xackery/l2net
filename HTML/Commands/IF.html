@@ -1,0 +1,34 @@
+IF [V] [conditional] [V]<br />
+<br />
+if V1 [conditional] V2 is true, the code until the following ELSE or ENDIF is run.<br />
+<br />
+In order to do a strong type comparison, the function must be passed the names of variables rather than the value of the variable. I realize this can be kind of a pain since you cannot compare a variable to a value (ie. if a < 10) but meh...<br />
+<br />
+EX: DEFINE INT A 10<br />
+EX: DEFINE INT B 20<br />
+EX: DEFINE STRING first "A"<br />
+EX: IF A < B<br />
+EX: //code goes here
+EX: ENDIF
+EX: IF A != B<br />
+EX: //code goes here
+EX: ELSE
+EX: //code goes here
+EX: ENDIF
+EX: IF "<&first&>" == B<br />
+EX: //code goes here
+EX: ENDIF
+<br />
+---<br />
+<br />
+ELSE<br />
+<br />
+If and IF conditional evaluates to false... the script will jump to the ELSe (if it exists) and start running code from there.<br />
+<br />
+If you just randomly place an ELSE the script will start scanning for the associated ENDIF to jump to that line.<br />
+<br />
+---<br />
+<br />
+ENDIF<br />
+<br />
+Ends an IF conditional statement.  If an IF is true... once it hits the ELSE it will jump to the ENDIF.  If the else does not exists and the conditional is false... the script will jump to the ENDIF.<br />

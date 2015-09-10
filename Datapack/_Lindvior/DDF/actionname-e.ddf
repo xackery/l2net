@@ -1,0 +1,27 @@
+//early version submitted by Allen (L2Sexi Server)
+
+FS = "|"; 
+HEADER = 1; 
+RECCNT = OFF; 
+MTXCNT_OUT = 1; 
+MATCNT_OUT = 1; 
+ORD_IGNORE = 0; 
+
+{ 
+	UINT tag;
+		ORD = OFF;
+	UINT id;
+	INT  type;
+	UINT category;
+	CNTR cat2_cnt;
+	INT  c[cat2_cnt];
+		ORD = OFF;
+	ASCF name;
+	ASCF icon;
+	ASCF iconz;
+		ORD = OFF;
+	ASCF desc;
+	UINT UNK1;
+		ORD = OFF;
+	UNICODE cmd;
+}

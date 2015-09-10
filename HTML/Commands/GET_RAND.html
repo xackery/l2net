@@ -1,0 +1,18 @@
+GET_RAND [V] [STRING] [STRING]<br />
+<br />
+Takes a variable [V1] as a parameter. Depending on the type of [V1] will determine how the following values are read.<br />
+<br />
+[STRING2] = min value<br />
+[STRING3] = max value<br />
+<br />
+Generates a random value between the two values passed. Setting max lower than min is an error with integers and the value will be set to 0. With doubles an error will still be thrown but the value will be negated.<br />
+<br />
+Random is defined as such: for ints: min <= r <= max, for doubles: min <= r < max<br />
+<br />
+Random is undefined for null or string types.<br />
+<br />
+EX: DEFINE INT myint 0<br />
+EX: GET_RAND myint 0 50<br />
+<br />
+EX: DEFINE DOUBLE mydub 0<br />
+EX: GET_RAND mydub -1.2345234 2.238487<br />

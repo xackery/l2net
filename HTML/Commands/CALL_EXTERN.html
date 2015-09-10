@@ -1,0 +1,18 @@
+CALL_EXTERN [STRING] [STRING] [V] [INT] ([v1] [v2] ... )<br />
+<br />
+[STRING1] is the relative path to the script file that contains the function to call. Files are cached for performance. Paths are relative to \Scripts\<br />
+<br />
+[STRING2] is the name of the function to be called. Again, not case sensitive.<br />
+<br />
+[V3] is where the return value of the function will be stored. Not all functions return a value or you may not wish to store the return value of a function. In these cases, use the global value VOID as the return variable.<br />
+<br />
+[INT4] is a count of how many variables to pass to the fucntion. You may pass less variables to a function than it calls for. The unasigned varialbes will be given the type of "null" and a value of 0. If you pass more variables than a function accepts, the extra variables will just be ignored.<br />
+<br />
+Then the list of variables being passed follows, much like the FUNCTION command.<br />
+<br />
+MAKE SURE YOU ALWAYS RETURN FROM EVERY FUNCTION YOU CALL!<br />
+<br />
+EX: CALL_EXTERN aa.l2r MYFUNCTION VOID 0<br />
+EX: CALL_EXTERN bb.txt MYFUNCTION1 VOID 0<br />
+EX: CALL_EXTERN cc.script MYFUNCTION1 VOID 1 VAR1<br />
+EX: CALL_EXTERN dd.dontbeapoophead MYFUNCTION2 VOID 2 VAR1 VAR2<br />

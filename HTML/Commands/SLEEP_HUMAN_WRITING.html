@@ -1,0 +1,7 @@
+SLEEP_HUMAN_WRITING [STRING]<br />
+<br />
+Determines how long it would take to write the passed string and sleeps that long.<br />
+<br />
+For writing, the sentence is converted to lowercase and all letters are assigned a weigthed value based on their distance from the center hand typing position. Then each pair of letters is evaluated to calculate the weighted difficultly the overall message is to type. Then the bot sleeps for a random 3 to 4 letters per second.<br />
+<br />
+EX: SLEEP_HUMAN_WRITING "MICHAEL BOLTON!"<br />

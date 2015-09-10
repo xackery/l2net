@@ -1,0 +1,361 @@
+396
+1|4445|Dye of STR |etc_str_symbol_i00|Str+1 Con-3|Str+1 Con-3
+2|4446|Dye of STR |etc_str_symbol_i00|Str+1 Dex-3|Str+1 Dex-3
+3|4447|Dye of CON|etc_con_symbol_i00|Con+1 Str-3|Con+1 Str-3
+4|4448|Dye of CON|etc_con_symbol_i00|Con+1 Dex-3|Con+1 Dex-3
+5|4449|Dye of DEX|etc_dex_symbol_i00|Dex+1 Str-3|Dex+1 Str-3
+6|4450|Dye of DEX|etc_dex_symbol_i00|Dex+1 Con-3|Dex+1 Con-3
+7|4451|Dye of INT|etc_int_symbol_i00|Int+1 Men-3|Int+1 Men-3
+8|4452|Dye of INT|etc_int_symbol_i00|Int+1 Wit-3|Int+1 Wit-3
+9|4453|Dye of MEN|etc_men_symbol_i00|Men+1 Int-3|Men+1 Int-3
+10|4454|Dye of MEN|etc_men_symbol_i00|Men+1 Wit-3|Men+1 Wit-3
+11|4455|Dye of WIT|etc_wit_symbol_i00|Wit+1 Int-3|Wit+1 Int-3
+12|4456|Dye of WIT|etc_wit_symbol_i00|Wit+1 Men-3|Wit+1 Men-3
+13|4457|Dye of STR |etc_str_symbol_i00|Str+1 Con-2|Str+1 Con-2
+14|4458|Dye of STR |etc_str_symbol_i00|Str+1 Dex-2|Str+1 Dex-2
+15|4459|Dye of CON|etc_con_symbol_i00|Con+1 Str-2|Con+1 Str-2
+16|4460|Dye of CON|etc_con_symbol_i00|Con+1 Dex-2|Con+1 Dex-2
+17|4461|Dye of DEX|etc_dex_symbol_i00|Dex+1 Str-2|Dex+1 Str-2
+18|4462|Dye of DEX|etc_dex_symbol_i00|Dex+1 Con-2|Dex+1 Con-2
+19|4463|Dye of INT|etc_int_symbol_i00|Int+1 Men-2|Int+1 Men-2
+20|4464|Dye of INT|etc_int_symbol_i00|Int+1 Wit-2|Int+1 Wit-2
+21|4465|Dye of MEN|etc_men_symbol_i00|Men+1 Int-2|Men+1 Int-2
+22|4466|Dye of MEN|etc_men_symbol_i00|Men+1 Wit-2|Men+1 Wit-2
+23|4467|Dye of WIT|etc_wit_symbol_i00|Wit+1 Int-2|Wit+1 Int-2
+24|4468|Dye of WIT|etc_wit_symbol_i00|Wit+1 Men-2|Wit+1 Men-2
+25|4469|Dye of STR |etc_str_symbol_i00|Str+1 Con-1|Str+1 Con-1
+26|4470|Dye of STR |etc_str_symbol_i00|Str+1 Dex-1|Str+1 Dex-1
+27|4471|Dye of CON|etc_con_symbol_i00|Con+1 Str-1|Con+1 Str-1
+28|4472|Dye of CON|etc_con_symbol_i00|Con+1 Dex-1|Con+1 Dex-1
+29|4473|Dye of DEX|etc_dex_symbol_i00|Dex+1 Str-1|Dex+1 Str-1
+30|4474|Dye of DEX|etc_dex_symbol_i00|Dex+1 Con-1|Dex+1 Con-1
+31|4475|Dye of INT|etc_int_symbol_i00|Int+1 Men-1|Int+1 Men-1
+32|4476|Dye of INT|etc_int_symbol_i00|Int+1 Wit-1|Int+1 Wit-1
+33|4477|Dye of MEN|etc_men_symbol_i00|Men+1 Int-1|Men+1 Int-1
+34|4478|Dye of MEN|etc_men_symbol_i00|Men+1 Wit-1|Men+1 Wit-1
+35|4479|Dye of WIT|etc_wit_symbol_i00|Wit+1 Int-1|Wit+1 Int-1
+36|4480|Dye of WIT|etc_wit_symbol_i00|Wit+1 Men-1|Wit+1 Men-1
+37|4481|Greater Dye of STR|etc_str_symbol_i01|Str+1 Con-3|Str+1 Con-3
+38|4482|Greater Dye of STR|etc_str_symbol_i01|Str+1 Dex-3|Str+1 Dex-3
+39|4483|Greater Dye of CON|etc_con_symbol_i01|Con+1 Str-3|Con+1 Str-3
+40|4484|Greater Dye of CON|etc_con_symbol_i01|Con+1 Dex-3|Con+1 Dex-3
+41|4485|Greater Dye of DEX|etc_dex_symbol_i01|Dex+1 Str-3|Dex+1 Str-3
+42|4486|Greater Dye of DEX|etc_dex_symbol_i01|Dex+1 Con-3|Dex+1 Con-3
+43|4487|Greater Dye of INT|etc_int_symbol_i01|Int+1 Men-3|Int+1 Men-3
+44|4488|Greater Dye of INT|etc_int_symbol_i01|Int+1 Wit-3|Int+1 Wit-3
+45|4489|Greater Dye of MEN|etc_men_symbol_i01|Men+1 Int-3|Men+1 Int-3
+46|4490|Greater Dye of MEN|etc_men_symbol_i01|Men+1 Wit-3|Men+1 Wit-3
+47|4491|Greater Dye of WIT|etc_wit_symbol_i01|Wit+1 Int-3|Wit+1 Int-3
+48|4492|Greater Dye of WIT|etc_wit_symbol_i01|Wit+1 Men-3|Wit+1 Men-3
+49|4493|Greater Dye of STR|etc_str_symbol_i01|Str+1 Con-2|Str+1 Con-2
+50|4494|Greater Dye of STR|etc_str_symbol_i01|Str+1 Dex-2|Str+1 Dex-2
+51|4495|Greater Dye of CON|etc_con_symbol_i01|Con+1 Str-2|Con+1 Str-2
+52|4496|Greater Dye of CON|etc_con_symbol_i01|Con+1 Dex-2|Con+1 Dex-2
+53|4497|Greater Dye of DEX|etc_dex_symbol_i01|Dex+1 Str-2|Dex+1 Str-2
+54|4498|Greater Dye of DEX|etc_dex_symbol_i01|Dex+1 Con-2|Dex+1 Con-2
+55|4499|Greater Dye of INT|etc_int_symbol_i01|Int+1 Men-2|Int+1 Men-2
+56|4500|Greater Dye of INT|etc_int_symbol_i01|Int+1 Wit-2|Int+1 Wit-2
+57|4501|Greater Dye of MEN|etc_men_symbol_i01|Men+1 Int-2|Men+1 Int-2
+58|4502|Greater Dye of MEN|etc_men_symbol_i01|Men+1 Wit-2|Men+1 Wit-2
+59|4503|Greater Dye of WIT|etc_wit_symbol_i01|Wit+1 Int-2|Wit+1 Int-2
+60|4504|Greater Dye of WIT|etc_wit_symbol_i01|Wit+1 Men-2|Wit+1 Men-2
+61|4505|Greater Dye of STR|etc_str_symbol_i01|Str+2 Con-4|Str+2 Con-4
+62|4506|Greater Dye of STR|etc_str_symbol_i01|Str+2 Dex-4|Str+2 Dex-4
+63|4507|Greater Dye of CON|etc_con_symbol_i01|Con+2 Str-4|Con+2 Str-4
+64|4508|Greater Dye of CON|etc_con_symbol_i01|Con+2 Dex-4|Con+2 Dex-4
+65|4509|Greater Dye of DEX|etc_dex_symbol_i01|Dex+2 Str-4|Dex+2 Str-4
+66|4510|Greater Dye of DEX|etc_dex_symbol_i01|Dex+2 Con-4|Dex+2 Con-4
+67|4511|Greater Dye of INT|etc_int_symbol_i01|Int+2 Men-4|Int+2 Men-4
+68|4512|Greater Dye of INT|etc_int_symbol_i01|Int+2 Wit-4|Int+2 Wit-4
+69|4513|Greater Dye of MEN|etc_men_symbol_i01|Men+2 Int-4|Men+2 Int-4
+70|4514|Greater Dye of MEN|etc_men_symbol_i01|Men+2 Wit-4|Men+2 Wit-4
+71|4515|Greater Dye of WIT|etc_wit_symbol_i01|Wit+2 Int-4|Wit+2 Int-4
+72|4516|Greater Dye of WIT|etc_wit_symbol_i01|Wit+2 Men-4|Wit+2 Men-4
+73|4517|Greater Dye of STR|etc_str_symbol_i01|Str+2 Con-3|Str+2 Con-3
+74|4518|Greater Dye of STR|etc_str_symbol_i01|Str+2 Dex-3|Str+2 Dex-3
+75|4519|Greater Dye of CON|etc_con_symbol_i01|Con+2 Str-3|Con+2 Str-3
+76|4520|Greater Dye of CON|etc_con_symbol_i01|Con+2 Dex-3|Con+2 Dex-3
+77|4521|Greater Dye of DEX|etc_dex_symbol_i01|Dex+2 Str-3|Dex+2 Str-3
+78|4522|Greater Dye of DEX|etc_dex_symbol_i01|Dex+2 Con-3|Dex+2 Con-3
+79|4523|Greater Dye of INT|etc_int_symbol_i01|Int+2 Men-3|Int+2 Men-3
+80|4524|Greater Dye of INT|etc_int_symbol_i01|Int+2 Wit-3|Int+2 Wit-3
+81|4525|Greater Dye of MEN|etc_men_symbol_i01|Men+2 Int-3|Men+2 Int-3
+82|4526|Greater Dye of MEN|etc_men_symbol_i01|Men+2 Wit-3|Men+2 Wit-3
+83|4527|Greater Dye of WIT|etc_wit_symbol_i01|Wit+2 Int-3|Wit+2 Int-3
+84|4528|Greater Dye of WIT|etc_wit_symbol_i01|Wit+2 Men-3|Wit+2 Men-3
+85|4529|Greater Dye of STR|etc_str_symbol_i01|Str+3 Con-5|Str+3 Con-5
+86|4530|Greater Dye of STR|etc_str_symbol_i01|Str+3 Dex-5|Str+3 Dex-5
+87|4531|Greater Dye of CON|etc_con_symbol_i01|Con+3 Str-5|Con+3 Str-5
+88|4532|Greater Dye of CON|etc_con_symbol_i01|Con+3 Dex-5|Con+3 Dex-5
+89|4533|Greater Dye of DEX|etc_dex_symbol_i01|Dex+3 Str-5|Dex+3 Str-5
+90|4534|Greater Dye of DEX|etc_dex_symbol_i01|Dex+3 Con-5|Dex+3 Con-5
+91|4535|Greater Dye of INT|etc_int_symbol_i01|Int+3 Men-5|Int+3 Men-5
+92|4536|Greater Dye of INT|etc_int_symbol_i01|Int+3 Wit-5|Int+3 Wit-5
+93|4537|Greater Dye of MEN|etc_men_symbol_i01|Men+3 Int-5|Men+3 Int-5
+94|4538|Greater Dye of MEN|etc_men_symbol_i01|Men+3 Wit-5|Men+3 Wit-5
+95|4539|Greater Dye of WIT|etc_wit_symbol_i01|Wit+3 Int-5|Wit+3 Int-5
+96|4540|Greater Dye of WIT|etc_wit_symbol_i01|Wit+3 Men-5|Wit+3 Men-5
+97|4541|Greater Dye of STR|etc_str_symbol_i01|Str+3 Con-4|Str+3 Con-4
+98|4542|Greater Dye of STR|etc_str_symbol_i01|Str+3 Dex-4|Str+3 Dex-4
+99|4543|Greater Dye of CON|etc_con_symbol_i01|Con+3 Str-4|Con+3 Str-4
+100|4544|Greater Dye of CON|etc_con_symbol_i01|Con+3 Dex-4|Con+3 Dex-4
+101|4545|Greater Dye of DEX|etc_dex_symbol_i01|Dex+3 Str-4|Dex+3 Str-4
+102|4546|Greater Dye of DEX|etc_dex_symbol_i01|Dex+3 Con-4|Dex+3 Con-4
+103|4547|Greater Dye of INT|etc_int_symbol_i01|Int+3 Men-4|Int+3 Men-4
+104|4548|Greater Dye of INT|etc_int_symbol_i01|Int+3 Wit-4|Int+3 Wit-4
+105|4549|Greater Dye of MEN|etc_men_symbol_i01|Men+3 Int-4|Men+3 Int-4
+106|4550|Greater Dye of MEN|etc_men_symbol_i01|Men+3 Wit-4|Men+3 Wit-4
+107|4551|Greater Dye of WIT|etc_wit_symbol_i01|Wit+3 Int-4|Wit+3 Int-4
+108|4552|Greater Dye of WIT|etc_wit_symbol_i01|Wit+3 Men-4|Wit+3 Men-4
+109|4553|Greater Dye of STR|etc_str_symbol_i01|Str+1 Con-1|Str+1 Con-1
+110|4554|Greater Dye of STR|etc_str_symbol_i01|Str+1 Dex-1|Str+1 Dex-1
+111|4555|Greater Dye of CON|etc_con_symbol_i01|Con+1 Str-1|Con+1 Str-1
+112|4556|Greater Dye of CON|etc_con_symbol_i01|Con+1 Dex-1|Con+1 Dex-1
+113|4557|Greater Dye of DEX|etc_dex_symbol_i01|Dex+1 Str-1|Dex+1 Str-1
+114|4558|Greater Dye of DEX|etc_dex_symbol_i01|Dex+1 Con-1|Dex+1 Con-1
+115|4559|Greater Dye of INT|etc_int_symbol_i01|Int+1 Men-1|Int+1 Men-1
+116|4560|Greater Dye of INT|etc_int_symbol_i01|Int+1 Wit-1|Int+1 Wit-1
+117|4561|Greater Dye of MEN|etc_men_symbol_i01|Men+1 Int-1|Men+1 Int-1
+118|4562|Greater Dye of MEN|etc_men_symbol_i01|Men+1 Wit-1|Men+1 Wit-1
+119|4563|Greater Dye of WIT|etc_wit_symbol_i01|Wit+1 Int-1|Wit+1 Int-1
+120|4564|Greater Dye of WIT|etc_wit_symbol_i01|Wit+1 Men-1|Wit+1 Men-1
+121|4565|Greater Dye of STR|etc_str_symbol_i01|Str+4 Con-6|Str+4 Con-6
+122|4566|Greater Dye of STR|etc_str_symbol_i01|Str+4 Dex-6|Str+4 Dex-6
+123|4567|Greater Dye of CON|etc_con_symbol_i01|Con+4 Str-6|Con+4 Str-6
+124|4568|Greater Dye of CON|etc_con_symbol_i01|Con+4 Dex-6|Con+4 Dex-6
+125|4569|Greater Dye of DEX|etc_dex_symbol_i01|Dex+4 Str-6|Dex+4 Str-6
+126|4570|Greater Dye of DEX|etc_dex_symbol_i01|Dex+4 Con-6|Dex+4 Con-6
+127|4571|Greater Dye of INT|etc_int_symbol_i01|Int+4 Men-6|Int+4 Men-6
+128|4572|Greater Dye of INT|etc_int_symbol_i01|Int+4 Wit-6|Int+4 Wit-6
+129|4573|Greater Dye of MEN|etc_men_symbol_i01|Men+4 Int-6|Men+4 Int-6
+130|4574|Greater Dye of MEN|etc_men_symbol_i01|Men+4 Wit-6|Men+4 Wit-6
+131|4575|Greater Dye of WIT|etc_wit_symbol_i01|Wit+4 Int-6|Wit+4 Int-6
+132|4576|Greater Dye of WIT|etc_wit_symbol_i01|Wit+4 Men-6|Wit+4 Men-6
+133|4577|Greater Dye of STR|etc_str_symbol_i01|Str+4 Con-5|Str+4 Con-5
+134|4578|Greater Dye of STR|etc_str_symbol_i01|Str+4 Dex-5|Str+4 Dex-5
+135|4579|Greater Dye of CON|etc_con_symbol_i01|Con+4 Str-5|Con+4 Str-5
+136|4580|Greater Dye of CON|etc_con_symbol_i01|Con+4 Dex-5|Con+4 Dex-5
+137|4581|Greater Dye of DEX|etc_dex_symbol_i01|Dex+4 Str-5|Dex+4 Str-5
+138|4582|Greater Dye of DEX|etc_dex_symbol_i01|Dex+4 Con-5|Dex+4 Con-5
+139|4583|Greater Dye of INT|etc_int_symbol_i01|Int+4 Men-5|Int+4 Men-5
+140|4584|Greater Dye of INT|etc_int_symbol_i01|Int+4 Wit-5|Int+4 Wit-5
+141|4585|Greater Dye of MEN|etc_men_symbol_i01|Men+4 Int-5|Men+4 Int-5
+142|4586|Greater Dye of MEN|etc_men_symbol_i01|Men+4 Wit-5|Men+4 Wit-5
+143|4587|Greater Dye of WIT|etc_wit_symbol_i01|Wit+4 Int-5|Wit+4 Int-5
+144|4588|Greater Dye of WIT|etc_wit_symbol_i01|Wit+4 Men-5|Wit+4 Men-5
+145|4589|Greater Dye of STR|etc_str_symbol_i01|Str+2 Con-2|Str+2 Con-2
+146|4590|Greater Dye of STR|etc_str_symbol_i01|Str+2 Dex-2|Str+2 Dex-2
+147|4591|Greater Dye of CON|etc_con_symbol_i01|Con+2 Str-2|Con+2 Str-2
+148|4592|Greater Dye of CON|etc_con_symbol_i01|Con+2 Dex-2|Con+2 Dex-2
+149|4593|Greater Dye of DEX|etc_dex_symbol_i01|Dex+2 Str-2|Dex+2 Str-2
+150|4594|Greater Dye of DEX|etc_dex_symbol_i01|Dex+2 Con-2|Dex+2 Con-2
+151|4595|Greater Dye of INT|etc_int_symbol_i01|Int+2 Men-2|Int+2 Men-2
+152|4596|Greater Dye of INT|etc_int_symbol_i01|Int+2 Wit-2|Int+2 Wit-2
+153|4597|Greater Dye of MEN|etc_men_symbol_i01|Men+2 Int-2|Men+2 Int-2
+154|4598|Greater Dye of MEN|etc_men_symbol_i01|Men+2 Wit-2|Men+2 Wit-2
+155|4599|Greater Dye of WIT|etc_wit_symbol_i01|Wit+2 Int-2|Wit+2 Int-2
+156|4600|Greater Dye of WIT|etc_wit_symbol_i01|Wit+2 Men-2|Wit+2 Men-2
+157|4601|Greater Dye of STR|etc_str_symbol_i01|Str+3 Con-3|Str+3 Con-3
+158|4602|Greater Dye of STR|etc_str_symbol_i01|Str+3 Dex-3|Str+3 Dex-3
+159|4603|Greater Dye of CON|etc_con_symbol_i01|Con+3 Str-3|Con+3 Str-3
+160|4604|Greater Dye of CON|etc_con_symbol_i01|Con+3 Dex-3|Con+3 Dex-3
+161|4605|Greater Dye of DEX|etc_dex_symbol_i01|Dex+3 Str-3|Dex+3 Str-3
+162|4606|Greater Dye of DEX|etc_dex_symbol_i01|Dex+3 Con-3|Dex+3 Con-3
+163|4607|Greater Dye of INT|etc_int_symbol_i01|Int+3 Men-3|Int+3 Men-3
+164|4608|Greater Dye of INT|etc_int_symbol_i01|Int+3 Wit-3|Int+3 Wit-3
+165|4609|Greater Dye of MEN|etc_men_symbol_i01|Men+3 Int-3|Men+3 Int-3
+166|4610|Greater Dye of MEN|etc_men_symbol_i01|Men+3 Wit-3|Men+3 Wit-3
+167|4611|Greater Dye of WIT|etc_wit_symbol_i01|Wit+3 Int-3|Wit+3 Int-3
+168|4612|Greater Dye of WIT|etc_wit_symbol_i01|Wit+3 Men-3|Wit+3 Men-3
+169|4613|Greater Dye of STR|etc_str_symbol_i01|Str+4 Con-4|Str+4 Con-4
+170|4614|Greater Dye of STR|etc_str_symbol_i01|Str+4 Dex-4|Str+4 Dex-4
+171|4615|Greater Dye of CON|etc_con_symbol_i01|Con+4 Str-4|Con+4 Str-4
+172|4616|Greater Dye of CON|etc_con_symbol_i01|Con+4 Dex-4|Con+4 Dex-4
+173|4617|Greater Dye of DEX|etc_dex_symbol_i01|Dex+4 Str-4|Dex+4 Str-4
+174|4618|Greater Dye of DEX|etc_dex_symbol_i01|Dex+4 Con-4|Dex+4 Con-4
+175|4619|Greater Dye of INT|etc_int_symbol_i01|Int+4 Men-4|Int+4 Men-4
+176|4620|Greater Dye of INT|etc_int_symbol_i01|Int+4 Wit-4|Int+4 Wit-4
+177|4621|Greater Dye of MEN|etc_men_symbol_i01|Men+4 Int-4|Men+4 Int-4
+178|4622|Greater Dye of MEN|etc_men_symbol_i01|Men+4 Wit-4|Men+4 Wit-4
+179|4623|Greater Dye of WIT|etc_wit_symbol_i01|Wit+4 Int-4|Wit+4 Int-4
+180|4624|Greater Dye of WIT|etc_wit_symbol_i01|Wit+4 Men-4|Wit+4 Men-4
+181|17625|Lv1 Giant's Dye of STR|lv1_1_hena_str|Str+3 Dex-2|Str+3 Dex-2
+182|17626|Lv1 Giant's Dye of DEX|lv1_1_hena_dex|Dex+3 Con-2|Dex+3 Con-2
+183|17627|Lv1 Giant's Dye of CON|lv1_1_hena_con|Con+3 Str-2|Con+3 Str-2
+184|17628|Lv1 Giant's Dye of INT|lv1_1_hena_int|Int+3 Wit-2|Int+3 Wit-2
+185|17629|Lv1 Giant's Dye of WIT|lv1_1_hena_wit|Wit+3 Men-2|Wit+3 Men-2
+186|17630|Lv1 Giant's Dye of MEN|lv1_1_hena_men|Men+3 Int-2|Men+3 Int-2
+187|17631|Lv1 Ancient Dye of STR|lv1_2_hena_str|Str+3 Dex-2 Resistance to Fire +5|Str+3 Dex-2 Resistance to Fire +5
+188|17632|Lv1 Ancient Dye of DEX|lv1_2_hena_dex|Dex+3 Con-2 Resistance to Earth +5|Dex+3 Con-2 Resistance to Earth +5
+189|17633|Lv1 Ancient Dye of CON|lv1_2_hena_con|Con+3 Str-2 Resistance to Darkness+5|Con+3 Str-2 Resistance to Darkness+5
+190|17634|Lv1 Ancient Dye of INT|lv1_2_hena_int|Int+3 Wit-2 Resistance to Water+5|Int+3 Wit-2 Resistance to Water+5
+191|17635|Lv1 Ancient Dye of WIT|lv1_2_hena_wit|Wit+3 Men-2 Resistance to Wind+5|Wit+3 Men-2 Resistance to Wind+5
+192|17636|Lv1 Ancient Dye of MEN|lv1_2_hena_men|MEN+3 INT-2 Resistance to Holy+5|MEN+3 INT-2 Resistance to Holy+5
+193|17637|Lv1 Legendary Dye of STR|lv1_3_hena_str|Str+3 Dex-1 Resistance to Fire +5|Str+3 Dex-1 Resistance to Fire +5
+194|17638|Lv1 Legendary Dye of DEX|lv1_3_hena_dex|Dex+3 Con-1 Resistance to Earth +5|Dex+3 Con-1 Resistance to Earth +5
+195|17639|Lv1 Legendary Dye of CON|lv1_3_hena_con|Con+3 Str-1 Resistance to Darkness+5|Con+3 Str-1 Resistance to Darkness+5
+196|17640|Lv1 Legendary Dye of INT|lv1_3_hena_int|Int+3 Wit-1 Resistance to Water+5|Int+3 Wit-1 Resistance to Water+5
+197|17641|Lv1 Legendary Dye of WIT|lv1_3_hena_wit|Wit+3 Men-1 Resistance to Wind+5|Wit+3 Men-1 Resistance to Wind+5
+198|17642|Lv1 Legendary Dye of MEN|lv1_3_hena_men|MEN+3 INT-1 Resistance to Holy+5|MEN+3 INT-1 Resistance to Holy+5
+199|17643|Lv2 Giant's Dye of STR|lv2_1_hena_str|Str+4 Dex-3|Str+4 Dex-3
+200|17644|Lv2 Giant's Dye of DEX|lv2_1_hena_dex|Dex+4 Con-3|Dex+4 Con-3
+201|17645|Lv2 Giant's Dye of CON|lv2_1_hena_con|Con+4 Str-3|Con+4 Str-3
+202|17646|Lv2 Giant's Dye of INT|lv2_1_hena_int|Int+4 Wit-3|Int+4 Wit-3
+203|17647|Lv2 Giant's Dye of WIT|lv2_1_hena_wit|Wit+4 Men-3|Wit+4 Men-3
+204|17648|Lv2 Giant's Dye of MEN|lv2_1_hena_men|Men+4 Int-3|Men+4 Int-3
+205|17649|Lv2 Ancient Dye of STR|lv2_2_hena_str|Str+4 Dex-3 Resistance to Fire +10|Str+4 Dex-3 Resistance to Fire +10
+206|17650|Lv2 Ancient Dye of DEX|lv2_2_hena_dex|Dex+4 Con-3 Resistance to Earth +10|Dex+4 Con-3 Resistance to Earth +10
+207|17651|Lv2 Ancient Dye of CON|lv2_2_hena_con|Con+4 Str-3 Resistance to Darkness+ 10|Con+4 Str-3 Resistance to Darkness+ 10
+208|17652|Lv2 Ancient Dye of INT|lv2_2_hena_int|Int+4 Wit-3 Resistance to Water+10|Int+4 Wit-3 Resistance to Water+10
+209|17653|Lv2 Ancient Dye of WIT|lv2_2_hena_wit|Wit+4 Men-3 Resistance to Wind+ 10|Wit+4 Men-3 Resistance to Wind+ 10
+210|17654|Lv2 Ancient Dye of MEN|lv2_2_hena_men|MEN+4 INT-3 Resistance to Holy+10|MEN+4 INT-3 Resistance to Holy+10
+211|17655|Lv2 Legendary Dye of STR|lv2_3_hena_str|Str+4 Dex-2 Resistance to Fire +10|Str+4 Dex-2 Resistance to Fire +10
+212|17656|Lv2 Legendary Dye of DEX|lv2_3_hena_dex|Dex+4 Con-2 Resistance to Earth +10|Dex+4 Con-2 Resistance to Earth +10
+213|17657|Lv2 Legendary Dye of CON|lv2_3_hena_con|Con+4 Str-2 Resistance to Darkness+ 10|Con+4 Str-2 Resistance to Darkness+ 10
+214|17658|Lv2 Legendary Dye of INT|lv2_3_hena_int|Int+4 Wit-2 Resistance to Water+10|Int+4 Wit-2 Resistance to Water+10
+215|17659|Lv2 Legendary Dye of WIT|lv2_3_hena_wit|Wit+4 Men-2 Resistance to Wind+ 10|Wit+4 Men-2 Resistance to Wind+ 10
+216|17660|Lv2 Legendary Dye of MEN|lv2_3_hena_men|MEN+4 INT-2 Resistance to Holy+10|MEN+4 INT-2 Resistance to Holy+10
+217|17661|Str +5 Dex -4|lv3_1_hena_str|Str+4 Dex-2|Str+4 Dex-2
+218|17662|Dex +5 Con -4|lv3_1_hena_dex|Dex+4 Con-2|Dex+4 Con-2
+219|17663|Con +5 Str -4|lv3_1_hena_con|Con+4 Str-2|Con+4 Str-2
+220|17664|Int +5 Wit -4|lv3_1_hena_int|Int+4 Wit-2|Int+4 Wit-2
+221|17665|Wit +5 Men -4|lv3_1_hena_wit|Wit+4 Men-2|Wit+4 Men-2
+222|17666|Men +5 Int -4|lv3_1_hena_men|Men+4 Int-2|Men+4 Int-2
+223|17667|Str +5 Dex -4 Resistance to Fire +15|lv3_2_hena_str|Str+4 Dex-2 Resistance to Fire +15|Str+4 Dex-2 Resistance to Fire +15
+224|17668|Dex +5 Con -4 Resistance to Earth +15|lv3_2_hena_dex|Dex+4 Con-2 Resistance to Earth +15|Dex+4 Con-2 Resistance to Earth +15
+225|17669|Con +5 Str -4 Resistance to Darkness +15|lv3_2_hena_con|Con+4 Str-2 Resistance to Darkness+15|Con+4 Str-2 Resistance to Darkness+15
+226|17670|Int +5 Wit -4 Resistance to Water +15|lv3_2_hena_int|Int+4 Wit-2 Resistance to Water+15|Int+4 Wit-2 Resistance to Water+15
+227|17671|Wit +5 Men -4 Resistance to Wind +15|lv3_2_hena_wit|Wit+4 Men-2 Resistance to Wind+15|Wit+4 Men-2 Resistance to Wind+15
+228|17672|Men +5 Int -4 Resistance to Holy +15|lv3_2_hena_men|MEN+4 INT-2 Resistance to Holy+15|MEN+4 INT-2 Resistance to Holy+15
+229|17673|Str +5 Dex -3 Resistance to Fire +15|lv3_3_hena_str|Str+4 Dex-1 Resistance to Fire +15|Str+4 Dex-1 Resistance to Fire +15
+230|17674|Dex +5 Con -3 Resistance to Earth +15|lv3_3_hena_dex|Dex+4 Con-1 Resistance to Earth +15|Dex+4 Con-1 Resistance to Earth +15
+231|17675|Con +5 Str -3 Resistance to Darkness +15|lv3_3_hena_con|Con+4 Str-1 Resistance to Darkness+15|Con+4 Str-1 Resistance to Darkness+15
+232|17676|Int +5 Wit -3 Resistance to Water +15|lv3_3_hena_int|Int+4 Wit-1 Resistance to Water+15|Int+4 Wit-1 Resistance to Water+15
+233|17677|Wit +5 Men -3 Resistance to Wind +15|lv3_3_hena_wit|Wit+4 Men-1 Resistance to Wind+15|Wit+4 Men-1 Resistance to Wind+15
+234|17678|Men +5 Int -3 Resistance to Holy +15|lv3_3_hena_men|MEN+4 INT-1 Resistance to Holy+15|MEN+4 INT-1 Resistance to Holy+15
+235|17679|Str +5 Dex -2|lv4_1_hena_str|Str+5 Dex-3|Str+5 Dex-3
+236|17680|Dex +5 Con -2|lv4_1_hena_dex|Dex+5 Con-3|Dex+5 Con-3
+237|17681|Con +5 Str -2|lv4_1_hena_con|Con+5 Str-3|Con+5 Str-3
+238|17682|Int +5 Wit -2|lv4_1_hena_int|Int+5 Wit-3|Int+5 Wit-3
+239|17683|Wit +5 Men -2|lv4_1_hena_wit|Wit+5 Men-3|Wit+5 Men-3
+240|17684|Men +5 Int -2|lv4_1_hena_men|Men+5 Int-3|Men+5 Int-3
+241|17685|Str +5 Dex -2 Resistance to Fire +20|lv4_2_hena_str|Str+5 Dex-3 Resistance to Fire +20|Str+5 Dex-3 Resistance to Fire +20
+242|17686|Dex +5 Con -2 Resistance to Earth +20|lv4_2_hena_dex|Dex+5 Con-3 Resistance to Earth +20|Dex+5 Con-3 Resistance to Earth +20
+243|17687|Con +5 Str -2 Resistance to Darkness +20|lv4_2_hena_con|Con+5 Str-3 Resistance to Darkness+20|Con+5 Str-3 Resistance to Darkness+20
+244|17688|Int +5 Wit -2 Resistance to Water +20|lv4_2_hena_int|Int+5 Wit-3 Resistance to Water+20|Int+5 Wit-3 Resistance to Water+20
+245|17689|Wit +5 Men -2 Resistance to Wind +20|lv4_2_hena_wit|Wit+5 Men-3 Resistance to Wind+20|Wit+5 Men-3 Resistance to Wind+20
+246|17690|Men +5 Int -2 Resistance to Holy +20|lv4_2_hena_men|MEN+5 INT-3 Resistance to Holy+20|MEN+5 INT-3 Resistance to Holy+20
+247|17691|Lv4 Legendary Dye of STR|lv4_3_hena_str|Str+5 Dex-1 Resistance to Fire +20|Str+5 Dex-1 Resistance to Fire +20
+248|17692|Lv4 Legendary Dye of DEX|lv4_3_hena_dex|Dex+5 Con-1 Resistance to Earth +20|Dex+5 Con-1 Resistance to Earth +20
+249|17693|Lv4 Legendary Dye of CON|lv4_3_hena_con|Con+5 Str-1 Resistance to Darkness+20|Con+5 Str-1 Resistance to Darkness+20
+250|17694|Lv4 Legendary Dye of INT|lv4_3_hena_int|Int+5 Wit-1 Resistance to Water+20|Int+5 Wit-1 Resistance to Water+20
+251|17695|Lv4 Legendary Dye of WIT|lv4_3_hena_wit|Wit+5 Men-1 Resistance to Wind+20|Wit+5 Men-1 Resistance to Wind+20
+252|17696|Lv4 Legendary Dye of MEN|lv4_3_hena_men|MEN+5 INT-1 Resistance to Holy+20|MEN+5 INT-1 Resistance to Holy+20
+253|17697|Lv5 Giant's Dye of STR|lv5_1_hena_str|Str+5|Str+5
+254|17698|Lv5 Giant's Dye of DEX|lv5_1_hena_dex|Dex+5|Dex+5
+255|17699|Lv5 Giant's Dye of CON|lv5_1_hena_con|Con+5|Con+5
+256|17700|Lv5 Giant's Dye of INT|lv5_1_hena_int|Int+5|Int+5
+257|17701|Lv5 Giant's Dye of WIT|lv5_1_hena_wit|Wit+5|Wit+5
+258|17702|Lv5 Giant's Dye of MEN|lv5_1_hena_men|Men+5|Men+5
+259|17703|Lv5 Ancient Dye of STR|lv5_2_hena_str|Str+5 Resistance to Fire +25|Str+5 Resistance to Fire +25
+260|17704|Lv5 Ancient Dye of DEX|lv5_2_hena_dex|Dex+5 Resistance to Earth +25|Dex+5 Resistance to Earth +25
+261|17705|Lv5 Ancient Dye of CON|lv5_2_hena_con|Con+5 Resistance to Darkness+25|Con+5 Resistance to Darkness+25
+262|17706|Lv5 Ancient Dye of INT|lv5_2_hena_int|Int+5 Resistance to Water+25|Int+5 Resistance to Water+25
+263|17707|Lv5 Ancient Dye of WIT|lv5_2_hena_wit|Wit+5 Resistance to Wind+25|Wit+5 Resistance to Wind+25
+264|17708|Lv5 Ancient Dye of MEN|lv5_2_hena_men|MEN+5 Resistance to Holy+25|MEN+5 Resistance to Holy+25
+265|17709|Lv5 Legendary Dye of STR|lv5_3_hena_str|Str+5 Dex+1 Resistance to Fire +25|Str+5 Dex+1 Resistance to Fire +25
+266|17710|Lv5 Legendary Dye of DEX|lv5_3_hena_dex|Dex+5 Con+1 Resistance to Earth +25|Dex+5 Con+1 Resistance to Earth +25
+267|17711|Lv5 Legendary Dye of CON|lv5_3_hena_con|Con+5 Str+1 Resistance to Darkness+25|Con+5 Str+1 Resistance to Darkness+25
+268|17712|Lv5 Legendary Dye of INT|lv5_3_hena_int|Int+5 Wit+1 Resistance to Water+25|Int+5 Wit+1 Resistance to Water+25
+269|17713|Lv5 Legendary Dye of WIT|lv5_3_hena_wit|Wit+5 Men+1 Resistance to Wind+25|Wit+5 Men+1 Resistance to Wind+25
+270|17714|Lv5 Legendary Dye of MEN|lv5_3_hena_men|MEN+5 INT+1 Resistance to Holy+25|MEN+5 INT+1 Resistance to Holy+25
+271|22982|Lv1 Giant's Dye of STR|lv1_1_hena_str|Str+3 Dex-2|Str+3 Dex-2
+272|22983|Lv1 Giant's Dye of DEX|lv1_1_hena_dex|Dex+3 Con-2|Dex+3 Con-2
+273|22984|Lv1 Giant's Dye of CON|lv1_1_hena_con|Con+3 Str-2|Con+3 Str-2
+274|22985|Lv1 Giant's Dye of INT|lv1_1_hena_int|Int+3 Wit-2|Int+3 Wit-2
+275|22986|Lv1 Giant's Dye of WIT|lv1_1_hena_wit|Wit+3 Men-2|Wit+3 Men-2
+276|22987|Lv1 Giant's Dye of MEN|lv1_1_hena_men|Men+3 Int-2|Men+3 Int-2
+277|22988|Lv1 Ancient Dye of STR|lv1_2_hena_str|Str+3 Dex-2 Resistance to Fire +5|Str+3 Dex-2 Resistance to Fire +5
+278|22989|Lv1 Ancient Dye of DEX|lv1_2_hena_dex|Dex+3 Con-2 Resistance to Earth+5|Dex+3 Con-2 Resistance to Earth+5
+279|22990|Lv1 Ancient Dye of CON|lv1_2_hena_con|Con+3 Str-2 Resistance to Dark+5|Con+3 Str-2 Resistance to Dark+5
+280|22991|Lv1 Ancient Dye of INT|lv1_2_hena_int|Int+3 Wit-2 Resistance to Water+5|Int+3 Wit-2 Resistance to Water+5
+281|22992|Lv1 Ancient Dye of WIT|lv1_2_hena_wit|Wit+3 Men-2 Resistance to Wind+5|Wit+3 Men-2 Resistance to Wind+5
+282|22993|Lv1 Ancient Dye of MEN|lv1_2_hena_men|Men+3 Int-2 Resistance to Holy+5|Men+3 Int-2 Resistance to Holy+5
+283|22994|Lv1 Legendary Dye of STR|lv1_3_hena_str|Str+3 Dex-1 Resistance to Fire +5|Str+3 Dex-1 Resistance to Fire +5
+284|22995|Lv1 Legendary Dye of DEX|lv1_3_hena_dex|Dex+3 Con-1 Resistance to Earth+5|Dex+3 Con-1 Resistance to Earth+5
+285|22996|Lv1 Legendary Dye of CON|lv1_3_hena_con|Con+3 Str-1 Resistance to Dark+5|Con+3 Str-1 Resistance to Dark+5
+286|22997|Lv1 Legendary Dye of INT|lv1_3_hena_int|Int+3 Wit-1 Resistance to Water+5|Int+3 Wit-1 Resistance to Water+5
+287|22998|Lv1 Legendary Dye of WIT|lv1_3_hena_wit|Wit+3 Men-1 Resistance to Wind+5|Wit+3 Men-1 Resistance to Wind+5
+288|22999|Lv1 Legendary Dye of MEN|lv1_3_hena_men|Men+3 Int-1 Resistance to Holy+5|Men+3 Int-1 Resistance to Holy+5
+289|23000|Lv2 Giant's Dye of STR|lv2_1_hena_str|Str+4 Dex-3|Str+4 Dex-3
+290|23001|Lv2 Giant's Dye of DEX|lv2_1_hena_dex|Dex+4 Con-3|Dex+4 Con-3
+291|23002|Lv2 Giant's Dye of CON|lv2_1_hena_con|Con+4 Str-3|Con+4 Str-3
+292|23003|Lv2 Giant's Dye of INT|lv2_1_hena_int|Int+4 Wit-3|Int+4 Wit-3
+293|23004|Lv2 Giant's Dye of WIT|lv2_1_hena_wit|Wit+4 Men-3|Wit+4 Men-3
+294|23005|Lv2 Giant's Dye of MEN|lv2_1_hena_men|Men+4 Int-3|Men+4 Int-3
+295|23006|Lv2 Ancient Dye of STR|lv2_2_hena_str|Str+4 Dex-3 Resistance to Fire +10|Str+4 Dex-3 Resistance to Fire +10
+296|23007|Lv2 Ancient Dye of DEX|lv2_2_hena_dex|Dex+4 Con-3 Resistance to Earth+10|Dex+4 Con-3 Resistance to Earth+10
+297|23008|Lv2 Ancient Dye of CON|lv2_2_hena_con|Con+4 Str-3 Resistance to Dark+10|Con+4 Str-3 Resistance to Dark+10
+298|23009|Lv2 Ancient Dye of INT|lv2_2_hena_int|Int+4 Wit-3 Resistance to Water+10|Int+4 Wit-3 Resistance to Water+10
+299|23010|Lv2 Ancient Dye of WIT|lv2_2_hena_wit|Wit+4 Men-3 Resistance to Wind+10|Wit+4 Men-3 Resistance to Wind+10
+300|23011|Lv2 Ancient Dye of MEN|lv2_2_hena_men|Men+4 Int-3 Resistance to Holy+10|Men+4 Int-3 Resistance to Holy+10
+301|23012|Lv2 Legendary Dye of STR|lv2_3_hena_str|Str+4 Dex-2 Resistance to Fire +10|Str+4 Dex-2 Resistance to Fire +10
+302|23013|Lv2 Legendary Dye of DEX|lv2_3_hena_dex|Dex+4 Con-2 Resistance to Earth+10|Dex+4 Con-2 Resistance to Earth+10
+303|23014|Lv2 Legendary Dye of CON|lv2_3_hena_con|Con+4 Str-2 Resistance to Dark+10|Con+4 Str-2 Resistance to Dark+10
+304|23015|Lv2 Legendary Dye of INT|lv2_3_hena_int|Int+4 Wit-2 Resistance to Water+10|Int+4 Wit-2 Resistance to Water+10
+305|23016|Lv2 Legendary Dye of WIT|lv2_3_hena_wit|Wit+4 Men-2 Resistance to Wind+10|Wit+4 Men-2 Resistance to Wind+10
+306|23017|Lv2 Legendary Dye of MEN|lv2_3_hena_men|Men+4 Int-2 Resistance to Holy+10|Men+4 Int-2 Resistance to Holy+10
+307|23018|Lv3 Giant's Dye of STR|lv3_1_hena_str|Str+5 Dex-4|Str+5 Dex-4
+308|23019|Lv3 Giant's Dye of DEX|lv3_1_hena_dex|Dex+5 Con-4|Dex+5 Con-4
+309|23020|Lv3 Giant's Dye of CON|lv3_1_hena_con|Con+5 Str-4|Con+5 Str-4
+310|23021|Lv3 Giant's Dye of INT|lv3_1_hena_int|Int+5 Wit-4|Int+5 Wit-4
+311|23022|Lv3 Giant's Dye of WIT|lv3_1_hena_wit|Wit+5 Men-4|Wit+5 Men-4
+312|23023|Lv3 Giant's Dye of MEN|lv3_1_hena_men|Men+5 Int-4|Men+5 Int-4
+313|23024|Lv3 Ancient Dye of STR|lv3_2_hena_str|Str+5 Dex-4 Resistance to Fire +15|Str+5 Dex-4 Resistance to Fire +15
+314|23025|Lv3 Ancient Dye of DEX|lv3_2_hena_dex|Dex+5 Con-4 Resistance to Earth+15|Dex+5 Con-4 Resistance to Earth+15
+315|23026|Lv3 Ancient Dye of CON|lv3_2_hena_con|Con+5 Str-4 Resistance to Dark+15|Con+5 Str-4 Resistance to Dark+15
+316|23027|Lv3 Ancient Dye of INT|lv3_2_hena_int|Int+5 Wit-4 Resistance to Water+15|Int+5 Wit-4 Resistance to Water+15
+317|23028|Lv3 Ancient Dye of WIT|lv3_2_hena_wit|Wit+5 Men-4 Resistance to Wind+15|Wit+5 Men-4 Resistance to Wind+15
+318|23029|Lv3 Ancient Dye of MEN|lv3_2_hena_men|Men+5 Int-4 Resistance to Holy+15|Men+5 Int-4 Resistance to Holy+15
+319|23030|Lv3 Legendary Dye of STR|lv3_3_hena_str|Str+5 Dex-3 Resistance to Fire +15|Str+5 Dex-3 Resistance to Fire +15
+320|23031|Lv3 Legendary Dye of DEX|lv3_3_hena_dex|Dex+5 Con-3 Resistance to Earth+15|Dex+5 Con-3 Resistance to Earth+15
+321|23032|Lv3 Legendary Dye of CON|lv3_3_hena_con|Con+5 Str-3 Resistance to Dark+15|Con+5 Str-3 Resistance to Dark+15
+322|23033|Lv3 Legendary Dye of INT|lv3_3_hena_int|Int+5 Wit-3 Resistance to Water+15|Int+5 Wit-3 Resistance to Water+15
+323|23034|Lv3 Legendary Dye of WIT|lv3_3_hena_wit|Wit+5 Men-3 Resistance to Wind+15|Wit+5 Men-3 Resistance to Wind+15
+324|23035|Lv3 Legendary Dye of MEN|lv3_3_hena_men|Men+5 Int-3 Resistance to Holy+15|Men+5 Int-3 Resistance to Holy+15
+325|23036|Lv4 Giant's Dye of STR|lv4_1_hena_str|Str+5 Dex-2|Str+5 Dex-2
+326|23037|Lv4 Giant's Dye of DEX|lv4_1_hena_dex|Dex+5 Con-2|Dex+5 Con-2
+327|23038|Lv4 Giant's Dye of CON|lv4_1_hena_con|Con+5 Str-2|Con+5 Str-2
+328|23039|Lv4 Giant's Dye of INT|lv4_1_hena_int|Int+5 Wit-2|Int+5 Wit-2
+329|23040|Lv4 Giant's Dye of WIT|lv4_1_hena_wit|Wit+5 Men-2|Wit+5 Men-2
+330|23041|Lv4 Giant's Dye of MEN|lv4_1_hena_men|Men+5 Int-2|Men+5 Int-2
+331|23042|Lv4 Ancient Dye of STR|lv4_2_hena_str|Str+5 Dex-2 Resistance to Fire +20|Str+5 Dex-2 Resistance to Fire +20
+332|23043|Lv4 Ancient Dye of DEX|lv4_2_hena_dex|Dex+5 Con-2 Resistance to Earth+20|Dex+5 Con-2 Resistance to Earth+20
+333|23044|Lv4 Ancient Dye of CON|lv4_2_hena_con|Con+5 Str-2 Resistance to Dark+20|Con+5 Str-2 Resistance to Dark+20
+334|23045|Lv4 Ancient Dye of INT|lv4_2_hena_int|Int+5 Wit-2 Resistance to Water+20|Int+5 Wit-2 Resistance to Water+20
+335|23046|Lv4 Ancient Dye of WIT|lv4_2_hena_wit|Wit+5 Men-2 Resistance to Wind+20|Wit+5 Men-2 Resistance to Wind+20
+336|23047|Lv4 Ancient Dye of MEN|lv4_2_hena_men|Men+5 Int-2 Resistance to Holy+20|Men+5 Int-2 Resistance to Holy+20
+337|23048|Lv4 Legendary Dye of STR|lv4_3_hena_str|Str+5 Dex-1 Resistance to Fire +20|Str+5 Dex-1 Resistance to Fire +20
+338|23049|Lv4 Legendary Dye of DEX|lv4_3_hena_dex|Dex+5 Con-1 Resistance to Earth+20|Dex+5 Con-1 Resistance to Earth+20
+339|23050|Lv4 Legendary Dye of CON|lv4_3_hena_con|Con+5 Str-1 Resistance to Dark+20|Con+5 Str-1 Resistance to Dark+20
+340|23051|Lv4 Legendary Dye of INT|lv4_3_hena_int|Int+5 Wit-1 Resistance to Water+20|Int+5 Wit-1 Resistance to Water+20
+341|23052|Lv4 Legendary Dye of WIT|lv4_3_hena_wit|Wit+5 Men-1 Resistance to Wind+20|Wit+5 Men-1 Resistance to Wind+20
+342|23053|Lv4 Legendary Dye of MEN|lv4_3_hena_men|Men+5 Int-1 Resistance to Holy+20|Men+5 Int-1 Resistance to Holy+20
+343|23054|Lv5 Giant's Dye of STR|lv5_1_hena_str|Str+5|Str+5
+344|23055|Lv5 Giant's Dye of DEX|lv5_1_hena_dex|Dex+5|Dex+5
+345|23056|Lv5 Giant's Dye of CON|lv5_1_hena_con|Con+5|Con+5
+346|23057|Lv5 Giant's Dye of INT|lv5_1_hena_int|Int+5|Int+5
+347|23058|Lv5 Giant's Dye of WIT|lv5_1_hena_wit|Wit+5|Wit+5
+348|23059|Lv5 Giant's Dye of MEN|lv5_1_hena_men|Men+5|Men+5
+349|23060|Lv5 Ancient Dye of STR|lv5_2_hena_str|Str+5 Resistance to Fire +25|Str+5 Resistance to Fire +25
+350|23061|Lv5 Ancient Dye of DEX|lv5_2_hena_dex|Dex+5 Resistance to Earth+25|Dex+5 Resistance to Earth+25
+351|23062|Lv5 Ancient Dye of CON|lv5_2_hena_con|Con+5 Resistance to Dark+25|Con+5 Resistance to Dark+25
+352|23063|Lv5 Ancient Dye of INT|lv5_2_hena_int|Int+5 Resistance to Water+25|Int+5 Resistance to Water+25
+353|23064|Lv5 Ancient Dye of WIT|lv5_2_hena_wit|Wit+5 Resistance to Wind+25|Wit+5 Resistance to Wind+25
+354|23065|Lv5 Ancient Dye of MEN|lv5_2_hena_men|Men+5 Resistance to Holy+25|Men+5 Resistance to Holy+25
+355|23066|Lv5 Legendary Dye of STR|lv5_3_hena_str|Str+5 Dex+1 Resistance to Fire +25|Str+5 Dex+1 Resistance to Fire +25
+356|23067|Lv5 Legendary Dye of DEX|lv5_3_hena_dex|Dex+5 Con+1 Resistance to Earth+25|Dex+5 Con+1 Resistance to Earth+25
+357|23068|Lv5 Legendary Dye of CON|lv5_3_hena_con|Con+5 Str+1 Resistance to Dark+25|Con+5 Str+1 Resistance to Dark+25
+358|23069|Lv5 Legendary Dye of INT|lv5_3_hena_int|Int+5 Wit+1 Resistance to Water+25|Int+5 Wit+1 Resistance to Water+25
+359|23070|Lv5 Legendary Dye of WIT|lv5_3_hena_wit|Wit+5 Men+1 Resistance to Wind+25|Wit+5 Men+1 Resistance to Wind+25
+360|23071|Lv5 Legendary Dye of MEN|lv5_3_hena_men|Men+5 Int+1 Resistance to Holy+25|Men+5 Int+1 Resistance to Holy+25

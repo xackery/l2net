@@ -1,0 +1,19 @@
+CALL [STRING] [V] [INT] ([V] [V]  ... )<br />
+<br />
+STRING1 is the name of the function to be called. Again, not case sensitive.<br />
+<br />
+V2 is where the return value of the function will be stored. Not all functions return a value or you may not wish to store the return value of a function. In these cases, use the global value VOID as the return variable.<br />
+<br />
+INT3 is a count of how many variables to pass to the fucntion. You may pass less variables to a function than it calls for. The unasigned varialbes will be given the type of "null" and a value of 0. If you pass more variables than a function accepts, the extra variables will just be ignored.<br />
+<br />
+Then the list of variables being passed follows, much like the FUNCTION command.<br />
+<br />
+MAKE SURE YOU ALWAYS RETURN FROM EVERY FUNCTION YOU CALL!<br />
+<br />
+NOTe: CALL is redundant... if you drop the CALL but leave the rest of the command intact... it will still work.<br />
+<br />
+EX: CALL MYFUNCTION VOID 0<br />
+EX: CALL MYFUNCTION1 VOID 0<br />
+EX: CALL MYFUNCTION1 VOID 1 VAR1<br />
+EX: CALL MYFUNCTION2 VOID 2 VAR1 VAR2<br />
+EX: MYFUNCTION2 VOID 2 VAR1 VAR2<br />

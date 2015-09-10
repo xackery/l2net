@@ -1,0 +1,19 @@
+LOCK [STRING]<br />
+<br />
+This will place a lock on the string specified. As long as you hold the lock on this string... no other thread will be able to lock on it and will be forced to sleep. The string is NOT case sensitive.<br />
+<br />
+---<br />
+<br />
+UNLOCK [STRING]<br />
+<br />
+This will release the lock held on the string. This means that another thread could grab ahold of it now. The string is NOT case sensitive.<br />
+<br />
+SPECIAL NOTE: ALWAYS ALWAYS ALWAYS release your locks in the reverse order you created them!<br />
+<br />
+Such as:<br />
+LOCK A<br />
+LOCK B<br />
+LOCK C<br />
+UNLOCK C<br />
+UNLOCK B<br />
+UNLOCK A<br />

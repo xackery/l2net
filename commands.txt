@@ -1,0 +1,194 @@
+DO NOT USE THIS BOT OOG ON RETAIL SERVERS
+THE GAMEGUARDS PACKET STRUCTURE HAS NOT BEEN FULLY PARSED YET
+YOU "MAY" BE BANNED
+
+----in the all channel----
+"name *sends tell to name*
+!text *shouts*
++text *trade chat*
+@text *clan chat*
+$text *ally chat*
+%text *hero chat*
+&text *reply in petition window*
+
+supports
+accept party invite
+decline party invite
+accept clan invite
+decline ally invite
+accept friend invite
+decline friend invite
+accept ally invite
+decline ally invite
+go to village on dead
+go to clanhall on dead
+go to castle on dead
+go to siege hq on dead
+
+active follow
+active follow attack
+auto spoil
+auto sweep
+buff timers for all players
+heals at % in party only
+
+earthquake
+sunset
+sunrise
+
+double click in item list to pick up lootz
+double click in npc list to target/talk/attack npcs
+double click in player list to target/attack players
+double click in the skills list to use skills
+double click in inventory to use items
+
+/attack
+/invite [name]
+/leave
+/dismiss [name]
+/changepartyleader [name]
+/socialhello
+/socialvictory
+/socialcharge
+/socialno
+/socialyes
+/socialbow
+/socialunaware
+/socialwaiting
+/sociallaugh
+/socialapplause
+/socialdance
+/socialsad
+/charm
+/nsociallevelup *might work on official server...use at own risk*
+/nsocialhero *might work on official server...use at own risk*
+/nsocialflame *might work on official server...use at own risk*
+/sit
+/stand
+/walk
+/run
+/buttonsit *presses the sit/stand button*
+/buttonwalk *presses the walk/run button*
+/unstuck
+/loc
+/mount
+/dismount
+/time
+/partyinfo
+/attacklist
+/warlist
+/friendlist
+/friendinvite [name]
+/frienddel [name]
+/block [name]
+/unblock [name]
+/blocklist
+/evaluate
+/gmlist
+/skill [#] *uses skill of #...use at own risk*
+/script (runs a script command)
+/flush (flushed all datastreams)
+/cls (clears the chat box)
+/hidedead (hides the return to town box)
+/hideaccept (hides the yes/no window without sending a reply)
+/restart
+/logout
+/playerloc [name] (displays the location of the player with name)
+/assist
+/assist [name]
+/spause (pauses the running script)
+/sresume (resumes the paused script)
+/sstop (stops the running script)
+/getskills (downloads a new list of skills)
+/target [name]
+/generalmanufacture
+/vendor
+/buy
+/godmode (makes you invincible to attack)
+/nick [name]
+/forcelogout
+/instancezone
+/allblock
+/allunblock
+/allyinfo
+/siegestatus
+/withdraw
+/clanwarstart [name]
+/clanwarstop [name]
+/duel [name]
+/partyduel [name]
+/mybirthday
+
+---command line parameters---
+-a auto accept license
+-b:data custom blowfish
+-c:data custom protocol
+-d:data login port
+-i:data login ip
+-p:data password
+-u:data username
+-s:data script to load
+-x:data IG local listen port
+-y:data IG local listen ip
+-z:# Chronicle to use (7 = CT1)(8 = CT1.5)(9 = CT2.1)(10 = CT2.2)
+
+-accept (same as -a)
+-blowfish (same as -b)
+-protocol (same as -C)
+-loginport (same as -d)
+-loginip (same as -i)
+-password (same as -p)
+-username (same as -u)
+-script (same as -s)
+-iglistenport (Same as -x)
+-iglistenip (same as -y)
+-chronicle (same as -z)
+
+The following command line parameters require valid keys to function:
+
+-overidegameserver enables the gameserver overide 
+-useproxylogin enables proxy server for login connections 
+-useproxygame enables proxy server for game connections 
+-gameserverip ip address of gameserver 
+-gameserverport port of gameserver 
+-socks5ip ip address of the socks proxy server 
+-socks5port port of the socks proxy server 
+-socks5username username for socks proxy 
+-socks5password password for socks proxy
+-ewip enable editing ip in enterworld packet
+-ip01: , -ip02: , -ip03: ,ip04:
+-ip11: , -ip12: , -ip13: ,ip14:
+... to ip44:
+example -ip01:127 -ip02:0
+-ubs enable unknow blowfish
+-wasp enable work as proxy srv
+-gslp - game server listen port ex. (-gslp:1999)
+
+-ggip //gameguard server listen ip & gameguard client connect ip
+-ggport // --- || --- port
+-ggsrv //Autostart gg server
+-ggcl //Autostart gg client
+
+GUI BOTSET commands
+-ACTIVEFOLLOW_ON
+-ACTIVEFOLLOW_WALKERSTYLE
+-ACTIVEFOLLOW_ATTACK
+-ACTIVEFOLLOW_TARGET
+-ACTIVEFOLLOW_NAME
+-ACTIVEFOLLOW_DISTANCE
+-CLEAR_ITEMS
+-CLEAR_BUFFS
+-CLEAR_COMBAT
+-ACCEPT_INVITE
+-ACCEPT_INVITE_ON
+-ACCEPT_REZ
+-ACCEPT_REZ_ON
+-HEAL_RANGE
+-LOOT_RANGE
+-ACTIVE_TARGET_ON
+-ACTIVE_ATTACK_ON
+-PICKUP_ON
+-AUTO_UNSTUCK_ON
+-MOVE_BEFORE_ATTACK_ON
+-AUTO_BLACKLIST_ON
+-MOVE_SMART_BEFORE_ATTACK_ON

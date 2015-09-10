@@ -1,0 +1,25 @@
+SAY_TEXT [INT] [STRING] ([STRING])<br />
+<br />
+[INT1] the channel to say the text in.<br />
+[STIRNG2] the text to say.<br />
+([STRING3]) the person to send the text to.  Only needed when sending private messages.<br />
+<br />
+There are script global variables to use for the channels:<br />
+<li>CHANNEL_ALL
+<li>CHANNEL_SHOUT
+<li>CHANNEL_PRIVATE
+<li>CHANNEL_PARTY
+<li>CHANNEL_CLAN
+<li>CHANNEL_GM
+<li>CHANNEL_PETITION
+<li>CHANNEL_PETITIONREPLY
+<li>CHANNEL_TRADE
+<li>CHANNEL_ALLY
+<li>CHANNEL_ANNOUNCEMENT
+<li>CHANNEL_BOAT
+<li>CHANNEL_PARTYROOM
+<li>CHANNEL_PARTYCOMMANDER
+<li>CHANNEL_HERO
+<br /><br />
+Ex: SAY_TEXT "<&CHANNEL_ALL&>" "this is a test of the dereferenced global channl value... easy isn't it? ^^"<br />
+Ex: SAY_TEXT "<&CHANNEL_PRIVATE&>" "you are a poopoo head" "notspider"<br />

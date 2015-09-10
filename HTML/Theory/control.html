@@ -1,0 +1,33 @@
+Various mechanisms exist in jingjing to control the flow of your code.  Flow control commands can be broken into three groups: conditionals, loops and jumps.<br />
+<br />
+jingjing supports the following conditionals:<br />
+<li>IF/ELSE/ENDIF
+<li>SWITCH/CASE/DEFAULT/ENDSWITCH
+<br /><br />
+These conditionals allow you to run code only if some condition is met.  Pretty much the most basic control mechanisms.  A SWITCH is the same as a large block of IF/ELSE/IF/ELSE...ENDIF...
+<br />
+Conditionals are handled on the fly in jingjing.  If the condition is not met... the script is parsed looking for the end of the conditional.  Because of the performance hit associated with this search; it is recommended to move code out of conditionals and into functions as the length of the code increases.  This will result in a small performance boost.<br />
+<br />
+The BREAK command can be used to end conditionals before the end has really been reached.
+<br />
+jingjing supports the following loops:<br />
+<li>FOR/NEXT
+<li>WHILE/WEND
+<li>DO/LOOP
+<li>FOREACH/NEXTEACH
+<br /><br />
+Loops are handled on the fly in jingjing.  There is no table of loops stored... every loop is parsed as it is reached.  This allows for no limitations in the depth of loops.  You can nest as many loops as you want.<br />
+<br />
+When the end of a loop is reached (NEXT, WEND, LOOP, NEXTEACH), jingjing checks the conditional of the loop to determine if it should continue to run.  If it is to continue... the script is parsed in reverse looking for the start of the loop.  A count of loops passed is kept to make sure that the correct start is found.  Because of the search used... there will be a performance hit for loops with many lines.  For this reason, it is suggested that you use functions or subs to move the code outside of long loops.<br />
+<br />
+The BREAK command can be used to end loops before the end has really been reached.
+<br />
+jingjing supports the following jumps:<br />
+<li>JUMO_TO_LINE
+<li>LABEL/JUMP_TO_LABEL
+<li>SUB/CALLSUB/RETURNSUB
+<li>FUNCTION/CALL/CALL_EXTERN/RETURN
+<br /><br />
+Whenever jingjing comes across a jump destination (LABEL, SUB, FUNCTION) it caches the file and line number.  This allows for a call time of O(1) when the destination is cached.  If the destination is not known... the call time if O(n) where n is the line number of the destination.  The call time may be even longer if the destination file has not yet been loaded as this will require the file to be loaded into memory before it can be searched.<br />
+<br />
+Of the jumps... only FUNCTION creates a new stack level.  The other jumps are only included for beginning programmers.  It is recommend that they be avoided as much as possible; use only FUNCTION if you can.

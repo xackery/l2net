@@ -1,0 +1,26 @@
+DEFINE [STRING] [STRING] [STRING]<br />
+<br />
+Declares a global variable of type [STRING1] named [STRING2] with default value [STRING3].<br />
+<br />
+Being global... this variable can be accessed by all stack levels.<br />
+<br />
+Built in variable types:<br />
+<li>NULL
+<li>INT
+<li>DOUBLE
+<li>STRING
+<li>FILEREADER**
+<li>FILEWRITER**
+<li>ARRAYLIST*
+<li>SORTEDLIST8
+<li>StACK
+<li>QUEUE
+<li>BYTEBUFFER
+<br /><br />
+*For both ARRAYLIST and SORTEDLIST [STRING3] must resolve to an INT and is the default size of the collection.<br />
+<br />
+**FILEREADER and FILEWRITER can only open files contained in the Scripts\Files\ folder<br />
+<br />
+EX: DEFINE_GLOBAL INT MOB_COUNT 0
+EX: DEFINE_GLOBAL STRING MOB_S1 "zero"
+EX: DEFINE_GLOBAL STRING MOB_S2 "<&MOB_COUNT&>"

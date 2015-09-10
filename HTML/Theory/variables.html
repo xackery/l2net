@@ -1,0 +1,37 @@
+Variables are the basic building blocks of any programming language.  They are no different in jingjing.  Variables are strongly typed.  This means that a variable must have a type.  jingjing can not guess the type of a variable.  Even siple numbers must be explictly declared a type (ie. the prefixes i, d and $).<br />
+<br />
+Variables reside on the stack.  For more information about the Stack see <a href="memory.html">Memory and the Stack</a><br />
+<br />
+Varibles are built of simply defined.  A variable consists of:<br />
+<li>an object
+<li>a name
+<li>a type
+<li>a state
+<br /><br />
+Internally the object is a c# base object that gets cast to the correct type whenever a variable is accessed.<br />
+Internally the name is a string that is used to access the variable.  All variables are stored in a sorted list for quick access.<br />
+Internally the is a Var_Type enum.<br />
+Internally the state is a Var_State enum<br />
+<br />
+The Var_Type enum lists possible variable types and is used to properly cast a variable to the correct type.  The following types are possible:<br />
+<li>NULL
+<li>INT
+<li>DOUBLE
+<li>STRING
+<li>FILEWRITER
+<li>FILEREADER
+<li>ARRAYLIST
+<li>SORTEDLIST
+<li>STACK
+<li>QUEUE
+<li>CLASS
+<li>BYTEBUFFER
+<br /><br />
+The Var_State enum lists the possible states for a variable and is looked at to make sure a variable can be accessed from the calling function.  The following types are possible:<br />
+<li>PUBLIC
+<li>PRIVATE
+<li>PROTECTED
+<li>STATIC
+<br /><br />
+PLANNED FOR THE FUTURE<br />
+In the future variable will be able to be const.  This will allow users to create readonly variables.  I am undecided on casting variables to and from const... this will probably not be allowed.

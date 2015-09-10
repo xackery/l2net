@@ -1,0 +1,6 @@
+jingjing runs on 1 physical thread but supports the creation of an unlimited virtual threads.  Each virtual thread has it's own stack and can sleep independent of each other.  When an event is fired a new thread is created to handle it.<br />
+<br />
+When you make threads... sometimes you want to have a section of code only run by 1 thread at a time. This could be a counter or something cooler... but... you have no guarantee that you won't get switched out after only a single line has run. This is where the LOCK and UNLOCK command come in. Locks are global across all threads and functions.<br />
+<br />
+PLANNED FOR THE FUTURE<br />
+Eventually the script engine will be truly multi-threaded and user script virtual threads will be load balanced across how ever many physical threads are created.<br />

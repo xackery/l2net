@@ -1,0 +1,11 @@
+jingjing uses a stack to order it's memory... similar to the actual stack used in c or c++ program.<br />
+<br />
+The root of a script resides at the base of the stack (index 0).  When a variable is created it is put on the stack at the current level.  Globals exist outside of the normal stack.<br />
+<br />
+Script code can only access variables at the same stack level as the calling code.  Because globals reside outside of the normal stack... they can be accessed by all levels of the stack.<br />
+<br />
+Because of this stack model... the only limit to how deep your functions may go is how much memory your system has.  There is no arbitrary limit to the stack height.  Recursive functions are fully supported by jingjing.<br />
+<br />
+Calling a function creates a new stack level that is placed on top of the current level (at current level + 1).  Control is then passed to this new stack level.  When the function returns, the returned value is passed up the stack to the previous level.<br />
+<br />
+Calling a sub does not create a new stack level.  Subs share the same stack level as the calling code.  For this reason, be weary of using subs as you may pollute the variable namespace.<br />

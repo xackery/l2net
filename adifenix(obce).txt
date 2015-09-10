@@ -1,0 +1,94 @@
+12.7.12
+parser for packets in packet window
+-------------------------------------------------------------
+20.2.12
+IN_POLY - new unary operator in script (check if specify uid is in pollygon)
+ex.
+IF IN_POLY target_id
+	print_text "in poly"
+endif
+
+end_script
+
+------------------------------rc2
+12.2.12
+friend chat sender name fix
+12.2.12
+inject fix (opcodes work now)
+-------------------------------rc1
+6.2.12
+fix for chat event in script for h5,god
+5.2.12
+fix for say_to_client :h5,god
+19.1.12
+-fix for packet window lag (big amount pck per sec)
+-save only visable packets checkbox(default endabled)
+---------------------------beta 10
+-------------------------- beta 9
+17.1.12
+Fix bug causing l2net to crash when using packet window
+15.1.12
+work as whitelist - in filter window
+search pck name - little rework
+
+-------------------------- beta 8
+-------------------------- beta 7
+5.1.12
+hide client/server pck
+read pck names from file only when u run pck window
+search by pck name
+folow new pck 
+31.12.11
+fix for pck window oog
+-----------------------beta 6-------------------------------
+29.12.11
+optymalization for load pck log/ fix for search 
+27.12.12
+fix for listviev in packet window
+23.12.11
+little optymalization in load packet log func.
+22.12.11
+new search controls (in packet window)
+21.12.11
+new converter window (in packet window)
+18.12.11
+packet window alpha 2 (packet names credit-"JIV" from l2j forum)
+
+11.12.11
+temp fix for packets: (party packets need to be checked with pet/summon in pt)
+magicskilluse
+partysmallwindowupdate
+partysmallwindowall
+
+6.12.11
+new comandlines parameters
+-ubs enable unknow blowfish
+-wasp enable work as proxy srv
+-gslp - game server listen port ex (-gslp:1999)
+4.12.11
+new control in adv login opt:
+work as proxy srv(checkbox)- alow redirect conection(gserv) only using proxifier (no need ipjack/fork anymore for blowfishless conection)
+
+
+
+----------------------------------------------------------
+new comandlines
+-ewip 
+will enable editing ip in enterworld packet
+
+
+-ip01
+-ip02
+-ip03
+-ip04
+... ip11 .. ip22 ...
+-ip44
+ex. 
+-ip01:125
+-ip02:33
+
+if u do not add any number to specyfic ip it will be generated randomaly
+
+
+new controls for ip in enterworld - advanced login opt.
+

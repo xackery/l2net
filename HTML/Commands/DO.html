@@ -1,0 +1,18 @@
+DO<br />
+<br />
+starts a DO LOOP conditional block<br />
+<br />
+---<br />
+<br />
+LOOP [V] [conditional] [V]<br />
+<br />
+While the conditional is true, jump back up to the DO and run the code again.  Think of a DO/LOOP as a backwards WHILE/WEND.  DO/LOOP runs the code... then checks the conditional.  WHILE/WEND checks the conditional and then runs the code.<br />
+<br />
+Actual variables need to be passed instead of just the value.<br />
+<br />
+EX: DEFINE INT A 10<br />
+EX: DEFINE INT B 20<br />
+EX: DO<br />
+EX: LOOP A < B<br />
+EX: DO<br />
+EX: LOOP A != B<br />

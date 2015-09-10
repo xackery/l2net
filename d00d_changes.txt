@@ -1,0 +1,179 @@
+09/26/10
+Updated Code/Data/Packs/Other Players/CharInfo.cs to work with Retail Freya
+
+10/09/10
+Further updates to Charinfo.
+
+10/27/10
+Updates to Player_Info (packet structure and HasExtendedEffect bool)
+Updates to CharInfo (packet structure and HasExtendedEffect bool)
+Updates to NpcInfo (packet structure and HasExtendedEffect bool)
+Updates to GlobalData ExtendedEffects 
+Updates to Script_Evaluate.cs (IS_STIGMAED unary op test)
+
+11/02/10
+Added the following unary operators
+    * IS_BLEEDING
+    * IS_POISONED
+    * IS_REDCIRCLE
+    * IS_ICE
+    * IS_WIND
+    * IS_AFRAID (Heroic Dread / Antharas Fear / Valakas Fear)
+    * IS_STUNNED
+    * IS_ASLEEP
+    * IS_MUTE
+    * IS_ROOTED
+    * IS_PARALYZED
+    * IS_PETRIFIED
+    * IS_BURNING
+    * IS_FLOATING_ROOT (Frintezza Paralyze)
+    * IS_DANCE_STUNNED (Frintezza Raid Stun)
+    * IS_FIREROOT_STUN (Valakas Burning Stun)
+    * IS_STEALTH
+    * IS_IMPRISIONING_1
+    * IS_IMPRISIONING_2
+    * IS_SOE (target is using soe or /unstuck)
+    * IS_ICE2
+    * IS_EARTHQUAKE (IoP screen shake)
+    * IS_INVULNERABLE (Ultimate defense effects / anti magic armor)
+    * IS_REGEN_VITALITY (Vitality Potion / Birthday buff)
+    * IS_REAL_TARGETED
+    * IS_DEATH_MARKED
+    * IS_TERRIFIED (Curse Fear / Mass Fear / Sword Symphony)
+    * IS_CONFUSED
+    * IS_INVINCIBLE (Celestial Effects)
+    * IS_AIR_STUN
+    * IS_AIR_ROOT
+    * IS_STIGMAED
+    * IS_STAKATOROOT
+    * IS_FREEZING (Freya Raid Freeze attack)
+    * IS_DISABLED (combination check if not fear/stun/sleep/para/petrified/frint para/frint stun/valakas stun/antharas stun/afraid/freya stun)
+    * IS_SHOP
+    * IS_NOBLE
+    * IS_HERO
+    * IS_DUELING
+    * IS_FAKEDEATH
+    * IS_INVISIBLE
+    * IS_INCOMBAT
+    * IS_SITTING
+    * IS_WALKING (slothmo already had IS_RUNNING for something else :/)
+    * IS_FISHING
+    * IS_DEMONSWORD
+    * IS_TRANSFORMED
+    * IS_AGATHON
+    * IS_FINDPARTY
+    * IS_USINGCUBIC
+    * IS_FLAGGED
+    * IS_RED
+    * IS_PARTYMEMBER
+    * IS_PARTYLEADER
+    * IS_INPARTY
+    * IS_CLANMEMBER (is the id in a clan not necessarily yours)
+    * IS_LEADER
+    * IS_CLANMATE (is the id in your clan)
+    * IS_INSIEGE
+    * IS_ATTACKER
+    * IS_INALLY (is the id in an alliance not necessarily yours)
+    * IS_ENEMY
+    * IS_MUTUALWAR
+    * IS_1SIDEWAR
+    * IS_ALLYMEMBER (is the id in your alliance)
+    * IS_TWAR (participating in a territory war)
+11/03/10
+  AddInfo.cs  - public static void Set_Relation(uint id, int relation)
+  AddInfo.cs  - Extended ADD Npcinfo
+  GameData.cs - public enum RelationStates : uint
+  CharInfo.cs - public bool HasRelation(RelationStates test)
+  CharInfo.cs - Extended Copy
+
+11/04/10
+New Binary operators:
+
+    * IS_CLAN
+    * IS_ALLY
+    * IS_CLASS
+    * IS_ROOTCLASS
+
+New JingJing globals:
+    * SERVER_ID
+    * SERVER_KEY (obfuscation key)
+
+11/13/10
+New Binary operator:
+
+    * IN_RANGE - returns true of ID is within N distance of the character
+
+New JingJing global:
+    * NOW (returns the current time in ticks - implicit int)
+
+11/13/10
+    * Added PartySpelled/Add_PartyBuff packet handlers
+
+New function:
+    * GET_EFFECTS SortedList "<&OBJECT_ID&>"
+
+    Returns a list of effects on a player or party member.
+    Requires new Effect.l2c
+
+11/13/10
+    * Added preliminary support for in game time via new global GAME_TIME and LOGIN_TIME.
+      When a character logs in the server sets their clock via CharSelected.  From there we need to keep
+      track of the difference. (experimental)
+
+11/13/10
+    * Added Global Variable ZONE (Globals.gamedata.cur_zone)
+
+11/14/10
+	* Added USE_SKILL_SMART (experimental use_skill with auto sense delay and interrupt)
+
+11/16/10
+        * Added IS_RESISTED binary operator
+
+11/18/10
+        * Fix for IS_RESISTED
+
+11/20/10
+        * Fix for IN_RANGE
+        * Added .EFFECT_TIME for GET_EFFECTS initialized sortedlists
+        * Added CANCEL_BUFF command 
+        * Added global CHAR_CLAN, CHAR_ALLY
+        * Added many item id globals for equipped items on character.
+
+11/21/10
+        * Added GROUP_HP / GROUP_MP / GROUP CP binary operators
+
+11/23/10
+	* fix for IS_INVISIBLE unary operator
+	* fix IS_ENEMY typo -> IS_SIEGEENEMY
+
+11/27/10
+
+	* fix for SKILL_GET_REUSE when using USE_SKILL_SMART
+
+12/04/10
+	* Support for Content Filtering - IG performance tweaks
+
+12/05/10
+	* new setup option: Disconnect on IG Crash
+	* new setup option: Dump Network buffer on IG Crash
+
+12/23/10
+	* new setup option: toggle botting when teleported
+        
+01/31/11
+        * added GET_SKILLS and STDLIB\Skill.l2c (returns a list of player skills with attributes)
+
+02/02/11
+        * Added IS_READY (skill id) unary operator
+
+02/04/11
+	* Extended GET_INVENTORY and updated Inventory.l2c
+	* Added prelim High5 support to the login screen.	
+02/05/11
+	* Sped up USE_SKILL_SMART
+03/19/11
+	* Added unary operator IS_ITEM_EQUIPPED <item id>
+	* Added unary operator IS_AUG_EQUIPPED <aug id> (from optiondata-e.dat)
+07/13/2011
+        * Made IS_AFRAID cover all fear vfx.
+        * IS_TERRIFIED maintained for backwards compat but depreciated.

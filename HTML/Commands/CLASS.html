@@ -1,0 +1,46 @@
+CLASS [STRING] [V]<br />
+<br />
+[STRING1] is the name of the class.<br />
+<br />
+[V2] is the type of the parent class.  This is for inheritence.  Use NULL if you want to inherit from nothing.<br />
+<br />
+Start a class with the CLASS command and end it with the END_CLASS command. Only 1 class may be in a file.<br />
+<br />
+You may include other classes from a class. When you declare a class you must specify the parent class. Use NULL if you have no parent class.<br />
+<br />
+Class functions can be declared using PUBLIC, PRIVATE and PROTECTED instead of the FUNCTION command.<br />
+<br />
+All variables must be defined inside a VAR_START - VAR_END block. You may only have 1 VAR_START - VAR_END block per class.<br />
+<br />
+Should make more sense if you look at the following code blocks:<br />
+<br />
+my_class.l2c<br />
+---<br />
+CLASS Super null<br />
+VAR_START<br />
+<br />
+PUBLIC INT A 100<br />
+PUBLIC DOUBLE B 10.1<br />
+<br />
+VAR_END<br />
+<br />
+END_CLASS<br />
+---<br />
+<br />
+child_class.l2c<br />
+---<br />
+INCLUDE Tests\my_class.l2c<br />
+<br />
+CLASS NewSuper Super<br />
+VAR_START<br />
+<br />
+PUBLIC INT C 50<br />
+<br />
+VAR_END<br />
+<br />
+END_CLASS<br />
+---<br />
+<br />
+Once you have declared a class, you can create types of it using the DEFINE command just as if it was a built in type.<br />
+<br />
+Take a look at class_test.l2s in the Scripts\Tests\ folder for a better example.<br />

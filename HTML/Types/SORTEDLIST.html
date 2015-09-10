@@ -1,0 +1,46 @@
+SORTEDLIST<br />
+<br />
+A sortedlist of variables.<br />
+<br />
+Member Functions:<br />
+.TYPE<br />
+Returns the global SORTEDLIST<br />
+<br />
+.CLASSNAME<br />
+Returns a string "SORTEDLIST"<br />
+<br />
+.CLONE<br />
+Returns a copy of the variable.<br />
+<br />
+.CLEAR<br />
+Removes all elements from the sortedlist.<br />
+<br />
+.COUNT<br />
+Returns an int for how many elements are in the sortedlist.<br />
+<br />
+.LENGTH<br />
+Same as .COUNT<br />
+<br />
+.[VINT]<br />
+Returns the element at index [VINT1].<br />
+<br />
+.[STRING]<br />
+Returns the element with key [STRING1].<br />
+<br />
+.ADD [V] [STRING]<br />
+Puts [V1] with key [STRING2] into the sortedlist.<br />
+<br />
+.PUSH [V] [STRING]<br />
+Same as .ADD [V1] [STRING2]<br />
+<br />
+.GET_KEY [VINT]<br />
+Returns the string key at index [VINT1]<br />
+<br />
+.REMOVE [STRING]<br />
+Removes the element with key [STRING1]. The data is shifted left accordingly.<br />
+<br />
+.REMOVEAT [INT]<br />
+Removes the element with index [INT1].  The data is shifted left accordingly.<br />
+.CONTAINS_KEY [STRING]<br />
+Returns the global TRUE or FALSE depending if the key [STRING1] exists.<br />
+<br />

@@ -1,0 +1,9 @@
+SKILL_GET_REUSE [VINT] [INT]<br />
+<br />
+Stores the remaining milliseconds before the SKILL with type id INT2 can be reused in VINT1 as an int.<br />
+<br />
+The variable will be changed to a int regardless of what it's type was before the call.<br />
+<br />
+EX: DEFINE INT rtime 0<br />
+EX: SKILL_GET_REUSE rtime 100<br />
+<br />

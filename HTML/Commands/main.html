@@ -1,0 +1,46 @@
+jingjing is NOT case sensitive.<br />
+<br />
+Anywhere there is a string, you can put it in quotes to include more than 1 word. See String Parsing under Theory for more information.<br />
+<br />
+To include the character " in a string, preface it with \. Ex "hello \"everybody\""<br />
+<br />
+Use // to comment out a line of code.<br />
+<br />
+Variables can be converted to their string equivalent by putting them in double quotes and surronding the variable name with <& &><br />
+<br />
+Conditionals:<br />
+<li>== 
+<li>!=
+<li><
+<li>>
+<li>>=
+<li><=
+<li>~ (approx =, true when within 1%) 
+<li>CONTAINS (only works when the first parameter is a string, case sensitive)
+<li>STARTSWITH (only works when the first parameter is a string, case sensitive)
+<li>ENDSWIDTH (only works when the first parameter is a string, case sensitive)
+<br /><br />
+Conditionals can be joined with &&, ||, AND, OR.  The spacing and usage of ( ) are very important.  There must be a space between a value and conditional.  Use ( and ) to surround each half of a conditional pair. Follow these simple rules to conditionals such as:<br />
+IF A > B<br />
+IF (A < B)<br />
+IF (A < B) && ( C == D )<br />
+IF ((&nbsp; A &nbsp;&nbsp;<&nbsp;&nbsp; B &nbsp;) && (C == D)) && (B < D )<br />
+<br />
+Script functions are listed in this format:<br />
+NAME [parameters]<br />
+<br />
+Parameters are listed in the order passed.  Each parameter is bounded by squre brackets [].<br />
+<br />
+If a parameter is prefaced with V that means it needs an actual variable.  The type will follow the V.  If the V is not present that means the function needs a string version of the variable.<br />
+<br />
+If a paramter is bounded by parenthesis () that means it is an optional parameter.  Read the descriptor for the command to determine if you need the parameter.<br />
+<br />
+If no type is given for a variable (merely a V is shown) that means the parameter can be multiple types.  Read the descriptor for the command to learn more.<br />
+<br />
+Parameters are numbered from 1 to n where n is the total number of parameters.  This is used in command descriptors to make it easier to know which parameter is referred to.<br />
+<br />
+Example functions:<br />
+PAUSE [INT]<br />
+SAY_TEXT [INT] [STRING] [STRING]<br />
+MATH [V] [V] [STRING] ([V] [V} [V})<br />
+CHAR_GET_ID [VINT] [STRING]<br />

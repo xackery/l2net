@@ -1,0 +1,42 @@
+FOREACH [V] [STRING] [STRING]<br />
+<br />
+You can use FOREACH to iterate over SORTEDLISTs and ARRAYLISTs<br />
+<br />
+[V1] is the variable the index will be stored in. If var does not exist it will be created. var is made an INT<br />
+<br />
+[STRING2] is the type of objects you want to iterate over.<br />
+<br />
+[STRING3] is the name of the list you want to iterate inside.<br />
+<br />
+FOREACH in L2.Net is a bit different from a usual FOREACH. I had to change things up a bit to make sure I won't have problems if the set changes on any thread. As such... you pass FOREACH a variable where it will store the index of the current object. Then you can use the . (dot) operator to reference the value in the list. NEXTEACH will loop through the set until it finds another type that matches what you are iterating on. If it doesn't find any... it will skip to the next line and exit the FOREACH loop. Kinda different, but not altogether difficult. Check the example here or in the Tests folder.<br />
+<br />
+EX:<br />
+DEFINE SORTEDLIST MYSL 0<br />
+DEFINE INT I0 0<br />
+DEFINE INT I1 1<br />
+DEFINE INT I2 2<br />
+DEFINE INT I3 3<br />
+<br />
+DEFINE DOUBLE D0 100.5<br />
+DEFINE DOUBLE D1 101.5<br />
+DEFINE DOUBLE D2 102.5<br />
+DEFINE DOUBLE D3 103.5<br />
+<br />
+MYSL.ADD I0 "i0"<br />
+MYSL.ADD D0 "d0"<br />
+MYSL.ADD I1 "i1"<br />
+MYSL.ADD D1 "d1"<br />
+MYSL.ADD I2 "i2"<br />
+MYSL.ADD D2 "d2"<br />
+MYSL.ADD I3 "i3"<br />
+MYSL.ADD D3 "d3"<br />
+<br />
+FOREACH A INT MYSL<br />
+PRINT_TEXT "<&MYSL.A&>"<br />
+NEXTEACH<br />
+<br />
+---<br />
+<br />
+NEXTEACH<br />
+<br />
+Advances the iterator<br />

@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="menuItem_File" xml:space="preserve">
+    <value>F1|3</value>
+  </data>
+  <data name="menuItem_cmd_logon" xml:space="preserve">
+    <value>|060n W1nd0w</value>
+  </data>
+  <data name="menuItem_cmd_game" xml:space="preserve">
+    <value>64m3 W1nd0w</value>
+  </data>
+  <data name="menuItem_cmd_restart" xml:space="preserve">
+    <value>R3574r7</value>
+  </data>
+  <data name="menuItem_cmd_logout" xml:space="preserve">
+    <value>|060u7</value>
+  </data>
+  <data name="menuItem_closeclient" xml:space="preserve">
+    <value>C|053 C|13n7</value>
+  </data>
+  <data name="menuItem_exit" xml:space="preserve">
+    <value>3x17</value>
+  </data>
+  <data name="menuItem_Commands" xml:space="preserve">
+    <value>C0mm4nd5</value>
+  </data>
+  <data name="menuItem_cmd_cancel" xml:space="preserve">
+    <value>C4nc3| 74r637</value>
+  </data>
+  <data name="menuItem_toggle_botting" xml:space="preserve">
+    <value>7066|3 B0771n6</value>
+  </data>
+  <data name="menuItem_Options" xml:space="preserve">
+    <value>0p710n5</value>
+  </data>
+  <data name="menuItem_bot_options" xml:space="preserve">
+    <value>B07 0p710n5</value>
+  </data>
+  <data name="menuItem_sound_alerts" xml:space="preserve">
+    <value>50und 4|3r75</value>
+  </data>
+  <data name="menuItem_bot_load" xml:space="preserve">
+    <value>|04d 0p710n5</value>
+  </data>
+  <data name="menuItem_bot_save" xml:space="preserve">
+    <value>54v3 0p710n5</value>
+  </data>
+  <data name="menuItem_saveinterface" xml:space="preserve">
+    <value>54v3 1n73rf4c3</value>
+  </data>
+  <data name="menuItem_Help" xml:space="preserve">
+    <value>H3|p</value>
+  </data>
+  <data name="menuItem_about" xml:space="preserve">
+    <value>4b0u7</value>
+  </data>
+  <data name="menuItem_hosts" xml:space="preserve">
+    <value>H0575</value>
+  </data>
+  <data name="menuItem_language" xml:space="preserve">
+    <value>|4n6u463</value>
+  </data>
+  <data name="button_save" xml:space="preserve">
+    <value>54v3</value>
+  </data>
+  <data name="button_cancel" xml:space="preserve">
+    <value>C4nc3|</value>
+  </data>
+  <data name="label_select_lang" xml:space="preserve">
+    <value>53|3c7 |4n6u463</value>
+  </data>
+  <data name="button_dead_town" xml:space="preserve">
+    <value>70wn</value>
+  </data>
+  <data name="button_dead_castle" xml:space="preserve">
+    <value>C457|3</value>
+  </data>
+  <data name="button_dead_clanhall" xml:space="preserve">
+    <value>C|4n H4||</value>
+  </data>
+  <data name="button_dead_siege" xml:space="preserve">
+    <value>51363 HQ</value>
+  </data>
+  <data name="button_yesno_yes" xml:space="preserve">
+    <value>Y35</value>
+  </data>
+  <data name="button_yesno_no" xml:space="preserve">
+    <value>N0</value>
+  </data>
+  <data name="button_npc_close" xml:space="preserve">
+    <value>C|053</value>
+  </data>
+  <data name="checkBox_downloadcrests" xml:space="preserve">
+    <value>D0wn|04d n3w cr3575</value>
+  </data>
+  <data name="checkBox_social_self" xml:space="preserve">
+    <value>50c14| 53|f</value>
+  </data>
+  <data name="checkBox_social_pcs" xml:space="preserve">
+    <value>50c14| pc5</value>
+  </data>
+  <data name="checkBox_social_npcs" xml:space="preserve">
+    <value>50c14| npc5</value>
+  </data>
+  <data name="checkBox_minimap" xml:space="preserve">
+    <value>M4p</value>
+  </data>
+  <data name="checkBox_op_control" xml:space="preserve">
+    <value>c0n7r0|</value>
+  </data>
+  <data name="checkBox_op_shift" xml:space="preserve">
+    <value>5h1f7</value>
+  </data>
+  <data name="button_select_oog" xml:space="preserve">
+    <value>006</value>
+  </data>
+  <data name="button_select_ig" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label_blowfishkey" xml:space="preserve">
+    <value>B|0wf15h K3y(70k3n)</value>
+  </data>
+  <data name="label_loginserver" xml:space="preserve">
+    <value>|061n 53rv3r</value>
+  </data>
+  <data name="label_gameserver" xml:space="preserve">
+    <value>64m3 53rv3r</value>
+  </data>
+  <data name="label_localport" xml:space="preserve">
+    <value>|0c4| P0r7</value>
+  </data>
+  <data name="checkBox_bypassgg" xml:space="preserve">
+    <value>3mu|473 64m36u4rd</value>
+  </data>
+  <data name="button_logon" xml:space="preserve">
+    <value>|060n</value>
+  </data>
+  <data name="button_server" xml:space="preserve">
+    <value>53|3c7 53rv3r</value>
+  </data>
+  <data name="button_char" xml:space="preserve">
+    <value>53|3c7 Ch4r</value>
+  </data>
+  <data name="checkBox_activefollow" xml:space="preserve">
+    <value>4c71v3 F0||0w</value>
+  </data>
+  <data name="label_followname" xml:space="preserve">
+    <value>N4m3</value>
+  </data>
+  <data name="label_followdistance" xml:space="preserve">
+    <value>D1574nc3</value>
+  </data>
+  <data name="checkBox_activefollow_attack" xml:space="preserve">
+    <value>4c71v3 F0||0w 4774ck</value>
+  </data>
+  <data name="Skill" xml:space="preserve">
+    <value>5k1||</value>
+  </data>
+  <data name="Names" xml:space="preserve">
+    <value>N4m35</value>
+  </data>
+  <data name="Trait" xml:space="preserve">
+    <value>7r417</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>173m</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>71m3</value>
+  </data>
+  <data name="button_sendtext" xml:space="preserve">
+    <value>54y</value>
+  </data>
+  <data name="label_youdied" xml:space="preserve">
+    <value>U 7074| N00BZ0R!</value>
+  </data>
+  <data name="button_ig_listen" xml:space="preserve">
+    <value>|1573n</value>
+  </data>
+  <data name="label_delaymsec" xml:space="preserve">
+    <value>D3|4y(m53c)</value>
+  </data>
+  <data name="menuItem_scripting" xml:space="preserve">
+    <value>5cr1p71n6</value>
+  </data>
+  <data name="menuItem_scriptwindow" xml:space="preserve">
+    <value>5cr1p7 Ed1704</value>
+  </data>
+  <data name="menuItem_startscript" xml:space="preserve">
+    <value>574r7 5cr1p7</value>
+  </data>
+  <data name="menuItem_resestscript" xml:space="preserve">
+    <value>R3537 5cr1p7</value>
+  </data>
+  <data name="menuItem_stopscript" xml:space="preserve">
+    <value>570p 5cr1p7</value>
+  </data>
+  <data name="button_loadscript" xml:space="preserve">
+    <value>|04d 5cr1p7</value>
+  </data>
+  <data name="button_savescript" xml:space="preserve">
+    <value>54v3 5cr1p7</value>
+  </data>
+  <data name="tab_Char" xml:space="preserve">
+    <value>Ch4r</value>
+  </data>
+  <data name="tab_Players" xml:space="preserve">
+    <value>P|4y3r5</value>
+  </data>
+  <data name="tab_Items" xml:space="preserve">
+    <value>173m5</value>
+  </data>
+  <data name="tab_NPC" xml:space="preserve">
+    <value>|\|P(</value>
+  </data>
+  <data name="tab_Inv" xml:space="preserve">
+    <value>1nv</value>
+  </data>
+  <data name="tab_Skills" xml:space="preserve">
+    <value>5k1||5</value>
+  </data>
+  <data name="tab_Clan" xml:space="preserve">
+    <value>C|4n</value>
+  </data>
+  <data name="col_ObjID" xml:space="preserve">
+    <value>0bj1D</value>
+  </data>
+  <data name="col_War" xml:space="preserve">
+    <value>W4r</value>
+  </data>
+  <data name="col_Title" xml:space="preserve">
+    <value>717|3</value>
+  </data>
+  <data name="col_Clan" xml:space="preserve">
+    <value>C|4n</value>
+  </data>
+  <data name="col_Ally" xml:space="preserve">
+    <value>4||y</value>
+  </data>
+  <data name="col_X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="col_Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="col_Z" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="col_Race" xml:space="preserve">
+    <value>R4c3</value>
+  </data>
+  <data name="col_Sex" xml:space="preserve">
+    <value>53x</value>
+  </data>
+  <data name="col_Class" xml:space="preserve">
+    <value>C|455</value>
+  </data>
+  <data name="col_Head" xml:space="preserve">
+    <value>H34d</value>
+  </data>
+  <data name="col_RHand" xml:space="preserve">
+    <value>RH4nd</value>
+  </data>
+  <data name="col_LRHand" xml:space="preserve">
+    <value>|RH4nd</value>
+  </data>
+  <data name="col_LHand" xml:space="preserve">
+    <value>|H4nd</value>
+  </data>
+  <data name="col_Gloves" xml:space="preserve">
+    <value>6|0v35</value>
+  </data>
+  <data name="col_Chest" xml:space="preserve">
+    <value>Ch357</value>
+  </data>
+  <data name="col_Legs" xml:space="preserve">
+    <value>|365</value>
+  </data>
+  <data name="col_Feet" xml:space="preserve">
+    <value>F337</value>
+  </data>
+  <data name="col_Back" xml:space="preserve">
+    <value>B4ck</value>
+  </data>
+  <data name="col_Hair" xml:space="preserve">
+    <value>H41r</value>
+  </data>
+  <data name="col_PvPFlag" xml:space="preserve">
+    <value>PvPF|46</value>
+  </data>
+  <data name="col_Karma" xml:space="preserve">
+    <value>R3pu74720n</value>
+  </data>
+  <data name="col_MatkSpeed" xml:space="preserve">
+    <value>M47k5p33d</value>
+  </data>
+  <data name="col_PatkSpeed" xml:space="preserve">
+    <value>P47k5p33d</value>
+  </data>
+  <data name="col_RunSpeed" xml:space="preserve">
+    <value>Run5p33d</value>
+  </data>
+  <data name="col_WalkSpeed" xml:space="preserve">
+    <value>W4|k5p33d</value>
+  </data>
+  <data name="col_HairStyle" xml:space="preserve">
+    <value>H41r57y|3</value>
+  </data>
+  <data name="col_HairColor" xml:space="preserve">
+    <value>H41rC0|0r</value>
+  </data>
+  <data name="col_Face" xml:space="preserve">
+    <value>F4c3</value>
+  </data>
+  <data name="col_ClanID" xml:space="preserve">
+    <value>C|4n1D</value>
+  </data>
+  <data name="col_AllyID" xml:space="preserve">
+    <value>4||y1D</value>
+  </data>
+  <data name="col_Sitting" xml:space="preserve">
+    <value>51771n6?</value>
+  </data>
+  <data name="col_Running" xml:space="preserve">
+    <value>Runn1n6?</value>
+  </data>
+  <data name="col_InCombat" xml:space="preserve">
+    <value>1nC0mb47?</value>
+  </data>
+  <data name="col_LikeDead" xml:space="preserve">
+    <value>|1k3D34d? L0L</value>
+  </data>
+  <data name="col_Invisible" xml:space="preserve">
+    <value>1nv151b|3?</value>
+  </data>
+  <data name="col_Mount" xml:space="preserve">
+    <value>M0un7?</value>
+  </data>
+  <data name="col_PrivateStore" xml:space="preserve">
+    <value>Pr1v473570r3</value>
+  </data>
+  <data name="col_CubicCount" xml:space="preserve">
+    <value>Cub1cC0un7</value>
+  </data>
+  <data name="col_LFG" xml:space="preserve">
+    <value>|F6</value>
+  </data>
+  <data name="col_RecAmount" xml:space="preserve">
+    <value>R3c4m0un7</value>
+  </data>
+  <data name="col_Enchant" xml:space="preserve">
+    <value>3nch4n7</value>
+  </data>
+  <data name="col_LogoGlow" xml:space="preserve">
+    <value>|0606|0w</value>
+  </data>
+  <data name="col_HeroGlow" xml:space="preserve">
+    <value>H3r06|0w</value>
+  </data>
+  <data name="col_Fishing" xml:space="preserve">
+    <value>F15h1n6?</value>
+  </data>
+  <data name="col_Item" xml:space="preserve">
+    <value>173m</value>
+  </data>
+  <data name="col_Count" xml:space="preserve">
+    <value>C0un7</value>
+  </data>
+  <data name="col_Stack" xml:space="preserve">
+    <value>574ck?</value>
+  </data>
+  <data name="col_NPC" xml:space="preserve">
+    <value>|\|P(</value>
+  </data>
+  <data name="col_Attackable" xml:space="preserve">
+    <value>4774ck4b|3?</value>
+  </data>
+  <data name="col_Radius" xml:space="preserve">
+    <value>R4d1u5</value>
+  </data>
+  <data name="col_Height" xml:space="preserve">
+    <value>H316h7</value>
+  </data>
+  <data name="col_NameShows" xml:space="preserve">
+    <value>N4m35h0w5?</value>
+  </data>
+  <data name="col_Summoned" xml:space="preserve">
+    <value>5umm0n3d?</value>
+  </data>
+  <data name="col_AbnormalEffects" xml:space="preserve">
+    <value>4bn0rm473ff3c75</value>
+  </data>
+  <data name="col_TeamCircle" xml:space="preserve">
+    <value>734mC1rc|3</value>
+  </data>
+  <data name="col_Trait" xml:space="preserve">
+    <value>7r417</value>
+  </data>
+  <data name="col_Value" xml:space="preserve">
+    <value>V4|u3</value>
+  </data>
+  <data name="col_Color" xml:space="preserve">
+    <value>C0|0r</value>
+  </data>
+  <data name="col_Type" xml:space="preserve">
+    <value>7yp31</value>
+  </data>
+  <data name="col_Type2" xml:space="preserve">
+    <value>7yp32</value>
+  </data>
+  <data name="col_Type3" xml:space="preserve">
+    <value>7yp33</value>
+  </data>
+  <data name="col_Type4" xml:space="preserve">
+    <value>7yp34</value>
+  </data>
+  <data name="col_Equipped" xml:space="preserve">
+    <value>3qu1pp3d?</value>
+  </data>
+  <data name="col_Slot" xml:space="preserve">
+    <value>5|07</value>
+  </data>
+  <data name="col_Level" xml:space="preserve">
+    <value>|3v3|</value>
+  </data>
+  <data name="col_Passive" xml:space="preserve">
+    <value>P4551v3?</value>
+  </data>
+  <data name="col_Desc1" xml:space="preserve">
+    <value>D35cr1p710n1</value>
+  </data>
+  <data name="col_Desc2" xml:space="preserve">
+    <value>D35cr1p710n2</value>
+  </data>
+  <data name="col_Desc3" xml:space="preserve">
+    <value>D35cr1p710n3</value>
+  </data>
+  <data name="col_Online" xml:space="preserve">
+    <value>0n|1n3</value>
+  </data>
+  <data name="label_on" xml:space="preserve">
+    <value>0n</value>
+  </data>
+  <data name="show_names" xml:space="preserve">
+    <value>5h0w N4m35</value>
+  </data>
+  <data name="overlay_window" xml:space="preserve">
+    <value>0v3r|4y W1nd0w</value>
+  </data>
+  <data name="button_top" xml:space="preserve">
+    <value>70p</value>
+  </data>
+  <data name="shortcut_window" xml:space="preserve">
+    <value>5h0r7cu7 W1nd0w</value>
+  </data>
+  <data name="report_window" xml:space="preserve">
+    <value>R3p0r7 W1nd0w</value>
+  </data>
+  <data name="ShortCut" xml:space="preserve">
+    <value>5h0r7cu7</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>P463</value>
+  </data>
+  <data name="delaysec" xml:space="preserve">
+    <value>D3|4y(53c)</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Upd473</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>4pp|y</value>
+  </data>
+  <data name="NeedTarget" xml:space="preserve">
+    <value>N33d 74r637</value>
+  </data>
+  <data name="menuItem_debug_mode" xml:space="preserve">
+    <value>D3bu6 M0d3</value>
+  </data>
+  <data name="menuItem_loadscript" xml:space="preserve">
+    <value>537 5cr1p7 M41n</value>
+  </data>
+  <data name="menuItem_scriptdebugger" xml:space="preserve">
+    <value>5cr1p7 D3bu663r</value>
+  </data>
+  <data name="add" xml:space="preserve">
+    <value>4dd</value>
+  </data>
+  <data name="auto_spoil" xml:space="preserve">
+    <value>4u70 5p01|</value>
+  </data>
+  <data name="auto_sweep" xml:space="preserve">
+    <value>4u70 5w33p</value>
+  </data>
+  <data name="buffs_heals" xml:space="preserve">
+    <value>Buff5/H34|5</value>
+  </data>
+  <data name="direct_3d" xml:space="preserve">
+    <value>U53 D1r3c7 3D</value>
+  </data>
+  <data name="direct_sound" xml:space="preserve">
+    <value>U53 D1r3c7 50und</value>
+  </data>
+  <data name="do_not" xml:space="preserve">
+    <value>D0 N07</value>
+  </data>
+  <data name="ignore_unknown_items" xml:space="preserve">
+    <value>16n0r3 Unkn0wn 173m5</value>
+  </data>
+  <data name="l2_path" xml:space="preserve">
+    <value>|1n3463 2 P47h</value>
+  </data>
+  <data name="menuItem_dump_mode" xml:space="preserve">
+    <value>Dump M0d3</value>
+  </data>
+  <data name="menuItem_forcecollect" xml:space="preserve">
+    <value>F0rc3 C0||3c7</value>
+  </data>
+  <data name="menuItem_help_donate" xml:space="preserve">
+    <value>D0n473</value>
+  </data>
+  <data name="menuItem_killthreads" xml:space="preserve">
+    <value>K1|| 7hr34d5</value>
+  </data>
+  <data name="menuItem_launchl2" xml:space="preserve">
+    <value>|4unch |1n3463 2</value>
+  </data>
+  <data name="menuItem_options_setup" xml:space="preserve">
+    <value>537up</value>
+  </data>
+  <data name="min_to_tray" xml:space="preserve">
+    <value>M1n1m1z3 70 7r4y</value>
+  </data>
+  <data name="party" xml:space="preserve">
+    <value>P4r7y</value>
+  </data>
+  <data name="pause_resume_script" xml:space="preserve">
+    <value>P4u53/R35um3 5cr1p7</value>
+  </data>
+  <data name="product_key" xml:space="preserve">
+    <value>Pr0duc7 K3y</value>
+  </data>
+  <data name="script_io" xml:space="preserve">
+    <value>4||0w 5cr1p7 1/0</value>
+  </data>
+  <data name="snapshot" xml:space="preserve">
+    <value>5n4p5h07</value>
+  </data>
+  <data name="spoil_crush" xml:space="preserve">
+    <value>U53 5p01| Cru5h</value>
+  </data>
+  <data name="toggle_key" xml:space="preserve">
+    <value>7066|3 K3y</value>
+  </data>
+  <data name="voice" xml:space="preserve">
+    <value>V01c3</value>
+  </data>
+  <data name="accept_party" xml:space="preserve">
+    <value>4u70 4cc3p7 P4r7y</value>
+  </data>
+  <data name="accept_rez" xml:space="preserve">
+    <value>4u70 4cc3p7 R3z</value>
+  </data>
+  <data name="active_attack" xml:space="preserve">
+    <value>4c71v3 4774ck</value>
+  </data>
+  <data name="active_pickup" xml:space="preserve">
+    <value>P1ckup</value>
+  </data>
+  <data name="active_pickup_range" xml:space="preserve">
+    <value>P1ckup R4n63</value>
+  </data>
+  <data name="active_target" xml:space="preserve">
+    <value>4c71v3 74r637</value>
+  </data>
+  <data name="add_current" xml:space="preserve">
+    <value>4dd Curr3n7 |0c4710n</value>
+  </data>
+  <data name="autofighter" xml:space="preserve">
+    <value>4u70f16h73r</value>
+  </data>
+  <data name="buff_control" xml:space="preserve">
+    <value>Buff w17h C0n7r0|</value>
+  </data>
+  <data name="buff_range" xml:space="preserve">
+    <value>Buff/H34| R4n63</value>
+  </data>
+  <data name="buff_shift" xml:space="preserve">
+    <value>Buff w17h 5h1f7</value>
+  </data>
+  <data name="button_dead_fort" xml:space="preserve">
+    <value>F0r7r355</value>
+  </data>
+  <data name="combat" xml:space="preserve">
+    <value>C0mb47</value>
+  </data>
+  <data name="conditional" xml:space="preserve">
+    <value>C0nd1710n4|</value>
+  </data>
+  <data name="forcelog" xml:space="preserve">
+    <value>F0rc3 |06</value>
+  </data>
+  <data name="generate_box" xml:space="preserve">
+    <value>63n3r473 B0x</value>
+  </data>
+  <data name="offset" xml:space="preserve">
+    <value>0ff537</value>
+  </data>
+  <data name="polygon" xml:space="preserve">
+    <value>B0und1n6 P0|y60n</value>
+  </data>
+  <data name="radius" xml:space="preserve">
+    <value>R4d1u5</value>
+  </data>
+  <data name="sides" xml:space="preserve">
+    <value>51d35</value>
+  </data>
+  <data name="zrange" xml:space="preserve">
+    <value>Z R4n63</value>
+  </data>
+  <data name="zrange_map" xml:space="preserve">
+    <value>M4p Z R4n63</value>
+  </data>
+  <data name="check_ignexitconf" xml:space="preserve">
+    <value>19n0r3 3x17 (0nƒ1rm4710n</value>
+  </data>
+  <data name="radio_active" xml:space="preserve">
+    <value>4(71v3</value>
+  </data>
+  <data name="radio_passive" xml:space="preserve">
+    <value>P4$$1v3</value>
+  </data>
+  <data name="button_delete_char" xml:space="preserve">
+    <value>Ð3£373 (h4r</value>
+  </data>
+  <data name="but_ss_activate" xml:space="preserve">
+    <value>4(71v473</value>
+  </data>
+  <data name="but_ss_deactivate" xml:space="preserve">
+    <value>Ð34(71v473</value>
+  </data>
+  <data name="label_autoss" xml:space="preserve">
+    <value>4µ70 $0µ£/$p1r17$h07</value>
+  </data>
+  <data name="Forums" xml:space="preserve">
+    <value>pH0rU/\/\$</value>
+  </data>
+  <data name="EULA" xml:space="preserve">
+    <value>EULA</value>
+  </data>
+  <data name="server_dump_mode" xml:space="preserve">
+    <value>53r\/3r dU/\/\P /\/\0D3</value>
+  </data>
+  <data name="blacklist_target" xml:space="preserve">
+    <value>L4(|&lt;L157 74R937</value>
+  </data>
+  <data name="actions" xml:space="preserve">
+    <value>4(710|\|$</value>
+  </data>
+  <data name="char_detail" xml:space="preserve">
+    <value>|-|4r d3741L</value>
+  </data>
+  <data name="NPC_chat" xml:space="preserve">
+    <value>|\|P( (|-|47</value>
+  </data>
+  <data name="buffs" xml:space="preserve">
+    <value>BUPhPh$</value>
+  </data>
+  <data name="remaining" xml:space="preserve">
+    <value>Remaining</value>
+  </data>
+  <data name="rest_options" xml:space="preserve">
+    <value>R35t 0pti0n5</value>
+  </data>
+  <data name="sound_alerts" xml:space="preserve">
+    <value>50und 4l3rt5</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>L09 0U7</value>
+  </data>
+  <data name="targeting" xml:space="preserve">
+    <value>74r9371|\|9</value>
+  </data>
+  <data name="solo_settings" xml:space="preserve">
+    <value>5010 53tting5</value>
+  </data>
+  <data name="party_settings" xml:space="preserve">
+    <value>P4r7'/ 53771|\|9$</value>
+  </data>
+  <data name="rest_below" xml:space="preserve">
+    <value>R35t B3l0w</value>
+  </data>
+  <data name="follow_rest" xml:space="preserve">
+    <value>pH0LL0\/\/ R3$7</value>
+  </data>
+  <data name="auto_send_party_invite" xml:space="preserve">
+    <value>4U70 $3|\|D p4R7'/ 1|\|\/173</value>
+  </data>
+  <data name="OOP_members" xml:space="preserve">
+    <value>00P /\/\3/\/\B3R5</value>
+  </data>
+  <data name="walker_style" xml:space="preserve">
+    <value>W4lk3r 5tyl3</value>
+  </data>
+  <data name="l2net_style" xml:space="preserve">
+    <value>L2.|\|37 57'/L3</value>
+  </data>
+  <data name="move_before_attack" xml:space="preserve">
+    <value>5/\/\4r7 /\/\0\/3 b3Ph0r3 4774(|&lt;</value>
+  </data>
+  <data name="active_follow_target" xml:space="preserve">
+    <value>4(71\/3 pH0LL0\/\/ 74r937</value>
+  </data>
+  <data name="move_range" xml:space="preserve">
+    <value>/\/\0\/3 R4|\|93</value>
+  </data>
+  <data name="until" xml:space="preserve">
+    <value>U|\|71L</value>
+  </data>
+  <data name="ignore_meshless_items" xml:space="preserve">
+    <value>19|\|0R3 /\/\35|-|L355 173/\/\5</value>
+  </data>
+  <data name="ignore_raidbosses" xml:space="preserve">
+    <value>19|\|0R3 r41DB05535</value>
+  </data>
+  <data name="ignore_chests" xml:space="preserve">
+    <value>19|\|0r3 (|-|3$7$</value>
+  </data>
+  <data name="2_way_war" xml:space="preserve">
+    <value>2 \/\/4'/ \/\/4r</value>
+  </data>
+  <data name="1_way_war" xml:space="preserve">
+    <value>1 \/\/4'/ \/\/4r</value>
+  </data>
+  <data name="n1_way_war" xml:space="preserve">
+    <value>-1 \/\/4'/ \/\/4r</value>
+  </data>
+  <data name="player" xml:space="preserve">
+    <value>PL4'/3r</value>
+  </data>
+  <data name="ignore_party_members" xml:space="preserve">
+    <value>19|\|0r3 p4r7'/ /\/\3/\/\B3r$</value>
+  </data>
+  <data name="white_chat" xml:space="preserve">
+    <value>Whit3 Ch4t</value>
+  </data>
+  <data name="private_message" xml:space="preserve">
+    <value>Pr1\/473 /\/\3$$493</value>
+  </data>
+  <data name="friend_chat" xml:space="preserve">
+    <value>pHr13|\|D (|-|47</value>
+  </data>
+  <data name="menuItem_bot_clear" xml:space="preserve">
+    <value>(L34R 0P710|\|5</value>
+  </data>
+  <data name="anti_ks_delay" xml:space="preserve">
+    <value>4nti K5 D3l4y</value>
+  </data>
+  <data name="attack_only" xml:space="preserve">
+    <value>4tt4c 0nly NPC5 in Li5t</value>
+  </data>
+  <data name="auto_follow_delay" xml:space="preserve">
+    <value>4ut0 F0ll0w D3l4y</value>
+  </data>
+  <data name="blacklist_tries" xml:space="preserve">
+    <value>Bl4ckli5t Tri35</value>
+  </data>
+  <data name="btn_reset" xml:space="preserve">
+    <value>R3s3t</value>
+  </data>
+  <data name="btn_set" xml:space="preserve">
+    <value>S3t</value>
+  </data>
+  <data name="custom_window_title" xml:space="preserve">
+    <value>Cust0m Wind0w Titl3</value>
+  </data>
+  <data name="pick_only" xml:space="preserve">
+    <value>Pick 0nly It3m5 in Li5t</value>
+  </data>
+  <data name="advanced" xml:space="preserve">
+    <value>4D\/4|\|(3D</value>
+  </data>
+  <data name="alive" xml:space="preserve">
+    <value>4L1\/3</value>
+  </data>
+  <data name="attackable" xml:space="preserve">
+    <value>4774(|&lt;4BL3</value>
+  </data>
+  <data name="auto_unstuck" xml:space="preserve">
+    <value>4U70 U|\|57U(|&lt;</value>
+  </data>
+  <data name="both" xml:space="preserve">
+    <value>B07|-|</value>
+  </data>
+  <data name="dead" xml:space="preserve">
+    <value>D34D</value>
+  </data>
+  <data name="dont_ks" xml:space="preserve">
+    <value>D0|\|'7 |&lt;$</value>
+  </data>
+  <data name="ignore_summons" xml:space="preserve">
+    <value>19|\|0r3 5U/\/\/\/\0|\|$</value>
+  </data>
+  <data name="invincible" xml:space="preserve">
+    <value>1|\|\/1|\|(1BL3</value>
+  </data>
+  <data name="in_box" xml:space="preserve">
+    <value>1|\| b0&gt;&lt;</value>
+  </data>
+  <data name="move_normal_before_attack" xml:space="preserve">
+    <value>/\/\0\/3 b3Ph0r3 4774(|&lt;</value>
+  </data>
+  <data name="not_in_box" xml:space="preserve">
+    <value>|\|07 1|\| b0&gt;&lt;</value>
+  </data>
+  <data name="npcs" xml:space="preserve">
+    <value>|\|P(5</value>
+  </data>
+  <data name="only_ks" xml:space="preserve">
+    <value>0|\|L'/ |&lt;$</value>
+  </data>
+  <data name="only_pick_mine" xml:space="preserve">
+    <value>0|\|L'/ p1(|&lt; /\/\1|\|3</value>
+  </data>
+  <data name="players" xml:space="preserve">
+    <value>PL4'/3r$</value>
+  </data>
+  <data name="protect_priority" xml:space="preserve">
+    <value>Pr073(7 pr10r17'/</value>
+  </data>
+  <data name="cancel_target" xml:space="preserve">
+    <value>Cancel Target on Dead</value>
+  </data>
+</root>

@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="menuItem_File" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="menuItem_cmd_logon" xml:space="preserve">
+    <value>ログオンウィンドウ</value>
+  </data>
+  <data name="menuItem_cmd_game" xml:space="preserve">
+    <value>ゲームウィンドウ</value>
+  </data>
+  <data name="menuItem_cmd_restart" xml:space="preserve">
+    <value>リスタート</value>
+  </data>
+  <data name="menuItem_cmd_logout" xml:space="preserve">
+    <value>ログアウト</value>
+  </data>
+  <data name="menuItem_closeclient" xml:space="preserve">
+    <value>クライアントを閉じる</value>
+  </data>
+  <data name="menuItem_exit" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="menuItem_Commands" xml:space="preserve">
+    <value>コマンド</value>
+  </data>
+  <data name="menuItem_cmd_cancel" xml:space="preserve">
+    <value>ターゲットキャンセル</value>
+  </data>
+  <data name="menuItem_toggle_botting" xml:space="preserve">
+    <value>BOT オン/オフ</value>
+  </data>
+  <data name="menuItem_Options" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="menuItem_bot_options" xml:space="preserve">
+    <value>BOTオプション</value>
+  </data>
+  <data name="menuItem_sound_alerts" xml:space="preserve">
+    <value>サウンド警告</value>
+  </data>
+  <data name="menuItem_bot_load" xml:space="preserve">
+    <value>BOT設定読込</value>
+  </data>
+  <data name="menuItem_bot_save" xml:space="preserve">
+    <value>BOT設定保存</value>
+  </data>
+  <data name="menuItem_saveinterface" xml:space="preserve">
+    <value>設定保存</value>
+  </data>
+  <data name="menuItem_Help" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="menuItem_about" xml:space="preserve">
+    <value>バージョン情報</value>
+  </data>
+  <data name="menuItem_hosts" xml:space="preserve">
+    <value>Hosts編集</value>
+  </data>
+  <data name="menuItem_language" xml:space="preserve">
+    <value>表示言語</value>
+  </data>
+  <data name="button_save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="button_cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="label_select_lang" xml:space="preserve">
+    <value>言語選択</value>
+  </data>
+  <data name="button_dead_town" xml:space="preserve">
+    <value>最寄りの村へ</value>
+  </data>
+  <data name="button_dead_castle" xml:space="preserve">
+    <value>城へ</value>
+  </data>
+  <data name="button_dead_clanhall" xml:space="preserve">
+    <value>アジトへ</value>
+  </data>
+  <data name="button_dead_siege" xml:space="preserve">
+    <value>陣地へ</value>
+  </data>
+  <data name="button_yesno_yes" xml:space="preserve">
+    <value>はい</value>
+  </data>
+  <data name="button_yesno_no" xml:space="preserve">
+    <value>いいえ</value>
+  </data>
+  <data name="button_npc_close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="checkBox_downloadcrests" xml:space="preserve">
+    <value>ｴﾝﾌﾞﾚﾑのﾀﾞｳﾝﾛｰﾄﾞ</value>
+  </data>
+  <data name="checkBox_social_self" xml:space="preserve">
+    <value>自分のｿｰｼｬﾙ</value>
+  </data>
+  <data name="checkBox_social_pcs" xml:space="preserve">
+    <value>ﾌﾟﾚｲﾔｰのｿｰｼｬﾙ</value>
+  </data>
+  <data name="checkBox_social_npcs" xml:space="preserve">
+    <value>NPCのｿｰｼｬﾙ</value>
+  </data>
+  <data name="checkBox_minimap" xml:space="preserve">
+    <value>マップ</value>
+  </data>
+  <data name="checkBox_op_control" xml:space="preserve">
+    <value>Ctrl</value>
+  </data>
+  <data name="checkBox_op_shift" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="button_select_oog" xml:space="preserve">
+    <value>OOG</value>
+  </data>
+  <data name="button_select_ig" xml:space="preserve">
+    <value>IG</value>
+  </data>
+  <data name="label_blowfishkey" xml:space="preserve">
+    <value>Blowfishキー(トークン)</value>
+  </data>
+  <data name="label_loginserver" xml:space="preserve">
+    <value>ログインサーバー</value>
+  </data>
+  <data name="label_gameserver" xml:space="preserve">
+    <value>ゲームサーバー</value>
+  </data>
+  <data name="label_localport" xml:space="preserve">
+    <value>ポート</value>
+  </data>
+  <data name="checkBox_bypassgg" xml:space="preserve">
+    <value>GameGuardエミュレート</value>
+  </data>
+  <data name="button_logon" xml:space="preserve">
+    <value>ログオン</value>
+  </data>
+  <data name="button_server" xml:space="preserve">
+    <value>サーバー選択</value>
+  </data>
+  <data name="button_char" xml:space="preserve">
+    <value>キャラクター選択</value>
+  </data>
+  <data name="checkBox_activefollow" xml:space="preserve">
+    <value>自動追尾</value>
+  </data>
+  <data name="label_followname" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="label_followdistance" xml:space="preserve">
+    <value>追尾間隔</value>
+  </data>
+  <data name="checkBox_activefollow_attack" xml:space="preserve">
+    <value>攻撃をアシスト</value>
+  </data>
+  <data name="Skill" xml:space="preserve">
+    <value>スキル</value>
+  </data>
+  <data name="Names" xml:space="preserve">
+    <value>名前</value>
+  </data>
+  <data name="Trait" xml:space="preserve">
+    <value>ｽﾃｰﾀｽ</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>項目</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>時間</value>
+  </data>
+  <data name="button_sendtext" xml:space="preserve">
+    <value>発言</value>
+  </data>
+  <data name="label_youdied" xml:space="preserve">
+    <value>お前はもう死んでいる！</value>
+  </data>
+  <data name="button_ig_listen" xml:space="preserve">
+    <value>IG接続待機</value>
+  </data>
+  <data name="label_delaymsec" xml:space="preserve">
+    <value>ディレイ(msec)</value>
+  </data>
+  <data name="menuItem_scripting" xml:space="preserve">
+    <value>スクリプト</value>
+  </data>
+  <data name="menuItem_scriptwindow" xml:space="preserve">
+    <value>ｽｸﾘﾌﾟﾄ編集</value>
+  </data>
+  <data name="menuItem_startscript" xml:space="preserve">
+    <value>ｽｸﾘﾌﾟﾄ開始</value>
+  </data>
+  <data name="menuItem_resestscript" xml:space="preserve">
+    <value>ｽｸﾘﾌﾟﾄリセット</value>
+  </data>
+  <data name="menuItem_stopscript" xml:space="preserve">
+    <value>ｽｸﾘﾌﾟﾄ停止</value>
+  </data>
+  <data name="button_loadscript" xml:space="preserve">
+    <value>ｽｸﾘﾌﾟﾄ読込</value>
+  </data>
+  <data name="button_savescript" xml:space="preserve">
+    <value>ｽｸﾘﾌﾟﾄ保存</value>
+  </data>
+  <data name="tab_Char" xml:space="preserve">
+    <value>ｷｬﾗ</value>
+  </data>
+  <data name="tab_Players" xml:space="preserve">
+    <value>プレイヤー</value>
+  </data>
+  <data name="tab_Items" xml:space="preserve">
+    <value>ｱｲﾃﾑ</value>
+  </data>
+  <data name="tab_NPC" xml:space="preserve">
+    <value>NPC</value>
+  </data>
+  <data name="tab_Inv" xml:space="preserve">
+    <value>ｲﾝﾍﾞﾝﾄﾘ</value>
+  </data>
+  <data name="tab_Skills" xml:space="preserve">
+    <value>ｽｷﾙ</value>
+  </data>
+  <data name="tab_Clan" xml:space="preserve">
+    <value>血盟</value>
+  </data>
+  <data name="col_ObjID" xml:space="preserve">
+    <value>ｵﾌﾞｼﾞｪｸﾄID</value>
+  </data>
+  <data name="col_War" xml:space="preserve">
+    <value>戦争</value>
+  </data>
+  <data name="col_Title" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="col_Clan" xml:space="preserve">
+    <value>血盟</value>
+  </data>
+  <data name="col_Ally" xml:space="preserve">
+    <value>同盟</value>
+  </data>
+  <data name="col_X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="col_Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="col_Z" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="col_Race" xml:space="preserve">
+    <value>種族</value>
+  </data>
+  <data name="col_Sex" xml:space="preserve">
+    <value>性別</value>
+  </data>
+  <data name="col_Class" xml:space="preserve">
+    <value>クラス</value>
+  </data>
+  <data name="col_Head" xml:space="preserve">
+    <value>ヘルム</value>
+  </data>
+  <data name="col_RHand" xml:space="preserve">
+    <value>右手</value>
+  </data>
+  <data name="col_LRHand" xml:space="preserve">
+    <value>両手</value>
+  </data>
+  <data name="col_LHand" xml:space="preserve">
+    <value>左手</value>
+  </data>
+  <data name="col_Gloves" xml:space="preserve">
+    <value>グローブ</value>
+  </data>
+  <data name="col_Chest" xml:space="preserve">
+    <value>上半身</value>
+  </data>
+  <data name="col_Legs" xml:space="preserve">
+    <value>下半身</value>
+  </data>
+  <data name="col_Feet" xml:space="preserve">
+    <value>ブーツ</value>
+  </data>
+  <data name="col_Back" xml:space="preserve">
+    <value>マント</value>
+  </data>
+  <data name="col_Hair" xml:space="preserve">
+    <value>ヘアー</value>
+  </data>
+  <data name="col_PvPFlag" xml:space="preserve">
+    <value>PVP/PK</value>
+  </data>
+  <data name="col_Karma" xml:space="preserve">
+    <value>性向</value>
+  </data>
+  <data name="col_MatkSpeed" xml:space="preserve">
+    <value>魔法速度</value>
+  </data>
+  <data name="col_PatkSpeed" xml:space="preserve">
+    <value>攻撃速度</value>
+  </data>
+  <data name="col_RunSpeed" xml:space="preserve">
+    <value>走る速度</value>
+  </data>
+  <data name="col_WalkSpeed" xml:space="preserve">
+    <value>歩く速度</value>
+  </data>
+  <data name="col_HairStyle" xml:space="preserve">
+    <value>髪型</value>
+  </data>
+  <data name="col_HairColor" xml:space="preserve">
+    <value>髪色</value>
+  </data>
+  <data name="col_Face" xml:space="preserve">
+    <value>顔</value>
+  </data>
+  <data name="col_ClanID" xml:space="preserve">
+    <value>血盟ID</value>
+  </data>
+  <data name="col_AllyID" xml:space="preserve">
+    <value>同盟ID</value>
+  </data>
+  <data name="col_Sitting" xml:space="preserve">
+    <value>座る</value>
+  </data>
+  <data name="col_Running" xml:space="preserve">
+    <value>走る</value>
+  </data>
+  <data name="col_InCombat" xml:space="preserve">
+    <value>戦闘中</value>
+  </data>
+  <data name="col_LikeDead" xml:space="preserve">
+    <value>死亡</value>
+  </data>
+  <data name="col_Invisible" xml:space="preserve">
+    <value>不可視</value>
+  </data>
+  <data name="col_Mount" xml:space="preserve">
+    <value>搭乗</value>
+  </data>
+  <data name="col_PrivateStore" xml:space="preserve">
+    <value>個人商店</value>
+  </data>
+  <data name="col_CubicCount" xml:space="preserve">
+    <value>キュービック数</value>
+  </data>
+  <data name="col_LFG" xml:space="preserve">
+    <value>LFG</value>
+  </data>
+  <data name="col_RecAmount" xml:space="preserve">
+    <value>残りの推薦数</value>
+  </data>
+  <data name="col_Enchant" xml:space="preserve">
+    <value>強化</value>
+  </data>
+  <data name="col_LogoGlow" xml:space="preserve">
+    <value>LogoGlow</value>
+  </data>
+  <data name="col_HeroGlow" xml:space="preserve">
+    <value>HeroGlow</value>
+  </data>
+  <data name="col_Fishing" xml:space="preserve">
+    <value>ﾌｨｯｼﾝｸﾞ</value>
+  </data>
+  <data name="col_Item" xml:space="preserve">
+    <value>ｱｲﾃﾑ</value>
+  </data>
+  <data name="col_Count" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="col_Stack" xml:space="preserve">
+    <value>ｽﾀｯｸ</value>
+  </data>
+  <data name="col_NPC" xml:space="preserve">
+    <value>NPC</value>
+  </data>
+  <data name="col_Attackable" xml:space="preserve">
+    <value>攻撃可能</value>
+  </data>
+  <data name="col_Radius" xml:space="preserve">
+    <value>半径</value>
+  </data>
+  <data name="col_Height" xml:space="preserve">
+    <value>高さ</value>
+  </data>
+  <data name="col_NameShows" xml:space="preserve">
+    <value>名前表示</value>
+  </data>
+  <data name="col_Summoned" xml:space="preserve">
+    <value>召喚</value>
+  </data>
+  <data name="col_AbnormalEffects" xml:space="preserve">
+    <value>異常効果</value>
+  </data>
+  <data name="col_TeamCircle" xml:space="preserve">
+    <value>チームサークル</value>
+  </data>
+  <data name="col_Trait" xml:space="preserve">
+    <value>ｽﾃｰﾀｽ</value>
+  </data>
+  <data name="col_Value" xml:space="preserve">
+    <value>値</value>
+  </data>
+  <data name="col_Color" xml:space="preserve">
+    <value>色</value>
+  </data>
+  <data name="col_Type" xml:space="preserve">
+    <value>ﾀｲﾌﾟ1</value>
+  </data>
+  <data name="col_Type2" xml:space="preserve">
+    <value>ﾀｲﾌﾟ2</value>
+  </data>
+  <data name="col_Type3" xml:space="preserve">
+    <value>ﾀｲﾌﾟ3</value>
+  </data>
+  <data name="col_Type4" xml:space="preserve">
+    <value>ﾀｲﾌﾟ4</value>
+  </data>
+  <data name="col_Equipped" xml:space="preserve">
+    <value>装備</value>
+  </data>
+  <data name="col_Slot" xml:space="preserve">
+    <value>スロット</value>
+  </data>
+  <data name="col_Level" xml:space="preserve">
+    <value>レベル</value>
+  </data>
+  <data name="col_Passive" xml:space="preserve">
+    <value>パッシブ</value>
+  </data>
+  <data name="col_Desc1" xml:space="preserve">
+    <value>説明1</value>
+  </data>
+  <data name="col_Desc2" xml:space="preserve">
+    <value>説明2</value>
+  </data>
+  <data name="col_Desc3" xml:space="preserve">
+    <value>説明3</value>
+  </data>
+  <data name="col_Online" xml:space="preserve">
+    <value>オンライン</value>
+  </data>
+  <data name="label_on" xml:space="preserve">
+    <value>オン</value>
+  </data>
+  <data name="show_names" xml:space="preserve">
+    <value>名前表示</value>
+  </data>
+  <data name="overlay_window" xml:space="preserve">
+    <value>オーバーレイウィンドウ</value>
+  </data>
+  <data name="button_top" xml:space="preserve">
+    <value>トップ</value>
+  </data>
+  <data name="shortcut_window" xml:space="preserve">
+    <value>ショートカットウィンドウ</value>
+  </data>
+  <data name="report_window" xml:space="preserve">
+    <value>レポートウィンドウ</value>
+  </data>
+  <data name="ShortCut" xml:space="preserve">
+    <value>ショートカット</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>ページ</value>
+  </data>
+  <data name="delaysec" xml:space="preserve">
+    <value>ディレイ(sec)</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="NeedTarget" xml:space="preserve">
+    <value>ターゲット必須</value>
+  </data>
+  <data name="menuItem_debug_mode" xml:space="preserve">
+    <value>デバッグモード</value>
+  </data>
+  <data name="menuItem_loadscript" xml:space="preserve">
+    <value>メインスクリプト</value>
+  </data>
+  <data name="menuItem_scriptdebugger" xml:space="preserve">
+    <value>スクリプトデバッガ</value>
+  </data>
+  <data name="add" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="auto_spoil" xml:space="preserve">
+    <value>自動スポイル</value>
+  </data>
+  <data name="auto_sweep" xml:space="preserve">
+    <value>自動スウィーパー</value>
+  </data>
+  <data name="buffs_heals" xml:space="preserve">
+    <value>ﾊﾞﾌ/ﾋｰﾙ</value>
+  </data>
+  <data name="direct_3d" xml:space="preserve">
+    <value>Direct 3Dを使う</value>
+  </data>
+  <data name="direct_sound" xml:space="preserve">
+    <value>Direct Soundを使う</value>
+  </data>
+  <data name="do_not" xml:space="preserve">
+    <value>禁止</value>
+  </data>
+  <data name="ignore_unknown_items" xml:space="preserve">
+    <value>不明アイテムを無視</value>
+  </data>
+  <data name="l2_path" xml:space="preserve">
+    <value>l2.binのパス</value>
+  </data>
+  <data name="menuItem_dump_mode" xml:space="preserve">
+    <value>ダンプモード</value>
+  </data>
+  <data name="menuItem_forcecollect" xml:space="preserve">
+    <value>強制メモリ確保</value>
+  </data>
+  <data name="menuItem_help_donate" xml:space="preserve">
+    <value>寄付</value>
+  </data>
+  <data name="menuItem_killthreads" xml:space="preserve">
+    <value>スレッド終了</value>
+  </data>
+  <data name="menuItem_launchl2" xml:space="preserve">
+    <value>Lineage2起動</value>
+  </data>
+  <data name="menuItem_options_setup" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="min_to_tray" xml:space="preserve">
+    <value>最小化でタスクトレイ</value>
+  </data>
+  <data name="party" xml:space="preserve">
+    <value>ﾊﾟｰﾃｨｰ</value>
+  </data>
+  <data name="pause_resume_script" xml:space="preserve">
+    <value>ｽｸﾘﾌﾟﾄ中断/再開</value>
+  </data>
+  <data name="product_key" xml:space="preserve">
+    <value>プロダクトキー</value>
+  </data>
+  <data name="script_io" xml:space="preserve">
+    <value>ｽｸﾘﾌﾟﾄの入出力を許可</value>
+  </data>
+  <data name="snapshot" xml:space="preserve">
+    <value>スナップショット</value>
+  </data>
+  <data name="spoil_crush" xml:space="preserve">
+    <value>スポイルクラッシュを使う</value>
+  </data>
+  <data name="toggle_key" xml:space="preserve">
+    <value>トグルキー</value>
+  </data>
+  <data name="voice" xml:space="preserve">
+    <value>ボイス</value>
+  </data>
+  <data name="accept_party" xml:space="preserve">
+    <value>ﾊﾟｰﾃｨｰ招待に自動応答</value>
+  </data>
+  <data name="accept_rez" xml:space="preserve">
+    <value>ﾘｻﾞﾚｸｼｮﾝに自動応答</value>
+  </data>
+  <data name="active_attack" xml:space="preserve">
+    <value>アクティブMOBを攻撃</value>
+  </data>
+  <data name="active_pickup" xml:space="preserve">
+    <value>拾う</value>
+  </data>
+  <data name="active_pickup_range" xml:space="preserve">
+    <value>拾う範囲</value>
+  </data>
+  <data name="active_target" xml:space="preserve">
+    <value>アクティブMOBをターゲット</value>
+  </data>
+  <data name="add_current" xml:space="preserve">
+    <value>現在地を追加</value>
+  </data>
+  <data name="autofighter" xml:space="preserve">
+    <value>自動戦闘</value>
+  </data>
+  <data name="buff_control" xml:space="preserve">
+    <value>Ctrlでバフ</value>
+  </data>
+  <data name="buff_range" xml:space="preserve">
+    <value>ﾊﾞﾌ/ﾋｰﾙの範囲</value>
+  </data>
+  <data name="buff_shift" xml:space="preserve">
+    <value>Shiftでバフ</value>
+  </data>
+  <data name="button_dead_fort" xml:space="preserve">
+    <value>要塞</value>
+  </data>
+  <data name="combat" xml:space="preserve">
+    <value>戦闘</value>
+  </data>
+  <data name="conditional" xml:space="preserve">
+    <value>状態</value>
+  </data>
+  <data name="forcelog" xml:space="preserve">
+    <value>強制切断</value>
+  </data>
+  <data name="generate_box" xml:space="preserve">
+    <value>多角形作成</value>
+  </data>
+  <data name="offset" xml:space="preserve">
+    <value>オフセット</value>
+  </data>
+  <data name="polygon" xml:space="preserve">
+    <value>多角形境界</value>
+  </data>
+  <data name="radius" xml:space="preserve">
+    <value>半径</value>
+  </data>
+  <data name="sides" xml:space="preserve">
+    <value>角数</value>
+  </data>
+  <data name="zrange" xml:space="preserve">
+    <value>Z範囲</value>
+  </data>
+  <data name="zrange_map" xml:space="preserve">
+    <value>マップのZ範囲</value>
+  </data>
+  <data name="check_ignexitconf" xml:space="preserve">
+    <value>終了確認しない</value>
+  </data>
+  <data name="radio_active" xml:space="preserve">
+    <value>ｱｸﾃｨﾌﾞ</value>
+  </data>
+  <data name="radio_passive" xml:space="preserve">
+    <value>ﾊﾟｯｼﾌﾞ</value>
+  </data>
+  <data name="button_delete_char" xml:space="preserve">
+    <value>ｷｬﾗｸﾀｰ削除</value>
+  </data>
+  <data name="but_ss_activate" xml:space="preserve">
+    <value>オン</value>
+  </data>
+  <data name="but_ss_deactivate" xml:space="preserve">
+    <value>オフ</value>
+  </data>
+  <data name="label_autoss" xml:space="preserve">
+    <value>SS/SpS自動使用</value>
+  </data>
+  <data name="Forums" xml:space="preserve">
+    <value>フォーラム</value>
+  </data>
+  <data name="EULA" xml:space="preserve">
+    <value>使用許諾契約</value>
+  </data>
+  <data name="server_dump_mode" xml:space="preserve">
+    <value>サーバダンプモード</value>
+  </data>
+  <data name="blacklist_target" xml:space="preserve">
+    <value>ﾌﾞﾗｯｸﾘｽﾄ ﾀｰｹﾞｯﾄ</value>
+  </data>
+  <data name="actions" xml:space="preserve">
+    <value>ｱｸｼｮﾝ</value>
+  </data>
+  <data name="char_detail" xml:space="preserve">
+    <value>ｷｬﾗ詳細</value>
+  </data>
+  <data name="NPC_chat" xml:space="preserve">
+    <value>NPCﾁｬｯﾄ</value>
+  </data>
+  <data name="buffs" xml:space="preserve">
+    <value>バフ</value>
+  </data>
+  <data name="remaining" xml:space="preserve">
+    <value>残り</value>
+  </data>
+  <data name="rest_options" xml:space="preserve">
+    <value>休憩</value>
+  </data>
+  <data name="sound_alerts" xml:space="preserve">
+    <value>ｻｳﾝﾄﾞ警告</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>ﾛｸﾞｱｳﾄ</value>
+  </data>
+  <data name="targeting" xml:space="preserve">
+    <value>ﾀｰｹﾞｯﾄ</value>
+  </data>
+  <data name="solo_settings" xml:space="preserve">
+    <value>ソロ設定</value>
+  </data>
+  <data name="party_settings" xml:space="preserve">
+    <value>パーティー設定</value>
+  </data>
+  <data name="rest_below" xml:space="preserve">
+    <value>休憩：＞</value>
+  </data>
+  <data name="follow_rest" xml:space="preserve">
+    <value>一緒に休憩</value>
+  </data>
+  <data name="auto_send_party_invite" xml:space="preserve">
+    <value>ﾊﾟｰﾃｨｰ招待を自動送信</value>
+  </data>
+  <data name="OOP_members" xml:space="preserve">
+    <value>ﾊﾞｰﾃｨｰ外ﾒﾝﾊﾞｰ</value>
+  </data>
+  <data name="walker_style" xml:space="preserve">
+    <value>Walkerｽﾀｲﾙ</value>
+  </data>
+  <data name="l2net_style" xml:space="preserve">
+    <value>L2.Netｽﾀｲﾙ</value>
+  </data>
+  <data name="move_before_attack" xml:space="preserve">
+    <value>Smart 攻撃前に移動</value>
+  </data>
+  <data name="active_follow_target" xml:space="preserve">
+    <value>ﾀｰｹﾞｯﾄを合わせる</value>
+  </data>
+  <data name="move_range" xml:space="preserve">
+    <value>移動範囲</value>
+  </data>
+  <data name="until" xml:space="preserve">
+    <value>＜</value>
+  </data>
+  <data name="ignore_meshless_items" xml:space="preserve">
+    <value>拾えないｱｲﾃﾑを無視</value>
+  </data>
+  <data name="ignore_raidbosses" xml:space="preserve">
+    <value>レイドボスを無視</value>
+  </data>
+  <data name="ignore_chests" xml:space="preserve">
+    <value>宝箱を無視</value>
+  </data>
+  <data name="2_way_war" xml:space="preserve">
+    <value>双方布告</value>
+  </data>
+  <data name="1_way_war" xml:space="preserve">
+    <value>布告中</value>
+  </data>
+  <data name="n1_way_war" xml:space="preserve">
+    <value>被布告中</value>
+  </data>
+  <data name="player" xml:space="preserve">
+    <value>ﾌﾟﾚｲﾔｰ</value>
+  </data>
+  <data name="ignore_party_members" xml:space="preserve">
+    <value>ﾊﾟｰﾃｨｰのﾒﾝﾊﾞｰは無視</value>
+  </data>
+  <data name="white_chat" xml:space="preserve">
+    <value>白ﾁｬ受信</value>
+  </data>
+  <data name="private_message" xml:space="preserve">
+    <value>ｳｨｽﾊﾟｰ受信</value>
+  </data>
+  <data name="friend_chat" xml:space="preserve">
+    <value>友人ﾁｬｯﾄ受信</value>
+  </data>
+  <data name="menuItem_bot_clear" xml:space="preserve">
+    <value>Clear Options</value>
+  </data>
+  <data name="anti_ks_delay" xml:space="preserve">
+    <value>Anti KS Delay</value>
+  </data>
+  <data name="attack_only" xml:space="preserve">
+    <value>Attack Only NPCs in List</value>
+  </data>
+  <data name="auto_follow_delay" xml:space="preserve">
+    <value>Auto Follow Delay</value>
+  </data>
+  <data name="blacklist_tries" xml:space="preserve">
+    <value>Blacklist Tries</value>
+  </data>
+  <data name="btn_reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="btn_set" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="custom_window_title" xml:space="preserve">
+    <value>Custom Window Title</value>
+  </data>
+  <data name="pick_only" xml:space="preserve">
+    <value>Pick Only Items in List</value>
+  </data>
+  <data name="advanced" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="alive" xml:space="preserve">
+    <value>Alive</value>
+  </data>
+  <data name="attackable" xml:space="preserve">
+    <value>Attackable</value>
+  </data>
+  <data name="auto_unstuck" xml:space="preserve">
+    <value>Auto Unstuck</value>
+  </data>
+  <data name="both" xml:space="preserve">
+    <value>Both</value>
+  </data>
+  <data name="dead" xml:space="preserve">
+    <value>Dead</value>
+  </data>
+  <data name="dont_ks" xml:space="preserve">
+    <value>Don't KS</value>
+  </data>
+  <data name="ignore_summons" xml:space="preserve">
+    <value>Ignore Summons</value>
+  </data>
+  <data name="invincible" xml:space="preserve">
+    <value>Invincible</value>
+  </data>
+  <data name="in_box" xml:space="preserve">
+    <value>In Box</value>
+  </data>
+  <data name="move_normal_before_attack" xml:space="preserve">
+    <value>Move Before Attack</value>
+  </data>
+  <data name="not_in_box" xml:space="preserve">
+    <value>Not in Box</value>
+  </data>
+  <data name="npcs" xml:space="preserve">
+    <value>NPCs</value>
+  </data>
+  <data name="only_ks" xml:space="preserve">
+    <value>Only KS</value>
+  </data>
+  <data name="only_pick_mine" xml:space="preserve">
+    <value>Only Pick Mine</value>
+  </data>
+  <data name="players" xml:space="preserve">
+    <value>Players</value>
+  </data>
+  <data name="protect_priority" xml:space="preserve">
+    <value>Protect Priority</value>
+  </data>
+  <data name="cancel_target" xml:space="preserve">
+    <value>Cancel Target on Dead</value>
+  </data>
+</root>

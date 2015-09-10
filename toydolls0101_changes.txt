@@ -1,0 +1,45 @@
+
+-Changed debug messages to system filter.
+
+------------------------------------------------------------------------
+-fixed bug for TARGET_NEAREST_NAME. The NPCInfo object was not setting the name correctly from the packet. Either the packet contained no data about the npc's name or it was looking in the wrong spot. Changed it so it looks up the npc name via the npcname text file instead.
+-Added command line parameters.
+
+Add this to commands.txt or w/e =P
+---- New command line parameters ---
+-accept (same as -a)
+-blowfish (same as -b)
+-protocol (same as -C)
+-loginport (same as -d)
+-loginip (same as -i)
+-password (same as -p)
+-username (same as -u)
+-script (same as -s)
+-iglistenport (Same as -x)
+-iglistenip (same as -y)
+-chronicle (same as -z)
+
+The following command line parameters require valid keys to function:
+
+-overidegameserver enables the gameserver overide 
+-useproxylogin enables proxy server for login connections 
+-userproxygame enables proxy server for game connections 
+-gameserverip ip address of gameserver 
+-gameserverport port of gameserver 
+-socks5ip ip address of the socks proxy server 
+-socks5port port of the socks proxy server 
+-socks5username username for socks proxy 
+-socks5password password for socks proxy
+
+added astar.cs, astarnode.cs pathmanager.cs
+added pathmanager to gamedata (with locks)
+added locks to Astar object
+fixed bug in wall drawing code, changed wall color so its not equal to boundsbox color
+fixed some minor usability bugs in MOVE_SMART
+A* pathfinding now works. Requires testing.
+
+-Fixed bug where SYSTEM_CURRENTFILE global would dereference with \n as a newline character, thus causing scripts that exist in directories with \t \b \n etc to not work correctly
+-Added MOVE_INTERRUPT command which stops a smart move from any Thread
+-Added a new SET_TARGETING and CHECK_TARGETING command called PATHFINDING which allows mobs that do not have paths to not be selected for targeting.
+
+minor bug fixes to A*

@@ -1,0 +1,186 @@
+Events are similar to event handlers in c#, vb, and several other languages. You setup a function to be called when an event fires.<br />
+<br />
+Unlike some other languages...there can only be one function to be called per event. You could always make that function start up other threads if you want.<br />
+<br />
+Every event will provide you will different variables that you can read to find out various information. Please see the script event thread to learn more.<br />
+<br />
+-----------------<br />
+<br />
+SCRIPTEVENT_CHAT<br />
+<br />
+INT MESSAGETYPE<br />
+INT SENDERID<br />
+STRING SENDERNAME<br />
+STRING MESSAGE<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SELFDIE<br />
+<br />
+no variables<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SELFREZ<br />
+<br />
+no variables<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SELFENTERCOMBAT<br />
+<br />
+no variables<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SELFLEAVECOMBAT<br />
+<br />
+no variables<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SELFSTOPMOVE<br />
+<br />
+no variables<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SELFTARGETED<br />
+<br />
+INT TARGETER_ID<br />
+INT TARGETER_X<br />
+INT TARGETER_Y<br />
+INT TARGETER_Z<br />
+INT TARGETER_IS_PLAYER (1 = yes, 0 = npc)<br />
+STRING TARGETER_NAME<br />
+INT TARGETER_WARSTATE (-1, 0, 1, 2)<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SELFUNTARGETED<br />
+<br />
+INT TARGETER_ID<br />
+INT TARGETER_X<br />
+INT TARGETER_Y<br />
+INT TARGETER_Z<br />
+INT TARGETER_IS_PLAYER (1 = TRUE, 0 = FALSE)<br />
+STRING TARGETER_NAME<br />
+INT TARGETER_WARSTATE (-1, 0, 1, 2)<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_TARGETDIE<br />
+<br />
+INT TARGET_BLUE (1 = TRUE, 0 = FALSE)<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_CHATTOBOT<br />
+<br />
+INT MESSAGETYPE<br />
+STRING TARGETNAME<br />
+STRING MESSAGE<br />
+<br />
+Chat sent from the real client through L2.Net or typed into the chat box in L2.Net and prefaced with a minus (-) will trigger this event. Text prefaced with minus minus (--) will be converted to a single minus, passed to the server, and will not trigger this event.<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_UDPRECEIVE<br />
+<br />
+STRING SENDER<br />
+INT SENDERID<br />
+STRING STRING1<br />
+INT PARAM1<br />
+INT PARAM2<br />
+INT PARAM3<br />
+INT PARAM4<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_UDPRECEIVEBB<br />
+<br />
+STRING SENDER<br />
+INT SENDERID<br />
+BYTEBUFFER BBUFF<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SKILLUSED<br />
+<br />
+INT TARGET_ID<br />
+INT SKILL_ID<br />
+INT SKILL_LEVEL<br />
+INT HIT_TIME<br />
+INT DELAY<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SKILLLAUNCHED<br />
+<br />
+INT SKILL_ID<br />
+INT SKILL_LEVEL<br />
+INT TARGET_HIT<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SKILLCANCELED<br />
+<br />
+no variables<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_OTHERSKILLUSED<br />
+<br />
+INT USER_ID<br />
+INT TARGET_ID<br />
+INT SKILL_ID<br />
+INT SKILL_LEVEL<br />
+INT HIT_TIME<br />
+INT DELAY<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_OTHERSKILLLAUNCHED<br />
+<br />
+INT USER_ID<br />
+INT SKILL_ID<br />
+INT SKILL_LEVEL<br />
+INT TARGET_HIT<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_OTHERSKILLCANCELED<br />
+<br />
+INT USER_ID<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_JOINPARTY<br />
+<br />
+no variables<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_LEAVEPARTY<br />
+<br />
+no variables<br />
+<br />
+--<br />
+<br />
+SCRIPTEVENT_SERVERPACKET<br />
+<br />
+BYTEBUFFER PACKET<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SERVERPACKETEX<br />
+<br />
+BYTEBUFFER PACKET<br />
+<br />
+---<br />
+<br />
+SCRIPTEVENT_SYSTEMMESSAGE<br />
+<br />
+INT MESSAGETYPE<br />
+STRING MESSAGE<br />
+<br />

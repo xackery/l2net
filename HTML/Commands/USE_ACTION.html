@@ -1,0 +1,7 @@
+USE_ACTION [INT] ([INT] [INT])<br />
+<br />
+[INT1] is the ID of the action to use, followed by values for if control ([INT2]) and shift ([INT3]) are being used.<br />
+<br />
+Attempts to use the action with id [INT1]. Not all actions send the same use action packet and need to be parsed to send the correct packet out. Don't worry about this. The USE_ACTION command will perform all the parsing behind the scenes for you.<br />
+<br />
+EX: USE_ACTION 1003 0 0<br />

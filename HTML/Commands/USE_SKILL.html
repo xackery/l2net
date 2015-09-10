@@ -1,0 +1,12 @@
+USE_SKILL [INT] ([INT] [INT])<br />
+<br />
+[INT1] is the ID of the skill to use, followed by values for if control ([INT2]) and shift ([INT3]) are being used.<br />
+<br />
+Attempts to use the skill with id [INT1]. If the char doesn't have the skill trained (or the bot doesnt know it is trained), nothing is done.<br />
+<br />
+Note: Currently the bot only grabs the skill list when you first login, so changing classes/learning new skill will result in skills that CANNOT be used (yet). You can double click in the region on the skills page below the tabs and above the box of skills to force it to download new skills. Or, type /getskills in the chat box of the bot.<br />
+<br />
+Remember, TRUE = 1, FALSE = 0<br />
+<br />
+EX: USE_SKILL 10 "<&TRUE&>" "<&FALSE&>"<br />
+EX: USE_SKILL 10 1 0<br />

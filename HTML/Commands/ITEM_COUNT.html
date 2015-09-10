@@ -1,0 +1,16 @@
+ITEM_COUNT [V] [VINT]<br />
+<br />
+Stores the count of items of type [VINT2] (type ID, not unique ID) into V1 cast as the same type as V1.<br />
+<br />
+If the item is not in your inventory... then 0 is stored to V1.<br />
+<br />
+EX: DEFINE STRING Itm "100"<br />
+EX: DEFINE STRING ItmI 100<br />
+EX: DEFINE STRING Dest "ItmCnt"<br />
+EX: DEFINE INT ItmCnt 0<br />
+EX: ITEM_COUNT ItmCnt "<&Itm&>"<br />
+EX: ITEM_COUNT ItmCnt <&ItmI&><br />
+EX: ITEM_COUNT ItmCnt 100<br />
+EX: ITEM_COUNT "<&Dest&>" "<&Itm&>"<br />
+EX: ITEM_COUNT "<&Dest&>" "<&ItmI&>"<br />
+EX: ITEM_COUNT "<&Dest&>" 100<br />

@@ -1,0 +1,116 @@
+01 Apr 2013 - Added 3 pickup ban preventions... Beta
+			- Scripting pickup nearest now works the same as the GUI's pickup.
+			- tweaked pickup code
+			- re-added pickup mode. 
+			- pickup will no longer ignore/blacklist when stun/slept etc.
+
+
+
+13 Mar 2013 - added out of combat stuff (move when no mobs are around)
+			- messed with gui positioning
+			- small tweak to pickup... fix stuck issues?
+			- tweaks to move to location, including canceling target when dead and spoil isnt activated.
+			- added leash to botoptions for move to location when no mobs			
+			- Bot will KS by default, anti-ks does not work well in party.
+			- party invite crash fix
+			- added party in combat detection for various features... including pickup
+			- Toggle Skills GUI (only) complete implementation
+			- other stuff i forget...
+			- pickup bug fixed, (blacklisting items that can't be reached)
+			
+
+
+-------------------------------------------------------------------
+
+05 Mar 2013 - pickup 2.0 (works with AOE and works way better then the last one) 90% re-write. This should be a huge performance boost. Most likely 200%+ performance boost. 
+			- fixed 2 ban related targeting issues. Highly recommend you drop whatever your bots are doing and update to this version if you are playing retail.
+			- added bad npc counter in stats
+
+
+01 Mar 2013 - cleaned code and optimized pickup function
+			- optiomized stats page
+			- added combat skills disabled when picking up
+			- added stats for meshless ignored
+
+
+-------------------------------------------------------------------
+
+21 feb 2013 - fixed npc titles... again
+			- added Gained adena per hour
+			- added Total adena gained
+
+22 feb 2013 - partially added items picked up to stats page
+
+23 feb 2013 - items for stats completely fixed. Please let me know if you spot anything I missed.
+
+24 feb 2013 - fixed crystalize from inventory
+			- tweaked autopin again... (3 seconds now... that should be enough.... right?)
+
+25 feb 2013 - fixed small gui bug
+
+27 feb 2013 - fixed packet structure
+			- added additional meshless items. This probably wasn't used to ban people, but thinking ahead helps.
+
+28 feb 2013 - changed pickup timeout to 10 by default... please let me know what you think.
+			- fixed distance bug with DONOT + Whitelist
+			- revamped pickup. Please test and let me know if anything is off.
+			- tweaked pickup to not attack mobs while in pickup mode.
+			- Disabled cancel target on dead when spoil is activated
+			- resting now happens after pickup is complete
+ 
+
+-------------------------------------------------------------------
+
+20 Feb 2013 - XP/SP per hour added, new tab added for stats
+			- fixed npctitles
+			- added accept rez from party
+			- default Z range changed to 600
+
+
+-------------------------------------------------------------------
+
+05 Feb 2013 - Active follow distance now 200 by default
+			- small tweaks for placement in bot options.
+
+07 Feb 2013	-added auto accept party/rez from alliance/clan
+			-fixed clear in botoptions to clear new checkboxes I added. Also resets the follow distance to 200.
+			-fix memory leak? (obce/slothmo/mpj123)
+
+
+
+-------------------------------------------------------------------
+
+25 Jan 2013 - Fixed party invite count, previously 9, now 7
+
+27 Jan 2013 - added .PER_HP
+			  added .PER_MP
+			  added .PER_CP
+			  to scripting for npcs and players
+
+			  Changed protocol to 488
+			  added cancel on dead target (bot options)
+29 Jan 2013
+			  added autolearnskills to save interface and load
+			  Fixed crash using autopin (now waits before responding)
+			  Disabled packet transform in the content filter option, this needs work.
+
+31 Jan 2013 - Fixed Disconnect on IG Crash (save to interface... not recommended on retail fyi)
+			  Disable botting if teleported (save to interface)
+			  Added a warning for Disconnect on IG crash since we no longer hardcode the value. (now shows "Check this for retail
+
+02 Feb 2013 - Fixed invite party member
+			  Also added error handling added, you wont crash anymore, and just in case, added name parsing so you wont be sending invites with blank requests...
+			  added option to turn off log writing in setup menu. It will still create the file, but wont write anything to it. This is only in case you decide to turn it on at a later time.
+
+03 Feb 2013 - Tweaked pin to wait for 1 second before entering pin to better emulate real players, and hopefully reduce the crash.
+			- Added leave if leader in bot options.
+			- tweaked invite party member, also put in a check for being in the gameserver before starting.
+
+--------------------------------------------------------
+
+17 Jan 2013 - added ExSendUIEventPacket chat handling
+			- added BOTSET options to commands.txt
+19 Jan 2013 - fixed auto-pin packet
+			- fixed social skills (shyness and others)
+24 Jan 2013 - fixed autolearn skills
+

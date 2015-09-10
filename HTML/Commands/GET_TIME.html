@@ -1,0 +1,19 @@
+GET_TIME [V]<br />
+<br />
+Grabs the current tick counter and stores it in the variable [V1]. The method of storage will vary based on the type of [V1].<br />
+<br />
+INT = absolute tick counter (ideal)<br />
+DOUBLE = ticks typecast as a double (some rounding will occur)<br />
+STRING = absolute tick counter in string form (not good for comparrisons)<br />
+<br />
+This call returns the TICK counter. Ticks are very small units of time. For your help... plz see the following table:<br />
+<br />
+Ticks per:<br />
+Millisecond 10,000<br />
+Second 10,000,000 (10 million)<br />
+Minute 600,000,000 (600 million)<br />
+Hour 36,000,000,000 (36 billion)<br />
+Day 864,000,000,000 (864 billion)<br />
+<br />
+EX: DEFINE INT StartTime<br />
+EX: GET_TIME StartTime<br />

@@ -1,0 +1,10 @@
+USE_SHORTCUT [INT] ([INT] [INT])<br />
+<br />
+[INT1] is the number of the shortcut to use. The following are the setting for control [INT2] and shift [INT3].<br />
+<br />
+To determine the number of the shortcut... take the index of the shortcut (1 to 12) minus 1 + (page - 1) * 12.<br />
+<br />
+For example, the 5th skill on page 2 would be (5 - 1) + ((2 -1) * 12) = 4 + (1 * 12) = 4 + 12 = 16 Easy right?<br />
+<br />
+EX: USE_SHORTCUT 16 "<FALSE&>" "<&TRUE&>"<br />
+EX: USE_SHORTCUT 16 0 1<br />

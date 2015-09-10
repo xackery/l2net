@@ -1,0 +1,11 @@
+NMESSAGE_BOX [STRING] [STRING] [INT]<br />
+<br />
+[STRING1] is the title of the message box.<br />
+<br />
+[STRING2] is the text to be displayed in the message box.<br />
+<br />
+Opens a non-blocking message box of type [INT3] on a new thread. Types can be found in the global variable list.<br />
+<br />
+The script will continue while the message box is open. This box will be forced closed when L2.Net closes.<br />
+<br />
+EX: NMESSAGE_BOX "don't stop" "can't fight the feeling" EXCLAMATION<br />

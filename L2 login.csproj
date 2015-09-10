@@ -1,0 +1,902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6B422EE-16D1-ABEC-712C-77DA88E254AF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>l2_fedorf.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>L2NET</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>L2_login</RootNamespace>
+    <StartupObject>L2_login.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutomaticUpdater">
+      <HintPath>.\AutomaticUpdater.dll</HintPath>
+    </Reference>
+    <Reference Include="AutomaticUpdater.Design">
+      <HintPath>.\AutomaticUpdater.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="SlimDX, Version=4.0.10.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\SlimDX SDK (June 2010)\Bin\net40\x86\SlimDX.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <Content Include="l2_fedorf.ico" />
+    <Content Include="pikasprite.ico" />
+    <None Include="app.config" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="Resources\button_trade.bmp" />
+    <EmbeddedResource Include="Code\Scripting\Windows\ScriptWindow_HTML.resx">
+      <DependentUpon>ScriptWindow_HTML.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Finnish.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\PortuguesePT.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Thai.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Vietnamese.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sounds\M1.wav" />
+    <EmbeddedResource Include="Sounds\M2.wav" />
+    <EmbeddedResource Include="Sounds\M3.wav" />
+    <EmbeddedResource Include="Sounds\M4.wav" />
+    <EmbeddedResource Include="Sounds\M5.wav" />
+    <EmbeddedResource Include="Sounds\M6.wav" />
+    <EmbeddedResource Include="Sounds\M7.wav" />
+    <EmbeddedResource Include="Sounds\M8.wav" />
+    <EmbeddedResource Include="Sounds\M9.wav" />
+    <EmbeddedResource Include="Sounds\Ch1.wav" />
+    <EmbeddedResource Include="Sounds\Ch2.wav" />
+    <EmbeddedResource Include="Sounds\Ch3.wav" />
+    <EmbeddedResource Include="Sounds\Ch4.wav" />
+    <EmbeddedResource Include="Sounds\Ch5.wav" />
+    <EmbeddedResource Include="Sounds\Ch6.wav" />
+    <EmbeddedResource Include="Sounds\Ch7.wav" />
+    <EmbeddedResource Include="Sounds\Ch8.wav" />
+    <EmbeddedResource Include="Sounds\Ch9.wav" />
+    <None Include="Code\Data\GameGuard\GameGuardLogs.txt" />
+    <Compile Include="Code\Crypting\Script_Crypt.cs" />
+    <Compile Include="Code\Data\Packs\Items\BuyList.cs" />
+    <Compile Include="Code\Data\Packs\Items\PetInventoryInfo.cs" />
+    <Compile Include="Code\Data\Packs\Object_Base.cs" />
+    <Compile Include="Code\Data\Packs\Player\Buffs\CharBuff.cs" />
+    <Compile Include="Code\Data\Packs\Player\Pet_Info.cs" />
+    <Compile Include="Code\Data\Packs\Text\MapData.cs" />
+    <Compile Include="Code\Data\Packs\Text\NPCString.cs" />
+    <Compile Include="Code\Logic\GameServer.cs" />
+    <Compile Include="Code\Data\LoadData.cs" />
+    <Compile Include="Code\Logic\GameServer\GameServer_Alert.cs" />
+    <Compile Include="Code\Logic\GameServer\GameServer_Animate.cs" />
+    <Compile Include="Code\Logic\GameServer\GameServer_CleanUp.cs" />
+    <Compile Include="Code\Logic\GameServer\GameServer_HandlePackets.cs" />
+    <Compile Include="Code\Logic\FollowRestThread.cs" />
+    <Compile Include="Code\Network\LoginServer.cs" />
+    <Compile Include="Code\Scripting\Handlers\Script_Evaluate.cs" />
+    <Compile Include="Code\Scripting\Windows\ScriptWindow.cs" />
+    <Compile Include="Code\Scripting\Windows\ScriptWindow_GDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code\Scripting\Windows\ScriptWindow_GDI.Designer.cs">
+      <DependentUpon>ScriptWindow_GDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Scripting\Windows\ScriptWindow_HTML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Code\Scripting\Windows\ScriptWindow_HTML.Designer.cs">
+      <DependentUpon>ScriptWindow_HTML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\Util\Cleverbot.cs" />
+    <Compile Include="Code\Util\Pathing\Astar.cs" />
+    <Compile Include="Code\Util\Pathing\AstarNode.cs" />
+    <Compile Include="Code\Util\Pathing\PathManager.cs" />
+    <Compile Include="Code\Util\pck_parser.cs" />
+    <Compile Include="Code\Util\pck_window_dat.cs" />
+    <Compile Include="Code\Util\pck_window_thr.cs" />
+    <Compile Include="Code\Util\SmartTimer.cs" />
+    <Compile Include="Code\Util\SOCKS5\Socks5Proxy.cs" />
+    <Compile Include="Code\Util\Sounds\VoicePlayer.cs" />
+    <Compile Include="Code\Logic\MapThread.cs" />
+    <Compile Include="Code\Util\Keyboard\DX_Keyboard.cs" />
+    <Compile Include="Code\Util\NonBMessageBox.cs" />
+    <Compile Include="Code\Scripting\Handlers\Script_Handlers_L2.cs" />
+    <Compile Include="Code\Scripting\Handlers\Script_Handlers_Test.cs" />
+    <Compile Include="Code\Util\Util_DDS2BMP.cs" />
+    <Compile Include="Code\Util\Util_L2NET.cs" />
+    <Compile Include="Code\Util\Util_Sort.cs" />
+    <Compile Include="Code\Util\Util_Test.cs" />
+    <Compile Include="Code\Crypting\MixedPackets.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Crypting\AES.cs" />
+    <Compile Include="Code\Crypting\Blowfish.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Crypting\Code.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Crypting\Crypt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Crypting\enc_dec.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Crypting\NewCrypt.cs" />
+    <Compile Include="Code\Crypting\RSAManaged.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Botoptions\BotOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Botoptions\BuffTarget\BaseTargetClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Botoptions\BuffTarget\BuffTargetClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Botoptions\BuffTarget\CombatTargetClass.cs" />
+    <Compile Include="Code\Data\Botoptions\BuffTarget\ItemTargetClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\ByteBuffer\ByteBuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Network\Packets\ClientPackets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Scripting\ELIZA\ELIZA.cs" />
+    <Compile Include="Code\Data\Globals.cs" />
+    <Compile Include="Code\Data\GameData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Network\Packets\ServerPackets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\UDP\NetCode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\UDP\NetPacket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\NPC\NPCInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Other Players\CharInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Other Players\Clan_Info.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Other Players\PartyMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Player\Buffs\BuffTimer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Player\Buffs\CharBuffTimer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Items\InventoryInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Items\ItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Player\Player_Info.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Player\ShortCuts\ShortCuts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Player\Skills\SkillList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Player\Skills\UserSkill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\ActionName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\BaseText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\Classes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\HennaGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\ItemName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\NPCName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\QuestName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\Races.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\ServerName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\SkillInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\SystemMsg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Data\Packs\Text\ZoneName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\Pathing\PathValues.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Scripting\Logic\ScriptFile.cs" />
+    <Compile Include="Code\Scripting\Logic\ScriptThread.cs" />
+    <Compile Include="Code\Scripting\Variables\ScriptVariable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Scripting\Variables\Script_Class.cs" />
+    <Compile Include="Code\Scripting\Logic\Script_Ops.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Scripting\Variables\VariableList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\Sounds\AlertOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\Sounds\WSounds.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\UDP\BroadcastThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Network\ClientThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Network\ServerThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Logic\BotAIThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Scripting\ScriptEngineThread.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Scripting\Logic\Script_Events.cs" />
+    <Compile Include="Code\Scripting\Variables\Script_GetValue.cs" />
+    <Compile Include="Code\Scripting\Handlers\Script_Handlers.cs" />
+    <Compile Include="Code\Scripting\Logic\Script_Values.cs">
+    </Compile>
+    <Compile Include="Code\Util\class_sort.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\Util.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\Util_Convert.cs" />
+    <Compile Include="Code\Util\Util_DXT1.cs" />
+    <Compile Include="Code\Util\Util_Get.cs" />
+    <Compile Include="Code\Util\Mono\BigInteger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\Mono\ConfidenceFactor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\Mono\NextPrimeFinder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\Mono\PrimalityTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\Mono\PrimeGeneratorBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Util\Mono\SequentialSearchPrimeGeneratorBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Code\Network\Packets\Packets.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Add\AddInfo\AddInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\ColorListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\L2NET\L2NET_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Add\NPCChat\NPC_Chat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\L2NET\L2NET_Clan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\L2NET\L2NET_Interact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\L2NET\L2NET_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\L2NET\L2NET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\L2NET\L2NET_ListViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\L2NET\L2NET_Party.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\L2NET\L2NET_ScriptWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\L2NET\L2NET_Text.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\L2NET\L2NET_Timers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\MDI\Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\MDI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\MDI\Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\BotOptionsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\BuyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\BuyWindow.Designer.cs">
+      <DependentUpon>BuyWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\ActionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\ActionWindow.Designer.cs">
+      <DependentUpon>ActionWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\converter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\converter.Designer.cs">
+      <DependentUpon>converter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\CreateChar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\CreateChar.Designer.cs">
+      <DependentUpon>CreateChar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\ExtendedActionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\ExtendedActionWindow.Designer.cs">
+      <DependentUpon>ExtendedActionWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\GameGuardClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\GameGuardClient.Designer.cs">
+      <DependentUpon>GameGuardClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\GameGuardServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\GameGuardServer.Designer.cs">
+      <DependentUpon>GameGuardServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\help_parser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\help_parser.Designer.cs">
+      <DependentUpon>help_parser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\Language.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\MailboxWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\MailboxWindow.Designer.cs">
+      <DependentUpon>MailboxWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\MailMenuWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\MailMenuWindow.Designer.cs">
+      <DependentUpon>MailMenuWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\ManualGameKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\ManualGameKey.designer.cs">
+      <DependentUpon>ManualGameKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\Packet_filter_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\Packet_filter_window.Designer.cs">
+      <DependentUpon>Packet_filter_window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\packet_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\packet_window.Designer.cs">
+      <DependentUpon>packet_window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\PetWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\PetWindow.Designer.cs">
+      <DependentUpon>PetWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\PetWindowGive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\PetWindowGive.Designer.cs">
+      <DependentUpon>PetWindowGive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\PetWindowTake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\PetWindowTake.Designer.cs">
+      <DependentUpon>PetWindowTake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\PrivateStoreSellWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\PrivateStoreSellWindow.Designer.cs">
+      <DependentUpon>PrivateStoreSellWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\ScriptDebugger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\ScriptDebugger.Designer.cs">
+      <DependentUpon>ScriptDebugger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\Scripting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\TargetInfoScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\TargetInfoScreen.Designer.cs">
+      <DependentUpon>TargetInfoScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popup\TradeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Popup\TradeWindow.Designer.cs">
+      <DependentUpon>TradeWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\RichTextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Top\Captcha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Top\Captcha.Designer.cs">
+      <DependentUpon>Captcha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Top\PvPOverlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Top\PvPOverlay.Designer.cs">
+      <DependentUpon>PvPOverlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Top\Overlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Top\ShortCutBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Languages\Czech.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Danish.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Marklar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\German.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Greek.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Leet.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\English.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Norwegian.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Slovenian.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Spanish.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\French.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Hungarian.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Italian.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Japanese.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Korean.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Lithuanian.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Dutch.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Polish.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\PortugueseBR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Romanian.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Russian.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Chinese.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\Swedish.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sounds\A1.wav" />
+    <EmbeddedResource Include="Sounds\A2.wav" />
+    <EmbeddedResource Include="Sounds\A3.wav" />
+    <EmbeddedResource Include="Sounds\A4.wav" />
+    <EmbeddedResource Include="Sounds\A5.wav" />
+    <EmbeddedResource Include="Sounds\A6.wav" />
+    <EmbeddedResource Include="Sounds\A7.wav" />
+    <EmbeddedResource Include="Sounds\A8.wav" />
+    <EmbeddedResource Include="Sounds\A9.wav" />
+    <EmbeddedResource Include="Sounds\C1.wav" />
+    <EmbeddedResource Include="Sounds\C2.wav" />
+    <EmbeddedResource Include="Sounds\C3.wav" />
+    <EmbeddedResource Include="Sounds\C4.wav" />
+    <EmbeddedResource Include="Sounds\C5.wav" />
+    <EmbeddedResource Include="Sounds\C6.wav" />
+    <EmbeddedResource Include="Sounds\C7.wav" />
+    <EmbeddedResource Include="Sounds\C8.wav" />
+    <EmbeddedResource Include="Sounds\C9.wav" />
+    <EmbeddedResource Include="Sounds\H1.wav" />
+    <EmbeddedResource Include="Sounds\H2.wav" />
+    <EmbeddedResource Include="Sounds\H3.wav" />
+    <EmbeddedResource Include="Sounds\H4.wav" />
+    <EmbeddedResource Include="Sounds\H5.wav" />
+    <EmbeddedResource Include="Sounds\H6.wav" />
+    <EmbeddedResource Include="Sounds\H7.wav" />
+    <EmbeddedResource Include="Sounds\H8.wav" />
+    <EmbeddedResource Include="Sounds\H9.wav" />
+    <EmbeddedResource Include="Sounds\R1.wav" />
+    <EmbeddedResource Include="Sounds\R2.wav" />
+    <EmbeddedResource Include="Sounds\R3.wav" />
+    <EmbeddedResource Include="Sounds\R4.wav" />
+    <EmbeddedResource Include="Sounds\R5.wav" />
+    <EmbeddedResource Include="Sounds\R6.wav" />
+    <EmbeddedResource Include="Sounds\R7.wav" />
+    <EmbeddedResource Include="Sounds\R8.wav" />
+    <EmbeddedResource Include="Sounds\R9.wav" />
+    <EmbeddedResource Include="Sounds\T1.wav" />
+    <EmbeddedResource Include="Sounds\T2.wav" />
+    <EmbeddedResource Include="Sounds\T3.wav" />
+    <EmbeddedResource Include="Sounds\T4.wav" />
+    <EmbeddedResource Include="Sounds\T5.wav" />
+    <EmbeddedResource Include="Sounds\T6.wav" />
+    <EmbeddedResource Include="Sounds\T7.wav" />
+    <EmbeddedResource Include="Sounds\T8.wav" />
+    <EmbeddedResource Include="Sounds\T9.wav" />
+    <EmbeddedResource Include="Windows\L2NET\L2NET.resx">
+      <DependentUpon>L2NET.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\MDI\Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\MDI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\MDI\Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\BotOptionsScreen.resx">
+      <DependentUpon>BotOptionsScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\BuyWindow.resx">
+      <DependentUpon>BuyWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\ActionWindow.resx">
+      <DependentUpon>ActionWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\converter.resx">
+      <DependentUpon>converter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\CreateChar.resx">
+      <DependentUpon>CreateChar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\ExtendedActionWindow.resx">
+      <DependentUpon>ExtendedActionWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\GameGuardClient.resx">
+      <DependentUpon>GameGuardClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\GameGuardServer.resx">
+      <DependentUpon>GameGuardServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\help_parser.resx">
+      <DependentUpon>help_parser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\Language.resx">
+      <DependentUpon>Language.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\MailboxWindow.resx">
+      <DependentUpon>MailboxWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\MailMenuWindow.resx">
+      <DependentUpon>MailMenuWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\ManualGameKey.resx">
+      <DependentUpon>ManualGameKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\Packet_filter_window.resx">
+      <DependentUpon>Packet_filter_window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\packet_window.resx">
+      <DependentUpon>packet_window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\PetWindow.resx">
+      <DependentUpon>PetWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\PetWindowGive.resx">
+      <DependentUpon>PetWindowGive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\PetWindowTake.resx">
+      <DependentUpon>PetWindowTake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\PrivateStoreSellWindow.resx">
+      <DependentUpon>PrivateStoreSellWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\ScriptDebugger.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ScriptDebugger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\Scripting.resx">
+      <DependentUpon>Scripting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\Setup.resx">
+      <DependentUpon>Setup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\TargetInfoScreen.resx">
+      <DependentUpon>TargetInfoScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Popup\TradeWindow.resx">
+      <DependentUpon>TradeWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Top\Captcha.resx">
+      <DependentUpon>Captcha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Top\PvPOverlay.resx">
+      <DependentUpon>PvPOverlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Top\Overlay.resx">
+      <DependentUpon>Overlay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Top\ShortCutBar.resx">
+      <DependentUpon>ShortCutBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
