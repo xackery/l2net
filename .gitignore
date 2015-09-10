@@ -2,3 +2,5 @@
 *.resources
 *.manifest
 obj/x86/Release/L2 login.csproj.FileListAbsolute.txt
+bin/Release/
+bin/Debug/
