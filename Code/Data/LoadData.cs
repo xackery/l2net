@@ -27,9 +27,9 @@ namespace L2_login
 
         private static bool isDataLoaded = false;
         public static void LoadDataFiles()
-        {            
+        {
             if (isDataLoaded)
-            { //This is a singleton, only load it once.
+            { //This can only be loaded once.
                 return;
             }
 
@@ -56,7 +56,9 @@ namespace L2_login
             {
                 throw new Exception(e.Message);
             }
-            
+
+            LoadSkills();
+            /*
             System.Threading.Tasks.Parallel.For(0, 14, (i) =>
                 {
                     switch (i)
@@ -70,9 +72,9 @@ namespace L2_login
                         case 2:
                             LoadSystemMsg();
                             break;
-                        /*case 3:
-                            LoadQuests();
-                            break;*/
+                        //case 3:
+                            //LoadQuests();
+                            //break;
                         case 4:
                             LoadNPCName();
                             break;
@@ -109,6 +111,7 @@ namespace L2_login
                     }
                 }
             );
+            */
 
             data_lvlexp = null;
             data_servername = null;
@@ -722,50 +725,44 @@ namespace L2_login
             System.IO.StreamReader temp_stream;
             System.IO.MemoryStream mem_stream;
 
-            try
+            dec = GetData(data_skillname, "br2qeSw65ephepH8");
+            
+            mem_stream = new System.IO.MemoryStream(dec);
+            temp_stream = new System.IO.StreamReader((System.IO.Stream)mem_stream);
+
+            int version = Util.GetInt32(temp_stream.ReadLine());
+
+            if (version < Globals.MinDataPack)
             {
-                dec = GetData(data_skillname, "br2qeSw65ephepH8");
-
-                mem_stream = new System.IO.MemoryStream(dec);
-                temp_stream = new System.IO.StreamReader((System.IO.Stream)mem_stream);
-
-                int version = Util.GetInt32(temp_stream.ReadLine());
-                if (version < Globals.MinDataPack)
-                {
-                    System.Windows.Forms.MessageBox.Show("skillname.txt is too old for this version of L2.Net!");
-                    System.Windows.Forms.Application.Exit();
-                }
+                System.Windows.Forms.MessageBox.Show("skillname.txt is too old for this version of L2.Net!");
+                System.Windows.Forms.Application.Exit();
+            }
                 
-                Globals.skilllist = new SortedList();
-                Globals.skilllist.Capacity = Globals.COUNT_SKILLS;
+            Globals.skilllist = new SortedList();
+            Globals.skilllist.Capacity = Globals.COUNT_SKILLS;
 
-                while ((loaded = temp_stream.ReadLine()) != null)
+            while ((loaded = temp_stream.ReadLine()) != null)
+            {
+                SkillInfo sk_inf = new SkillInfo();
+
+                sk_inf.Parse(loaded);
+
+                if (Globals.skilllist.IndexOfKey(sk_inf.ID) == -1)
                 {
-                    SkillInfo sk_inf = new SkillInfo();
+                    //the key wasnt found
+                    SkillList skill = new SkillList();
 
-                    sk_inf.Parse(loaded);
-
-                    if (Globals.skilllist.IndexOfKey(sk_inf.ID) == -1)
-                    {
-                        //the key wasnt found
-                        SkillList skill = new SkillList();
-
-                        Globals.skilllist.Add(sk_inf.ID, skill);
-                    }
-
-                    ((SkillList)Globals.skilllist[sk_inf.ID]).Add_Level(sk_inf);
+                    Globals.skilllist.Add(sk_inf.ID, skill);
                 }
 
-                mem_stream.Close();
-                temp_stream.Close();
-
-                //Add_Text("loaded skills", Globals.Red);
-            }
-            catch
-            {
-                Globals.l2net_home.Add_PopUpError("failed to load data\\skillname.txt");
+                ((SkillList)Globals.skilllist[sk_inf.ID]).Add_Level(sk_inf);
             }
 
+            mem_stream.Close();
+            temp_stream.Close();
+
+            //Add_Text("loaded skills", Globals.Red);
+            
             dec = null;
         }
 
