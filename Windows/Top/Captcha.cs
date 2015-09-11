@@ -20,7 +20,7 @@ namespace L2_login
 
         public void Add_Captcha_Image(string name)
         {
-            Bitmap myBitmap = new Bitmap(Globals.PATH + "\\Crests\\" + name + ".bmp");
+            Bitmap myBitmap = new Bitmap(Globals.PATH + "\\crests\\" + name + ".bmp");
             pictureBox_captcha.Size = myBitmap.Size;
             pictureBox_captcha.Image = myBitmap;
             i = 0;

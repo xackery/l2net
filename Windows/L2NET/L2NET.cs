@@ -530,11 +530,11 @@ namespace L2_login
             System.Drawing.Bitmap img;
             try
             {
-                img = new System.Drawing.Bitmap(Globals.PATH + "\\Crests\\0.bmp");
+                img = new System.Drawing.Bitmap(Globals.PATH + "\\crests\\0.bmp");
             }
             catch
             {
-                Add_Error("failed to load Crests\\0.bmp, generating substitute", false);
+                Add_Error("failed to load crests\\0.bmp, generating substitute", false);
                 img = new System.Drawing.Bitmap(16, 8);
             }
 

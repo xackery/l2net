@@ -4817,7 +4817,7 @@ namespace L2_login
 
                 //Globals.l2net_home.Add_Text("Saving crest: " + crestid.ToString());
 
-                if (!System.IO.File.Exists(Globals.PATH + "\\Crests\\" + crestid.ToString() + ".bmp"))
+                if (!System.IO.File.Exists(Globals.PATH + "\\crests\\" + crestid.ToString() + ".bmp"))
                 {
                     //Globals.l2net_home.Add_Text(":::" + buffe.Length().ToString());
                     byte[] data = new byte[crestsize];
@@ -4835,12 +4835,12 @@ namespace L2_login
                         img = Util.Dds2BMP(data);
                     }
 
-                    img.Save(Globals.PATH + "\\Crests\\" + crestid.ToString() + ".bmp");
+                    img.Save(Globals.PATH + "\\crests\\" + crestid.ToString() + ".bmp");
                 }
                 else
                 {
                     //got this crest file already
-                    img = new System.Drawing.Bitmap(Globals.PATH + "\\Crests\\" + crestid.ToString() + ".bmp");
+                    img = new System.Drawing.Bitmap(Globals.PATH + "\\crests\\" + crestid.ToString() + ".bmp");
                 }
                 Globals.l2net_home.imageList_crests.Images.Add(img);
                 Globals.crestids.Add(crestid);

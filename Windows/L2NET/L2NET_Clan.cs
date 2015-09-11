@@ -237,7 +237,7 @@ namespace L2_login
                         pictureBox_clan_crest.BackgroundImage.Dispose();
                         pictureBox_clan_crest.BackgroundImage = null;
                     }
-                    string path = Globals.PATH + "\\Crests\\" + clan_crest.ToString() + ".bmp";
+                    string path = Globals.PATH + "\\crests\\" + clan_crest.ToString() + ".bmp";
 
 
                     //Globals.l2net_home.Add_Text("Crest location pre: " + path);

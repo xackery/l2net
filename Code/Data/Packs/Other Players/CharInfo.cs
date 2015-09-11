@@ -305,10 +305,10 @@ namespace L2_login
                         //if we get here... we didn't find the crest
                         //lets make sure we havent requested it already
                         //and then request it if we need it
-                        if (System.IO.File.Exists(Globals.PATH + "\\Crests\\" + _ClanCrestID.ToString() + ".bmp"))
+                        if (System.IO.File.Exists(Globals.PATH + "\\crests\\" + _ClanCrestID.ToString() + ".bmp"))
                         {
                             //try to load the crest and add to the array
-                            System.Drawing.Bitmap img = new System.Drawing.Bitmap(Globals.PATH + "\\Crests\\" + _ClanCrestID.ToString() + ".bmp");
+                            System.Drawing.Bitmap img = new System.Drawing.Bitmap(Globals.PATH + "\\crests\\" + _ClanCrestID.ToString() + ".bmp");
                             Globals.l2net_home.imageList_crests.Images.Add(img);
                             Globals.crestids.Add(_ClanCrestID);
                             ClanCrestIndex = Globals.l2net_home.imageList_crests.Images.Count - 1;

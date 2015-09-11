@@ -480,7 +480,7 @@ namespace L2_login
 
         public void Add_Dialog_Image(string name)
         {
-            Bitmap myBitmap = new Bitmap(Globals.PATH + "\\Crests\\" + name + ".bmp");
+            Bitmap myBitmap = new Bitmap(Globals.PATH + "\\crests\\" + name + ".bmp");
 
             richTextBox_dialog.ReadOnly = false;
 
