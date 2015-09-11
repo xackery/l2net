@@ -972,16 +972,6 @@ namespace L2_login
             }
 
             dec = null;
-        }
-
-        /*private static void LoadStaticObjects()
-        {
-            //   wvYoty4^#E9(1l3d
-        }*/
-
-        /*private static void LoadOptionData()
-        {
-            //   #E9(1l3dwvYoty4^
-        }*/
+        }        
     }
 }
