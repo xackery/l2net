@@ -719,51 +719,56 @@ namespace L2_login
 
         private static void LoadSkills()
         {
-            string loaded;
+            try {
+                string loaded;
 
-            byte[] dec;
-            System.IO.StreamReader temp_stream;
-            System.IO.MemoryStream mem_stream;
+                byte[] dec;
+                System.IO.StreamReader temp_stream;
+                System.IO.MemoryStream mem_stream;
 
-            dec = GetData(data_skillname, "br2qeSw65ephepH8");
-            
-            mem_stream = new System.IO.MemoryStream(dec);
-            temp_stream = new System.IO.StreamReader((System.IO.Stream)mem_stream);
+                dec = GetData(data_skillname, "br2qeSw65ephepH8");
 
-            int version = Util.GetInt32(temp_stream.ReadLine());
+                mem_stream = new System.IO.MemoryStream(dec);
+                temp_stream = new System.IO.StreamReader((System.IO.Stream)mem_stream);
 
-            if (version < Globals.MinDataPack)
-            {
-                System.Windows.Forms.MessageBox.Show("skillname.txt is too old for this version of L2.Net!");
-                System.Windows.Forms.Application.Exit();
-            }
-                
-            Globals.skilllist = new SortedList();
-            Globals.skilllist.Capacity = Globals.COUNT_SKILLS;
+                int version = Util.GetInt32(temp_stream.ReadLine());
 
-            while ((loaded = temp_stream.ReadLine()) != null)
-            {
-                SkillInfo sk_inf = new SkillInfo();
-
-                sk_inf.Parse(loaded);
-
-                if (Globals.skilllist.IndexOfKey(sk_inf.ID) == -1)
+                if (version < Globals.MinDataPack)
                 {
-                    //the key wasnt found
-                    SkillList skill = new SkillList();
-
-                    Globals.skilllist.Add(sk_inf.ID, skill);
+                    System.Windows.Forms.MessageBox.Show("skillname.txt is too old for this version of L2.Net!");
+                    System.Windows.Forms.Application.Exit();
                 }
 
-                ((SkillList)Globals.skilllist[sk_inf.ID]).Add_Level(sk_inf);
+                Globals.skilllist = new SortedList();
+                Globals.skilllist.Capacity = Globals.COUNT_SKILLS;
+
+                while ((loaded = temp_stream.ReadLine()) != null)
+                {
+                    SkillInfo sk_inf = new SkillInfo();
+
+                    sk_inf.Parse(loaded);
+
+                    if (Globals.skilllist.IndexOfKey(sk_inf.ID) == -1)
+                    {
+                        //the key wasnt found
+                        SkillList skill = new SkillList();
+
+                        Globals.skilllist.Add(sk_inf.ID, skill);
+                    }
+
+                    ((SkillList)Globals.skilllist[sk_inf.ID]).Add_Level(sk_inf);
+                }
+
+                mem_stream.Close();
+                temp_stream.Close();
+
+                //Add_Text("loaded skills", Globals.Red);
+
+                dec = null;
+            } catch (Exception e)
+            {
+                throw new Exception("Error during LoadSkill: " + e.Message);
             }
-
-            mem_stream.Close();
-            temp_stream.Close();
-
-            //Add_Text("loaded skills", Globals.Red);
-            
-            dec = null;
         }
 
         private static void LoadActions()
