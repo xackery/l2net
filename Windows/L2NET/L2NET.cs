@@ -432,6 +432,7 @@ namespace L2_login
 
             try {
                 Load_Interface();
+                GameServer.Init(args);
             } catch (Exception e)
             {
                 MessageBox.Show(e.Message);
@@ -439,10 +440,7 @@ namespace L2_login
                 Application.Exit();
                 return;     
             }
-
-            //do our loading here...
-            GameServer.Init(args);
-
+            
             SetName();
 
             timer_players = new SmartTimer();
@@ -4727,7 +4725,6 @@ namespace L2_login
 
 		private void L2NET_Closing(object sender, System.ComponentModel.CancelEventArgs cancel)
 		{
-			VoicePlayer.PlaySound(2);
 
             if (Globals.IgnoreExitConf == false)
             {

@@ -8,9 +8,7 @@ namespace L2_login
     {
         public static void Init(string[] args)
         {
-            VoicePlayer.Init();
-            VoicePlayer.PlaySound(1);
-
+           
             Globals.PATH = Environment.CurrentDirectory;
 
             try
@@ -64,15 +62,9 @@ namespace L2_login
 
             Globals.gamedata.botoptions = new BotOptions();
             Globals.gamedata.alertoptions = new AlertOptions();
-
-            try {
-                LoadData.LoadDataFiles();
-            } catch (Exception e)
-            {
-                System.Windows.Forms.MessageBox.Show(e.Message);
-                Environment.FailFast(e.Message);
-                return;
-            }
+            
+            LoadData.LoadDataFiles();
+           
 
             AddInfo.Set_PartyVisible();
             AddInfo.Set_PartyInfo();
