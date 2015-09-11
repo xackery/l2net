@@ -7,7 +7,7 @@
     <ProjectGuid>{B6B422EE-16D1-ABEC-712C-77DA88E254AF}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ApplicationIcon>l2_fedorf.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\l2_fedorf.ico</ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>L2NET</AssemblyName>
@@ -103,8 +103,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icon.ico" />
-    <Content Include="l2_fedorf.ico" />
+    <Content Include="Resources\icon.ico" />
+    <Content Include="Resources\l2_fedorf.ico" />
     <Content Include="pikasprite.ico" />
     <None Include="app.config" />
     <None Include="ClassDiagram2.cd" />
