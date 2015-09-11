@@ -103,12 +103,8 @@
   <ItemGroup>
     <Content Include="Resources\icon.ico" />
     <Content Include="Resources\l2_fedorf.ico" />
-    <Content Include="pikasprite.ico" />
     <None Include="app.config" />
-    <None Include="ClassDiagram2.cd" />
-    <None Include="ClassDiagram3.cd" />
     <None Include="packages.config" />
-    <None Include="Resources\button_trade.bmp" />
     <EmbeddedResource Include="Code\Scripting\Windows\ScriptWindow_HTML.resx">
       <DependentUpon>ScriptWindow_HTML.cs</DependentUpon>
       <SubType>Designer</SubType>
