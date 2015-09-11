@@ -71,6 +71,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="SlimDX, Version=4.0.10.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Program Files (x86)\SlimDX SDK (June 2010)\Bin\net40\x86\SlimDX.dll</HintPath>
@@ -103,6 +107,7 @@
     <None Include="app.config" />
     <None Include="ClassDiagram2.cd" />
     <None Include="ClassDiagram3.cd" />
+    <None Include="packages.config" />
     <None Include="Resources\button_trade.bmp" />
     <EmbeddedResource Include="Code\Scripting\Windows\ScriptWindow_HTML.resx">
       <DependentUpon>ScriptWindow_HTML.cs</DependentUpon>
