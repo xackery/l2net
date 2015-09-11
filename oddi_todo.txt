@@ -1,3 +1,0 @@
-Add > < in combat tab
-Fix summon heal etc
-Add summon attack range

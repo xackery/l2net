@@ -1,0 +1,90 @@
+
+Add > < in combat tab
+Fix summon heal etc
+Add summon attack range
+
+* TODO - stand to use skills
+* TODO - fix allowing movement while dead
+* TODO - make server emulator to test gameguard login packets
+* TODO - self/target - like dead, sitting, running, armor, weapon...etc
+* TODO - protected / static class functions
+* TODO - fix all non-thread safe variables
+* TODO - allow setting L2.Net follow distance 2
+* TODO - set walls via bot options
+* TODO - command channel pink
+* TODO - party info summon
+* TODO - debug output with command line param
+* TODO - on self targeted -targeter clan, ally
+* TODO - add script events for enter/leave peace zone
+* TODO - event MEMBER_JOIN_PARTY?
+* TODO - event MEMBER_LEFT_PARTY?
+* TODO - skill successful/failed for skill launched events?
+* TODO - delayed party invite reject
+* TODO - delayed trade invite reject
+* TODO - "<&DOUBLE I2&>" set precision
+* TODO - add flagged state to targeting and combat events
+* TODO - script targeting ... TARGETTED, TARGETING, IGNORE
+* TODO - Util.GetCharName - check clan members
+* TODO - Util.GetCharID - check clan members
+* TODO - fix forward exit packet on close
+* TODO - 0x12 = GM Announcement - Light Blue use hero color
+* TODO - make hero chat color a little darker
+
+* TODO - summoned/spawned - spawned last forever.
+* TODO - on dead delay of 15 seconds.
+* TODO - added x,y map viewport offset to map tab
+* TODO - script event PARTY_INVITE
+* TODO - script event TRADE_INVITE
+
+* TODO - fix needlessly reusing items when bot options are applied
+
+-add check for summon before spamming attack packet
+
+-Fix 6815 - Deadly Poison for GUI
+
+DV/LOA, need higher level
+
+public enum AbnormalEffects : uint
+
+    case BuffTriggers.AB_Poison:
+        if (System.String.Equals(Globals.gamedata.my_char.Name.ToUpperInvariant(), Name))
+        {
+            if (Globals.gamedata.my_char.HasEffect(AbnormalEffects.POISON))
+            {
+                return BuffState.Needs;
+            }
+            return BuffState.Has;
+        }
+
+
+
+
+checkBox_advanced.Checked = true;
+ch_w_a_s.Checked = true;
+checkBox_Unknown_Blowfish.Checked = true;
+textBox_game_ip.Text = "64.25.37.135";
+textBox_game_port.Text = "7777";
+textBox_game_listenport.Text = "1999";
+
+
+
+ByteBuffer buff = new ByteBuffer(37);
+buff.WriteByte((byte)PServer.SpawnItem);
+buff.WriteUInt32(Globals.gamedata.my_char.ID);
+buff.WriteUInt32(1152295325);
+buff.WriteUInt32(700);
+buff.WriteInt32(Util.Float_Int32(Globals.gamedata.my_char.X));
+
+buff.WriteInt32(Util.Float_Int32(Globals.gamedata.my_char.Y));
+buff.WriteInt32(Util.Float_Int32(Globals.gamedata.my_char.Z));
+buff.WriteUInt32(1);
+buff.WriteUInt64(18446744073709551);
+
+buff.ResetIndex();
+buff.ReadByte();
+ClientPackets.ItemDrop(buff);
+buff.ResetIndex();
+//Globals.gamedata.SendToClient(buff);
+
+regular expression
+^~(:Wh@//.+)~(:Wh@\{:Wh@)~(:Wh@\}:Wh@)~(:Wh@/#).+

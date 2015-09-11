@@ -9,7 +9,614 @@ Features
 * Combat / Buff/Heal Options to automate skill usage.
 * Custom Scripting Support, including packet detection and logic chains
 
+Agreement
+---
+This program was developed on and for L2J servers ONLY.  Use of this program on any other type of server is against this EULA .  Use of this program by anyone employed by or aquainted to anyone who works for NCSoft or its subsidaries is against the EULA and ILLEGAL. Use of this program by anyone remotely involved with law enforcement is against the EULA and ILLEGAL. Loss of money/time/sex/friends from using this program is your own damn fault and you agree not to sue or pursue the makers of this program. This program comes with no warranty expressed or implied.  You agree not to talk about this program with anyone employed by NCSoft or its agents. You agree not to talk about this program inside the chat of any program(game) by NCSoft or its agents.  You also agree not to breathe while this program is running.  You forfeit your rights to pee while standing up and eat with your right hand.  You agree the DMCA is cool and reverse-enigneering is legal, even of this program since you did obtain this legally (unless you work for NCSoft or it's agents).
+
 # Original Changelog
+
+
+Nov 27: Add: "Ignore Exit Confirmation" option in Settings menu
+	 Fix: Autosweep button
+	 Add: Active/Passive button in skill list
+	 Add: Delete Char Button
+	 Add: Auto Soulshots/Spiritshots
+
+Nov 28: Add: "Remove All" option in donot items and npc lists
+
+Nov 30: Add: BETA!: OOG Trade - Needs testing
+	 TODO: Add text to resx files, Improve "number of items" textbox, add "received items" list.
+	 ADD: BETA!: OOG Buy from normal shop - Needs testing
+	 TODO: Clean code, add multilanguage support, make a better interface.
+
+Dec 07: Buy from shop window disabled in IG mode to prevent l2net from locking up.
+	 Trade window is now called with .Show() instead of .ShowDialog()
+
+v378:
+
+Dec 16: Fixed bug with trade crashing on certain items.
+	Started work on action window.
+	Add support for social action: Shy
+
+Dec 25: Fixed inventory on Official.
+
+Dec 29: Fixed bug with l2net crashing when using shy and charm in CT 2.2 and below
+	Fixed bug preventing all items from showing in trade window.
+	Trade window closes automatically if trade is cancelled.
+
+Jan 4:  Add Security card support (IG only)
+	Edit: Security card is now detected automatically, removed security card checkbox
+	Fix: Bug making active skills show up when passive radiobutton is selected under certain conditions.
+
+v379:
+
+Jan 8: Protocol version now updates automatically when you select a different chronicle.
+Jan 12: Add force-log button.
+	Remove passive skills from skill-list in "Buffs/Heals" tab
+Jan 15: Add key only feature: Advanced logon -> Custom enterworld packet. Store the packet in enterworld.txt if you don't want to type it manually
+Jan 18: "Passive?" column in skill-list removed.
+	Buttons in the OOG login window don't move on top of eachother when the l2net window is resized anymore.
+Jan 24: Fix packet error for CT 2.3 and above servers when using OOG login. (request player list packet)
+	Fix packet error for CT 1.5 and below servers when using OOG login. (request player list packet)
+
+v380:
+Jan 25: Fix listview_skills bug
+	Fix more packet errors, OOG is now working again on L2Inc
+	Disable text boxes when setting toggle/kill key
+
+v381:
+Jan 26: Fix bug with textbox making l2net crash under certain conditions
+
+v383:
+Beta 1:
+Fix "Index was out of range" error when connecting to l2inc
+Beta: Rest options
+Beta 2:
+Fix HP view in Official server (Credits to d00d for analyzing the new packet)
+Add "Official server" checkbox to keep backwards compability with old CT 2.4 servers
+Rest options: Rest below HP is now defined as percentage.
+Beta 3:
+Fix HP view for party members in official server
+EnterWorld packet updated to the current G+ Official packet.
+Fix -c & -protocol command line parameter.
+Add "Wrong username or password" error message when logging in. (Server full and other errors still gives the old "Login fail" message)
+Beta 4:
+Add GET_DEC and HEXTODEC script commands.
+Beta 5:
+Add: "Account already in use" error message
+Rest options moved to a seperate tab, MP support
+Add: "Rest until" in rest options
+Change: [I used social skill: pooping: 84A] to [I used social skill: Level Up] when leveling up.
+Beta 6:
+Fix: netping reply for CT 2.3 servers
+Fix: Bug in rest options when char is dead.
+Add: Follow Rest
+Add: "Add to donot list" option in item list.
+
+v384
+Beta 1:
+Add: "Add to donot list" option in inventory list.
+Add: "Add to donot list" option in NPC list.
+Add: Rest options is now saved to the config file.
+Add: "Ignore Raidbosses" and "Ignore Chests" checkboxes. Credits to Inxile for finding and writing down all the NPCs and to mpj123 for the suggestion.
+Add: Proper output for more login errors (server overloaded, server maintenance, wrong password (but correct username)).
+
+Beta 2: 
+Stuckcheck:
+ - The bot is now able to detect if its stuck
+TODO:
+ - Write code to make the character do something when its stuck.
+   - Done: The character now tries to free itself when stuck.
+ - Parse "cannot see target" system message
+ - Auto blacklist bad mobs.
+   - Partially done: Mobs get blacklisted if the char can't attack it after trying to unstuck 6 times.
+Change: NPC-List extended to include Type-ID
+Fix: add to "do not" list now works with NPC's with the same name but different ID.
+Add: Blacklist npc button in NPC list. This will make the bot ignore only the selected NPC, useful for NPC's in trees etc.
+Add: Commands -> "Blacklist current target" button.
+Add: Auto unstuck checkbox status is now saved to the config file.
+Add: Needs testing!: "Only pick mine" option.
+Add: /petattack
+
+
+
+/*********************************************/
+v385
+Beta 1:
+Add: Script command: BLOCK_SELF, BLOCKEX_SELF, UNBLOCK_SELF, UNBLOCKEX_SELF, CLEAR_BLOCK_SELF, CLEAR_BLOCKEX_SELF
+Add: Script event: SCRIPTEVENT_SELFPACKET, SCRIPTEVENT_SELFPACKETEX
+Fix: BLOCK_SELF and BLOCKEX_SELF no longer blocks INJECT and INJECTBB
+Beta 2:
+Fix: Maxlenght changed to 64 in server ip textboxes to support longer addresses.
+Add: Script command: BLOCK_SELF_ALL, BLOCKEX_SELF_ALL
+Add: Map Z-Range and Zoom-level is now saved to and loaded from interface.txt.
+Fix: You no longer get autobanned on l2divinity and servers with similar protection. Credits to obce for analyzing the packets.
+Beta 3:
+Fix: Trade now supports 64bit integers.
+Add: /trade now makes the trade window pop up.
+Beta 5:
+Fix: "ERROR: Packet Error: 1C Previous Packet: 62 : Object reference not set to an instance of an object." when trading
+Fix: Stuck-check and blacklist no longer triggers when char is dead.
+Fix: Mobs attacking you is now removed from the blacklist automatically.
+Fix: Char no longer attacks party members.
+Fix: Mobs in the do-not list attacking you is now getting targeted and killed.
+Add: Radiobuttons for inventory (Items, Equipped, Quest)
+Fix: Type2 set incorrectly when loading inventory
+Add: Support for ports in loginlist.txt. Format: IP:Port or IP Port. For example 127.0.0.1:1231 or 127.0.0.1 1231
+Add: "Clear Options" button in bot options.
+Add: Support for FE:33 - ExSetCompassZoneCode
+Add: Script command GET_ZONE. Usage: GET_ZONE variable. 
+Add: Support for OOG Private store!
+Fix: /Vendor no longer causes the client to crash
+Beta 7:
+Add: Ignore Summons checkbox, credits to Inxile for finding all the IDs
+Add: -ew & -enterworld commandline switch
+Fix: War state+++ in CT 2.4 servers
+Fix: Party stuff in CT 2.3 servers
+Add: Stuck check now checks for "cannot see target" system message.
+Fix: Heal/Buff-range now loaded correctly.
+Fix: Stuck-check only triggers if we got a target.
+Fix: PRINT_TEXT messages changed to only show up in the "All" and "Bot" tab
+Beta 9:
+Change: "Move before attack" changed to "Move Smart Before Attack"
+Add: "Move Before Attack" checkbox, this will use normal movement instead of move smart.
+
+
+/*********************************************/
+v386
+Beta 1:
+Add: Support for OOG security card on private servers.
+Update: Anti-KS logic updated.
+Add: Mobs attacking party members are now automatically removed from blacklist.
+Update: Tweak unstuck code, blacklist made more aggressive.
+Fix: Armor icons not showing up correctly.
+Add: Advanced tab in botoptions.
+Add: More stuff saved to the config file.
+Add: "Pick Only" and "Attack Only" in donot tab
+
+Beta 2:
+Add: Freya buttons
+Fix: inventory list in Freya
+Change: Default ip changed to new NA official ip
+Add: Logon window now pops up automatically when starting l2net
+Fix: Freya EX Packets and enterworld (thanks d00d)
+Change: Server dump text is now showed in yellow and client dump in orange.
+Change: Default protocol changed to 216 to support freya.
+
+Beta 3:
+Add: Valid product key feature: Support for servers with unknown blowfish (Alpha)
+Add: Support for unknown blowfish on servers that share the login and gameserver IP.
+Add: Botoptions -> Advanced -> Custom Window Title
+Add: Auto invite to party. Format supported: Name1,Name2,Name3 or Name1;Name2;Name3
+Fix: Blacklisted mobs no longer getting targetted when "attack only" is active.
+Add: Custom window title, Party loot type & Attack/Pick only items in list is now saved to the bot options.
+Add: Valid product key feature: Ability to set gamekey manually (l2dc)
+Change: "failed to load saved enterworld packet" removed to avoid incorrect bug reports. All this error message means is that enterworld.txt used for "custom enterworld packet" is missing or contains invalid data.
+Add: Freya OOG login stuff.
+Add: More login packets (OOG) fixed
+
+
+/*********************************************/
+v387
+Beta 2:
+Fix: Freya charlist.
+
+Beta 3:
+Add: Script commands:
+	BOTSET AUTO_UNSTUCK_ON "<&TRUE&>"
+	BOTSET MOVE_BEFORE_ATTACK_ON "<&TRUE&>"
+	BOTSET MOVE_SMART_BEFORE_ATTACK_ON "<&TRUE&>"
+(Fix: Everything in bot options made translatable)
+Change: Load now displayed as %
+Fix: Autospoil no longer causes auto-unstuck not to work
+Fix: Nullpointer exception
+Fix: Unknown blowfish now works for servers with non-standard gameserver port.
+Add: Login->Advanced: Combobox for gameservers stored in gslist.txt. Format: Same as loginlist.txt.
+Fix: Summon packet is now processed correctly
+Fix: Summons are no longer getting targeted by the autofighter.
+
+Beta 4:
+Fix: Bug when loading botoptions-files with blank window title.
+Update: Autofighter improved.
+
+Beta 5:
+Add: Hero tab in text window.
+Add: ExQuestItemList = 0xC5
+Fix: Quest items not showing up in inventory on Freya servers
+Add: ID to GET_EFFECTS
+
+/*********************************************/
+v388
+Beta 1:
+Fix: GG reply length made dynamic in GG.txt
+Fix: "Packet Error: F4 :: Object reference not set to an instance of an object." when in a party with someone far away.
+Add: Support for ExVitalityUpdate = 0xA0
+Add: Vitality is now displayed next to XP bar
+
+/*********************************************/
+v389
+Beta 1:
+Add: Bypass simple antibot used in some servers.
+Fix: EXShowScreenMessage
+Fix: Unable to create female dwarf OOG
+Change: "Smart move before attack" disabled until its fixed
+Fix: Loginserver connection now closed correctly
+Fix: Potential bug causing char not to attack when using a buff (autofighter)
+Add: Setup -> Disable botting if GM action. This will turn off botting if a GM performs an action on you, but it also triggers on some l2j system messages (mainly when logging in). Use with care.
+Add: New soulshots IDs now appears in the auto-ss list.
+
+/*********************************************/
+v390
+Beta 1:
+Fix: HP view of party members when "official" is checked
+Fix: NPCSay
+Add: NPCString.txt (Put in data folder)
+
+Beta 2:
+Fix: High Five userinfo
+Change: Official server checked by default in Freya and above servers
+Fix: Skills with no icon are now showing up in the skill-list
+Fix: Protocol packet High Five
+Add: Enterworld High Five
+Fix: OOG Create char High Five
+Fix: Authlogin High Five
+Update: NPCString.txt updated to High Five
+Fix: High Five npc chat
+
+Beta 3:
+Fix: /evaluate in CT 2.5 and above servers
+Add: Color progress bars for HP/MP/CP/XP
+Add: Updated charinfo panel
+
+/*********************************************/
+v391
+Beta 1:
+Add: Botoptions -> Auto Blacklist. It is now possible to auto-blacklist mobs without having the char trying to unstuck first.
+Add: Login -> IG -> Override Protocol. Allows you to override the game client protocol.
+Fix: Antibot: Made bot harder to detect.
+Fix: Autoblacklist & auto unstuck improved.
+Add: Autofighter: Move before target. This will move the char close to the mob before targeting it (BETA)
+Fix: Autofighter no longer spams packets in high five official server (never did in private servers)
+
+Beta 2:
+Add: Dead Logout/Return/Toggle botting
+Update: Bot options design updated
+Add: Advanced login settings -> custom gameserver listen port
+Fix: Char not attacking if attacked when resting.
+
+Beta 3: 
+Fix: Bug causing char to run west when no mobs are in range
+Fix: Bug causing char not to attack after resting then spoiling
+Add: Spoil until success button.
+Fix: 0x12 Announcements now show up correctly
+Add: Botoptions -> Pick Up After Attack
+Fix: Autosweep should now work better
+
+Beta 4:
+Add: Command line parameters: -ig -oog -official_on -official_off
+Fix: Spoil until success
+
+Beta 5:
+Add: Textbox spoil mp above.
+Add: Pet Window
+
+Beta 6:
+Fix: Packet error when more than 1 pet in party
+Fix: Error when loading old settings file
+Fix: -IG -OOG command line parameters now works for all users
+Add: Pet Inventory
+Add: Pet Actions
+Add: Autofighter -> Pet assist
+
+Beta 7:
+Add: Support for custom sized crests/captchas
+Add: Key only: OOG captcha box popup
+Update: Beautify actions window
+Add: Active follow attack instant - Attacks instantly without waiting for leader to attack first
+Fix: Autospoil when spoiler is not leader
+
+
+v392
+Beta 1:
+Add: Preliminary GoD support.
+
+Beta 2: 
+Fix: GoD NPC-Chat
+Fix: GoD Shortcut errors
+Fix: GoD Endless buff loop
+
+Beta 5:
+Add: GoD lvlexp.txt
+Fix: GoD: Players with green names are no longer shows up as pk'ers on map
+Fix: GoD: Autofighter stops attacking
+
+Beta 6:
+Add: Auto updater
+Add: All GoD datapack files
+
+Beta 7:
+Add: Display m.accuracy, m.evasion and m.critical in gui.
+Add: Botoptions -> Advanced -> Pickup Delay
+Add: GG forwarding to enable OOG clients in l2off. (File -> Gameguard window)
+Fix: use_skill_smart & is_ready. (Credits to Infant for spotting the error)
+Add: GoD Enterworld + some other packets
+
+Beta 8:
+Fix: GoD opcode obfuscation
+Add: GG forwarding for IG clients running no gg patch
+Update: Datapack updated to newest GoD revision 01/11/12
+Fix: New soulshots now show up in the bot options
+
+Beta 9:
+Fix: Clan stuff
+Fix: -bad target- bug in autofighter
+Add: Bounding polygon points can now be moved by clicking on them
+Add: "Move before attack" now works better for nukers
+Update: Autofighter updated to only attack mobs in polygon, even if mobs outside it targets you
+Add: Bounding polygon points can now be added by clicking on map
+
+Beta 10:
+Temp Fix: Disable clan stuff again
+Fix: Crash when loading bot options
+Fix: Char should no longer attack summons even if they are flagged
+
+Beta 11:
+Add: Command line:   -ggip //gameguard server listen ip & gameguard client connect ip
+		     -ggport // --- || --- port
+                     -ggsrv //Autostart gg server
+                     -ggcl //Autostart gg client
+		     -secpin:123456  //sets security pin to 123456
+Add: IG: Auto restart IG listener if login fails
+Add: GoD Pet info stuff
+Add: Pet heal support, in heal options, enter name "pet" and uncheck "need target"
+Add: Summon solo attack
+Add: Summon instant attack
+Fix: F4 Packeterror suff
+Fix: Ignore raidbosses (thanks Jeapordy)
+Add: Security pin feature OOG
+
+RC1:
+Fix: Update anti-ks stuff for summoner
+Fix: Increase delay when targetting mobs to prevent false autoblacklist
+Add: Support for auto-securitypin IG
+Add: Support for security pin from clients using old system folder
+Add: Commandline: -oldclient
+Add: Autolearn skills (semi automatic)
+Fix: Party parsed incorrectly
+
+RC2:
+Add: Autokill threads and re-listen if server is full
+Change: Autolearn skills not checked by default
+Fix: Targeting
+Change: Minor speed improvement when blacklisting mobs (thanks Infant)
+
+Harmony:
+New datapack etc
+
+v393
+Beta 1:
+Fix: Compability update for GoD official  11.04.2012 changes
+Fix: SKILL_GET_REUSE (thanks riff)
+Fix: Toggle buffs now works in interface and scripting.
+Add: Plunder
+Add: -o, -options autoloads bot options,example: -o:c:\options.l2d
+Fix: IS_INCOMBAT for pets 
+Fix: IS_FLAGGED for pets
+Fix: IS_RED for players and pets in GoD
+Fix: IS_BLEEDING for pets
+Fix: IS_POISONED for pets
+Fix: IS_REDCIRLCE for pets
+Fix: IS_ICE for pets
+Fix: IS_WIND for pets
+Fix: IS_AFRAID for pets
+Fix: IS_STUNNED for pets
+Fix: IS_ASLEEP for pets
+Fix: IS_ROOTED for pets
+Fix: IS_PARALYZED for pets
+Fix: IS_PETRIFIED for pets
+Fix: IS_BURNING for pets
+Fix: IS_FLOATING_ROOT for pets
+Fix: IS_DANCE_STUNNED for pets
+Fix: IS_FIREROOT_STUN for pets
+Fix: IS_STEALTH for pets
+Fix: IS_IMPRISIONING_1 for pets
+Fix: IS_IMPRISIONING_2 for pets
+Fix: IS_ICE2 for pets
+Fix: IS_EARTHQUAKE for pets
+Fix: IS_INVULNERABLE for pets
+Fix: IS_REAL_TARGETED for pets
+Fix: IS_DEATH_MARKED for pets
+Fix: IS_TERRIFIED for pets
+Fix: IS_CONFUSED for pets
+Fix: IS_INVINCIBLE for pets
+Fix: IS_DISABLED for pets
+Add: Multipet support in buffs/heals. Usage: use pet;pet1;pet2;pet3 as names
+Add: Pet script variables: PET1_*, PET2_*, PET3_* 
+	Example: PET1_FORM will return the form of your 2nd summon, PET_MAX_HP will return the hp of your 1st summon, PET2_X will return the X value of your 3rd pet, PET3_PER_HP will return the hp percent of your 4th pet)
+	PET_NAME
+	PET_TITLE
+	PET_X
+	PET_Y
+	PET_Z
+	PET_DESTX
+	PET_DESTY
+	PET_DESTZ
+	PET_IS_MOVING
+	PET_MAX_HP
+	PET_MAX_MP
+	PET_MAX_CP
+	PET_MAX_LOAD
+	PET_MAX_FED
+	PET_CUR_HP
+	PET_CUR_MP
+	PET_CUR_CP
+	PET_PER_HP
+	PET_PER_MP
+	PET_PER_CP
+	PET_CUR_LOAD
+	PET_CUR_FED
+	PET_RUN_SPEED
+	PET_WALK_SPEED
+	PET_ATTACK_SPEED
+	PET_ATTACK_SPEED_MULT
+	PET_CAST_SPEED
+	PET_ID
+	PET_TYPE
+	PET_NPCTYPE
+	PET_FORM
+	PET_TARGETID
+	PET_RUNNING
+	PET_LOOKS_DEAD
+Fix: GROUP_HP not including self
+Fix: GROUP_MP not including self
+Fix: GROUP_CP not including self
+Fix: GROUP_HP, GROUP_MP, GROUP_CP always triggering
+Fix: Disconnects when need target in bot options is checked and script is running at the same time
+Fix: Pet1;Pet2;Pet3 not working correctly in bot options
+
+v394
+Fix: Shortcut stuff
+Fix: Anti-KS logic
+Add: Auto-reply
+Fix: XP-Percent
+Fix: Duplicate entries in do not lists
+
+v396
+01.24.13
+ - New datapack encrypter
+ - New crypt keys
+
+02.03.13
+ - Fix OOG login
+
+02.21.13
+ - Fix party view when pets in party
+ - Fix tab size in information panel
+
+02.27.13
+ - Fix abnormal effects for players
+ - Add option to disable NPCsay
+
+03.06.13
+ - Fix abnormal effects again...
+
+
+01 Apr 2013 - Added 3 pickup ban preventions... Beta
+			- Scripting pickup nearest now works the same as the GUI's pickup.
+			- tweaked pickup code
+			- re-added pickup mode. 
+			- pickup will no longer ignore/blacklist when stun/slept etc.
+
+
+
+13 Mar 2013 - added out of combat stuff (move when no mobs are around)
+			- messed with gui positioning
+			- small tweak to pickup... fix stuck issues?
+			- tweaks to move to location, including canceling target when dead and spoil isnt activated.
+			- added leash to botoptions for move to location when no mobs			
+			- Bot will KS by default, anti-ks does not work well in party.
+			- party invite crash fix
+			- added party in combat detection for various features... including pickup
+			- Toggle Skills GUI (only) complete implementation
+			- other stuff i forget...
+			- pickup bug fixed, (blacklisting items that can't be reached)
+			
+
+
+-------------------------------------------------------------------
+
+05 Mar 2013 - pickup 2.0 (works with AOE and works way better then the last one) 90% re-write. This should be a huge performance boost. Most likely 200%+ performance boost. 
+			- fixed 2 ban related targeting issues. Highly recommend you drop whatever your bots are doing and update to this version if you are playing retail.
+			- added bad npc counter in stats
+
+
+01 Mar 2013 - cleaned code and optimized pickup function
+			- optiomized stats page
+			- added combat skills disabled when picking up
+			- added stats for meshless ignored
+
+
+-------------------------------------------------------------------
+
+21 feb 2013 - fixed npc titles... again
+			- added Gained adena per hour
+			- added Total adena gained
+
+22 feb 2013 - partially added items picked up to stats page
+
+23 feb 2013 - items for stats completely fixed. Please let me know if you spot anything I missed.
+
+24 feb 2013 - fixed crystalize from inventory
+			- tweaked autopin again... (3 seconds now... that should be enough.... right?)
+
+25 feb 2013 - fixed small gui bug
+
+27 feb 2013 - fixed packet structure
+			- added additional meshless items. This probably wasn't used to ban people, but thinking ahead helps.
+
+28 feb 2013 - changed pickup timeout to 10 by default... please let me know what you think.
+			- fixed distance bug with DONOT + Whitelist
+			- revamped pickup. Please test and let me know if anything is off.
+			- tweaked pickup to not attack mobs while in pickup mode.
+			- Disabled cancel target on dead when spoil is activated
+			- resting now happens after pickup is complete
+ 
+
+-------------------------------------------------------------------
+
+20 Feb 2013 - XP/SP per hour added, new tab added for stats
+			- fixed npctitles
+			- added accept rez from party
+			- default Z range changed to 600
+
+
+-------------------------------------------------------------------
+
+05 Feb 2013 - Active follow distance now 200 by default
+			- small tweaks for placement in bot options.
+
+07 Feb 2013	-added auto accept party/rez from alliance/clan
+			-fixed clear in botoptions to clear new checkboxes I added. Also resets the follow distance to 200.
+			-fix memory leak? (obce/slothmo/mpj123)
+
+
+
+-------------------------------------------------------------------
+
+25 Jan 2013 - Fixed party invite count, previously 9, now 7
+
+27 Jan 2013 - added .PER_HP
+			  added .PER_MP
+			  added .PER_CP
+			  to scripting for npcs and players
+
+			  Changed protocol to 488
+			  added cancel on dead target (bot options)
+29 Jan 2013
+			  added autolearnskills to save interface and load
+			  Fixed crash using autopin (now waits before responding)
+			  Disabled packet transform in the content filter option, this needs work.
+
+31 Jan 2013 - Fixed Disconnect on IG Crash (save to interface... not recommended on retail fyi)
+			  Disable botting if teleported (save to interface)
+			  Added a warning for Disconnect on IG crash since we no longer hardcode the value. (now shows "Check this for retail
+
+02 Feb 2013 - Fixed invite party member
+			  Also added error handling added, you wont crash anymore, and just in case, added name parsing so you wont be sending invites with blank requests...
+			  added option to turn off log writing in setup menu. It will still create the file, but wont write anything to it. This is only in case you decide to turn it on at a later time.
+
+03 Feb 2013 - Tweaked pin to wait for 1 second before entering pin to better emulate real players, and hopefully reduce the crash.
+			- Added leave if leader in bot options.
+			- tweaked invite party member, also put in a check for being in the gameserver before starting.
+
+--------------------------------------------------------
+
+17 Jan 2013 - added ExSendUIEventPacket chat handling
+			- added BOTSET options to commands.txt
+19 Jan 2013 - fixed auto-pin packet
+			- fixed social skills (shyness and others)
+24 Jan 2013 - fixed autolearn skills
+
 
 
 3.07.2013: Fixed IS_RED
@@ -29,40 +636,6 @@ Features
 
 volatile only on: byte, sbyte, short, ushort, int, uint, char, float, or bool, or an enumeration with a base type of byte, sbyte, short, ushort, int, or uint
 
-* TODO - stand to use skills
-* TODO - fix allowing movement while dead
-* TODO - make server emulator to test gameguard login packets
-* TODO - self/target - like dead, sitting, running, armor, weapon...etc
-* TODO - protected / static class functions
-* TODO - fix all non-thread safe variables
-* TODO - allow setting L2.Net follow distance 2
-* TODO - set walls via bot options
-* TODO - command channel pink
-* TODO - party info summon
-* TODO - debug output with command line param
-* TODO - on self targeted -targeter clan, ally
-* TODO - add script events for enter/leave peace zone
-* TODO - event MEMBER_JOIN_PARTY?
-* TODO - event MEMBER_LEFT_PARTY?
-* TODO - skill successful/failed for skill launched events?
-* TODO - delayed party invite reject
-* TODO - delayed trade invite reject
-* TODO - "<&DOUBLE I2&>" set precision
-* TODO - add flagged state to targeting and combat events
-* TODO - script targeting ... TARGETTED, TARGETING, IGNORE
-* TODO - Util.GetCharName - check clan members
-* TODO - Util.GetCharID - check clan members
-* TODO - fix forward exit packet on close
-* TODO - 0x12 = GM Announcement - Light Blue use hero color
-* TODO - make hero chat color a little darker
-
-* TODO - summoned/spawned - spawned last forever.
-* TODO - on dead delay of 15 seconds.
-* TODO - added x,y map viewport offset to map tab
-* TODO - script event PARTY_INVITE
-* TODO - script event TRADE_INVITE
-
-* TODO - fix needlessly reusing items when bot options are applied
 
 "Auto Unstuck"
 "Only Pick Mine"
@@ -462,6 +1035,54 @@ added \\n resolves to \n in jingjing string parser (\n still resolves to newline
 changed default chronicle on invalid command line param to ct 2.3
 refactored Force Log (part of Kill Threads)
 updated Spanish translation (ty escabuchen!)
+
+
+
+-Changed debug messages to system filter.
+
+------------------------------------------------------------------------
+-fixed bug for TARGET_NEAREST_NAME. The NPCInfo object was not setting the name correctly from the packet. Either the packet contained no data about the npc's name or it was looking in the wrong spot. Changed it so it looks up the npc name via the npcname text file instead.
+-Added command line parameters.
+
+Add this to commands.txt or w/e =P
+---- New command line parameters ---
+-accept (same as -a)
+-blowfish (same as -b)
+-protocol (same as -C)
+-loginport (same as -d)
+-loginip (same as -i)
+-password (same as -p)
+-username (same as -u)
+-script (same as -s)
+-iglistenport (Same as -x)
+-iglistenip (same as -y)
+-chronicle (same as -z)
+
+The following command line parameters require valid keys to function:
+
+-overidegameserver enables the gameserver overide 
+-useproxylogin enables proxy server for login connections 
+-userproxygame enables proxy server for game connections 
+-gameserverip ip address of gameserver 
+-gameserverport port of gameserver 
+-socks5ip ip address of the socks proxy server 
+-socks5port port of the socks proxy server 
+-socks5username username for socks proxy 
+-socks5password password for socks proxy
+
+added astar.cs, astarnode.cs pathmanager.cs
+added pathmanager to gamedata (with locks)
+added locks to Astar object
+fixed bug in wall drawing code, changed wall color so its not equal to boundsbox color
+fixed some minor usability bugs in MOVE_SMART
+A* pathfinding now works. Requires testing.
+
+-Fixed bug where SYSTEM_CURRENTFILE global would dereference with \n as a newline character, thus causing scripts that exist in directories with \t \b \n etc to not work correctly
+-Added MOVE_INTERRUPT command which stops a smart move from any Thread
+-Added a new SET_TARGETING and CHECK_TARGETING command called PATHFINDING which allows mobs that do not have paths to not be selected for targeting.
+
+minor bug fixes to A*
+
 
 v370
 *continued work on pets
@@ -2002,3 +2623,185 @@ AES 256 Encoding
 new mini map
 newer gameguard packets for login process
 C6 support
+
+
+09/26/10
+Updated Code/Data/Packs/Other Players/CharInfo.cs to work with Retail Freya
+
+10/09/10
+Further updates to Charinfo.
+
+10/27/10
+Updates to Player_Info (packet structure and HasExtendedEffect bool)
+Updates to CharInfo (packet structure and HasExtendedEffect bool)
+Updates to NpcInfo (packet structure and HasExtendedEffect bool)
+Updates to GlobalData ExtendedEffects 
+Updates to Script_Evaluate.cs (IS_STIGMAED unary op test)
+
+11/02/10
+Added the following unary operators
+    * IS_BLEEDING
+    * IS_POISONED
+    * IS_REDCIRCLE
+    * IS_ICE
+    * IS_WIND
+    * IS_AFRAID (Heroic Dread / Antharas Fear / Valakas Fear)
+    * IS_STUNNED
+    * IS_ASLEEP
+    * IS_MUTE
+    * IS_ROOTED
+    * IS_PARALYZED
+    * IS_PETRIFIED
+    * IS_BURNING
+    * IS_FLOATING_ROOT (Frintezza Paralyze)
+    * IS_DANCE_STUNNED (Frintezza Raid Stun)
+    * IS_FIREROOT_STUN (Valakas Burning Stun)
+    * IS_STEALTH
+    * IS_IMPRISIONING_1
+    * IS_IMPRISIONING_2
+    * IS_SOE (target is using soe or /unstuck)
+    * IS_ICE2
+    * IS_EARTHQUAKE (IoP screen shake)
+    * IS_INVULNERABLE (Ultimate defense effects / anti magic armor)
+    * IS_REGEN_VITALITY (Vitality Potion / Birthday buff)
+    * IS_REAL_TARGETED
+    * IS_DEATH_MARKED
+    * IS_TERRIFIED (Curse Fear / Mass Fear / Sword Symphony)
+    * IS_CONFUSED
+    * IS_INVINCIBLE (Celestial Effects)
+    * IS_AIR_STUN
+    * IS_AIR_ROOT
+    * IS_STIGMAED
+    * IS_STAKATOROOT
+    * IS_FREEZING (Freya Raid Freeze attack)
+    * IS_DISABLED (combination check if not fear/stun/sleep/para/petrified/frint para/frint stun/valakas stun/antharas stun/afraid/freya stun)
+    * IS_SHOP
+    * IS_NOBLE
+    * IS_HERO
+    * IS_DUELING
+    * IS_FAKEDEATH
+    * IS_INVISIBLE
+    * IS_INCOMBAT
+    * IS_SITTING
+    * IS_WALKING (slothmo already had IS_RUNNING for something else :/)
+    * IS_FISHING
+    * IS_DEMONSWORD
+    * IS_TRANSFORMED
+    * IS_AGATHON
+    * IS_FINDPARTY
+    * IS_USINGCUBIC
+    * IS_FLAGGED
+    * IS_RED
+    * IS_PARTYMEMBER
+    * IS_PARTYLEADER
+    * IS_INPARTY
+    * IS_CLANMEMBER (is the id in a clan not necessarily yours)
+    * IS_LEADER
+    * IS_CLANMATE (is the id in your clan)
+    * IS_INSIEGE
+    * IS_ATTACKER
+    * IS_INALLY (is the id in an alliance not necessarily yours)
+    * IS_ENEMY
+    * IS_MUTUALWAR
+    * IS_1SIDEWAR
+    * IS_ALLYMEMBER (is the id in your alliance)
+    * IS_TWAR (participating in a territory war)
+11/03/10
+  AddInfo.cs  - public static void Set_Relation(uint id, int relation)
+  AddInfo.cs  - Extended ADD Npcinfo
+  GameData.cs - public enum RelationStates : uint
+  CharInfo.cs - public bool HasRelation(RelationStates test)
+  CharInfo.cs - Extended Copy
+
+11/04/10
+New Binary operators:
+
+    * IS_CLAN
+    * IS_ALLY
+    * IS_CLASS
+    * IS_ROOTCLASS
+
+New JingJing globals:
+    * SERVER_ID
+    * SERVER_KEY (obfuscation key)
+
+11/13/10
+New Binary operator:
+
+    * IN_RANGE - returns true of ID is within N distance of the character
+
+New JingJing global:
+    * NOW (returns the current time in ticks - implicit int)
+
+11/13/10
+    * Added PartySpelled/Add_PartyBuff packet handlers
+
+New function:
+    * GET_EFFECTS SortedList "<&OBJECT_ID&>"
+
+    Returns a list of effects on a player or party member.
+    Requires new Effect.l2c
+
+11/13/10
+    * Added preliminary support for in game time via new global GAME_TIME and LOGIN_TIME.
+      When a character logs in the server sets their clock via CharSelected.  From there we need to keep
+      track of the difference. (experimental)
+
+11/13/10
+    * Added Global Variable ZONE (Globals.gamedata.cur_zone)
+
+11/14/10
+	* Added USE_SKILL_SMART (experimental use_skill with auto sense delay and interrupt)
+
+11/16/10
+        * Added IS_RESISTED binary operator
+
+11/18/10
+        * Fix for IS_RESISTED
+
+11/20/10
+        * Fix for IN_RANGE
+        * Added .EFFECT_TIME for GET_EFFECTS initialized sortedlists
+        * Added CANCEL_BUFF command 
+        * Added global CHAR_CLAN, CHAR_ALLY
+        * Added many item id globals for equipped items on character.
+
+11/21/10
+        * Added GROUP_HP / GROUP_MP / GROUP CP binary operators
+
+11/23/10
+	* fix for IS_INVISIBLE unary operator
+	* fix IS_ENEMY typo -> IS_SIEGEENEMY
+
+11/27/10
+
+	* fix for SKILL_GET_REUSE when using USE_SKILL_SMART
+
+12/04/10
+	* Support for Content Filtering - IG performance tweaks
+
+12/05/10
+	* new setup option: Disconnect on IG Crash
+	* new setup option: Dump Network buffer on IG Crash
+
+12/23/10
+	* new setup option: toggle botting when teleported
+        
+01/31/11
+        * added GET_SKILLS and STDLIB\Skill.l2c (returns a list of player skills with attributes)
+
+02/02/11
+        * Added IS_READY (skill id) unary operator
+
+02/04/11
+	* Extended GET_INVENTORY and updated Inventory.l2c
+	* Added prelim High5 support to the login screen.	
+02/05/11
+	* Sped up USE_SKILL_SMART
+03/19/11
+	* Added unary operator IS_ITEM_EQUIPPED <item id>
+	* Added unary operator IS_AUG_EQUIPPED <aug id> (from optiondata-e.dat)
+07/13/2011
+        * Made IS_AFRAID cover all fear vfx.
+        * IS_TERRIFIED maintained for backwards compat but depreciated.
+
