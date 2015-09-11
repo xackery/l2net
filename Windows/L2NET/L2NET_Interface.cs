@@ -332,7 +332,7 @@ namespace L2_login
             System.IO.StreamReader interin;
             try
             {
-                interin = new System.IO.StreamReader("data\\interface.txt");
+                interin = new System.IO.StreamReader("config\\interface.txt");
             } catch (Exception e)
             {
                 throw new Exception("Failed to open file: " + e.Message);

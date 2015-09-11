@@ -1525,7 +1525,7 @@ namespace L2_login
                 string loaded;
 
                 //load the map datafiles...
-                System.IO.StreamReader filein = new System.IO.StreamReader(Globals.PATH + "\\Data\\maps.txt");
+                System.IO.StreamReader filein = new System.IO.StreamReader(Globals.PATH + "\\data\\maps.txt");
 
                 while ((loaded = filein.ReadLine()) != null)
                 {
@@ -1538,7 +1538,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\maps.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\maps.txt");
             }
         }
 

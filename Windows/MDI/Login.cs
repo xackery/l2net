@@ -2053,7 +2053,7 @@ namespace L2_login
 			{
 				//load the blowfish list
 				blowfish_list.Clear();
-				System.IO.StreamReader blowfish_file = new System.IO.StreamReader("blowfish.txt");
+				System.IO.StreamReader blowfish_file = new System.IO.StreamReader("config\\blowfish.txt");
 
 				string b_name;
 				string b_ip;
@@ -2080,7 +2080,7 @@ namespace L2_login
 			{
 				//load the login server list
 				loginserver_list.Clear();
-				System.IO.StreamReader login_file = new System.IO.StreamReader("loginlist.txt");
+				System.IO.StreamReader login_file = new System.IO.StreamReader("config\\loginlist.txt");
 
 				string l_name;
 				string l_ip;
@@ -2107,7 +2107,7 @@ namespace L2_login
             {
                 //load the login server list
                 gameserver_list.Clear();
-                System.IO.StreamReader gs_file = new System.IO.StreamReader("gslist.txt");
+                System.IO.StreamReader gs_file = new System.IO.StreamReader("config\\gslist.txt");
 
                 string gs_name;
                 string gs_ip;
@@ -2131,7 +2131,7 @@ namespace L2_login
         {
             try
             {
-                System.IO.StreamReader ew_file = new System.IO.StreamReader("enterworld.txt");
+                System.IO.StreamReader ew_file = new System.IO.StreamReader("config\\enterworld.txt");
 
                 string ew = ew_file.ReadLine();
                 ew_file.Close();

@@ -69,7 +69,7 @@ namespace L2_login
             } catch (Exception e)
             {
                 System.Windows.Forms.MessageBox.Show(e.Message);
-                Environment.FailFast("File not found:" + e.Message);
+                Environment.FailFast(e.Message);
                 return;
             }
 

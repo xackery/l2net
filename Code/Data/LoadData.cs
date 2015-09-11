@@ -29,22 +29,22 @@ namespace L2_login
         {
             try
             {
-                data_lvlexp = GetData(Globals.PATH + "\\Data\\lvlexp.txt");
-                data_servername = GetData(Globals.PATH + "\\Data\\servername.txt");
-                data_systemmsg = GetData(Globals.PATH + "\\Data\\systemmsg.txt");
-                data_hennagrp = GetData(Globals.PATH + "\\Data\\hennagrp.txt");
-                data_npcname = GetData(Globals.PATH + "\\Data\\npcname.txt");
-                data_itemname = GetData(Globals.PATH + "\\Data\\itemname.txt");
-                data_etcitemgrp = GetData(Globals.PATH + "\\Data\\etcitemgrp.txt");
-                data_weapongrp = GetData(Globals.PATH + "\\Data\\weapongrp.txt");
-                data_armorgrp = GetData(Globals.PATH + "\\Data\\armorgrp.txt");
-                data_classes = GetData(Globals.PATH + "\\Data\\classes.txt");
-                data_races = GetData(Globals.PATH + "\\Data\\races.txt");
-                data_skillname = GetData(Globals.PATH + "\\Data\\skillname.txt");
-                data_actionname = GetData(Globals.PATH + "\\Data\\actionname.txt");
-                //data_questname = GetData(Globals.PATH + "\\Data\\questname.txt");
-                data_zonename = GetData(Globals.PATH + "\\Data\\zonename.txt");
-                data_npcstring = GetData(Globals.PATH + "\\Data\\npcstring.txt");
+                data_lvlexp = GetData(Globals.PATH + "\\data\\lvlexp.txt");
+                data_servername = GetData(Globals.PATH + "\\data\\servername.txt");
+                data_systemmsg = GetData(Globals.PATH + "\\data\\systemmsg.txt");
+                data_hennagrp = GetData(Globals.PATH + "\\data\\hennagrp.txt");
+                data_npcname = GetData(Globals.PATH + "\\data\\npcname.txt");
+                data_itemname = GetData(Globals.PATH + "\\data\\itemname.txt");
+                data_etcitemgrp = GetData(Globals.PATH + "\\data\\etcitemgrp.txt");
+                data_weapongrp = GetData(Globals.PATH + "\\data\\weapongrp.txt");
+                data_armorgrp = GetData(Globals.PATH + "\\data\\armorgrp.txt");
+                data_classes = GetData(Globals.PATH + "\\data\\classes.txt");
+                data_races = GetData(Globals.PATH + "\\data\\races.txt");
+                data_skillname = GetData(Globals.PATH + "\\data\\skillname.txt");
+                data_actionname = GetData(Globals.PATH + "\\data\\actionname.txt");
+                //data_questname = GetData(Globals.PATH + "\\data\\questname.txt");
+                data_zonename = GetData(Globals.PATH + "\\data\\zonename.txt");
+                data_npcstring = GetData(Globals.PATH + "\\data\\npcstring.txt");
             }
             catch (Exception e)
             {
@@ -151,7 +151,7 @@ namespace L2_login
             try
             {
 #endif
-            System.IO.StreamReader filein = new System.IO.StreamReader(Globals.PATH + "\\Data\\gg.txt");
+            System.IO.StreamReader filein = new System.IO.StreamReader(Globals.PATH + "\\data\\gg.txt");
 
             string login_gg = filein.ReadLine();
             //need to convert this string and store in the global thingy...
@@ -203,7 +203,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\gg.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\gg.txt");
             }
 #endif
         }
@@ -254,7 +254,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\lvlexp.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\lvlexp.txt");
             }
 #endif
 
@@ -302,7 +302,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\servername.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\servername.txt");
             }
 
             dec = null;
@@ -349,7 +349,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\systemmsg.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\systemmsg.txt");
             }
 
             dec = null;
@@ -401,7 +401,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\hennagrp.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\hennagrp.txt");
             }
 
             dec = null;
@@ -453,7 +453,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\npcname.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\npcname.txt");
             }
 
             dec = null;
@@ -505,7 +505,7 @@ namespace L2_login
             }
             catch(Exception e)
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\itemname.txt" + e.Message);
+                Globals.l2net_home.Add_PopUpError("failed to load data\\itemname.txt" + e.Message);
             }
             //////////////////
             try
@@ -538,7 +538,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\etcitemgrp.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\etcitemgrp.txt");
             }
             //////////////
             try
@@ -574,7 +574,7 @@ namespace L2_login
             }
             catch (Exception e)
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\weapongrp.txt " + e.Message);
+                Globals.l2net_home.Add_PopUpError("failed to load data\\weapongrp.txt " + e.Message);
             }
             //////////////
             try
@@ -607,7 +607,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\armorgrp.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\armorgrp.txt");
             }
 
             dec = null;
@@ -654,7 +654,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\classes.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\classes.txt");
             }
 
             dec = null;
@@ -701,7 +701,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\races.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\races.txt");
             }
 
             dec = null;
@@ -756,7 +756,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\skillname.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\skillname.txt");
             }
 
             dec = null;
@@ -803,7 +803,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\actionname.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\actionname.txt");
             }
 
             dec = null;
@@ -850,7 +850,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\questname.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\questname.txt");
             }
 
             dec = null;
@@ -897,7 +897,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\zonename.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\zonename.txt");
             }
 
             dec = null;
@@ -914,7 +914,7 @@ namespace L2_login
             try
             {
                 ///#)"(#&JH(S&ZKS=
-                //dec = GetData(Globals.PATH + "\\Data\\npcstring.txt");
+                //dec = GetData(Globals.PATH + "\\data\\npcstring.txt");
                 dec = GetData(data_npcstring, ")#&!%J)(/S)J/&%¤");
 
                 mem_stream = new System.IO.MemoryStream(dec);
@@ -946,7 +946,7 @@ namespace L2_login
             }
             catch
             {
-                Globals.l2net_home.Add_PopUpError("failed to load Data\\npcstring.txt");
+                Globals.l2net_home.Add_PopUpError("failed to load data\\npcstring.txt");
             }
 
             dec = null;
