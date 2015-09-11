@@ -82,13 +82,7 @@ namespace L2_login
 
             Util.Setup_Threads();
 
-            Globals.l2net_home.Add_Text("Full version enabled, enjoy :)", Globals.Red, TextType.BOT);
-
-
             //process command line crap
-            //TD: modified to allow for longer command line parameter names
-            //      Kept compatability with old command line options. 
-            //      Added support for more verbose options.
 
             
             foreach (string s in args)
