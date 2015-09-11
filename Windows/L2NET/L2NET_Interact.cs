@@ -345,7 +345,14 @@ namespace L2_login
 
             if (Globals.login_window == null || Globals.login_window.IsDisposed == true)
             {
-                Globals.login_window = new Login(this);
+                try {
+                    Globals.login_window = new Login(this);
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.Message, "Error Displaying Login Window", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
             Globals.login_window.BringToFront();
             Globals.login_window.Show();

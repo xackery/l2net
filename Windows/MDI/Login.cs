@@ -2049,29 +2049,22 @@ namespace L2_login
 
 		private void Load_Blowfish()
 		{
-			try
+			//load the blowfish list
+			blowfish_list.Clear();
+			System.IO.StreamReader blowfish_file = new System.IO.StreamReader("config\\blowfish.txt");
+
+			string b_name;
+			string b_ip;
+
+			while( (b_name = blowfish_file.ReadLine()) != null)
 			{
-				//load the blowfish list
-				blowfish_list.Clear();
-				System.IO.StreamReader blowfish_file = new System.IO.StreamReader("config\\blowfish.txt");
-
-				string b_name;
-				string b_ip;
-
-				while( (b_name = blowfish_file.ReadLine()) != null)
-				{
-					b_ip = blowfish_file.ReadLine();
-					comboBox_blowfish.Items.Add(b_name);
-					blowfish_list.Add(b_ip);
-				}
-				blowfish_file.Close();
-
-				Globals.l2net_home.Add_Text("loaded saved blowfish list", Globals.Red, TextType.BOT);
+				b_ip = blowfish_file.ReadLine();
+				comboBox_blowfish.Items.Add(b_name);
+				blowfish_list.Add(b_ip);
 			}
-			catch
-			{
-				Globals.l2net_home.Add_Error("failed to load saved blowfish list");
-			}
+			blowfish_file.Close();
+
+			Globals.l2net_home.Add_Text("loaded saved blowfish list", Globals.Red, TextType.BOT);
 		}
 
 		private void Load_Servers()
