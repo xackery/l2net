@@ -25,8 +25,14 @@ namespace L2_login
         private static byte[] data_zonename;
         private static byte[] data_npcstring;
 
+        private static bool isDataLoaded = false;
         public static void LoadDataFiles()
-        {
+        {            
+            if (isDataLoaded)
+            { //This is a singleton, only load it once.
+                return;
+            }
+
             try
             {
                 data_lvlexp = GetData(Globals.PATH + "\\data\\lvlexp.txt");
@@ -50,8 +56,7 @@ namespace L2_login
             {
                 throw new Exception(e.Message);
             }
-
-            //System.Threading.Tasks.Parallel.For(0, 14, (i) =>
+            
             System.Threading.Tasks.Parallel.For(0, 14, (i) =>
                 {
                     switch (i)
@@ -121,6 +126,8 @@ namespace L2_login
             data_questname = null;
             data_zonename = null;
             data_npcstring = null;
+
+            isDataLoaded = true;
         }
 
         private static byte[] GetData(string filename)
