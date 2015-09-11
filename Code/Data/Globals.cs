@@ -50,7 +50,7 @@ namespace L2_login
         public const string Map_Salt = "QaABcmPq$]@H+2u4NXxG";
 
         public const string Name = "L2.Net";
-        public const string Version = "468";
+        public const string Version = "2015-09-10";
         public const string VersionLetter = "";
         public const int MinDataPack = 392;
         public static string PATH = "";
