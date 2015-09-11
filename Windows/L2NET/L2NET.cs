@@ -50,7 +50,7 @@ namespace L2_login
         public SmartTimer timer_inventory;
         public SmartTimer timer_mybuffs;
         
-        private System.Collections.SortedList ScriptWindows = new SortedList();
+        private SortedList ScriptWindows = new SortedList();
 
         private System.Collections.Queue Chat_Messages = new Queue();
 
@@ -364,7 +364,6 @@ namespace L2_login
         public volatile TextBox textBox_rtb_input;
         private ToolStripMenuItem extendedActionsToolStripMenuItem;
         private ToolStripMenuItem toolStrip_pck;
-        private wyDay.Controls.AutomaticUpdater automaticUpdater1;
         private ToolStripMenuItem menuitem_help_checkforupdates;
         private Label label_info_mcritical;
         private Label label_info_mevasion;
@@ -421,170 +420,168 @@ namespace L2_login
 
 			InitializeComponent();
 
-            if (!automaticUpdater1.ClosingForInstall)
+           
+
+            Globals.gamedata = new GameData();
+            Globals.l2net_home = this;
+
+            //need to setup our chat box shit first
+            timer_chat = new SmartTimer();
+            timer_chat.Interval = Globals.CHAT_TIMER;
+            timer_chat.OnTimerTick += timer_chat_Tick;
+
+            try {
+                Load_Interface();
+            } catch (Exception e)
             {
+                MessageBox.Show(e.Message);
+                this.Close();
+                Application.Exit();
+                return;     
+            }
 
-                Globals.gamedata = new GameData();
-                Globals.l2net_home = this;
+            //do our loading here...
+            GameServer.Init(args);
 
-                //need to setup our chat box shit first
-                timer_chat = new SmartTimer();
-                timer_chat.Interval = Globals.CHAT_TIMER;
-                timer_chat.OnTimerTick += timer_chat_Tick;
+            SetName();
 
-                try {
-                    Load_Interface();
-                } catch (Exception e)
-                {
-                    MessageBox.Show(e.Message);
-                    this.Close();
-                    Application.Exit();
-                    return;     
-                }
+            timer_players = new SmartTimer();
+            timer_players.Interval = Globals.PLAYERS_TIMER;
+            timer_players.OnTimerTick += timer_players_Tick;
 
-                //do our loading here...
-                GameServer.Init(args);
+            timer_items = new SmartTimer();
+            timer_items.Interval = Globals.ITEMS_TIMER;
+            timer_items.OnTimerTick += timer_items_Tick;
 
-                SetName();
+            timer_npcs = new SmartTimer();
+            timer_npcs.Interval = Globals.NPCS_TIMER;
+            timer_npcs.OnTimerTick += timer_npcs_Tick;
 
-                timer_players = new SmartTimer();
-                timer_players.Interval = Globals.PLAYERS_TIMER;
-                timer_players.OnTimerTick += timer_players_Tick;
+            timer_inventory = new SmartTimer();
+            timer_inventory.Interval = Globals.INVENTORY_TIMER;
+            timer_inventory.OnTimerTick += timer_inventory_Tick;
 
-                timer_items = new SmartTimer();
-                timer_items.Interval = Globals.ITEMS_TIMER;
-                timer_items.OnTimerTick += timer_items_Tick;
+            timer_mybuffs = new SmartTimer();
+            timer_mybuffs.Interval = Globals.MYBUFFS_TIMER;
+            timer_mybuffs.OnTimerTick += timer_mybuffs_Tick;
 
-                timer_npcs = new SmartTimer();
-                timer_npcs.Interval = Globals.NPCS_TIMER;
-                timer_npcs.OnTimerTick += timer_npcs_Tick;
+            this.SizeChanged += new EventHandler(L2NET_SizeChanged);
+            this.GotFocus += new EventHandler(L2NET_GotFocus);
+            this.notifyIcon_us.DoubleClick += new EventHandler(notifyIcon_us_DoubleClick);
 
-                timer_inventory = new SmartTimer();
-                timer_inventory.Interval = Globals.INVENTORY_TIMER;
-                timer_inventory.OnTimerTick += timer_inventory_Tick;
+            listView_inventory_items = new ArrayList();
+            lvwColumnSorter_inventory = new ListViewColumnSorter();
+            listView_inventory.RetrieveVirtualItem += new RetrieveVirtualItemEventHandler(listView_inventory_RetrieveVirtualItem);
+            listView_inventory.ColumnClick += new ColumnClickEventHandler(listView_inventory_ColumnClick);
 
-                timer_mybuffs = new SmartTimer();
-                timer_mybuffs.Interval = Globals.MYBUFFS_TIMER;
-                timer_mybuffs.OnTimerTick += timer_mybuffs_Tick;
+            listView_npc_data_items = new ArrayList();
+            lvwColumnSorter_npc_data = new ListViewColumnSorter();
+            listView_npc_data.RetrieveVirtualItem += new RetrieveVirtualItemEventHandler(listView_npc_data_RetrieveVirtualItem);
+            listView_npc_data.ColumnClick += new ColumnClickEventHandler(listView_npc_data_ColumnClick);
 
-                this.SizeChanged += new EventHandler(L2NET_SizeChanged);
-                this.GotFocus += new EventHandler(L2NET_GotFocus);
-                this.notifyIcon_us.DoubleClick += new EventHandler(notifyIcon_us_DoubleClick);
+            listView_items_data_items = new ArrayList();
+            lvwColumnSorter_item_data = new ListViewColumnSorter();
+            listView_items_data.RetrieveVirtualItem += new RetrieveVirtualItemEventHandler(listView_items_data_RetrieveVirtualItem);
+            listView_items_data.ColumnClick += new ColumnClickEventHandler(listView_items_data_ColumnClick);
 
-                listView_inventory_items = new ArrayList();
-                lvwColumnSorter_inventory = new ListViewColumnSorter();
-                listView_inventory.RetrieveVirtualItem += new RetrieveVirtualItemEventHandler(listView_inventory_RetrieveVirtualItem);
-                listView_inventory.ColumnClick += new ColumnClickEventHandler(listView_inventory_ColumnClick);
+            listView_players_data_items = new ArrayList();
+            lvwColumnSorter_players_data = new ListViewColumnSorter();
+            listView_players_data.RetrieveVirtualItem += new RetrieveVirtualItemEventHandler(listView_players_data_RetrieveVirtualItem);
+            listView_players_data.ColumnClick += new ColumnClickEventHandler(listView_players_data_ColumnClick);
 
-                listView_npc_data_items = new ArrayList();
-                lvwColumnSorter_npc_data = new ListViewColumnSorter();
-                listView_npc_data.RetrieveVirtualItem += new RetrieveVirtualItemEventHandler(listView_npc_data_RetrieveVirtualItem);
-                listView_npc_data.ColumnClick += new ColumnClickEventHandler(listView_npc_data_ColumnClick);
+            listView_mybuffs_data_items = new ArrayList();
+            lvwColumnSorter_mybuffs_data = new ListViewColumnSorter();
+            listView_mybuffs_data.RetrieveVirtualItem += new RetrieveVirtualItemEventHandler(listView_mybuffs_data_RetrieveVirtualItem);
+            listView_mybuffs_data.ColumnClick += new ColumnClickEventHandler(listView_mybuffs_data_ColumnClick);
 
-                listView_items_data_items = new ArrayList();
-                lvwColumnSorter_item_data = new ListViewColumnSorter();
-                listView_items_data.RetrieveVirtualItem += new RetrieveVirtualItemEventHandler(listView_items_data_RetrieveVirtualItem);
-                listView_items_data.ColumnClick += new ColumnClickEventHandler(listView_items_data_ColumnClick);
+            lvwColumnSorter_skills = new ListViewColumnSorter();
+            listView_skills.ListViewItemSorter = lvwColumnSorter_skills;
+            listView_skills.ColumnClick += new ColumnClickEventHandler(listView_skills_ColumnClick);
 
-                listView_players_data_items = new ArrayList();
-                lvwColumnSorter_players_data = new ListViewColumnSorter();
-                listView_players_data.RetrieveVirtualItem += new RetrieveVirtualItemEventHandler(listView_players_data_RetrieveVirtualItem);
-                listView_players_data.ColumnClick += new ColumnClickEventHandler(listView_players_data_ColumnClick);
+            lvwColumnSorter_clan = new ListViewColumnSorter();
+            listView_char_clan.ListViewItemSorter = lvwColumnSorter_clan;
+            listView_char_clan.ColumnClick += new ColumnClickEventHandler(listView_char_clan_ColumnClick);
 
-                listView_mybuffs_data_items = new ArrayList();
-                lvwColumnSorter_mybuffs_data = new ListViewColumnSorter();
-                listView_mybuffs_data.RetrieveVirtualItem += new RetrieveVirtualItemEventHandler(listView_mybuffs_data_RetrieveVirtualItem);
-                listView_mybuffs_data.ColumnClick += new ColumnClickEventHandler(listView_mybuffs_data_ColumnClick);
+            listView_inventory.DoubleClick += new EventHandler(listView_inventory_DoubleClick);
+            listView_npc_data.DoubleClick += new EventHandler(listView_npc_data_DoubleClick);
+            listView_items_data.DoubleClick += new EventHandler(listView_items_data_DoubleClick);
+            listView_players_data.DoubleClick += new EventHandler(listView_players_data_DoubleClick);
+            listView_skills.DoubleClick += new EventHandler(listView_skills_DoubleClick);
 
-                lvwColumnSorter_skills = new ListViewColumnSorter();
-                listView_skills.ListViewItemSorter = lvwColumnSorter_skills;
-                listView_skills.ColumnClick += new ColumnClickEventHandler(listView_skills_ColumnClick);
+            listView_inventory.SelectedIndexChanged += new EventHandler(listView_inventory_SelectedIndexChanged);
+            listView_npc_data.SelectedIndexChanged += new EventHandler(listView_npc_data_SelectedIndexChanged);
+            listView_items_data.SelectedIndexChanged += new EventHandler(listView_items_data_SelectedIndexChanged);
+            listView_players_data.SelectedIndexChanged += new EventHandler(listView_players_data_SelectedIndexChanged);
+            listView_skills.SelectedIndexChanged += new EventHandler(listView_skills_SelectedIndexChanged);
 
-                lvwColumnSorter_clan = new ListViewColumnSorter();
-                listView_char_clan.ListViewItemSorter = lvwColumnSorter_clan;
-                listView_char_clan.ColumnClick += new ColumnClickEventHandler(listView_char_clan_ColumnClick);
+            label_char_name.DoubleClick += new EventHandler(panel_charinfo_DoubleClick);
+            panel_charinfo.DoubleClick += new EventHandler(panel_charinfo_DoubleClick);
 
-                listView_inventory.DoubleClick += new EventHandler(listView_inventory_DoubleClick);
-                listView_npc_data.DoubleClick += new EventHandler(listView_npc_data_DoubleClick);
-                listView_items_data.DoubleClick += new EventHandler(listView_items_data_DoubleClick);
-                listView_players_data.DoubleClick += new EventHandler(listView_players_data_DoubleClick);
-                listView_skills.DoubleClick += new EventHandler(listView_skills_DoubleClick);
+            checkBox_op_control.CheckedChanged += new EventHandler(checkBox_op_control_CheckedChanged);
+            checkBox_op_shift.CheckedChanged += new EventHandler(checkBox_op_shift_CheckedChanged);
 
-                listView_inventory.SelectedIndexChanged += new EventHandler(listView_inventory_SelectedIndexChanged);
-                listView_npc_data.SelectedIndexChanged += new EventHandler(listView_npc_data_SelectedIndexChanged);
-                listView_items_data.SelectedIndexChanged += new EventHandler(listView_items_data_SelectedIndexChanged);
-                listView_players_data.SelectedIndexChanged += new EventHandler(listView_players_data_SelectedIndexChanged);
-                listView_skills.SelectedIndexChanged += new EventHandler(listView_skills_SelectedIndexChanged);
+            panel_yesno.Hide();
+            panel_dead.Hide();
+            panel_npc_chat.Hide();
 
-                label_char_name.DoubleClick += new EventHandler(panel_charinfo_DoubleClick);
-                panel_charinfo.DoubleClick += new EventHandler(panel_charinfo_DoubleClick);
+            tabControl_char.SelectedIndexChanged += new EventHandler(tabControl_char_SelectedIndexChanged);
+            tabControl_char.HandleCreated += new EventHandler(TabControl_HandleCreated);
 
-                checkBox_op_control.CheckedChanged += new EventHandler(checkBox_op_control_CheckedChanged);
-                checkBox_op_shift.CheckedChanged += new EventHandler(checkBox_op_shift_CheckedChanged);
+            comboBox_msg_type.SelectedIndex = 0;
 
-                panel_yesno.Hide();
-                panel_dead.Hide();
-                panel_npc_chat.Hide();
+            System.Drawing.Bitmap img;
+            try
+            {
+                img = new System.Drawing.Bitmap(Globals.PATH + "\\Crests\\0.bmp");
+            }
+            catch
+            {
+                Add_Error("failed to load Crests\\0.bmp, generating substitute", false);
+                img = new System.Drawing.Bitmap(16, 8);
+            }
 
-                tabControl_char.SelectedIndexChanged += new EventHandler(tabControl_char_SelectedIndexChanged);
-                tabControl_char.HandleCreated += new EventHandler(TabControl_HandleCreated);
+            imageList_crests.Images.Add(img);
+            Globals.crestids.Add((uint)0);
 
-                comboBox_msg_type.SelectedIndex = 0;
+            this.Closing += new System.ComponentModel.CancelEventHandler(L2NET_Closing);
 
-                System.Drawing.Bitmap img;
-                try
-                {
-                    img = new System.Drawing.Bitmap(Globals.PATH + "\\Crests\\0.bmp");
-                }
-                catch
-                {
-                    Add_Error("failed to load Crests\\0.bmp, generating substitute", false);
-                    img = new System.Drawing.Bitmap(16, 8);
-                }
+            richTextBox_dialog.LinkClicked += new LinkClickedEventHandler(richTextBox_dialog_LinkClicked);
 
-                imageList_crests.Images.Add(img);
-                Globals.crestids.Add((uint)0);
-
-                this.Closing += new System.ComponentModel.CancelEventHandler(L2NET_Closing);
-
-                richTextBox_dialog.LinkClicked += new LinkClickedEventHandler(richTextBox_dialog_LinkClicked);
-
-                Globals.CanPrint = true;
-                menuItem_cmd_logon_Click(null, null);
+            Globals.CanPrint = true;
+            menuItem_cmd_logon_Click(null, null);
 
 #if TESTING && DEBUG
-            //TESTING MAP ENGINE OFFLINE
-            Globals.gamedata.running = true;
-            Globals.gamedata.drawing_game = true;
-            Globals.gamedrawthread = new System.Threading.Thread(new System.Threading.ThreadStart(MapThread.DrawGameThread));
-            Globals.gamedrawthread.IsBackground = true;
-            Globals.gamedrawthread.Start();
-            //END OF TESTING MAP ENGINE OFFLINE
+        //TESTING MAP ENGINE OFFLINE
+        Globals.gamedata.running = true;
+        Globals.gamedata.drawing_game = true;
+        Globals.gamedrawthread = new System.Threading.Thread(new System.Threading.ThreadStart(MapThread.DrawGameThread));
+        Globals.gamedrawthread.IsBackground = true;
+        Globals.gamedrawthread.Start();
+        //END OF TESTING MAP ENGINE OFFLINE
 #endif
 
-                //Load pre bot options
-                if (!String.IsNullOrEmpty(Globals.BotOptionsFile))
+            //Load pre bot options
+            if (!String.IsNullOrEmpty(Globals.BotOptionsFile))
+            {
+                if (Globals.botoptionsscreen == null || Globals.botoptionsscreen.IsDisposed == true)
                 {
-                    if (Globals.botoptionsscreen == null || Globals.botoptionsscreen.IsDisposed == true)
-                    {
-                        Globals.botoptionsscreen = new BotOptionsScreen();
-                    }
-                    else
-                    {
-                        Globals.botoptionsscreen.Setup();
-                    }
-                    //Globals.botoptionsscreen.TopMost = true;
-                    //Globals.botoptionsscreen.BringToFront();
-                    //Globals.botoptionsscreen.Show();
+                    Globals.botoptionsscreen = new BotOptionsScreen();
                 }
-                //menuItem_Options_Click(null, null);
-                //Globals.botoptionsscreen.Hide();
-
-                splash.Close();
-                splash.Dispose();
-                splash = null;
-
+                else
+                {
+                    Globals.botoptionsscreen.Setup();
+                }
+                //Globals.botoptionsscreen.TopMost = true;
+                //Globals.botoptionsscreen.BringToFront();
+                //Globals.botoptionsscreen.Show();
             }
+            //menuItem_Options_Click(null, null);
+            //Globals.botoptionsscreen.Hide();
+
+            splash.Close();
+            splash.Dispose();
+            splash = null;
+            
         }
 
 		/// <summary>
@@ -970,7 +967,6 @@ namespace L2_login
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.menuItem_forcecollect = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.automaticUpdater1 = new wyDay.Controls.AutomaticUpdater();
             this.disconectClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_party_5.SuspendLayout();
             this.panel_party_6.SuspendLayout();
@@ -1017,7 +1013,6 @@ namespace L2_login
             this.tab_hero.SuspendLayout();
             this.contextMenuStrip_notify.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.automaticUpdater1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_party_5
@@ -4597,19 +4592,7 @@ namespace L2_login
             this.menuItem_forcecollect.Name = "menuItem_forcecollect";
             this.menuItem_forcecollect.Size = new System.Drawing.Size(173, 22);
             this.menuItem_forcecollect.Text = "Force Collect";
-            this.menuItem_forcecollect.Click += new System.EventHandler(this.menuItem_forcecollect_Click);
-            // 
-            // automaticUpdater1
-            // 
-            this.automaticUpdater1.ContainerForm = this;
-            this.automaticUpdater1.GUID = "c2d56b23-7b32-472d-94b5-5ede3926dfe2";
-            this.automaticUpdater1.Location = new System.Drawing.Point(636, 4);
-            this.automaticUpdater1.Name = "automaticUpdater1";
-            this.automaticUpdater1.Size = new System.Drawing.Size(16, 16);
-            this.automaticUpdater1.TabIndex = 29;
-            this.automaticUpdater1.ToolStripItem = this.menuitem_help_checkforupdates;
-            this.automaticUpdater1.wyUpdateCommandline = null;
-            this.automaticUpdater1.wyUpdateLocation = "L2NetUpdater.exe";
+            this.menuItem_forcecollect.Click += new System.EventHandler(this.menuItem_forcecollect_Click);          
             // 
             // disconectClientToolStripMenuItem
             // 
@@ -4623,7 +4606,6 @@ namespace L2_login
             this.AcceptButton = this.button_sendtext;
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(1016, 659);
-            this.Controls.Add(this.automaticUpdater1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel_char);
             this.Controls.Add(this.panel_charinfo);
@@ -4687,7 +4669,6 @@ namespace L2_login
             this.contextMenuStrip_notify.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.automaticUpdater1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
