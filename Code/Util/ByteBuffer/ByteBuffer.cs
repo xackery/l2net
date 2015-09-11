@@ -131,7 +131,7 @@ namespace L2_login
             }
 
 #if DEBUG
-            Globals.l2net_home.Add_Error("read beyond array size ReadUInt32");
+            //Globals.l2net_home.Add_Error("read beyond array size ReadUInt32");
 #endif
 			return 0;
 		}

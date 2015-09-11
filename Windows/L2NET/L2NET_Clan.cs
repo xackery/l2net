@@ -396,6 +396,9 @@ namespace L2_login
                 buff.ReadUInt32(); //Sponsor
             }
 
+            if (mem_name == "") {
+                return;
+            }
             bool found = false;
             foreach (System.Windows.Forms.ListViewItem obj in Globals.l2net_home.listView_char_clan.Items)
             {
