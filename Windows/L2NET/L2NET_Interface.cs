@@ -709,7 +709,7 @@ namespace L2_login
 
                 Globals.LoadedInterface = true;
 
-                Add_Text("loaded interface", Globals.Red, TextType.BOT);
+                //Add_Text("loaded interface", Globals.Red, TextType.BOT);
 			}
 			catch
 			{

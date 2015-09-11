@@ -2064,7 +2064,7 @@ namespace L2_login
 			}
 			blowfish_file.Close();
 
-			Globals.l2net_home.Add_Text("loaded saved blowfish list", Globals.Red, TextType.BOT);
+			//Globals.l2net_home.Add_Text("loaded saved blowfish list", Globals.Red, TextType.BOT);
 		}
 
 		private void Load_Servers()
@@ -2086,7 +2086,7 @@ namespace L2_login
 					loginserver_list.Add(l_ip);
 				}
 				login_file.Close();
-				Globals.l2net_home.Add_Text("loaded saved server list", Globals.Red, TextType.BOT);
+				//Globals.l2net_home.Add_Text("loaded saved server list", Globals.Red, TextType.BOT);
 			}
 			catch
 			{
@@ -2112,11 +2112,11 @@ namespace L2_login
                     gameserver_list.Add(gs_ip);
                 }
                 gs_file.Close();
-                Globals.l2net_home.Add_Text("loaded saved gameserver list", Globals.Red, TextType.BOT);
+               // Globals.l2net_home.Add_Text("loaded saved gameserver list", Globals.Red, TextType.BOT);
             }
             catch
             {
-                //Globals.l2net_home.Add_Error("failed to load saved gameserver list");
+                Globals.l2net_home.Add_Error("failed to load saved gameserver list");
             }
         }
 
@@ -2131,11 +2131,11 @@ namespace L2_login
 
                 textBox_Custom_EnterWorld.Text = ew;
 
-                Globals.l2net_home.Add_Text("loaded saved enterworld packet", Globals.Red, TextType.BOT);
+             //   Globals.l2net_home.Add_Text("loaded saved enterworld packet", Globals.Red, TextType.BOT);
             }
             catch
             {
-                //Globals.l2net_home.Add_Error("failed to load saved enterworld packet");
+                Globals.l2net_home.Add_Error("failed to load saved enterworld packet");
             }
         }
 
