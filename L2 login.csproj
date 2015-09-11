@@ -126,24 +126,6 @@
     <EmbeddedResource Include="Languages\Vietnamese.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sounds\M1.wav" />
-    <EmbeddedResource Include="Sounds\M2.wav" />
-    <EmbeddedResource Include="Sounds\M3.wav" />
-    <EmbeddedResource Include="Sounds\M4.wav" />
-    <EmbeddedResource Include="Sounds\M5.wav" />
-    <EmbeddedResource Include="Sounds\M6.wav" />
-    <EmbeddedResource Include="Sounds\M7.wav" />
-    <EmbeddedResource Include="Sounds\M8.wav" />
-    <EmbeddedResource Include="Sounds\M9.wav" />
-    <EmbeddedResource Include="Sounds\Ch1.wav" />
-    <EmbeddedResource Include="Sounds\Ch2.wav" />
-    <EmbeddedResource Include="Sounds\Ch3.wav" />
-    <EmbeddedResource Include="Sounds\Ch4.wav" />
-    <EmbeddedResource Include="Sounds\Ch5.wav" />
-    <EmbeddedResource Include="Sounds\Ch6.wav" />
-    <EmbeddedResource Include="Sounds\Ch7.wav" />
-    <EmbeddedResource Include="Sounds\Ch8.wav" />
-    <EmbeddedResource Include="Sounds\Ch9.wav" />
     <None Include="Code\Data\GameGuard\GameGuardLogs.txt" />
     <Compile Include="Code\Crypting\Script_Crypt.cs" />
     <Compile Include="Code\Data\Packs\Items\BuyList.cs" />
@@ -684,51 +666,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sounds\A1.wav" />
-    <EmbeddedResource Include="Sounds\A2.wav" />
-    <EmbeddedResource Include="Sounds\A3.wav" />
-    <EmbeddedResource Include="Sounds\A4.wav" />
-    <EmbeddedResource Include="Sounds\A5.wav" />
-    <EmbeddedResource Include="Sounds\A6.wav" />
-    <EmbeddedResource Include="Sounds\A7.wav" />
-    <EmbeddedResource Include="Sounds\A8.wav" />
-    <EmbeddedResource Include="Sounds\A9.wav" />
-    <EmbeddedResource Include="Sounds\C1.wav" />
-    <EmbeddedResource Include="Sounds\C2.wav" />
-    <EmbeddedResource Include="Sounds\C3.wav" />
-    <EmbeddedResource Include="Sounds\C4.wav" />
-    <EmbeddedResource Include="Sounds\C5.wav" />
-    <EmbeddedResource Include="Sounds\C6.wav" />
-    <EmbeddedResource Include="Sounds\C7.wav" />
-    <EmbeddedResource Include="Sounds\C8.wav" />
-    <EmbeddedResource Include="Sounds\C9.wav" />
-    <EmbeddedResource Include="Sounds\H1.wav" />
-    <EmbeddedResource Include="Sounds\H2.wav" />
-    <EmbeddedResource Include="Sounds\H3.wav" />
-    <EmbeddedResource Include="Sounds\H4.wav" />
-    <EmbeddedResource Include="Sounds\H5.wav" />
-    <EmbeddedResource Include="Sounds\H6.wav" />
-    <EmbeddedResource Include="Sounds\H7.wav" />
-    <EmbeddedResource Include="Sounds\H8.wav" />
-    <EmbeddedResource Include="Sounds\H9.wav" />
-    <EmbeddedResource Include="Sounds\R1.wav" />
-    <EmbeddedResource Include="Sounds\R2.wav" />
-    <EmbeddedResource Include="Sounds\R3.wav" />
-    <EmbeddedResource Include="Sounds\R4.wav" />
-    <EmbeddedResource Include="Sounds\R5.wav" />
-    <EmbeddedResource Include="Sounds\R6.wav" />
-    <EmbeddedResource Include="Sounds\R7.wav" />
-    <EmbeddedResource Include="Sounds\R8.wav" />
-    <EmbeddedResource Include="Sounds\R9.wav" />
-    <EmbeddedResource Include="Sounds\T1.wav" />
-    <EmbeddedResource Include="Sounds\T2.wav" />
-    <EmbeddedResource Include="Sounds\T3.wav" />
-    <EmbeddedResource Include="Sounds\T4.wav" />
-    <EmbeddedResource Include="Sounds\T5.wav" />
-    <EmbeddedResource Include="Sounds\T6.wav" />
-    <EmbeddedResource Include="Sounds\T7.wav" />
-    <EmbeddedResource Include="Sounds\T8.wav" />
-    <EmbeddedResource Include="Sounds\T9.wav" />
     <EmbeddedResource Include="Windows\L2NET\L2NET.resx">
       <DependentUpon>L2NET.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -885,9 +822,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
