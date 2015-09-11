@@ -17,7 +17,7 @@ This program was developed on and for L2J servers ONLY.  Use of this program on 
 Download
 ---
 
-* Download and Extract [Latest Download Link](https://github.com/Xackery/l2net/tree/master/bin/latest/l2net-2015-09-10.zip)
+* Download and Extract [Latest Download Link](https://github.com/Xackery/l2net/raw/master/bin/latest/latest-2015-09-10.zip)
 * Download and Install [SlimDX](http://slimdx.org/download.php) (Used for Game Window, optional)
 
 Compiling
