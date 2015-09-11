@@ -13,6 +13,18 @@ Agreement
 ---
 This program was developed on and for L2J servers ONLY.  Use of this program on any other type of server is against this EULA .  Use of this program by anyone employed by or aquainted to anyone who works for NCSoft or its subsidaries is against the EULA and ILLEGAL. Use of this program by anyone remotely involved with law enforcement is against the EULA and ILLEGAL. Loss of money/time/sex/friends from using this program is your own damn fault and you agree not to sue or pursue the makers of this program. This program comes with no warranty expressed or implied.  You agree not to talk about this program with anyone employed by NCSoft or its agents. You agree not to talk about this program inside the chat of any program(game) by NCSoft or its agents.  You also agree not to breathe while this program is running.  You forfeit your rights to pee while standing up and eat with your right hand.  You agree the DMCA is cool and reverse-enigneering is legal, even of this program since you did obtain this legally (unless you work for NCSoft or it's agents).
 
+
+Installing
+---
+
+* Download and Extract [Latest Download Link](https://github.com/Xackery/l2net/tree/master/bin/latest/l2net-2015-09-10.zip)
+* Download and Install [SlimDX](http://slimdx.org/download.php) (Used for Game Window, optional)
+
+Compiling
+---
+* Open L2 Login.sln with Visual Studio C# 2015
+
+
 # Original Changelog
 
 
