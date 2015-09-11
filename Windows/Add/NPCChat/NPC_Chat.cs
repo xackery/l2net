@@ -37,7 +37,7 @@ namespace L2_login
                 //buff.ReadUInt32(); //item id?
 
 #if DEBUG
-                System.IO.StreamWriter outf = new System.IO.StreamWriter(Globals.PATH + "\\Logs\\npc.html");
+                System.IO.StreamWriter outf = new System.IO.StreamWriter(Globals.PATH + "\\logs\\npc.html");
                 outf.Write(html);
                 outf.Close();
 #endif

@@ -17,7 +17,8 @@ namespace L2_login
             {
                 if (Globals.LogWriting)
                 {
-                    Globals.text_out = new System.IO.StreamWriter(Globals.PATH + "\\Text\\" + System.DateTime.Now.Month.ToString() + "-" + System.DateTime.Now.Day.ToString() + "-" + System.DateTime.Now.Year.ToString() + "_" + System.DateTime.Now.Hour.ToString() + "=" + System.DateTime.Now.Minute.ToString() + "=" + System.DateTime.Now.Second.ToString() + ".txt");
+                    Globals.text_out = new System.IO.StreamWriter(Globals.PATH + "\\logs\\" + System.DateTime.Now.Year.ToString() + "-" + System.DateTime.Now.Month.ToString() + "-" + System.DateTime.Now.Day.ToString() + ".txt");
+
                 }
                 else
                 {
@@ -27,16 +28,16 @@ namespace L2_login
             catch
             {
                 Globals.text_out = null;
-                Globals.l2net_home.Add_PopUpError("failed to create text output log file... do you have the datapack?" + Environment.NewLine + "L2.net needs write/create access to the \\Text\\ folder to log chat.");
+                Globals.l2net_home.Add_PopUpError("failed to create text output log file... do you have the datapack?" + Environment.NewLine + "L2.net needs write/create access to the \\logs\\ folder to log chat.");
             }
 
 #if DEBUG
             try
             {
-                Globals.gamedataout = new System.IO.StreamWriter(Globals.PATH + "\\Logs\\from_gamelog.txt");
-                Globals.gamedatato = new System.IO.StreamWriter(Globals.PATH + "\\Logs\\to_gamelog.txt");
-                Globals.clientdataout = new System.IO.StreamWriter(Globals.PATH + "\\Logs\\from_clientlog.txt");
-                Globals.clientdatato = new System.IO.StreamWriter(Globals.PATH + "\\Logs\\to_clientlog.txt");
+                Globals.gamedataout = new System.IO.StreamWriter(Globals.PATH + "\\logs\\from_gamelog.txt");
+                Globals.gamedatato = new System.IO.StreamWriter(Globals.PATH + "\\logs\\to_gamelog.txt");
+                Globals.clientdataout = new System.IO.StreamWriter(Globals.PATH + "\\logs\\from_clientlog.txt");
+                Globals.clientdatato = new System.IO.StreamWriter(Globals.PATH + "\\logs\\to_clientlog.txt");
 
                 Globals.gamedataout.AutoFlush = true;
                 Globals.gamedatato.AutoFlush = true;

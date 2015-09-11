@@ -418,7 +418,7 @@ namespace L2_login
             BlowfishEngine bfengs = new BlowfishEngine();
 
 #if DEBUG
-            System.IO.StreamWriter login_serverout = new System.IO.StreamWriter("Logs\\login_from_serverlog.txt");
+            System.IO.StreamWriter login_serverout = new System.IO.StreamWriter("logs\\login_from_serverlog.txt");
             login_serverout.AutoFlush = true;
 #endif
 
@@ -704,7 +704,7 @@ namespace L2_login
             bool started = false;
 
 #if DEBUG
-            System.IO.StreamWriter login_clientout = new System.IO.StreamWriter("Logs\\login_from_clientlog.txt");
+            System.IO.StreamWriter login_clientout = new System.IO.StreamWriter("logs\\login_from_clientlog.txt");
             login_clientout.AutoFlush = true;
 #endif
 

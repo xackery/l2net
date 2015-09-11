@@ -775,7 +775,7 @@ namespace L2_login
         {
             if (checkBox_writetolog.Checked && Globals.text_out == null)
             {
-                Globals.text_out = new System.IO.StreamWriter(Globals.PATH + "\\Text\\" + System.DateTime.Now.Month.ToString() + "-" + System.DateTime.Now.Day.ToString() + "-" + System.DateTime.Now.Year.ToString() + "_" + System.DateTime.Now.Hour.ToString() + "=" + System.DateTime.Now.Minute.ToString() + "=" + System.DateTime.Now.Second.ToString() + ".txt");
+                Globals.text_out = new System.IO.StreamWriter(Globals.PATH + "\\logs\\" + System.DateTime.Now.Year.ToString() + "-" + System.DateTime.Now.Month.ToString() + "-" + System.DateTime.Now.Day.ToString() + ".txt");
             }
             if (!checkBox_writetolog.Checked && Globals.text_out != null)
             {
