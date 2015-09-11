@@ -58,6 +58,19 @@ namespace L2_login
             }
 
             LoadSkills();
+            LoadItemName();
+            LoadSystemMsg();
+            LoadNPCName();
+            LoadActions();
+            LoadHennaGrp();
+            LoadZones();
+            LoadServerName();
+            LoadXP();
+            LoadClasses();
+            LoadRaces();
+            LoadGG();
+            LoadNPCString();
+            Globals.pck_thread.load_filters();
             /*
             System.Threading.Tasks.Parallel.For(0, 14, (i) =>
                 {
