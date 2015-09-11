@@ -940,6 +940,7 @@ namespace L2_login
             this.menuItem_closeclient = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_killthreads = new System.Windows.Forms.ToolStripMenuItem();
             this.forceLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disconectClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_Options = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_scripting = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_loadscript = new System.Windows.Forms.ToolStripMenuItem();
@@ -965,7 +966,6 @@ namespace L2_login
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.menuItem_forcecollect = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.disconectClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_party_5.SuspendLayout();
             this.panel_party_6.SuspendLayout();
             this.panel_party_7.SuspendLayout();
@@ -1699,8 +1699,8 @@ namespace L2_login
             // 
             // tabControl_char
             // 
-            this.tabControl_char.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.tabControl_char.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.tabControl_char.Controls.Add(this.tabPage_char_info);
             this.tabControl_char.Controls.Add(this.tabPage_char_inv);
             this.tabControl_char.Controls.Add(this.tabPage_char_skills);
@@ -2545,7 +2545,7 @@ namespace L2_login
             this.radioButton_inv_quest.AutoSize = true;
             this.radioButton_inv_quest.Location = new System.Drawing.Point(194, 155);
             this.radioButton_inv_quest.Name = "radioButton_inv_quest";
-            this.radioButton_inv_quest.Size = new System.Drawing.Size(52, 17);
+            this.radioButton_inv_quest.Size = new System.Drawing.Size(53, 17);
             this.radioButton_inv_quest.TabIndex = 21;
             this.radioButton_inv_quest.Text = "Quest";
             this.radioButton_inv_quest.UseVisualStyleBackColor = true;
@@ -2556,7 +2556,7 @@ namespace L2_login
             this.radioButton_inv_equipped.AutoSize = true;
             this.radioButton_inv_equipped.Location = new System.Drawing.Point(92, 155);
             this.radioButton_inv_equipped.Name = "radioButton_inv_equipped";
-            this.radioButton_inv_equipped.Size = new System.Drawing.Size(69, 17);
+            this.radioButton_inv_equipped.Size = new System.Drawing.Size(70, 17);
             this.radioButton_inv_equipped.TabIndex = 20;
             this.radioButton_inv_equipped.Text = "Equipped";
             this.radioButton_inv_equipped.UseVisualStyleBackColor = true;
@@ -2568,7 +2568,7 @@ namespace L2_login
             this.radioButton_inv_items.Checked = true;
             this.radioButton_inv_items.Location = new System.Drawing.Point(14, 155);
             this.radioButton_inv_items.Name = "radioButton_inv_items";
-            this.radioButton_inv_items.Size = new System.Drawing.Size(49, 17);
+            this.radioButton_inv_items.Size = new System.Drawing.Size(50, 17);
             this.radioButton_inv_items.TabIndex = 19;
             this.radioButton_inv_items.TabStop = true;
             this.radioButton_inv_items.Text = "Items";
@@ -2740,9 +2740,9 @@ namespace L2_login
             // 
             // listView_inventory
             // 
-            this.listView_inventory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView_inventory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView_inventory.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader169,
             this.columnHeader170,
@@ -2846,7 +2846,7 @@ namespace L2_login
             this.radiobutton_passive.AutoSize = true;
             this.radiobutton_passive.Location = new System.Drawing.Point(134, 4);
             this.radiobutton_passive.Name = "radiobutton_passive";
-            this.radiobutton_passive.Size = new System.Drawing.Size(61, 17);
+            this.radiobutton_passive.Size = new System.Drawing.Size(62, 17);
             this.radiobutton_passive.TabIndex = 3;
             this.radiobutton_passive.Text = "Passive";
             this.radiobutton_passive.UseVisualStyleBackColor = true;
@@ -2857,7 +2857,7 @@ namespace L2_login
             this.radiobutton_active.Checked = true;
             this.radiobutton_active.Location = new System.Drawing.Point(43, 4);
             this.radiobutton_active.Name = "radiobutton_active";
-            this.radiobutton_active.Size = new System.Drawing.Size(54, 17);
+            this.radiobutton_active.Size = new System.Drawing.Size(55, 17);
             this.radiobutton_active.TabIndex = 2;
             this.radiobutton_active.TabStop = true;
             this.radiobutton_active.Text = "Active";
@@ -2866,9 +2866,9 @@ namespace L2_login
             // 
             // listView_skills
             // 
-            this.listView_skills.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView_skills.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView_skills.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader177,
             this.columnHeader178,
@@ -3080,9 +3080,9 @@ namespace L2_login
             // 
             // listView_char_clan
             // 
-            this.listView_char_clan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView_char_clan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView_char_clan.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader191,
             this.columnHeader192,
@@ -3136,9 +3136,9 @@ namespace L2_login
             // 
             // listView_char_data
             // 
-            this.listView_char_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView_char_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView_char_data.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listView_char_data.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader103,
@@ -3175,9 +3175,9 @@ namespace L2_login
             // 
             // listView_players_data
             // 
-            this.listView_players_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView_players_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView_players_data.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listView_players_data.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader80,
@@ -3235,9 +3235,9 @@ namespace L2_login
             // 
             // listView_items_data
             // 
-            this.listView_items_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView_items_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView_items_data.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listView_items_data.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader130,
@@ -3295,9 +3295,9 @@ namespace L2_login
             // 
             // listView_npc_data
             // 
-            this.listView_npc_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView_npc_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView_npc_data.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listView_npc_data.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader135,
@@ -3367,8 +3367,8 @@ namespace L2_login
             // 
             // panel_npc_chat
             // 
-            this.panel_npc_chat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_npc_chat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_npc_chat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_npc_chat.Controls.Add(this.textBox_rtb_input);
             this.panel_npc_chat.Controls.Add(this.richTextBox_dialog);
@@ -3388,9 +3388,9 @@ namespace L2_login
             // 
             // richTextBox_dialog
             // 
-            this.richTextBox_dialog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox_dialog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox_dialog.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox_dialog.Location = new System.Drawing.Point(3, 3);
             this.richTextBox_dialog.Name = "richTextBox_dialog";
@@ -3401,8 +3401,8 @@ namespace L2_login
             // 
             // button_npc_close
             // 
-            this.button_npc_close.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_npc_close.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button_npc_close.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button_npc_close.Location = new System.Drawing.Point(39, 578);
             this.button_npc_close.Name = "button_npc_close";
@@ -3423,9 +3423,9 @@ namespace L2_login
             // 
             // listView_mybuffs_data
             // 
-            this.listView_mybuffs_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView_mybuffs_data.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView_mybuffs_data.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -3567,9 +3567,9 @@ namespace L2_login
             // 
             // listView_stats
             // 
-            this.listView_stats.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView_stats.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView_stats.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader8,
             this.columnHeader6,
@@ -3733,8 +3733,8 @@ namespace L2_login
             // 
             // panel_chat
             // 
-            this.panel_chat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_chat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_chat.Controls.Add(this.checkBox_BoundingPoints);
             this.panel_chat.Controls.Add(this.comboBox_msg_type);
             this.panel_chat.Controls.Add(this.button_sendtext);
@@ -3802,8 +3802,8 @@ namespace L2_login
             // 
             // textBox_say
             // 
-            this.textBox_say.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox_say.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_say.Location = new System.Drawing.Point(88, 34);
             this.textBox_say.Name = "textBox_say";
             this.textBox_say.Size = new System.Drawing.Size(465, 20);
@@ -3812,9 +3812,9 @@ namespace L2_login
             // tabControl_ChatSelect
             // 
             this.tabControl_ChatSelect.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.tabControl_ChatSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl_ChatSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl_ChatSelect.Controls.Add(this.tab_all);
             this.tabControl_ChatSelect.Controls.Add(this.tab_system);
             this.tabControl_ChatSelect.Controls.Add(this.tab_bot);
@@ -3845,9 +3845,9 @@ namespace L2_login
             // 
             // colorListBox_all
             // 
-            this.colorListBox_all.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_all.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorListBox_all.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
             this.colorListBox_all.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.colorListBox_all.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
@@ -3872,9 +3872,9 @@ namespace L2_login
             // 
             // colorListBox_system
             // 
-            this.colorListBox_system.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_system.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorListBox_system.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
             this.colorListBox_system.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.colorListBox_system.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
@@ -3899,9 +3899,9 @@ namespace L2_login
             // 
             // colorListBox_bot
             // 
-            this.colorListBox_bot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_bot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorListBox_bot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
             this.colorListBox_bot.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.colorListBox_bot.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
@@ -3927,9 +3927,9 @@ namespace L2_login
             // 
             // colorListBox_local
             // 
-            this.colorListBox_local.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_local.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorListBox_local.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
             this.colorListBox_local.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.colorListBox_local.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
@@ -3954,9 +3954,9 @@ namespace L2_login
             // 
             // colorListBox_trade
             // 
-            this.colorListBox_trade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_trade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorListBox_trade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
             this.colorListBox_trade.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.colorListBox_trade.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
@@ -3981,9 +3981,9 @@ namespace L2_login
             // 
             // colorListBox_party
             // 
-            this.colorListBox_party.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_party.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorListBox_party.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
             this.colorListBox_party.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.colorListBox_party.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
@@ -4008,9 +4008,9 @@ namespace L2_login
             // 
             // colorListBox_clan
             // 
-            this.colorListBox_clan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_clan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorListBox_clan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
             this.colorListBox_clan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.colorListBox_clan.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
@@ -4035,9 +4035,9 @@ namespace L2_login
             // 
             // colorListBox_ally
             // 
-            this.colorListBox_ally.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_ally.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorListBox_ally.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
             this.colorListBox_ally.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.colorListBox_ally.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
@@ -4062,9 +4062,9 @@ namespace L2_login
             // 
             // colorListBox_hero
             // 
-            this.colorListBox_hero.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_hero.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorListBox_hero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
             this.colorListBox_hero.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.colorListBox_hero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
@@ -4098,47 +4098,47 @@ namespace L2_login
             this.closeToolStripMenuItem,
             this.forceLogToolStripMenuItem1});
             this.contextMenuStrip_notify.Name = "contextMenuStrip_notify";
-            this.contextMenuStrip_notify.Size = new System.Drawing.Size(154, 120);
+            this.contextMenuStrip_notify.Size = new System.Drawing.Size(153, 120);
             // 
             // toggleBottingToolStripMenuItem
             // 
             this.toggleBottingToolStripMenuItem.Checked = true;
             this.toggleBottingToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toggleBottingToolStripMenuItem.Name = "toggleBottingToolStripMenuItem";
-            this.toggleBottingToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.toggleBottingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.toggleBottingToolStripMenuItem.Text = "Toggle Botting";
             this.toggleBottingToolStripMenuItem.Click += new System.EventHandler(this.toggleBottingToolStripMenuItem_Click);
             // 
             // botOptionsToolStripMenuItem
             // 
             this.botOptionsToolStripMenuItem.Name = "botOptionsToolStripMenuItem";
-            this.botOptionsToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.botOptionsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.botOptionsToolStripMenuItem.Text = "Bot Options";
             this.botOptionsToolStripMenuItem.Click += new System.EventHandler(this.botOptionsToolStripMenuItem_Click);
             // 
             // startScriptToolStripMenuItem
             // 
             this.startScriptToolStripMenuItem.Name = "startScriptToolStripMenuItem";
-            this.startScriptToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.startScriptToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.startScriptToolStripMenuItem.Text = "Start Script";
             this.startScriptToolStripMenuItem.Click += new System.EventHandler(this.menuItem_startscript_Click);
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(150, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(149, 6);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // forceLogToolStripMenuItem1
             // 
             this.forceLogToolStripMenuItem1.Name = "forceLogToolStripMenuItem1";
-            this.forceLogToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.forceLogToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.forceLogToolStripMenuItem1.Text = "Force Log";
             this.forceLogToolStripMenuItem1.Click += new System.EventHandler(this.forceLogToolStripMenuItem_Click);
             // 
@@ -4181,117 +4181,117 @@ namespace L2_login
             this.toolStripSeparator2,
             this.menuItem_exit});
             this.menuItem_File.Name = "menuItem_File";
-            this.menuItem_File.Size = new System.Drawing.Size(39, 20);
+            this.menuItem_File.Size = new System.Drawing.Size(37, 20);
             this.menuItem_File.Text = "&File";
             // 
             // menuItem_cmd_logon
             // 
             this.menuItem_cmd_logon.Name = "menuItem_cmd_logon";
-            this.menuItem_cmd_logon.Size = new System.Drawing.Size(174, 22);
+            this.menuItem_cmd_logon.Size = new System.Drawing.Size(171, 22);
             this.menuItem_cmd_logon.Text = "Logon Window";
             this.menuItem_cmd_logon.Click += new System.EventHandler(this.menuItem_cmd_logon_Click);
             // 
             // menuItem_cmd_game
             // 
             this.menuItem_cmd_game.Name = "menuItem_cmd_game";
-            this.menuItem_cmd_game.Size = new System.Drawing.Size(174, 22);
+            this.menuItem_cmd_game.Size = new System.Drawing.Size(171, 22);
             this.menuItem_cmd_game.Text = "Game Window";
             this.menuItem_cmd_game.Click += new System.EventHandler(this.menuItem_cmd_game_Click);
             // 
             // menuitem_cmd_GG
             // 
             this.menuitem_cmd_GG.Name = "menuitem_cmd_GG";
-            this.menuitem_cmd_GG.Size = new System.Drawing.Size(174, 22);
+            this.menuitem_cmd_GG.Size = new System.Drawing.Size(171, 22);
             this.menuitem_cmd_GG.Text = "Gameguard Server";
             this.menuitem_cmd_GG.Click += new System.EventHandler(this.menuitem_cmd_GG_Click);
             // 
             // menuitem_cmd_ggclient
             // 
             this.menuitem_cmd_ggclient.Name = "menuitem_cmd_ggclient";
-            this.menuitem_cmd_ggclient.Size = new System.Drawing.Size(174, 22);
+            this.menuitem_cmd_ggclient.Size = new System.Drawing.Size(171, 22);
             this.menuitem_cmd_ggclient.Text = "Gameguard Client";
             this.menuitem_cmd_ggclient.Click += new System.EventHandler(this.menuitem_cmd_ggclient_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(171, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(168, 6);
             // 
             // menuItem_cmd_overlay
             // 
             this.menuItem_cmd_overlay.Name = "menuItem_cmd_overlay";
-            this.menuItem_cmd_overlay.Size = new System.Drawing.Size(174, 22);
+            this.menuItem_cmd_overlay.Size = new System.Drawing.Size(171, 22);
             this.menuItem_cmd_overlay.Text = "Overlay Window";
             this.menuItem_cmd_overlay.Click += new System.EventHandler(this.menuItem_cmd_overlay_Click);
             // 
             // menuItem_cmd_shortcut
             // 
             this.menuItem_cmd_shortcut.Name = "menuItem_cmd_shortcut";
-            this.menuItem_cmd_shortcut.Size = new System.Drawing.Size(174, 22);
+            this.menuItem_cmd_shortcut.Size = new System.Drawing.Size(171, 22);
             this.menuItem_cmd_shortcut.Text = "Shortcut Window";
             this.menuItem_cmd_shortcut.Click += new System.EventHandler(this.menuItem_cmd_shortcut_Click);
             // 
             // petWindowToolStripMenuItem
             // 
             this.petWindowToolStripMenuItem.Name = "petWindowToolStripMenuItem";
-            this.petWindowToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.petWindowToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.petWindowToolStripMenuItem.Text = "Pet Window";
             this.petWindowToolStripMenuItem.Click += new System.EventHandler(this.petWindowToolStripMenuItem_Click);
             // 
             // menuItem_actions
             // 
             this.menuItem_actions.Name = "menuItem_actions";
-            this.menuItem_actions.Size = new System.Drawing.Size(174, 22);
+            this.menuItem_actions.Size = new System.Drawing.Size(171, 22);
             this.menuItem_actions.Text = "Actions";
             this.menuItem_actions.Click += new System.EventHandler(this.ActionsToolStripMenuItem_Click);
             // 
             // extendedActionsToolStripMenuItem
             // 
             this.extendedActionsToolStripMenuItem.Name = "extendedActionsToolStripMenuItem";
-            this.extendedActionsToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.extendedActionsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.extendedActionsToolStripMenuItem.Text = "Extended Actions";
             this.extendedActionsToolStripMenuItem.Click += new System.EventHandler(this.extendedActionsToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(171, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(168, 6);
             // 
             // menuItem_options_setup
             // 
             this.menuItem_options_setup.Name = "menuItem_options_setup";
-            this.menuItem_options_setup.Size = new System.Drawing.Size(174, 22);
+            this.menuItem_options_setup.Size = new System.Drawing.Size(171, 22);
             this.menuItem_options_setup.Text = "Setup";
             this.menuItem_options_setup.Click += new System.EventHandler(this.menuItem_options_setup_Click);
             // 
             // menuItem_saveinterface
             // 
             this.menuItem_saveinterface.Name = "menuItem_saveinterface";
-            this.menuItem_saveinterface.Size = new System.Drawing.Size(174, 22);
+            this.menuItem_saveinterface.Size = new System.Drawing.Size(171, 22);
             this.menuItem_saveinterface.Text = "Save Interface";
             this.menuItem_saveinterface.Click += new System.EventHandler(this.menuItem_saveinterface_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(171, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(168, 6);
             // 
             // menuItem_launchl2
             // 
             this.menuItem_launchl2.Name = "menuItem_launchl2";
-            this.menuItem_launchl2.Size = new System.Drawing.Size(174, 22);
+            this.menuItem_launchl2.Size = new System.Drawing.Size(171, 22);
             this.menuItem_launchl2.Text = "Launch Lineage 2";
             this.menuItem_launchl2.Click += new System.EventHandler(this.menuItem_launchl2_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(171, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(168, 6);
             // 
             // menuItem_exit
             // 
             this.menuItem_exit.Name = "menuItem_exit";
-            this.menuItem_exit.Size = new System.Drawing.Size(174, 22);
+            this.menuItem_exit.Size = new System.Drawing.Size(171, 22);
             this.menuItem_exit.Text = "Exit";
             this.menuItem_exit.Click += new System.EventHandler(this.menuItem_exit_Click);
             // 
@@ -4314,27 +4314,27 @@ namespace L2_login
             this.forceLogToolStripMenuItem,
             this.disconectClientToolStripMenuItem});
             this.menuItem_Commands.Name = "menuItem_Commands";
-            this.menuItem_Commands.Size = new System.Drawing.Size(80, 20);
+            this.menuItem_Commands.Size = new System.Drawing.Size(81, 20);
             this.menuItem_Commands.Text = "&Commands";
             // 
             // menuItem_cmd_cancel
             // 
             this.menuItem_cmd_cancel.Name = "menuItem_cmd_cancel";
-            this.menuItem_cmd_cancel.Size = new System.Drawing.Size(201, 22);
+            this.menuItem_cmd_cancel.Size = new System.Drawing.Size(202, 22);
             this.menuItem_cmd_cancel.Text = "Cancel Target";
             this.menuItem_cmd_cancel.Click += new System.EventHandler(this.menuItem_cmd_cancel_Click);
             // 
             // blacklistTargetToolStripMenuItem
             // 
             this.blacklistTargetToolStripMenuItem.Name = "blacklistTargetToolStripMenuItem";
-            this.blacklistTargetToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.blacklistTargetToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.blacklistTargetToolStripMenuItem.Text = "Blacklist Target";
             this.blacklistTargetToolStripMenuItem.Click += new System.EventHandler(this.blacklistTargetToolStripMenuItem_Click);
             // 
             // showTargetInfoToolStripMenuItem
             // 
             this.showTargetInfoToolStripMenuItem.Name = "showTargetInfoToolStripMenuItem";
-            this.showTargetInfoToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.showTargetInfoToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.showTargetInfoToolStripMenuItem.Text = "Show Target Info";
             this.showTargetInfoToolStripMenuItem.Visible = false;
             this.showTargetInfoToolStripMenuItem.Click += new System.EventHandler(this.showTargetInfoToolStripMenuItem_Click);
@@ -4342,80 +4342,88 @@ namespace L2_login
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(198, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(199, 6);
             // 
             // menuItem_toggle_botting
             // 
             this.menuItem_toggle_botting.Checked = true;
             this.menuItem_toggle_botting.CheckState = System.Windows.Forms.CheckState.Checked;
             this.menuItem_toggle_botting.Name = "menuItem_toggle_botting";
-            this.menuItem_toggle_botting.Size = new System.Drawing.Size(201, 22);
+            this.menuItem_toggle_botting.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
+            this.menuItem_toggle_botting.Size = new System.Drawing.Size(202, 22);
             this.menuItem_toggle_botting.Text = "Toggle Botting";
             this.menuItem_toggle_botting.Click += new System.EventHandler(this.menuItem_toggle_botting_Click);
             // 
             // menuItem_toggle_autoreply
             // 
             this.menuItem_toggle_autoreply.Name = "menuItem_toggle_autoreply";
-            this.menuItem_toggle_autoreply.Size = new System.Drawing.Size(201, 22);
+            this.menuItem_toggle_autoreply.Size = new System.Drawing.Size(202, 22);
             this.menuItem_toggle_autoreply.Text = "Toggle Auto Reply Local";
             this.menuItem_toggle_autoreply.Click += new System.EventHandler(this.menuItem_toggle_autoreply_Click);
             // 
             // menuItem_toggle_autoreplyPM
             // 
             this.menuItem_toggle_autoreplyPM.Name = "menuItem_toggle_autoreplyPM";
-            this.menuItem_toggle_autoreplyPM.Size = new System.Drawing.Size(201, 22);
+            this.menuItem_toggle_autoreplyPM.Size = new System.Drawing.Size(202, 22);
             this.menuItem_toggle_autoreplyPM.Text = "Toggle Auto Reply PM";
             this.menuItem_toggle_autoreplyPM.Click += new System.EventHandler(this.menuItem_toggle_autoreplyPM_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(198, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(199, 6);
             // 
             // menuItem_cmd_restart
             // 
             this.menuItem_cmd_restart.Name = "menuItem_cmd_restart";
-            this.menuItem_cmd_restart.Size = new System.Drawing.Size(201, 22);
+            this.menuItem_cmd_restart.Size = new System.Drawing.Size(202, 22);
             this.menuItem_cmd_restart.Text = "Restart";
             this.menuItem_cmd_restart.Click += new System.EventHandler(this.menuItem_cmd_restart_Click);
             // 
             // menuItem_cmd_logout
             // 
             this.menuItem_cmd_logout.Name = "menuItem_cmd_logout";
-            this.menuItem_cmd_logout.Size = new System.Drawing.Size(201, 22);
+            this.menuItem_cmd_logout.Size = new System.Drawing.Size(202, 22);
             this.menuItem_cmd_logout.Text = "Logout";
             this.menuItem_cmd_logout.Click += new System.EventHandler(this.menuItem_cmd_logout_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(198, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(199, 6);
             // 
             // menuItem_closeclient
             // 
             this.menuItem_closeclient.Name = "menuItem_closeclient";
-            this.menuItem_closeclient.Size = new System.Drawing.Size(201, 22);
+            this.menuItem_closeclient.Size = new System.Drawing.Size(202, 22);
             this.menuItem_closeclient.Text = "Close Client";
             this.menuItem_closeclient.Click += new System.EventHandler(this.menuItem_closeclient_Click);
             // 
             // menuItem_killthreads
             // 
             this.menuItem_killthreads.Name = "menuItem_killthreads";
-            this.menuItem_killthreads.Size = new System.Drawing.Size(201, 22);
+            this.menuItem_killthreads.Size = new System.Drawing.Size(202, 22);
             this.menuItem_killthreads.Text = "Kill Threads";
             this.menuItem_killthreads.Click += new System.EventHandler(this.menuItem_killthreads_Click);
             // 
             // forceLogToolStripMenuItem
             // 
             this.forceLogToolStripMenuItem.Name = "forceLogToolStripMenuItem";
-            this.forceLogToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.forceLogToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.forceLogToolStripMenuItem.Text = "Force Log";
             this.forceLogToolStripMenuItem.Click += new System.EventHandler(this.forceLogToolStripMenuItem_Click);
+            // 
+            // disconectClientToolStripMenuItem
+            // 
+            this.disconectClientToolStripMenuItem.Name = "disconectClientToolStripMenuItem";
+            this.disconectClientToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.disconectClientToolStripMenuItem.Text = "Disconect Client";
+            this.disconectClientToolStripMenuItem.Click += new System.EventHandler(this.disconectClientToolStripMenuItem_Click);
             // 
             // menuItem_Options
             // 
             this.menuItem_Options.Name = "menuItem_Options";
-            this.menuItem_Options.Size = new System.Drawing.Size(83, 20);
+            this.menuItem_Options.Size = new System.Drawing.Size(82, 20);
             this.menuItem_Options.Text = "Bot &Options";
             this.menuItem_Options.Click += new System.EventHandler(this.menuItem_Options_Click);
             // 
@@ -4434,79 +4442,79 @@ namespace L2_login
             this.menuItem_dump_mode_server,
             this.toolStrip_pck});
             this.menuItem_scripting.Name = "menuItem_scripting";
-            this.menuItem_scripting.Size = new System.Drawing.Size(67, 20);
+            this.menuItem_scripting.Size = new System.Drawing.Size(66, 20);
             this.menuItem_scripting.Text = "&Scripting";
             // 
             // menuItem_loadscript
             // 
             this.menuItem_loadscript.Name = "menuItem_loadscript";
-            this.menuItem_loadscript.Size = new System.Drawing.Size(177, 22);
+            this.menuItem_loadscript.Size = new System.Drawing.Size(176, 22);
             this.menuItem_loadscript.Text = "Set Script Main";
             this.menuItem_loadscript.Click += new System.EventHandler(this.menuItem_loadscript_Click);
             // 
             // menuItem_startscript
             // 
             this.menuItem_startscript.Name = "menuItem_startscript";
-            this.menuItem_startscript.Size = new System.Drawing.Size(177, 22);
+            this.menuItem_startscript.Size = new System.Drawing.Size(176, 22);
             this.menuItem_startscript.Text = "Start Script";
             this.menuItem_startscript.Click += new System.EventHandler(this.menuItem_startscript_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(174, 6);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(173, 6);
             // 
             // menuItem_scriptwindow
             // 
             this.menuItem_scriptwindow.Name = "menuItem_scriptwindow";
-            this.menuItem_scriptwindow.Size = new System.Drawing.Size(177, 22);
+            this.menuItem_scriptwindow.Size = new System.Drawing.Size(176, 22);
             this.menuItem_scriptwindow.Text = "Script Editor";
             this.menuItem_scriptwindow.Click += new System.EventHandler(this.menuItem_scriptwindow_Click);
             // 
             // menuItem_scriptdebugger
             // 
             this.menuItem_scriptdebugger.Name = "menuItem_scriptdebugger";
-            this.menuItem_scriptdebugger.Size = new System.Drawing.Size(177, 22);
+            this.menuItem_scriptdebugger.Size = new System.Drawing.Size(176, 22);
             this.menuItem_scriptdebugger.Text = "Script Debugger";
             this.menuItem_scriptdebugger.Click += new System.EventHandler(this.menuItem_scriptdebugger_Click);
             // 
             // menuItem_encryptscript
             // 
             this.menuItem_encryptscript.Name = "menuItem_encryptscript";
-            this.menuItem_encryptscript.Size = new System.Drawing.Size(177, 22);
+            this.menuItem_encryptscript.Size = new System.Drawing.Size(176, 22);
             this.menuItem_encryptscript.Text = "Encrypt Script";
             this.menuItem_encryptscript.Click += new System.EventHandler(this.menuItem_encryptscript_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(174, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(173, 6);
             // 
             // menuItem_debug_mode
             // 
             this.menuItem_debug_mode.Name = "menuItem_debug_mode";
-            this.menuItem_debug_mode.Size = new System.Drawing.Size(177, 22);
+            this.menuItem_debug_mode.Size = new System.Drawing.Size(176, 22);
             this.menuItem_debug_mode.Text = "Debug Mode";
             this.menuItem_debug_mode.Click += new System.EventHandler(this.menuItem_debug_mode_Click);
             // 
             // menuItem_dump_mode
             // 
             this.menuItem_dump_mode.Name = "menuItem_dump_mode";
-            this.menuItem_dump_mode.Size = new System.Drawing.Size(177, 22);
+            this.menuItem_dump_mode.Size = new System.Drawing.Size(176, 22);
             this.menuItem_dump_mode.Text = "Client Dump Mode";
             this.menuItem_dump_mode.Click += new System.EventHandler(this.menuItem_dump_mode_Click);
             // 
             // menuItem_dump_mode_server
             // 
             this.menuItem_dump_mode_server.Name = "menuItem_dump_mode_server";
-            this.menuItem_dump_mode_server.Size = new System.Drawing.Size(177, 22);
+            this.menuItem_dump_mode_server.Size = new System.Drawing.Size(176, 22);
             this.menuItem_dump_mode_server.Text = "Server Dump Mode";
             this.menuItem_dump_mode_server.Click += new System.EventHandler(this.menuItem_dump_mode_server_Click);
             // 
             // toolStrip_pck
             // 
             this.toolStrip_pck.Name = "toolStrip_pck";
-            this.toolStrip_pck.Size = new System.Drawing.Size(177, 22);
+            this.toolStrip_pck.Size = new System.Drawing.Size(176, 22);
             this.toolStrip_pck.Text = "Packet Window";
             this.toolStrip_pck.Click += new System.EventHandler(this.toolStrip_pck_Click);
             // 
@@ -4530,74 +4538,67 @@ namespace L2_login
             // menuItem_about
             // 
             this.menuItem_about.Name = "menuItem_about";
-            this.menuItem_about.Size = new System.Drawing.Size(173, 22);
+            this.menuItem_about.Size = new System.Drawing.Size(171, 22);
             this.menuItem_about.Text = "About";
             this.menuItem_about.Click += new System.EventHandler(this.menuItem_about_Click);
             // 
             // eULAToolStripMenuItem
             // 
             this.eULAToolStripMenuItem.Name = "eULAToolStripMenuItem";
-            this.eULAToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.eULAToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.eULAToolStripMenuItem.Text = "EULA";
             this.eULAToolStripMenuItem.Click += new System.EventHandler(this.eULAToolStripMenuItem_Click);
             // 
             // menuItem_forums
             // 
             this.menuItem_forums.Name = "menuItem_forums";
-            this.menuItem_forums.Size = new System.Drawing.Size(173, 22);
+            this.menuItem_forums.Size = new System.Drawing.Size(171, 22);
             this.menuItem_forums.Text = "Forums";
             this.menuItem_forums.Click += new System.EventHandler(this.menuItem_forums_Click);
             // 
             // menuItem_help_donate
             // 
             this.menuItem_help_donate.Name = "menuItem_help_donate";
-            this.menuItem_help_donate.Size = new System.Drawing.Size(173, 22);
+            this.menuItem_help_donate.Size = new System.Drawing.Size(171, 22);
             this.menuItem_help_donate.Text = "Donate";
             this.menuItem_help_donate.Click += new System.EventHandler(this.menuItem_help_donate_Click);
             // 
             // menuitem_help_checkforupdates
             // 
             this.menuitem_help_checkforupdates.Name = "menuitem_help_checkforupdates";
-            this.menuitem_help_checkforupdates.Size = new System.Drawing.Size(173, 22);
+            this.menuitem_help_checkforupdates.Size = new System.Drawing.Size(171, 22);
             this.menuitem_help_checkforupdates.Text = "Check for Updates";
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(170, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(168, 6);
             // 
             // menuItem_language
             // 
             this.menuItem_language.Name = "menuItem_language";
-            this.menuItem_language.Size = new System.Drawing.Size(173, 22);
+            this.menuItem_language.Size = new System.Drawing.Size(171, 22);
             this.menuItem_language.Text = "Language";
             this.menuItem_language.Click += new System.EventHandler(this.menuItem_language_Click);
             // 
             // menuItem_hosts
             // 
             this.menuItem_hosts.Name = "menuItem_hosts";
-            this.menuItem_hosts.Size = new System.Drawing.Size(173, 22);
+            this.menuItem_hosts.Size = new System.Drawing.Size(171, 22);
             this.menuItem_hosts.Text = "Hosts";
             this.menuItem_hosts.Click += new System.EventHandler(this.menuItem_hosts_Click);
             // 
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(170, 6);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(168, 6);
             // 
             // menuItem_forcecollect
             // 
             this.menuItem_forcecollect.Name = "menuItem_forcecollect";
-            this.menuItem_forcecollect.Size = new System.Drawing.Size(173, 22);
+            this.menuItem_forcecollect.Size = new System.Drawing.Size(171, 22);
             this.menuItem_forcecollect.Text = "Force Collect";
-            this.menuItem_forcecollect.Click += new System.EventHandler(this.menuItem_forcecollect_Click);          
-            // 
-            // disconectClientToolStripMenuItem
-            // 
-            this.disconectClientToolStripMenuItem.Name = "disconectClientToolStripMenuItem";
-            this.disconectClientToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.disconectClientToolStripMenuItem.Text = "Disconect Client";
-            this.disconectClientToolStripMenuItem.Click += new System.EventHandler(this.disconectClientToolStripMenuItem_Click);
+            this.menuItem_forcecollect.Click += new System.EventHandler(this.menuItem_forcecollect_Click);
             // 
             // L2NET
             // 
