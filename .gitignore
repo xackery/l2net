@@ -1,6 +1,6 @@
 *.config
 *.resources
 *.manifest
-obj/x86/Release/L2 login.csproj.FileListAbsolute.txt
+obj/x86/
 bin/Release/
 bin/Debug/
