@@ -1751,6 +1751,8 @@ namespace L2_login
             this.textBox_pword.Size = new System.Drawing.Size(182, 20);
             this.textBox_pword.TabIndex = 5;
             this.textBox_pword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_pword.TextChanged += new System.EventHandler(this.textBox_pword_TextChanged);
+            this.textBox_pword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_pword_KeyDown);
             // 
             // button_server
             // 
@@ -2679,15 +2681,29 @@ namespace L2_login
             }
         }
 
+        private void textBox_pword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_pword_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+            if (e.KeyCode == Keys.Return)
+            {
+                button_logon.PerformClick();
+            }
+        }
+
         //private void panel_select_Paint(object sender, PaintEventArgs e)
         //{
-            //checkBox_advanced.Checked = true;
-            //ch_w_a_s.Checked = true;
-            //checkBox_Unknown_Blowfish.Checked = true;
-            //textBox_game_ip.Text = "64.25.37.135";
-            //textBox_game_port.Text = "7777";
-            //textBox_game_listenport.Text = "1999";
+        //checkBox_advanced.Checked = true;
+        //ch_w_a_s.Checked = true;
+        //checkBox_Unknown_Blowfish.Checked = true;
+        //textBox_game_ip.Text = "64.25.37.135";
+        //textBox_game_port.Text = "7777";
+        //textBox_game_listenport.Text = "1999";
         //}
 
-	}//end of class
+    }//end of class
 }
