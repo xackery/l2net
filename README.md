@@ -22,8 +22,10 @@ Download
 
 Compiling
 ---
-* Open L2 Login.sln with Visual Studio C# 2015
 
+* Get [NuGet for Visual Studio C# 2015](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d)
+* Get [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) via NuGet Package Manager
+* Open L2 Login.sln with Visual Studio C# 2015
 
 # Original Changelog
 
