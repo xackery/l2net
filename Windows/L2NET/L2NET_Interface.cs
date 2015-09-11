@@ -329,10 +329,15 @@ namespace L2_login
 
         private void Load_Interface()
         {
-			try
-			{
-                System.IO.StreamReader interin = new System.IO.StreamReader("interface.txt");
-
+            System.IO.StreamReader interin;
+            try
+            {
+                interin = new System.IO.StreamReader("data\\interface.txt");
+            } catch (Exception e)
+            {
+                throw new Exception("Failed to open file: " + e.Message);
+            }
+            try {
                 Globals.LanuageSet = Util.GetInt32(interin.ReadLine());
 
                 switch (Globals.LanuageSet)

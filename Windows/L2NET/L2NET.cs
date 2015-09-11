@@ -432,7 +432,15 @@ namespace L2_login
                 timer_chat.Interval = Globals.CHAT_TIMER;
                 timer_chat.OnTimerTick += timer_chat_Tick;
 
-                Load_Interface();
+                try {
+                    Load_Interface();
+                } catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                    this.Close();
+                    Application.Exit();
+                    return;     
+                }
 
                 //do our loading here...
                 GameServer.Init(args);
