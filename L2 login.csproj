@@ -123,6 +123,8 @@
     </EmbeddedResource>
     <None Include="Code\Data\GameGuard\GameGuardLogs.txt" />
     <Compile Include="Code\Crypting\Script_Crypt.cs" />
+    <Compile Include="Code\Data\Botoptions\BotConfig.cs" />
+    <Compile Include="Code\Data\Botoptions\FollowOption.cs" />
     <Compile Include="Code\Data\Packs\Items\BuyList.cs" />
     <Compile Include="Code\Data\Packs\Items\PetInventoryInfo.cs" />
     <Compile Include="Code\Data\Packs\Object_Base.cs" />
@@ -177,9 +179,6 @@
     </Compile>
     <Compile Include="Code\Crypting\AES.cs" />
     <Compile Include="Code\Crypting\Blowfish.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Code\Crypting\Code.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Code\Crypting\Crypt.cs">
