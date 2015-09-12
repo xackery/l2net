@@ -1,5 +1,6 @@
 # L2 .NET
 L2 .NET is an automated assistant tool (commonly referred to as 'bot') for Lineage 2 that assists a player's experience during their play. It is similar to [L2Divine](http://www.l2divine.com/) and [L2Walker](http://www.towalker.com/).
+
 WARNING: This software is not designed to circumvent anti-bot software nor is it supported for retail versions of Lineage 2. Using this on servers where botting is not allowed is not supported or condoned in any way.
 
 Features
