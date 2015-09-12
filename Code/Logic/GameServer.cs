@@ -134,11 +134,6 @@ namespace L2_login
                         Globals.pre_login_ip = data;
                         break;
 
-                    case "-o":
-                    case "-options":
-                        Globals.BotOptionsFile = data;
-                        break;
-
                     case "-p":
                     case "-password":
                         Globals.pre_password = data;

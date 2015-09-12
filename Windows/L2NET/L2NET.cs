@@ -557,24 +557,7 @@ namespace L2_login
         Globals.gamedrawthread.Start();
         //END OF TESTING MAP ENGINE OFFLINE
 #endif
-
-            //Load pre bot options
-            if (!String.IsNullOrEmpty(Globals.BotOptionsFile))
-            {
-                if (Globals.botoptionsscreen == null || Globals.botoptionsscreen.IsDisposed == true)
-                {
-                    Globals.botoptionsscreen = new BotOptionsScreen();
-                }
-                else
-                {
-                    Globals.botoptionsscreen.Setup();
-                }
-                //Globals.botoptionsscreen.TopMost = true;
-                //Globals.botoptionsscreen.BringToFront();
-                //Globals.botoptionsscreen.Show();
-            }
-            //menuItem_Options_Click(null, null);
-            //Globals.botoptionsscreen.Hide();
+            
 
             splash.Close();
             splash.Dispose();
