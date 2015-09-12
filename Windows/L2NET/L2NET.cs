@@ -660,16 +660,12 @@ namespace L2_login
             this.label_target_hp = new System.Windows.Forms.Label();
             this.label_target_name = new System.Windows.Forms.Label();
             this.panel_charinfo_ul = new System.Windows.Forms.Panel();
-            this.progressBar_char_XP = new VistaStyleProgressBar.ProgressBar();
-            this.progressBar_char_MP = new VistaStyleProgressBar.ProgressBar();
-            this.progressBar_char_CP = new VistaStyleProgressBar.ProgressBar();
             this.label_char_vitality = new System.Windows.Forms.Label();
             this.label_char_xp = new System.Windows.Forms.Label();
             this.label_char_level = new System.Windows.Forms.Label();
             this.label_char_cp = new System.Windows.Forms.Label();
             this.label_char_mp = new System.Windows.Forms.Label();
             this.label_char_name = new System.Windows.Forms.Label();
-            this.progressBar_char_HP = new VistaStyleProgressBar.ProgressBar();
             this.label_char_hp = new System.Windows.Forms.Label();
             this.panel_party_cover = new System.Windows.Forms.Panel();
             this.panel_char = new System.Windows.Forms.Panel();
@@ -839,7 +835,6 @@ namespace L2_login
             this.tabPage_npc_chat = new System.Windows.Forms.TabPage();
             this.panel_npc_chat = new System.Windows.Forms.Panel();
             this.textBox_rtb_input = new System.Windows.Forms.TextBox();
-            this.richTextBox_dialog = new L2_login.RichTextBoxEx();
             this.button_npc_close = new System.Windows.Forms.Button();
             this.tabPage_buffs = new System.Windows.Forms.TabPage();
             this.listView_mybuffs_data = new System.Windows.Forms.ListView();
@@ -879,23 +874,14 @@ namespace L2_login
             this.textBox_say = new System.Windows.Forms.TextBox();
             this.tabControl_ChatSelect = new System.Windows.Forms.TabControl();
             this.tab_all = new System.Windows.Forms.TabPage();
-            this.colorListBox_all = new L2_login.ColorListBox();
             this.tab_system = new System.Windows.Forms.TabPage();
-            this.colorListBox_system = new L2_login.ColorListBox();
             this.tab_bot = new System.Windows.Forms.TabPage();
-            this.colorListBox_bot = new L2_login.ColorListBox();
             this.tab_local = new System.Windows.Forms.TabPage();
-            this.colorListBox_local = new L2_login.ColorListBox();
             this.tab_trade = new System.Windows.Forms.TabPage();
-            this.colorListBox_trade = new L2_login.ColorListBox();
             this.tab_party = new System.Windows.Forms.TabPage();
-            this.colorListBox_party = new L2_login.ColorListBox();
             this.tab_clan = new System.Windows.Forms.TabPage();
-            this.colorListBox_clan = new L2_login.ColorListBox();
             this.tab_alliance = new System.Windows.Forms.TabPage();
-            this.colorListBox_ally = new L2_login.ColorListBox();
             this.tab_hero = new System.Windows.Forms.TabPage();
-            this.colorListBox_hero = new L2_login.ColorListBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.notifyIcon_us = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip_notify = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -966,6 +952,20 @@ namespace L2_login
             this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
             this.menuItem_forcecollect = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.richTextBox_dialog = new L2_login.RichTextBoxEx();
+            this.progressBar_char_XP = new VistaStyleProgressBar.ProgressBar();
+            this.progressBar_char_MP = new VistaStyleProgressBar.ProgressBar();
+            this.progressBar_char_CP = new VistaStyleProgressBar.ProgressBar();
+            this.progressBar_char_HP = new VistaStyleProgressBar.ProgressBar();
+            this.colorListBox_all = new L2_login.ColorListBox();
+            this.colorListBox_system = new L2_login.ColorListBox();
+            this.colorListBox_bot = new L2_login.ColorListBox();
+            this.colorListBox_local = new L2_login.ColorListBox();
+            this.colorListBox_trade = new L2_login.ColorListBox();
+            this.colorListBox_party = new L2_login.ColorListBox();
+            this.colorListBox_clan = new L2_login.ColorListBox();
+            this.colorListBox_ally = new L2_login.ColorListBox();
+            this.colorListBox_hero = new L2_login.ColorListBox();
             this.panel_party_5.SuspendLayout();
             this.panel_party_6.SuspendLayout();
             this.panel_party_7.SuspendLayout();
@@ -1554,47 +1554,6 @@ namespace L2_login
             this.panel_charinfo_ul.Size = new System.Drawing.Size(128, 84);
             this.panel_charinfo_ul.TabIndex = 6;
             // 
-            // progressBar_char_XP
-            // 
-            this.progressBar_char_XP.Animate = false;
-            this.progressBar_char_XP.BackColor = System.Drawing.Color.Transparent;
-            this.progressBar_char_XP.BackgroundColor = System.Drawing.Color.Transparent;
-            this.progressBar_char_XP.BarText = "XP";
-            this.progressBar_char_XP.BarTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.progressBar_char_XP.EndColor = System.Drawing.Color.DarkGray;
-            this.progressBar_char_XP.Location = new System.Drawing.Point(15, 68);
-            this.progressBar_char_XP.Name = "progressBar_char_XP";
-            this.progressBar_char_XP.Size = new System.Drawing.Size(113, 16);
-            this.progressBar_char_XP.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.progressBar_char_XP.TabIndex = 31;
-            // 
-            // progressBar_char_MP
-            // 
-            this.progressBar_char_MP.BackColor = System.Drawing.Color.Transparent;
-            this.progressBar_char_MP.BackgroundColor = System.Drawing.Color.Transparent;
-            this.progressBar_char_MP.BarText = "MP";
-            this.progressBar_char_MP.BarTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.progressBar_char_MP.EndColor = System.Drawing.Color.Blue;
-            this.progressBar_char_MP.Location = new System.Drawing.Point(15, 52);
-            this.progressBar_char_MP.Name = "progressBar_char_MP";
-            this.progressBar_char_MP.Size = new System.Drawing.Size(113, 16);
-            this.progressBar_char_MP.StartColor = System.Drawing.Color.Navy;
-            this.progressBar_char_MP.TabIndex = 31;
-            // 
-            // progressBar_char_CP
-            // 
-            this.progressBar_char_CP.BackColor = System.Drawing.Color.Transparent;
-            this.progressBar_char_CP.BackgroundColor = System.Drawing.Color.Transparent;
-            this.progressBar_char_CP.BarText = "CP";
-            this.progressBar_char_CP.BarTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.progressBar_char_CP.EndColor = System.Drawing.Color.Orange;
-            this.progressBar_char_CP.ForeColor = System.Drawing.Color.Transparent;
-            this.progressBar_char_CP.Location = new System.Drawing.Point(15, 22);
-            this.progressBar_char_CP.Name = "progressBar_char_CP";
-            this.progressBar_char_CP.Size = new System.Drawing.Size(113, 16);
-            this.progressBar_char_CP.StartColor = System.Drawing.Color.Yellow;
-            this.progressBar_char_CP.TabIndex = 31;
-            // 
             // label_char_vitality
             // 
             this.label_char_vitality.BackColor = System.Drawing.Color.Transparent;
@@ -1656,19 +1615,6 @@ namespace L2_login
             this.label_char_name.TabIndex = 0;
             this.label_char_name.Text = "Name";
             this.label_char_name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // progressBar_char_HP
-            // 
-            this.progressBar_char_HP.BackColor = System.Drawing.Color.Transparent;
-            this.progressBar_char_HP.BackgroundColor = System.Drawing.Color.Transparent;
-            this.progressBar_char_HP.BarText = "HP";
-            this.progressBar_char_HP.BarTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.progressBar_char_HP.EndColor = System.Drawing.Color.Red;
-            this.progressBar_char_HP.Location = new System.Drawing.Point(15, 38);
-            this.progressBar_char_HP.Name = "progressBar_char_HP";
-            this.progressBar_char_HP.Size = new System.Drawing.Size(113, 16);
-            this.progressBar_char_HP.StartColor = System.Drawing.Color.DarkRed;
-            this.progressBar_char_HP.TabIndex = 30;
             // 
             // label_char_hp
             // 
@@ -3166,9 +3112,9 @@ namespace L2_login
             // tabPage_players
             // 
             this.tabPage_players.Controls.Add(this.listView_players_data);
-            this.tabPage_players.Location = new System.Drawing.Point(4, 58);
+            this.tabPage_players.Location = new System.Drawing.Point(4, 40);
             this.tabPage_players.Name = "tabPage_players";
-            this.tabPage_players.Size = new System.Drawing.Size(256, 576);
+            this.tabPage_players.Size = new System.Drawing.Size(256, 594);
             this.tabPage_players.TabIndex = 6;
             this.tabPage_players.Text = "Players";
             this.tabPage_players.UseVisualStyleBackColor = true;
@@ -3191,7 +3137,7 @@ namespace L2_login
             this.listView_players_data.Location = new System.Drawing.Point(3, 3);
             this.listView_players_data.MultiSelect = false;
             this.listView_players_data.Name = "listView_players_data";
-            this.listView_players_data.Size = new System.Drawing.Size(253, 595);
+            this.listView_players_data.Size = new System.Drawing.Size(253, 613);
             this.listView_players_data.SmallImageList = this.imageList_crests;
             this.listView_players_data.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView_players_data.TabIndex = 0;
@@ -3226,9 +3172,9 @@ namespace L2_login
             // tabPage_items
             // 
             this.tabPage_items.Controls.Add(this.listView_items_data);
-            this.tabPage_items.Location = new System.Drawing.Point(4, 58);
+            this.tabPage_items.Location = new System.Drawing.Point(4, 40);
             this.tabPage_items.Name = "tabPage_items";
-            this.tabPage_items.Size = new System.Drawing.Size(256, 576);
+            this.tabPage_items.Size = new System.Drawing.Size(256, 594);
             this.tabPage_items.TabIndex = 7;
             this.tabPage_items.Text = "Items";
             this.tabPage_items.UseVisualStyleBackColor = true;
@@ -3249,7 +3195,7 @@ namespace L2_login
             this.listView_items_data.Location = new System.Drawing.Point(3, 0);
             this.listView_items_data.MultiSelect = false;
             this.listView_items_data.Name = "listView_items_data";
-            this.listView_items_data.Size = new System.Drawing.Size(253, 616);
+            this.listView_items_data.Size = new System.Drawing.Size(253, 634);
             this.listView_items_data.SmallImageList = this.imageList_items;
             this.listView_items_data.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView_items_data.TabIndex = 1;
@@ -3286,9 +3232,9 @@ namespace L2_login
             // tabPage_npc
             // 
             this.tabPage_npc.Controls.Add(this.listView_npc_data);
-            this.tabPage_npc.Location = new System.Drawing.Point(4, 58);
+            this.tabPage_npc.Location = new System.Drawing.Point(4, 40);
             this.tabPage_npc.Name = "tabPage_npc";
-            this.tabPage_npc.Size = new System.Drawing.Size(256, 576);
+            this.tabPage_npc.Size = new System.Drawing.Size(256, 594);
             this.tabPage_npc.TabIndex = 8;
             this.tabPage_npc.Text = "NPC";
             this.tabPage_npc.UseVisualStyleBackColor = true;
@@ -3310,7 +3256,7 @@ namespace L2_login
             this.listView_npc_data.Location = new System.Drawing.Point(3, 3);
             this.listView_npc_data.MultiSelect = false;
             this.listView_npc_data.Name = "listView_npc_data";
-            this.listView_npc_data.Size = new System.Drawing.Size(253, 613);
+            this.listView_npc_data.Size = new System.Drawing.Size(253, 631);
             this.listView_npc_data.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView_npc_data.TabIndex = 2;
             this.listView_npc_data.UseCompatibleStateImageBehavior = false;
@@ -3358,9 +3304,9 @@ namespace L2_login
             // tabPage_npc_chat
             // 
             this.tabPage_npc_chat.Controls.Add(this.panel_npc_chat);
-            this.tabPage_npc_chat.Location = new System.Drawing.Point(4, 58);
+            this.tabPage_npc_chat.Location = new System.Drawing.Point(4, 40);
             this.tabPage_npc_chat.Name = "tabPage_npc_chat";
-            this.tabPage_npc_chat.Size = new System.Drawing.Size(256, 576);
+            this.tabPage_npc_chat.Size = new System.Drawing.Size(256, 594);
             this.tabPage_npc_chat.TabIndex = 9;
             this.tabPage_npc_chat.Text = "NPC Chat";
             this.tabPage_npc_chat.UseVisualStyleBackColor = true;
@@ -3375,7 +3321,7 @@ namespace L2_login
             this.panel_npc_chat.Controls.Add(this.button_npc_close);
             this.panel_npc_chat.Location = new System.Drawing.Point(3, 3);
             this.panel_npc_chat.Name = "panel_npc_chat";
-            this.panel_npc_chat.Size = new System.Drawing.Size(253, 610);
+            this.panel_npc_chat.Size = new System.Drawing.Size(253, 628);
             this.panel_npc_chat.TabIndex = 25;
             // 
             // textBox_rtb_input
@@ -3386,25 +3332,12 @@ namespace L2_login
             this.textBox_rtb_input.TabIndex = 2;
             this.textBox_rtb_input.Visible = false;
             // 
-            // richTextBox_dialog
-            // 
-            this.richTextBox_dialog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox_dialog.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox_dialog.Location = new System.Drawing.Point(3, 3);
-            this.richTextBox_dialog.Name = "richTextBox_dialog";
-            this.richTextBox_dialog.ReadOnly = true;
-            this.richTextBox_dialog.Size = new System.Drawing.Size(245, 587);
-            this.richTextBox_dialog.TabIndex = 1;
-            this.richTextBox_dialog.Text = "";
-            // 
             // button_npc_close
             // 
             this.button_npc_close.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button_npc_close.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button_npc_close.Location = new System.Drawing.Point(39, 578);
+            this.button_npc_close.Location = new System.Drawing.Point(39, 596);
             this.button_npc_close.Name = "button_npc_close";
             this.button_npc_close.Size = new System.Drawing.Size(173, 24);
             this.button_npc_close.TabIndex = 0;
@@ -3414,9 +3347,9 @@ namespace L2_login
             // tabPage_buffs
             // 
             this.tabPage_buffs.Controls.Add(this.listView_mybuffs_data);
-            this.tabPage_buffs.Location = new System.Drawing.Point(4, 58);
+            this.tabPage_buffs.Location = new System.Drawing.Point(4, 40);
             this.tabPage_buffs.Name = "tabPage_buffs";
-            this.tabPage_buffs.Size = new System.Drawing.Size(256, 576);
+            this.tabPage_buffs.Size = new System.Drawing.Size(256, 594);
             this.tabPage_buffs.TabIndex = 10;
             this.tabPage_buffs.Text = "Buffs";
             this.tabPage_buffs.UseVisualStyleBackColor = true;
@@ -3436,7 +3369,7 @@ namespace L2_login
             this.listView_mybuffs_data.Location = new System.Drawing.Point(0, 0);
             this.listView_mybuffs_data.MultiSelect = false;
             this.listView_mybuffs_data.Name = "listView_mybuffs_data";
-            this.listView_mybuffs_data.Size = new System.Drawing.Size(253, 592);
+            this.listView_mybuffs_data.Size = new System.Drawing.Size(253, 610);
             this.listView_mybuffs_data.SmallImageList = this.imageList_skills;
             this.listView_mybuffs_data.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listView_mybuffs_data.TabIndex = 2;
@@ -3843,23 +3776,6 @@ namespace L2_login
             this.tab_all.Text = "All";
             this.tab_all.UseVisualStyleBackColor = true;
             // 
-            // colorListBox_all
-            // 
-            this.colorListBox_all.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.colorListBox_all.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
-            this.colorListBox_all.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.colorListBox_all.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.colorListBox_all.Font = new System.Drawing.Font("Arial", 9F);
-            this.colorListBox_all.FormattingEnabled = true;
-            this.colorListBox_all.HorizontalScrollbar = true;
-            this.colorListBox_all.Location = new System.Drawing.Point(0, 0);
-            this.colorListBox_all.Name = "colorListBox_all";
-            this.colorListBox_all.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.colorListBox_all.Size = new System.Drawing.Size(625, 132);
-            this.colorListBox_all.TabIndex = 0;
-            // 
             // tab_system
             // 
             this.tab_system.Controls.Add(this.colorListBox_system);
@@ -3870,23 +3786,6 @@ namespace L2_login
             this.tab_system.Text = "System";
             this.tab_system.UseVisualStyleBackColor = true;
             // 
-            // colorListBox_system
-            // 
-            this.colorListBox_system.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.colorListBox_system.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
-            this.colorListBox_system.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.colorListBox_system.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.colorListBox_system.Font = new System.Drawing.Font("Arial", 9F);
-            this.colorListBox_system.FormattingEnabled = true;
-            this.colorListBox_system.HorizontalScrollbar = true;
-            this.colorListBox_system.Location = new System.Drawing.Point(0, 0);
-            this.colorListBox_system.Name = "colorListBox_system";
-            this.colorListBox_system.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.colorListBox_system.Size = new System.Drawing.Size(625, 132);
-            this.colorListBox_system.TabIndex = 1;
-            // 
             // tab_bot
             // 
             this.tab_bot.Controls.Add(this.colorListBox_bot);
@@ -3896,23 +3795,6 @@ namespace L2_login
             this.tab_bot.TabIndex = 5;
             this.tab_bot.Text = "Bot";
             this.tab_bot.UseVisualStyleBackColor = true;
-            // 
-            // colorListBox_bot
-            // 
-            this.colorListBox_bot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.colorListBox_bot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
-            this.colorListBox_bot.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.colorListBox_bot.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.colorListBox_bot.Font = new System.Drawing.Font("Arial", 9F);
-            this.colorListBox_bot.FormattingEnabled = true;
-            this.colorListBox_bot.HorizontalScrollbar = true;
-            this.colorListBox_bot.Location = new System.Drawing.Point(0, 0);
-            this.colorListBox_bot.Name = "colorListBox_bot";
-            this.colorListBox_bot.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.colorListBox_bot.Size = new System.Drawing.Size(625, 132);
-            this.colorListBox_bot.TabIndex = 1;
             // 
             // tab_local
             // 
@@ -3925,23 +3807,6 @@ namespace L2_login
             this.tab_local.Text = "Local";
             this.tab_local.UseVisualStyleBackColor = true;
             // 
-            // colorListBox_local
-            // 
-            this.colorListBox_local.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.colorListBox_local.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
-            this.colorListBox_local.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.colorListBox_local.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.colorListBox_local.Font = new System.Drawing.Font("Arial", 9F);
-            this.colorListBox_local.FormattingEnabled = true;
-            this.colorListBox_local.HorizontalScrollbar = true;
-            this.colorListBox_local.Location = new System.Drawing.Point(0, 0);
-            this.colorListBox_local.Name = "colorListBox_local";
-            this.colorListBox_local.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.colorListBox_local.Size = new System.Drawing.Size(625, 132);
-            this.colorListBox_local.TabIndex = 1;
-            // 
             // tab_trade
             // 
             this.tab_trade.Controls.Add(this.colorListBox_trade);
@@ -3951,23 +3816,6 @@ namespace L2_login
             this.tab_trade.TabIndex = 2;
             this.tab_trade.Text = "Trade";
             this.tab_trade.UseVisualStyleBackColor = true;
-            // 
-            // colorListBox_trade
-            // 
-            this.colorListBox_trade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.colorListBox_trade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
-            this.colorListBox_trade.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.colorListBox_trade.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.colorListBox_trade.Font = new System.Drawing.Font("Arial", 9F);
-            this.colorListBox_trade.FormattingEnabled = true;
-            this.colorListBox_trade.HorizontalScrollbar = true;
-            this.colorListBox_trade.Location = new System.Drawing.Point(0, 0);
-            this.colorListBox_trade.Name = "colorListBox_trade";
-            this.colorListBox_trade.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.colorListBox_trade.Size = new System.Drawing.Size(625, 132);
-            this.colorListBox_trade.TabIndex = 1;
             // 
             // tab_party
             // 
@@ -3979,23 +3827,6 @@ namespace L2_login
             this.tab_party.Text = "Party";
             this.tab_party.UseVisualStyleBackColor = true;
             // 
-            // colorListBox_party
-            // 
-            this.colorListBox_party.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.colorListBox_party.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
-            this.colorListBox_party.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.colorListBox_party.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.colorListBox_party.Font = new System.Drawing.Font("Arial", 9F);
-            this.colorListBox_party.FormattingEnabled = true;
-            this.colorListBox_party.HorizontalScrollbar = true;
-            this.colorListBox_party.Location = new System.Drawing.Point(0, 0);
-            this.colorListBox_party.Name = "colorListBox_party";
-            this.colorListBox_party.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.colorListBox_party.Size = new System.Drawing.Size(625, 132);
-            this.colorListBox_party.TabIndex = 1;
-            // 
             // tab_clan
             // 
             this.tab_clan.Controls.Add(this.colorListBox_clan);
@@ -4005,23 +3836,6 @@ namespace L2_login
             this.tab_clan.TabIndex = 3;
             this.tab_clan.Text = "Clan";
             this.tab_clan.UseVisualStyleBackColor = true;
-            // 
-            // colorListBox_clan
-            // 
-            this.colorListBox_clan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.colorListBox_clan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
-            this.colorListBox_clan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.colorListBox_clan.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.colorListBox_clan.Font = new System.Drawing.Font("Arial", 9F);
-            this.colorListBox_clan.FormattingEnabled = true;
-            this.colorListBox_clan.HorizontalScrollbar = true;
-            this.colorListBox_clan.Location = new System.Drawing.Point(0, 0);
-            this.colorListBox_clan.Name = "colorListBox_clan";
-            this.colorListBox_clan.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.colorListBox_clan.Size = new System.Drawing.Size(625, 132);
-            this.colorListBox_clan.TabIndex = 1;
             // 
             // tab_alliance
             // 
@@ -4033,23 +3847,6 @@ namespace L2_login
             this.tab_alliance.Text = "Alliance";
             this.tab_alliance.UseVisualStyleBackColor = true;
             // 
-            // colorListBox_ally
-            // 
-            this.colorListBox_ally.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.colorListBox_ally.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
-            this.colorListBox_ally.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.colorListBox_ally.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.colorListBox_ally.Font = new System.Drawing.Font("Arial", 9F);
-            this.colorListBox_ally.FormattingEnabled = true;
-            this.colorListBox_ally.HorizontalScrollbar = true;
-            this.colorListBox_ally.Location = new System.Drawing.Point(0, 0);
-            this.colorListBox_ally.Name = "colorListBox_ally";
-            this.colorListBox_ally.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.colorListBox_ally.Size = new System.Drawing.Size(625, 132);
-            this.colorListBox_ally.TabIndex = 1;
-            // 
             // tab_hero
             // 
             this.tab_hero.Controls.Add(this.colorListBox_hero);
@@ -4059,23 +3856,6 @@ namespace L2_login
             this.tab_hero.TabIndex = 8;
             this.tab_hero.Text = "Hero";
             this.tab_hero.UseVisualStyleBackColor = true;
-            // 
-            // colorListBox_hero
-            // 
-            this.colorListBox_hero.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.colorListBox_hero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
-            this.colorListBox_hero.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.colorListBox_hero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.colorListBox_hero.Font = new System.Drawing.Font("Arial", 9F);
-            this.colorListBox_hero.FormattingEnabled = true;
-            this.colorListBox_hero.HorizontalScrollbar = true;
-            this.colorListBox_hero.Location = new System.Drawing.Point(2, 0);
-            this.colorListBox_hero.Name = "colorListBox_hero";
-            this.colorListBox_hero.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.colorListBox_hero.Size = new System.Drawing.Size(625, 132);
-            this.colorListBox_hero.TabIndex = 2;
             // 
             // toolTip1
             // 
@@ -4600,6 +4380,226 @@ namespace L2_login
             this.menuItem_forcecollect.Text = "Force Collect";
             this.menuItem_forcecollect.Click += new System.EventHandler(this.menuItem_forcecollect_Click);
             // 
+            // richTextBox_dialog
+            // 
+            this.richTextBox_dialog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox_dialog.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox_dialog.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox_dialog.Name = "richTextBox_dialog";
+            this.richTextBox_dialog.ReadOnly = true;
+            this.richTextBox_dialog.Size = new System.Drawing.Size(245, 605);
+            this.richTextBox_dialog.TabIndex = 1;
+            this.richTextBox_dialog.Text = "";
+            // 
+            // progressBar_char_XP
+            // 
+            this.progressBar_char_XP.Animate = false;
+            this.progressBar_char_XP.BackColor = System.Drawing.Color.Transparent;
+            this.progressBar_char_XP.BackgroundColor = System.Drawing.Color.Transparent;
+            this.progressBar_char_XP.BarText = "XP";
+            this.progressBar_char_XP.BarTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.progressBar_char_XP.EndColor = System.Drawing.Color.DarkGray;
+            this.progressBar_char_XP.Location = new System.Drawing.Point(15, 68);
+            this.progressBar_char_XP.Name = "progressBar_char_XP";
+            this.progressBar_char_XP.Size = new System.Drawing.Size(113, 16);
+            this.progressBar_char_XP.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.progressBar_char_XP.TabIndex = 31;
+            // 
+            // progressBar_char_MP
+            // 
+            this.progressBar_char_MP.BackColor = System.Drawing.Color.Transparent;
+            this.progressBar_char_MP.BackgroundColor = System.Drawing.Color.Transparent;
+            this.progressBar_char_MP.BarText = "MP";
+            this.progressBar_char_MP.BarTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.progressBar_char_MP.EndColor = System.Drawing.Color.Blue;
+            this.progressBar_char_MP.Location = new System.Drawing.Point(15, 52);
+            this.progressBar_char_MP.Name = "progressBar_char_MP";
+            this.progressBar_char_MP.Size = new System.Drawing.Size(113, 16);
+            this.progressBar_char_MP.StartColor = System.Drawing.Color.Navy;
+            this.progressBar_char_MP.TabIndex = 31;
+            // 
+            // progressBar_char_CP
+            // 
+            this.progressBar_char_CP.BackColor = System.Drawing.Color.Transparent;
+            this.progressBar_char_CP.BackgroundColor = System.Drawing.Color.Transparent;
+            this.progressBar_char_CP.BarText = "CP";
+            this.progressBar_char_CP.BarTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.progressBar_char_CP.EndColor = System.Drawing.Color.Orange;
+            this.progressBar_char_CP.ForeColor = System.Drawing.Color.Transparent;
+            this.progressBar_char_CP.Location = new System.Drawing.Point(15, 22);
+            this.progressBar_char_CP.Name = "progressBar_char_CP";
+            this.progressBar_char_CP.Size = new System.Drawing.Size(113, 16);
+            this.progressBar_char_CP.StartColor = System.Drawing.Color.Yellow;
+            this.progressBar_char_CP.TabIndex = 31;
+            // 
+            // progressBar_char_HP
+            // 
+            this.progressBar_char_HP.BackColor = System.Drawing.Color.Transparent;
+            this.progressBar_char_HP.BackgroundColor = System.Drawing.Color.Transparent;
+            this.progressBar_char_HP.BarText = "HP";
+            this.progressBar_char_HP.BarTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.progressBar_char_HP.EndColor = System.Drawing.Color.Red;
+            this.progressBar_char_HP.Location = new System.Drawing.Point(15, 38);
+            this.progressBar_char_HP.Name = "progressBar_char_HP";
+            this.progressBar_char_HP.Size = new System.Drawing.Size(113, 16);
+            this.progressBar_char_HP.StartColor = System.Drawing.Color.DarkRed;
+            this.progressBar_char_HP.TabIndex = 30;
+            // 
+            // colorListBox_all
+            // 
+            this.colorListBox_all.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_all.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
+            this.colorListBox_all.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.colorListBox_all.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.colorListBox_all.Font = new System.Drawing.Font("Arial", 9F);
+            this.colorListBox_all.FormattingEnabled = true;
+            this.colorListBox_all.HorizontalScrollbar = true;
+            this.colorListBox_all.Location = new System.Drawing.Point(0, 0);
+            this.colorListBox_all.Name = "colorListBox_all";
+            this.colorListBox_all.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.colorListBox_all.Size = new System.Drawing.Size(625, 132);
+            this.colorListBox_all.TabIndex = 0;
+            // 
+            // colorListBox_system
+            // 
+            this.colorListBox_system.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_system.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
+            this.colorListBox_system.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.colorListBox_system.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.colorListBox_system.Font = new System.Drawing.Font("Arial", 9F);
+            this.colorListBox_system.FormattingEnabled = true;
+            this.colorListBox_system.HorizontalScrollbar = true;
+            this.colorListBox_system.Location = new System.Drawing.Point(0, 0);
+            this.colorListBox_system.Name = "colorListBox_system";
+            this.colorListBox_system.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.colorListBox_system.Size = new System.Drawing.Size(625, 132);
+            this.colorListBox_system.TabIndex = 1;
+            // 
+            // colorListBox_bot
+            // 
+            this.colorListBox_bot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_bot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
+            this.colorListBox_bot.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.colorListBox_bot.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.colorListBox_bot.Font = new System.Drawing.Font("Arial", 9F);
+            this.colorListBox_bot.FormattingEnabled = true;
+            this.colorListBox_bot.HorizontalScrollbar = true;
+            this.colorListBox_bot.Location = new System.Drawing.Point(0, 0);
+            this.colorListBox_bot.Name = "colorListBox_bot";
+            this.colorListBox_bot.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.colorListBox_bot.Size = new System.Drawing.Size(625, 132);
+            this.colorListBox_bot.TabIndex = 1;
+            // 
+            // colorListBox_local
+            // 
+            this.colorListBox_local.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_local.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
+            this.colorListBox_local.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.colorListBox_local.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.colorListBox_local.Font = new System.Drawing.Font("Arial", 9F);
+            this.colorListBox_local.FormattingEnabled = true;
+            this.colorListBox_local.HorizontalScrollbar = true;
+            this.colorListBox_local.Location = new System.Drawing.Point(0, 0);
+            this.colorListBox_local.Name = "colorListBox_local";
+            this.colorListBox_local.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.colorListBox_local.Size = new System.Drawing.Size(625, 132);
+            this.colorListBox_local.TabIndex = 1;
+            // 
+            // colorListBox_trade
+            // 
+            this.colorListBox_trade.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_trade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
+            this.colorListBox_trade.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.colorListBox_trade.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.colorListBox_trade.Font = new System.Drawing.Font("Arial", 9F);
+            this.colorListBox_trade.FormattingEnabled = true;
+            this.colorListBox_trade.HorizontalScrollbar = true;
+            this.colorListBox_trade.Location = new System.Drawing.Point(0, 0);
+            this.colorListBox_trade.Name = "colorListBox_trade";
+            this.colorListBox_trade.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.colorListBox_trade.Size = new System.Drawing.Size(625, 132);
+            this.colorListBox_trade.TabIndex = 1;
+            // 
+            // colorListBox_party
+            // 
+            this.colorListBox_party.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_party.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
+            this.colorListBox_party.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.colorListBox_party.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.colorListBox_party.Font = new System.Drawing.Font("Arial", 9F);
+            this.colorListBox_party.FormattingEnabled = true;
+            this.colorListBox_party.HorizontalScrollbar = true;
+            this.colorListBox_party.Location = new System.Drawing.Point(0, 0);
+            this.colorListBox_party.Name = "colorListBox_party";
+            this.colorListBox_party.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.colorListBox_party.Size = new System.Drawing.Size(625, 132);
+            this.colorListBox_party.TabIndex = 1;
+            // 
+            // colorListBox_clan
+            // 
+            this.colorListBox_clan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_clan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
+            this.colorListBox_clan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.colorListBox_clan.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.colorListBox_clan.Font = new System.Drawing.Font("Arial", 9F);
+            this.colorListBox_clan.FormattingEnabled = true;
+            this.colorListBox_clan.HorizontalScrollbar = true;
+            this.colorListBox_clan.Location = new System.Drawing.Point(0, 0);
+            this.colorListBox_clan.Name = "colorListBox_clan";
+            this.colorListBox_clan.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.colorListBox_clan.Size = new System.Drawing.Size(625, 132);
+            this.colorListBox_clan.TabIndex = 1;
+            // 
+            // colorListBox_ally
+            // 
+            this.colorListBox_ally.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_ally.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
+            this.colorListBox_ally.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.colorListBox_ally.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.colorListBox_ally.Font = new System.Drawing.Font("Arial", 9F);
+            this.colorListBox_ally.FormattingEnabled = true;
+            this.colorListBox_ally.HorizontalScrollbar = true;
+            this.colorListBox_ally.Location = new System.Drawing.Point(0, 0);
+            this.colorListBox_ally.Name = "colorListBox_ally";
+            this.colorListBox_ally.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.colorListBox_ally.Size = new System.Drawing.Size(625, 132);
+            this.colorListBox_ally.TabIndex = 1;
+            // 
+            // colorListBox_hero
+            // 
+            this.colorListBox_hero.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorListBox_hero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(27)))));
+            this.colorListBox_hero.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.colorListBox_hero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.colorListBox_hero.Font = new System.Drawing.Font("Arial", 9F);
+            this.colorListBox_hero.FormattingEnabled = true;
+            this.colorListBox_hero.HorizontalScrollbar = true;
+            this.colorListBox_hero.Location = new System.Drawing.Point(2, 0);
+            this.colorListBox_hero.Name = "colorListBox_hero";
+            this.colorListBox_hero.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.colorListBox_hero.Size = new System.Drawing.Size(625, 132);
+            this.colorListBox_hero.TabIndex = 2;
+            // 
             // L2NET
             // 
             this.AcceptButton = this.button_sendtext;
@@ -5053,11 +5053,6 @@ namespace L2_login
                 }
             }
         }
-
-
-
-
-
-
-	}//end of class
+        
+    }//end of class
 }//end of namespace
