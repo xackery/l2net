@@ -12,7 +12,8 @@ namespace L2_login
     /// </summary>
     class BotConfig
     {
-        //public volatile FollowOption Follow = new FollowOption();
+        public volatile FollowOption Follow = new FollowOption();
+        public string PlayerName = "";
 
         private static volatile BotConfig instance;
         /// <summary>
@@ -38,6 +39,7 @@ namespace L2_login
             JsonTextWriter writer = new JsonTextWriter(new StreamWriter(path));
 
             JsonSerializer serializer = new JsonSerializer();
+            serializer.Formatting = Formatting.Indented;
             serializer.Serialize(writer, instance);
             writer.Close();
 
